@@ -1,0 +1,133 @@
+site_name: Our Infinite Reality
+site_url: https://ourinfinitereality.com
+site_description: Structural translations of the Dao De Jing - pattern documentation, not philosophy
+
+repo_url: https://github.com/goldsteinstudios/dao-de-jing-analyzer
+repo_name: Source Archive
+
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: white
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/reddit
+      link: https://reddit.com/r/ourinfinitereality
+      name: Discussion on Reddit
+    - icon: fontawesome/brands/github
+      link: https://github.com/goldsteinstudios/dao-de-jing-analyzer
+      name: Source Archive
+
+copyright: >
+  This work is offered freely. Take what's useful.
+  See <a href="/about/">About</a> for authorship details.
+
+nav:
+  - Home: index.md
+  - Translations:
+    - Overview: translations/README.md
+    - Chapters:
+      - Chapter 1 - The Coordinate System: translations/chapters/chapter01_2025-12-07.md
+      - Chapter 2 - Co-emergence: translations/chapters/chapter02_2025-11-26.md
+      - Chapter 3 - Governance: translations/chapters/chapter03_2025-11-26.md
+      - Chapter 4 - The Empty Vessel: translations/chapters/chapter04_2025-11-26.md
+      - Chapter 5 - The Bellows: translations/chapters/chapter05_2025-11-26.md
+      - Chapter 6 - The Valley Spirit: translations/chapters/chapter06_2025-11-26.md
+      - Chapter 7 - Heaven Endures: translations/chapters/chapter07_2025-11-26.md
+      - Chapter 8 - Water: translations/chapters/chapter08_clean_2025-12-08.md
+      - Chapter 9 - Completion: translations/chapters/chapter09_2025-11-26.md
+      - Chapter 10 - Holding Unity: translations/chapters/chapter10_2025-11-26.md
+      - Chapter 11 - Void and Function: translations/chapters/chapter11_2025-11-27.md
+      - Chapter 12 - The Senses: translations/chapters/chapter12_2025-11-26.md
+      - Chapter 14 - The Imperceptibles: translations/chapters/chapter14_2025-11-26.md
+      - Chapter 16 - Return to Root: translations/chapters/chapter16_2025-11-26.md
+      - Chapter 21 - Pattern-Alignment: translations/chapters/chapter21_2025-11-26.md
+      - Chapter 22 - The Arc Operation: translations/chapters/chapter22_2025-11-26.md
+      - Chapter 25 - Spherical Recursion: translations/chapters/chapter25_sphere_proof_2025-12-01.md
+      - Chapter 34 - Pattern Flows: translations/chapters/chapter34_2025-11-26.md
+      - Chapter 37 - Self-Transformation: translations/chapters/chapter37_clean_2025-12-08.md
+      - Chapter 38 - Alignment Degradation: translations/chapters/chapter38_2025-11-26.md
+      - Chapter 39 - Obtaining Unity: translations/chapters/chapter39_2025-11-26.md
+      - Chapter 40 - The Oscillation Engine: translations/chapters/chapter40_clean_2025-12-08.md
+      - Chapter 41 - Frame Responses: translations/chapters/chapter41_2025-11-26.md
+      - Chapter 42 - Dimensional Proof: translations/chapters/chapter42_2025-11-26.md
+      - Chapter 46 - Sufficiency: translations/chapters/chapter46_2025-11-26.md
+      - Chapter 48 - Daily Decrease: translations/chapters/chapter48_2025-11-27.md
+      - Chapter 51 - Pattern Nurtures: translations/chapters/chapter51_2025-11-26.md
+      - Chapter 52 - Return to Source: translations/chapters/chapter52_2025-11-26.md
+      - Chapter 56 - Mysterious Sameness: translations/chapters/chapter56_2025-11-26.md
+      - Chapter 64 - Assist Self-So-ness: translations/chapters/chapter64_2025-11-26.md
+      - Chapter 65 - Ancient Practitioners: translations/chapters/chapter65_2025-11-26.md
+      - Chapter 76 - Soft and Hard: translations/chapters/chapter76_2025-11-26.md
+      - Chapter 78 - Water Overcomes: translations/chapters/chapter78_2025-11-26.md
+      - Chapter 81 - Closing: translations/chapters/chapter81_2025-11-26.md
+    - Lexicon:
+      - Introduction: translations/lexicon/00_lexicon_introduction.md
+      - Substrate Families: translations/lexicon/01_substrate_families.md
+      - Operator Families: translations/lexicon/02_operator_families.md
+      - Structural Positions: translations/lexicon/03_structural_positions_2025-12-07.md
+      - Concept Index: translations/lexicon/04_concept_index.md
+      - Pinyin Index: translations/lexicon/05_pinyin_index.md
+      - Technology Index: translations/lexicon/06_technology_index.md
+  - Framework:
+    - Synthesis: translations/meta/framework_synthesis_2025-12-07.md
+    - Chapter 25 - Rosetta Stone: translations/meta/chapter25_rosetta_stone_2025-12-07.md
+    - Convergent Geometries: translations/meta/chapter25_convergent_geometries_2025-12-08.md
+    - Wei Wu Wei vs Wu Wei: translations/meta/wei_wu_wei_vs_wu_wei_2025-12-08.md
+    - Governance as Hydraulics: translations/meta/governance_hydraulic_etymology_2025-12-08.md
+    - Radical Technology Encoding: translations/meta/radical_technology_encoding_2025-11-27.md
+    - Forge Transformation Grammar: translations/meta/forge_transformation_grammar_2025-12-07.md
+    - Radical Families: translations/meta/radical_families_grain_blade_2025-12-07.md
+    - Scythe Not Knife: translations/meta/scythe_not_knife_2025-11-27.md
+    - Loom Axiom Identity: translations/meta/loom_axiom_identity_2025-11-27.md
+    - Focusing Operation: translations/meta/focusing_operation_2025-11-27.md
+    - Hydraulic Origin of Governance: translations/meta/hydraulic_origin_of_governance_2025-11-27.md
+  - Archaeology:
+    - Guodian Bundle A: translations/archaeology/guodian_bundle_a_inventory.md
+    - Guodian Bundle B: translations/archaeology/guodian_bundle_b_inventory.md
+    - Guodian Bundle C: translations/archaeology/guodian_bundle_c_inventory.md
+    - Cross-Reference Report: translations/archaeology/guodian_cross_reference_report.md
+    - Section Break Analysis: translations/archaeology/guodian_section_break_analysis.md
+  - Appendices:
+    - Traditional vs Structural: translations/appendices/appendix_traditional_vs_structural.md
+  - About: about.md
