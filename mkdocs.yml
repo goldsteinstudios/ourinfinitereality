@@ -64,7 +64,7 @@ copyright: >
 
 nav:
   - Home: index.md
-  - What's New: translations/meta/recent_changes.md
+  - Recently Updated: translations/meta/recently_updated.md
   - Translations:
     - Overview: translations/README.md
     - Chapters:
