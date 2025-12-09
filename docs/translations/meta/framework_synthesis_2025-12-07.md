@@ -626,3 +626,13 @@ The derivation shows *why* these constraints are necessary: polarity preserves r
 
 *Document updated: 2025-12-09*
 *Revised with: polarity principle, observation stances, Gₙ ∩ Bₙ = Pₙ formula, hyperboloid equation, tathata/ziran directional mapping, four impossibilities hierarchy, plug problem argument*
+
+---
+
+**See also:** [The Recursive Structural Model (RSM)](/translations/meta/recursive_structural_model/) for the complete formal specification, including:
+- P₀ (true void) and the five structural elements
+- 又/反/門 recursion operators
+- 谷神 throughline principle
+- 生/母 co-emergence operators
+- Falsification criteria
+- DDJ chapter index by RSM concept
