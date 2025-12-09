@@ -2,8 +2,8 @@ site_name: Our Infinite Reality
 site_url: https://ourinfinitereality.com
 site_description: Structural translations of the Dao De Jing - pattern documentation, not philosophy
 
-repo_url: https://github.com/goldsteinstudios/ourinfinitereality
-repo_name: Source
+repo_url: https://github.com/goldsteinstudios/dao-de-jing-analyzer
+repo_name: Source Archive
 
 docs_dir: docs
 
@@ -37,12 +37,15 @@ theme:
 
 plugins:
   - search
+  - tags
 
 markdown_extensions:
   - tables
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - toc:
       permalink: true
 
@@ -52,8 +55,8 @@ extra:
       link: https://reddit.com/r/ourinfinitereality
       name: Discussion on Reddit
     - icon: fontawesome/brands/github
-      link: https://github.com/goldsteinstudios/ourinfinitereality
-      name: Source
+      link: https://github.com/goldsteinstudios/dao-de-jing-analyzer
+      name: Source Archive
 
 copyright: >
   This work is offered freely. Take what's useful.
@@ -61,6 +64,7 @@ copyright: >
 
 nav:
   - Home: index.md
+  - What's New: translations/meta/recent_changes.md
   - Translations:
     - Overview: translations/README.md
     - Chapters:
@@ -71,7 +75,7 @@ nav:
       - Chapter 5 - The Bellows: translations/chapters/chapter05_2025-11-26.md
       - Chapter 6 - The Valley Spirit: translations/chapters/chapter06_2025-11-26.md
       - Chapter 7 - Heaven Endures: translations/chapters/chapter07_2025-11-26.md
-      - Chapter 8 - Water: translations/chapters/chapter08_2025-11-26.md
+      - Chapter 8 - Water: translations/chapters/chapter08_clean_2025-12-08.md
       - Chapter 9 - Completion: translations/chapters/chapter09_2025-11-26.md
       - Chapter 10 - Holding Unity: translations/chapters/chapter10_2025-11-26.md
       - Chapter 11 - Void and Function: translations/chapters/chapter11_2025-11-27.md
@@ -82,10 +86,10 @@ nav:
       - Chapter 22 - The Arc Operation: translations/chapters/chapter22_2025-11-26.md
       - Chapter 25 - Spherical Recursion: translations/chapters/chapter25_sphere_proof_2025-12-01.md
       - Chapter 34 - Pattern Flows: translations/chapters/chapter34_2025-11-26.md
-      - Chapter 37 - Self-Transformation: translations/chapters/chapter37_2025-11-27.md
+      - Chapter 37 - Self-Transformation: translations/chapters/chapter37_clean_2025-12-08.md
       - Chapter 38 - Alignment Degradation: translations/chapters/chapter38_2025-11-26.md
       - Chapter 39 - Obtaining Unity: translations/chapters/chapter39_2025-11-26.md
-      - Chapter 40 - The Oscillation Engine: translations/chapters/chapter40_2025-11-26.md
+      - Chapter 40 - The Oscillation Engine: translations/chapters/chapter40_clean_2025-12-08.md
       - Chapter 41 - Frame Responses: translations/chapters/chapter41_2025-11-26.md
       - Chapter 42 - Dimensional Proof: translations/chapters/chapter42_2025-11-26.md
       - Chapter 46 - Sufficiency: translations/chapters/chapter46_2025-11-26.md
@@ -109,6 +113,9 @@ nav:
   - Framework:
     - Synthesis: translations/meta/framework_synthesis_2025-12-07.md
     - Chapter 25 - Rosetta Stone: translations/meta/chapter25_rosetta_stone_2025-12-07.md
+    - Convergent Geometries: translations/meta/chapter25_convergent_geometries_2025-12-08.md
+    - Wei Wu Wei vs Wu Wei: translations/meta/wei_wu_wei_vs_wu_wei_2025-12-08.md
+    - Governance as Hydraulics: translations/meta/governance_hydraulic_etymology_2025-12-08.md
     - Radical Technology Encoding: translations/meta/radical_technology_encoding_2025-11-27.md
     - Forge Transformation Grammar: translations/meta/forge_transformation_grammar_2025-12-07.md
     - Radical Families: translations/meta/radical_families_grain_blade_2025-12-07.md
@@ -122,5 +129,6 @@ nav:
     - Guodian Bundle C: translations/archaeology/guodian_bundle_c_inventory.md
     - Cross-Reference Report: translations/archaeology/guodian_cross_reference_report.md
     - Section Break Analysis: translations/archaeology/guodian_section_break_analysis.md
+  - Appendices:
+    - Traditional vs Structural: translations/appendices/appendix_traditional_vs_structural.md
   - About: about.md
-
