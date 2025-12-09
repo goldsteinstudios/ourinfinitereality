@@ -83,17 +83,17 @@ The RSM uses five elements in a co-emergent relationship. These are not sequenti
 
 The double arrows (⟺) indicate mutual entailment: each element implies and requires the others. There is no "first" element that exists independently.
 
-### P₀ — True Void (無名, 玄牝)
+### P₀ — True Void (玄牝, 自然)
 
 The **true void** is the unframeable paradox preceding all distinction—the primordial condition that enables structure without itself being structure.
 
 **Properties:**
 - Logically necessary but never achievable
-- Not "nothing" (which would be a something)
+- Not "nothing" (which would be a something—that's 無名/O₁)
 - The self-so ground (自然) at the center of every recursion level
 - What remains when all frames dissolve
 
-**DDJ encoding:** 無名 (wú míng) — "nameless," the condition before naming is possible. 玄牝 (xuán pìn) — "mysterious female," the generative void.
+**DDJ encoding:** 玄牝 (xuán pìn) — "mysterious female," the generative void. 自然 (zì rán) — "self-so," the condition that is its own ground.
 
 **Key insight:** P₀ is not empty space. It's the *condition* for space—what makes distinction possible by being prior to distinction.
 
@@ -106,9 +106,9 @@ The **true void** is the unframeable paradox preceding all distinction—the pri
 
 ---
 
-### O — Origin (玄, 道)
+### O — Origin (無名, 玄, 道)
 
-The **origin** is the first named reference point—the inaccessible center around which structure circulates.
+The **origin** is the first named reference point—the "named nothing," the inaccessible center around which structure circulates.
 
 **Properties:**
 - Cannot be directly occupied or measured
@@ -121,7 +121,7 @@ The **origin** is the first named reference point—the inaccessible center arou
 - The hollow core of a tree trunk
 - The hub that makes the wheel turn
 
-**DDJ encoding:** 玄 (xuán) — the paradoxical, dark, mysterious origin point. 道 (dào) — pattern, the continuous process. Also 虛 (xū) — emptiness, void.
+**DDJ encoding:** 無名 (wú míng) — "nameless," the named nothing (contrasted with 有名). 玄 (xuán) — the paradoxical, dark, mysterious origin point. 道 (dào) — pattern, the continuous process. Also 虛 (xū) — emptiness, void.
 
 **Key insight:** O is not a thing that fails to exist. O is the *condition* for thingness—a different category entirely.
 
@@ -449,10 +449,12 @@ You can't have mother without children. You can't have children without mother. 
 無名天地之始，有名萬物之母
 ```
 
-- 無名 = nameless = P₀ (before distinction)
+- 無名 = nameless = O₁ (the named nothing, origin)
 - 天地之始 = beginning of coordinate system
-- 有名 = named = P₁ (after distinction)
+- 有名 = named = P₁ (the named something, surface)
 - 萬物之母 = mother of ten thousand things (relational anchor for derivatives)
+
+The pair 無名/有名 co-emerge as origin and surface—both are *named* positions within the coordinate system.
 
 ### The Co-emergence Formula
 
@@ -741,8 +743,8 @@ The Dao De Jing encodes this geometry in characters, radicals, and chapter struc
 ### Structural Elements
 | Symbol | Name | Description | DDJ |
 |--------|------|-------------|-----|
-| **P₀** | True Void | Unframeable paradox, self-so ground | 無名, 玄牝, 自然 |
-| **O** | Origin | Inaccessible center | 玄, 道, 虛 |
+| **P₀** | True Void | Unframeable paradox, self-so ground | 玄牝, 自然 |
+| **O** | Origin | Inaccessible center, named nothing | 無名, 玄, 道, 虛 |
 | **G** | Gradient | Hyperbolic flow surface | 天地, 道之動 |
 | **B** | Balance | Equilibrium axis y=x | 和, 中 |
 | **P** | Paradox | Intersection point, valley | 谷, 有名 |
