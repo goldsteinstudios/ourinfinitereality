@@ -111,6 +111,7 @@ nav:
       - Pinyin Index: translations/lexicon/05_pinyin_index.md
       - Technology Index: translations/lexicon/06_technology_index.md
   - Framework:
+    - Recursive Structural Model: translations/meta/recursive_structural_model.md
     - Synthesis: translations/meta/framework_synthesis_2025-12-07.md
     - Chapter 25 - Rosetta Stone: translations/meta/chapter25_rosetta_stone_2025-12-07.md
     - Convergent Geometries: translations/meta/chapter25_convergent_geometries_2025-12-08.md

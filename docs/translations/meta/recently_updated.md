@@ -6,6 +6,7 @@
 
 | Document | Last Updated |
 |----------|--------------|
+| [The Recursive Structural Model (RSM)](/translations/meta/recursive_structural_model/) | 2025-12-09 |
 | [Recent Changes](/translations/meta/recent_changes/) | 2025-12-09 |
 | [Framework Synthesis: How the Pieces Fit](/translations/meta/framework_synthesis_2025-12-07/) | 2025-12-09 |
 | [Chapter 76: The Living Are Yielding](/translations/chapters/chapter76_2025-11-26/) | 2025-12-09 |
