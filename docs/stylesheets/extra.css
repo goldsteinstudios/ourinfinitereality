@@ -10,8 +10,8 @@
 
 /* Font family variables */
 :root {
-  --font-display: 'IBM Plex Serif', Georgia, serif;
-  --font-body: 'IBM Plex Serif', Georgia, serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Cormorant Garamond', Georgia, serif;
   --font-mono: 'IBM Plex Mono', monospace;
 }
 

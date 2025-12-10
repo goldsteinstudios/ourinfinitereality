@@ -23,7 +23,7 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
   font:
-    text: IBM Plex Serif
+    text: Cormorant Garamond
     code: IBM Plex Mono
   features:
     - navigation.tabs
