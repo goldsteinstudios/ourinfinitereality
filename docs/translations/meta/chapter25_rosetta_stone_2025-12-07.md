@@ -83,23 +83,32 @@ The sequence describes structural emergence, not cyclical traversal:
 
 ---
 
-## The Euler Connection
+## The Mathematical Parallel
 
-The polarity principle finds precise parallel in Euler's Identity:
+**Critical framing:** DDJ and mathematics are parallel notation systems describing the same geometry. They are NOT translations of each other. Neither derives from the other. The convergence validates the underlying pattern.
 
-### e^(iπ) + 1 = 0
+### Euler's Identity
 
-This is Euler's identity—the equation mathematicians call "the most beautiful formula." It combines the five fundamental constants (*e, i, π, 1, 0*) into a single relationship.
+```
+e^(iπ) + 1 = 0
+```
 
-| Symbol | Operation | DDJ Term | Function |
-|--------|-----------|----------|----------|
-| e | Continuous growth | 潰/自然 | Overflow, natural extension |
-| i | Orthogonal rotation | 遠 | Extension into perpendicular dimension |
-| π | Half-turn | 反 | Arriving at opposite pole |
-| -1 | The opposite | — | Structural inverse of origin |
-| +1 = 0 | Closure | 無 | Adding unity returns to void |
+This equation relates the five fundamental constants through a single operation.
 
-The formula states: grow continuously (e), extend orthogonally (i), rotate halfway (π), and you are at the opposite pole (-1). This is not "going around and coming back." This is polarity: the -1 exists because the 1 exists. They are co-emergent.
+### Structural Operations — Both Systems Needed Vocabulary For:
+
+| Structural Operation | Math Notation | DDJ Notation |
+|---------------------|---------------|--------------|
+| Continuous extension | e | 潰/自然 (overflow) |
+| Orthogonal transformation | i | 遠 (extending to boundary) |
+| Arriving at opposite | π (half-turn) | 反 |
+| Measurable reference | 1 | 有 |
+| Unreachable center | 0 | 無 |
+
+**Do NOT write:** "e = 潰" or "π = 反"
+**DO write:** "e and 潰 both describe continuous extension"
+
+The formula describes: continuous extension (e/潰), orthogonal transformation (i/遠), arriving at opposite (π/反). The -1 exists because the 1 exists. They are co-emergent—this is the structure 反 points at.
 
 ---
 

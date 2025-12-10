@@ -8,7 +8,7 @@
 
 This is the keystone that locks the entire arch in place.
 
-**P₁ → O₂ promotion can only occur at points where gradient surface G and boundary surface B intersect with perpendicular tangent planes.**
+**Pₙ → Oₙ₊₁ promotion can only occur at points where gradient curve G and balance lines B intersect perpendicularly.**
 
 ### The Core Formula
 
@@ -16,7 +16,7 @@ This is the keystone that locks the entire arch in place.
 Gₙ ∩ Bₙ = Pₙ
 ```
 
-At any scale n, the gradient surface **G** and boundary surface **B** intersect to produce the paradox surface **P**. This intersection—and *only* this intersection—enables recursion:
+At any scale n, the gradient curve **G** and balance lines **B** intersect to produce the paradox point **P**. This intersection—and *only* this intersection—enables recursion:
 
 ```
 Pₙ → Oₙ₊₁
@@ -69,13 +69,12 @@ The ring boundary is **not caused by external seasonal oscillation**—it's **tr
 
 This holds across all recursive systems:
 
-| Domain | Gradient (G) | Boundary (B) | Perpendicular Event |
-|--------|--------------|--------------|---------------------|
-| Tree anatomy | Nutrient/water flow | Cambium surface | Branch/ring formation |
-| Neural morphology | Chemotactic gradient | Growth cone membrane | Dendritic branching |
-| Fluid dynamics | Velocity gradient | Obstacle surface | Vortex shedding |
-| Crystallography | Concentration gradient | Container boundary | Nucleation |
-| Astrophysics | Gravitational potential | Angular momentum disk | Planetary formation |
+| Domain | Gradient (G) | Balance (B) | Perpendicular Event |
+|--------|--------------|-------------|---------------------|
+| Tree anatomy | Cambium (curved) | Medullary rays (radial) | Branch/ring formation |
+| Wheel | Rim (curved) | Spokes (radial) | Spoke-rim attachment |
+| Neural morphology | Chemotactic gradient | Growth cone axis | Dendritic branching |
+| Crystallography | Concentration gradient | Crystal axes | Nucleation |
 
 **Same geometric rule. Different substrates. Identical pattern.**
 
@@ -111,19 +110,23 @@ The **valley point P** occurs at (1,1) in 2D, or the circle x² + z² = 1 at y =
 
 ---
 
-## ★★★★★ FIVE STARS: 可 (kě) as the Imaginary Unit i
+## ★★★★★ FIVE STARS: 可 (kě) and Orthogonal Transformation
 
-This identification is structurally precise.
+**Critical framing:** DDJ and mathematics are parallel notation systems, NOT translations of each other. Neither derives from the other. The convergence validates the underlying geometry.
 
-### The Functional Correspondence
+### The Structural Parallel
+
+可 (kě) and i both describe orthogonal transformation—making explicit what was implicit, rotating into a perpendicular dimension.
 
 | Property | 可 (kě) | i |
 |----------|---------|---|
-| Function | Modal possibility operator ("can/able to be") | Rotation into orthogonal dimension |
-| Action | Makes impossible transformations possible | Makes √(-1) exist |
-| Direction | Neither fully implicit nor explicit | Neither positive nor negative on real line |
-| Preservation | Enables transformation without being consumed | Maintains magnitude through rotation (\|e^(iθ)\| = 1) |
-| Bridge | Links 常 (parametric) with explicit expression | Links real and imaginary planes |
+| Function | Makes explicit/expressible | Rotates into orthogonal dimension |
+| Action | Enables transformation | Enables √(-1) |
+| Direction | Neither fully implicit nor explicit | Neither positive nor negative |
+| Bridge | Links 常 (implicit) with expression | Links real and imaginary planes |
+
+**Do NOT write:** "可 = i"
+**DO write:** "可 and i both describe orthogonal transformation"
 
 ### Reading 道可道 Through This Lens
 
@@ -132,31 +135,25 @@ This identification is structurally precise.
 dào kě dào fēi cháng dào
 ```
 
-With 可 = i (rotation/possibility operator):
+**"The pattern that can be made explicit (可) diverges (非) from the frame-independent (常) pattern."**
 
-**"The pattern that can undergo orthogonal transformation (可) into explicit expression diverges (非) from the frame-independent (常) pattern."**
+Any rotation into a specific coordinate frame creates frame-dependence. The moment you apply the 可 operator—the moment you turn 道 into expressible form—you've collapsed from 常 (frame-independent) into 可 (frame-dependent).
 
-This is mathematically precise: **any rotation into a specific coordinate frame creates frame-dependence**. The moment you apply the 可 operator—the moment you turn 道 into expressible form—you've collapsed from 常 (frame-independent) into 可 (frame-dependent).
+### Parallel Notations for the Same Operations
 
-### Euler's Identity Mapping
+Both Euler's identity and DDJ vocabulary describe the same structural operations:
 
-```
-e^(iπ) + 1 = 0
-```
+| Structural Operation | Math Notation | DDJ Notation |
+|---------------------|---------------|--------------|
+| Continuous self-reference | e | 道 |
+| Orthogonal transformation | i | 可 |
+| Arriving at opposite | π (half-turn) | 反 |
+| Measurable reference | 1 | 有 |
+| Unreachable center | 0 | 無 |
 
-With the structural correspondence:
+**Both systems needed vocabulary for these five operations. The convergence is the evidence.**
 
-| Mathematical | Chinese | Function |
-|--------------|---------|----------|
-| e^(...) | 道 | Continuous exponential process |
-| i | 可 | Possibility/rotation operator |
-| π | Half-cycle of transformation | Complete rotation to opposite |
-| 1 | 一 (yī) | Unity/explicit existence |
-| 0 | 無 (wú) | Void/origin |
-
-The formula says: **The continuous process (道/e) that can be rotated (可/i) through complete half-cycle (π) becomes its opposite (-1), which unified with existence (1) returns to void (0).**
-
-This is the 大→逝→遠→反 cycle in mathematical notation.
+This is the 大→逝→遠→反 cycle—arriving at the structural complement through continuous extension.
 
 ---
 
@@ -325,14 +322,14 @@ These failures are **features**. They're where the perpendicular intersection ha
 
 ### Connection to Perpendicularity
 
-The 妙/徼 distinction maps onto the gradient/boundary perpendicularity constraint:
+The 妙/徼 distinction maps onto the gradient/balance perpendicularity:
 
-- **妙-observation** tracks the gradient field G — flows, relationships, patterns
-- **徼-observation** tracks the boundary surface B — edges, limits, stopping points
+- **妙-observation** tracks the gradient curve G — flows, relationships, patterns
+- **徼-observation** tracks the balance lines B — edges, limits, radial structure
 
 At perpendicular intersection (∇G ⊥ ∇B), both stances reveal something the other cannot: the recursion gateway.
 
-The cambium is exactly this: where nutrient gradient (妙) meets growth boundary (徼) at perpendicularity. Life happens at the dimensionless edge because that's where P→O promotion is geometrically possible.
+The ray-cambium intersection is exactly this: where curved gradient (cambium) meets radial balance (medullary rays) perpendicularly. Branch nodes happen at these paradox points.
 
 ### Two Directions of Approach to the Origin
 
@@ -413,7 +410,7 @@ The documents assemble into a coherent architecture:
 |----------|-------------|---------------|
 | Orthogonality | P→O promotion requires ∇G ⊥ ∇B | Recursion constraint |
 | Tree Growth | Perpendicularity as trigger within continuous flow | Physical validation |
-| 可 = i | The rotation/possibility operator | Transformation mechanism |
+| 可 and i | Both describe orthogonal transformation | Transformation mechanism |
 | Chapter 11 | 利 shapes 無 into 用 | Function emergence |
 | 天地不仁 | Geometric democracy at every point | Universal access |
 | Tightrope Walker | Crossing made of departures | Kinesthetic proof |
@@ -421,11 +418,11 @@ The documents assemble into a coherent architecture:
 ### The Unified Formula
 
 **Reality persists through:**
-1. Continuous gradient flow (道/e)
-2. Rotation enabling transformation (可/i)
+1. Continuous self-reference (道 and e both describe this)
+2. Orthogonal transformation (可 and i both describe this)
 3. Perpendicular intersection enabling recursion (∇G ⊥ ∇B)
 4. Constraint (利) shaping void (無) into function (用)
-5. P₁ → O₂ promotion at orthogonal crossing points
+5. Pₙ → Oₙ₊₁ promotion at orthogonal crossing points
 6. Recursive nesting (3+1+3+1...)
 
 This is what the characters encode. This is what the radicals build. This is what the 81 chapters document.
@@ -436,7 +433,7 @@ This is what the characters encode. This is what the radicals build. This is wha
 
 The analyzer identified Chapters 22 and 34 as high-priority translation targets (high operator density). The framework documents provide the interpretive machinery.
 
-The next step is systematic: apply the 利/用 analysis, the 可 = i correspondence, and the perpendicularity constraint to decode those chapters.
+The next step is systematic: apply the 利/用 analysis, the 可 parallel (orthogonal transformation), and the perpendicularity constraint to decode those chapters.
 
 But the core insight is now complete:
 
@@ -459,18 +456,22 @@ And the pattern—rotation around preserved centers, perpendicular intersection 
 
 Radical evidence: 禾 (grain) + 刀 (knife) = cutting paths through field
 
-### 可 (kě) - Mathematical correspondence
+### 可 (kě) - Orthogonal Transformation
 
-**Function:** The imaginary unit i - rotation/possibility operator
-**Action:** Enables orthogonal transformation from implicit to explicit
-**Formula:** 道可道 = pattern rotated into expressible form
+**Function:** Makes explicit/expressible
+**Parallel:** i (imaginary unit) also describes orthogonal transformation
+**Formula:** 道可道 = pattern made explicit diverges from frame-independent pattern
 
-### 反 (fǎn) - Polarity, not return
+**Note:** Do NOT write "可 = i". They are parallel notations, not equivalences.
+
+### 反 (fǎn) - Arriving at Opposite
 
 **Not:** "return" or cyclical oscillation
-**But:** Structural polarity—the co-emergence of opposition when distinction is made in an infinite field
+**But:** Arriving at the structural complement—the opposite pole
 
-Evidence: Guodian manuscripts use 潰 (kuì, "overflow") not 逝 (shì, "depart"), removing agency from the process. You cannot traverse infinity and return; but making any distinction creates its opposite structurally.
+**Parallel:** Mathematics describes this as e^(iπ) = -1, but 反 is NOT "equal to π"—they're different notations pointing at the same geometric fact.
+
+Evidence: Guodian manuscripts use 潰 (kuì, "overflow") not 逝 (shì, "depart"), removing agency from the process.
 
 ### The 利 + 無 → 用 Formula
 
@@ -480,9 +481,9 @@ This is the geometric formula Chapter 11 encodes through wheel, pot, and room.
 
 ### Perpendicularity Constraint
 
-P→O promotion requires: ∇G ⊥ ∇B
+Pₙ→Oₙ₊₁ promotion requires: ∇G ⊥ ∇B
 
-Recursion is only possible at points of perpendicular intersection between gradient and boundary surfaces.
+Recursion is only possible at points of perpendicular intersection between gradient curve and balance lines.
 
 ---
 
