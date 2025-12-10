@@ -1,0 +1,138 @@
+/* Custom styles for Our Infinite Reality */
+
+/* ==========================================================================
+   TYPOGRAPHY
+
+   1950s industrial report aesthetic
+   IBM Plex Serif - headers and body (loaded via MkDocs theme)
+   IBM Plex Mono - code blocks
+   ========================================================================== */
+
+/* Font family variables */
+:root {
+  --font-display: 'IBM Plex Serif', Georgia, serif;
+  --font-body: 'IBM Plex Serif', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* Page Title - ALL CAPS, wide tracking */
+.md-typeset h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 2rem;
+}
+
+/* Subheading (h2) - Italic */
+.md-typeset h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+/* Section Header (h3) - Medium weight, slight tracking */
+.md-typeset h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Sub-header (h4) - Italic */
+.md-typeset h4 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Sub-header (h5) - Italic, smaller */
+.md-typeset h5 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+/* Body text */
+.md-typeset,
+.md-typeset p,
+.md-typeset li {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Block quotes - Italic, indented */
+.md-typeset blockquote {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.85rem;
+  border-left: 2px solid #666;
+  padding-left: 1.5em;
+  margin-left: 0;
+  color: #555;
+}
+
+.md-typeset blockquote p {
+  font-size: inherit;
+  font-style: inherit;
+}
+
+/* Code blocks - Mono */
+.md-typeset code,
+.md-typeset pre {
+  font-family: var(--font-mono);
+}
+
+/* ==========================================================================
+   LIST FIXES
+   ========================================================================== */
+
+/* Fix bullet list line breaking - ensure list items display on separate lines */
+ul li,
+ol li,
+.md-typeset ul li,
+.md-typeset ol li {
+  display: list-item !important;
+}
+
+ul,
+ol,
+.md-typeset ul,
+.md-typeset ol {
+  display: block !important;
+}
+
+/* Ensure proper list styling */
+.md-typeset ul {
+  list-style-type: disc;
+  margin-left: 1.25em;
+}
+
+.md-typeset ol {
+  list-style-type: decimal;
+  margin-left: 1.25em;
+}
+
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: 0.5em;
+}
+
+/* Nested lists */
+.md-typeset ul ul,
+.md-typeset ol ul {
+  list-style-type: circle;
+}
+
+.md-typeset ul ul ul,
+.md-typeset ol ul ul {
+  list-style-type: square;
+}

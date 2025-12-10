@@ -23,7 +23,7 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
   font:
-    text: IBM Plex Sans
+    text: IBM Plex Serif
     code: IBM Plex Mono
   features:
     - navigation.tabs
@@ -49,6 +49,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   social:
     - icon: fontawesome/brands/reddit
@@ -64,8 +67,10 @@ copyright: >
 
 nav:
   - Home: index.md
-  - Recently Updated: translations/meta/recently_updated.md
-  - Selected Essays: translations/selected_essays.md
+  - Selected Essays: selected_essays.md
+  - Essays:
+    - Overview: essays/index.md
+    - Why Water?: essays/why_water.md
   - Translations:
     - Overview: translations/README.md
     - Chapters:
