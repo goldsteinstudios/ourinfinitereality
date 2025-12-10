@@ -10,6 +10,18 @@ The Dao De Jing establishes a **coordinate system** for describing reality. Thes
 
 Understanding the axes means understanding where you're looking from.
 
+### Radical Breakdown Convention
+
+Throughout this lexicon, radicals are decomposed to their pictographic origins:
+
+```
+Character (pinyin) = Component₁ (pinyin) + Component₂ (pinyin)
+                   = pictographic meaning + pictographic meaning
+                   = combined structural meaning
+```
+
+All breakdowns use traditional radicals, traced to pictographic sources where possible.
+
 ---
 
 ## The 無/有 (wú/yǒu) Axis
@@ -22,6 +34,30 @@ Understanding the axes means understanding where you're looking from.
 |-----------|--------|------------|----------|--------------|----------|
 | **無** | wú | 舞-like (dancing/not-there) | Void, absence, potential | Throughout | ✓ Throughout |
 | **有** | yǒu | 又 + 月 (hand + moon) | Form, presence, manifest | Throughout | ✓ Throughout |
+
+### Full Radical Breakdowns
+
+**無 (wú) — Void/Nothing:**
+```
+無 (wú) = complex form, disputed etymology
+       ≈ originally depicted dancing feet + negative marker
+       = that which cannot be grasped = void, not-there
+
+Traditional form 無 vs simplified 无
+The character depicts absence—what DOESN'T occupy space
+```
+
+**有 (yǒu) — Presence/Existence:**
+```
+有 (yǒu) = 又 (yòu) + 月 (yuè)
+         = hand + flesh/moon
+
+又 (yòu) = pictograph of right hand = grasping
+月 (yuè) = pictograph of crescent moon = also used for 肉 (ròu, flesh)
+
+∴ 有 = hand holding flesh = possession = presence, existence
+     = that which CAN be grasped
+```
 
 ### The Structural Relationship
 
@@ -91,6 +127,53 @@ Chapter 64's definitive formula:
 | **可** | kě | 丁 + 口 (nail + mouth) | Expressible, frame-dependent | 1, 32, etc. | ✓ |
 | **常** | cháng | 尚 + 巾 (value + cloth) | Invariant, frame-independent | Throughout | ✓ (as 恆) |
 
+### Full Radical Breakdowns
+
+**可 (kě) — Expressible:**
+```
+可 (kě) = 丁 (dīng) + 口 (kǒu)
+        = nail + mouth
+
+丁 (dīng) = pictograph of nail head = fixed point, definite
+口 (kǒu) = pictograph of open mouth = opening, articulation
+
+∴ 可 = fixed point given mouth = can be articulated = expressible
+     = what can be pinned down in speech
+```
+
+**常 (cháng) — Constant/Invariant:**
+```
+常 (cháng) = 尚 (shàng) + 巾 (jīn)
+           = value/esteem + cloth
+
+尚 (shàng) = 八 (bā) + 向 (xiàng)
+           = division + direction
+           = what is esteemed/valued
+
+向 (xiàng) = 宀 (mián) + 口 (kǒu)
+           = roof + opening
+           = direction toward
+
+巾 (jīn) = pictograph of hanging cloth
+
+∴ 常 = valued cloth that hangs unchanged = constant, invariant
+     = what remains the same across frames
+```
+
+**恆 (héng) — Guodian form:**
+```
+恆 (héng) = 忄 (xīn) + 亙 (gèn)
+          = heart + spanning
+
+忄 (xīn) = heart radical (left-side form)
+亙 (gèn) = 二 (èr) + 月 (yuè)
+         = two + moon
+         = spanning between, extending across
+
+∴ 恆 = heart spanning across = persistence, constancy
+     = Guodian original, changed to 常 to avoid Emperor Heng's taboo name
+```
+
 **Guodian note:** The Guodian manuscripts use 恆 (héng) where later texts use 常 (cháng). This was changed to avoid taboo on Emperor Heng's name. Same structural meaning: frame-independent constancy.
 
 ### Chapter 1's Formula
@@ -134,6 +217,42 @@ This is why 知常曰明 (knowing the constant is called clarity). Clarity is se
 |-----------|--------|------------|----------|--------------|----------|
 | **妙** | miào | 女 + 少 (woman + few) | Relational patterns, flows, connections | 1, 27 | ✓ |
 | **徼** | jiào | 彳 + 敫 (step + boundary) | Edges, boundaries, where things stop | 1 | ✓ |
+
+### Full Radical Breakdowns
+
+**妙 (miào) — Relational patterns:**
+```
+妙 (miào) = 女 (nǚ) + 少 (shǎo)
+          = woman + few/small
+
+女 (nǚ) = pictograph of kneeling figure = woman, feminine
+少 (shǎo) = 小 (xiǎo) + 丿 (piě)
+          = small + slanting stroke
+          = few, young, subtle
+
+∴ 妙 = feminine + subtle = the subtle, the relational
+     = what emerges between, the pattern of connections
+     = how things flow INTO and THROUGH each other
+```
+
+**徼 (jiào) — Boundaries:**
+```
+徼 (jiào) = 彳 (chì) + 敫 (jiǎo)
+          = step + boundary-marker
+
+彳 (chì) = pictograph of left step = movement, path
+敫 (jiǎo) = 白 (bái) + 方 (fāng) + 攵 (pū)
+          = white + square + strike
+          = boundary demarcation
+
+白 (bái) = pictograph of white/clear = distinct, visible
+方 (fāng) = pictograph of joined rafts = square, bounded region
+攵 (pū) = pictograph of striking hand = to act upon
+
+∴ 徼 = stepping to boundary = edge-perception
+     = where things STOP, their manifest limits
+     = the form-edge that distinguishes this from not-this
+```
 
 ### Chapter 1's Formula
 
@@ -217,6 +336,43 @@ The two stances "emerge together" (同出) but "illuminate differently" (異名)
 | **動** | dòng | 重 + 力 (heavy + force) | Movement, activity, change | 5, 15, 16, 26, 45 | ✓ |
 | **靜** | jìng | 青 + 爭 (clear + contend) | Stillness, rest, settledness | 16, 26, 37, 45 | ✓ |
 
+### Full Radical Breakdowns
+
+**動 (dòng) — Movement:**
+```
+動 (dòng) = 重 (zhòng) + 力 (lì)
+          = heavy + force
+
+重 (zhòng) = 東 (dōng) + 土 (tǔ) [or alternate analysis]
+           = layered weight = heavy, weighty
+
+力 (lì) = pictograph of muscular arm = force, strength
+
+∴ 動 = force applied to weight = movement, activity
+     = the outward phase of oscillation
+```
+
+**靜 (jìng) — Stillness:**
+```
+靜 (jìng) = 青 (qīng) + 爭 (zhēng)
+          = blue-green/clarity + contend
+
+青 (qīng) = 生 (shēng) + 丹 (dān)
+          = life/growth + cinnabar
+          = blue-green (color of growing things)
+
+生 (shēng) = pictograph of sprouting plant
+丹 (dān) = pictograph of cinnabar (red mineral)
+
+爭 (zhēng) = 爫 (zhǎo) + 彐 (jì) + 亅 (jué)
+           = claw/grasp + snout + hook
+           = contending, striving
+
+∴ 靜 = clarity arising from/despite contention
+     = stillness = the return phase of oscillation
+     = NOT absence of motion, but settled completion
+```
+
 ### The Relationship
 
 > 動而愈出 (Chapter 5) — "Moving and yet more emerges"
@@ -265,6 +421,42 @@ This is why Chapter 45 says:
 | **剛** | gāng | 岡 + 刂 (ridge + blade) | Rigid, hard, unyielding | 76, 78 | ✓ |
 | **柔** | róu | 木 + 矛 (wood + spear?) | Flexible, soft, yielding | 43, 76, 78 | ✓ |
 
+### Full Radical Breakdowns
+
+**剛 (gāng) — Rigid/Hard:**
+```
+剛 (gāng) = 岡 (gāng) + 刂 (dāo)
+          = ridge + blade
+
+岡 (gāng) = 网 (wǎng) + 山 (shān)
+          = net + mountain
+          = mountain ridge (networked peaks)
+
+网 (wǎng) = pictograph of net
+山 (shān) = pictograph of three peaks
+
+刂 (dāo) = blade radical (right-side form of 刀)
+
+∴ 剛 = blade meeting ridge = what resists the arc
+     = rigid, unyielding, what CAN'T flex
+     = the property that causes breaking under stress
+```
+
+**柔 (róu) — Flexible/Soft:**
+```
+柔 (róu) = 矛 (máo) + 木 (mù)
+         = spear/lance + wood
+
+矛 (máo) = pictograph of spear = pointed, penetrating
+木 (mù) = pictograph of tree = wood, organic
+
+∴ 柔 = wood that can be worked into spear = flexible, yielding
+     = the property distributed by slow cooling (in metallurgy)
+     = what CAN engage the arc, what bends rather than breaks
+```
+
+**Metallurgical note:** 剛 and 柔 encode the blacksmith's understanding: cooling rate determines property distribution. Fast quench = 剛 (hard, brittle). Slow cool = 柔 (soft, flexible). The Wu-Yue bimetallic bronze sword demonstrates: 剛 edge for cutting, 柔 spine for resilience.
+
 ### The Structural Distinction
 
 | Property | 剛 (rigid) | 柔 (flexible) |
@@ -309,6 +501,38 @@ This isn't moral advice about humility. It's physics:
 | **高** | gāo | 亠 + 口 + 冋 (roof + mouth + enclosure) | Elevated, high | 2, 39 | ✓ |
 | **下** | xià | — | Low, below | 2, 8, 39, 61, 66 | ✓ |
 
+### Full Radical Breakdowns
+
+**高 (gāo) — High/Elevated:**
+```
+高 (gāo) = 亠 (tóu) + 口 (kǒu) + 冋 (jiōng)
+         = head/top + opening + enclosure
+
+亠 (tóu) = pictograph of crown/top = head, above
+口 (kǒu) = pictograph of mouth = opening
+冋 (jiōng) = 冂 (jiōng) + 口 (kǒu)
+           = border + opening
+           = enclosed space
+
+冂 (jiōng) = pictograph of border/frame
+
+∴ 高 = stacked structure reaching upward = high, elevated
+     = the position that requires defending
+```
+
+**下 (xià) — Low/Below:**
+```
+下 (xià) = 一 (yī) + 丶 (diǎn)
+        = one/horizontal line + dot below
+
+一 (yī) = pictograph of single horizontal stroke = one, horizon
+丶 (diǎn) = pictograph of dot = marker
+
+∴ 下 = below the horizon line = low, underneath
+     = the position where things gather (water, people)
+     = the foundation position
+```
+
 ### Chapter 2's Formula
 
 > 高下相盈 — "High and low mutually fill"
@@ -348,6 +572,34 @@ Those who take low positions become the foundation everything rests on.
 | **先** | xiān | 止 + 儿 (foot + person) | Before, first, ahead | 2, 7, 66, 67 | ✓ |
 | **後** | hòu | 彳 + 幺 + 夂 (step + thread + walking) | After, behind, following | 2, 7, 66, 67 | ✓ |
 
+### Full Radical Breakdowns
+
+**先 (xiān) — Before/First:**
+```
+先 (xiān) = 止 (zhǐ) + 儿 (rén)
+          = foot/stop + person
+
+止 (zhǐ) = pictograph of foot = stop, footprint
+儿 (rén) = pictograph of person (variant) = human
+
+∴ 先 = person whose footprints are ahead = first, before
+     = the position that must be defended
+```
+
+**後 (hòu) — After/Behind:**
+```
+後 (hòu) = 彳 (chì) + 幺 (yāo) + 夂 (zhǐ)
+         = step + thread + walking-behind
+
+彳 (chì) = pictograph of left step = stepping, path
+幺 (yāo) = pictograph of twisted silk = small, subtle, thread
+夂 (zhǐ) = pictograph of foot moving down = arriving, following
+
+∴ 後 = stepping with thread trailing behind = after, following
+     = the position with nothing to defend
+     = where all threads eventually gather
+```
+
 ### Chapter 2's Formula
 
 > 先後相隨 — "Before and after mutually follow"
@@ -376,41 +628,41 @@ The structural reason: 先 position requires defending against all who follow. �
 
 | Axis | Pole A | Pole B | What It Measures |
 |------|--------|--------|-----------------|
-| 無/有 | Void | Form | Manifestation |
-| 可/常 | Expressible | Invariant | Frame-dependence |
-| 妙/徼 | Relational | Boundary | Observational mode |
-| 動/靜 | Moving | Still | Oscillation phase |
-| 剛/柔 | Rigid | Yielding | Response to force |
-| 高/下 | High | Low | Vertical position |
-| 先/後 | Before | After | Temporal sequence |
+| 無/有 (wú/yǒu) | Void | Form | Manifestation |
+| 可/常 (kě/cháng) | Expressible | Invariant | Frame-dependence |
+| 妙/徼 (miào/jiào) | Relational | Boundary | Observational mode |
+| 動/靜 (dòng/jìng) | Moving | Still | Oscillation phase |
+| 剛/柔 (gāng/róu) | Rigid | Yielding | Response to force |
+| 高/下 (gāo/xià) | High | Low | Vertical position |
+| 先/後 (xiān/hòu) | Before | After | Temporal sequence |
 
 ### The Axes Are Related
 
 ```
-          常 (invariant)
+          常 cháng (invariant)
               │
               │
-妙 (relational)───┼───徼 (boundary)
+妙 miào (relational)───┼───徼 jiào (boundary)
               │
               │
-          可 (expressible)
+          可 kě (expressible)
 
               ↕
-          無/有 (void/form)
+          無/有 wú/yǒu (void/form)
               ↕
-          動/靜 (moving/still)
+          動/靜 dòng/jìng (moving/still)
               ↕
-          剛/柔 (rigid/yielding)
+          剛/柔 gāng/róu (rigid/yielding)
 ```
 
 The axes aren't independent—they map onto each other:
 
 | Pattern | Common Thread |
 |---------|---------------|
-| 無, 常, 妙, 靜, 柔, 下, 後 | Receptive, void-oriented, yielding |
-| 有, 可, 徼, 動, 剛, 高, 先 | Active, form-oriented, forcing |
+| 無 (wú), 常 (cháng), 妙 (miào), 靜 (jìng), 柔 (róu), 下 (xià), 後 (hòu) | Receptive, void-oriented, yielding |
+| 有 (yǒu), 可 (kě), 徼 (jiào), 動 (dòng), 剛 (gāng), 高 (gāo), 先 (xiān) | Active, form-oriented, forcing |
 
-But this isn't "Pole A good, Pole B bad." The text documents how both poles arise together (相生) and how oscillation between them (反) is the pattern's movement.
+But this isn't "Pole A good, Pole B bad." The text documents how both poles arise together (相生, xiāng shēng) and how oscillation between them (反, fǎn) is the pattern's movement.
 
 ---
 
@@ -423,6 +675,24 @@ But this isn't "Pole A good, Pole B bad." The text documents how both poles aris
 | Character | Pinyin | Components | Position | DDJ Chapters | Guodian? |
 |-----------|--------|------------|----------|--------------|----------|
 | **玄** | xuán | 幺 doubled (thread twisted) | Paradoxical origin, where axes meet | 1, 6, 10, 51, 56 | ✓ |
+
+### Full Radical Breakdown
+
+**玄 (xuán) — Paradoxical Origin:**
+```
+玄 (xuán) = 亠 (tóu) + 幺 (yāo)
+          = head/top + twisted thread
+
+亠 (tóu) = pictograph of crown/top = covering
+幺 (yāo) = pictograph of twisted silk = subtle, mysterious, tiny
+
+∴ 玄 = subtle thread covered/contained
+     = the dark, profound, paradoxical
+     = where distinction hasn't yet operated
+     = the origin point of the coordinate system
+```
+
+**Color note:** 玄 originally meant "black-red" or "dark red"—the color of dried blood, the boundary between visible and invisible. This becomes the metaphor: 玄 marks where things are ABOUT TO become distinguishable but haven't yet.
 
 ### What 玄 Marks
 

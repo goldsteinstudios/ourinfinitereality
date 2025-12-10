@@ -10,6 +10,18 @@ Characters cluster by the operations they encode. This index organizes by WHAT T
 
 Use this index to find all characters encoding a given principle.
 
+### Radical Breakdown Convention
+
+Throughout this lexicon, radicals are decomposed to their pictographic origins:
+
+```
+Character (pinyin) = Component₁ (pinyin) + Component₂ (pinyin)
+                   = pictographic meaning + pictographic meaning
+                   = combined structural meaning
+```
+
+All breakdowns use traditional radicals, traced to pictographic sources where possible. For complete radical analyses, see Parts I-III.
+
 ---
 
 ## π-Operation Characters
@@ -24,6 +36,24 @@ Use this index to find all characters encoding a given principle.
 | **反** | fǎn | Return arc completing 2π | 25, 40 |
 | **復** | fù | Return to root (recursive reset) | 16, 28, 52, 64 |
 | **歸** | guī | Return home | 16, 28, 34 |
+
+### Key Radical Breakdown: 利 (lì)
+
+```
+利 (lì) = 禾 (hé) + 刂 (dāo)
+        = grain + blade
+
+禾 (hé) = pictograph of drooping grain head on stalk
+刂 (dāo) = blade radical (right-side form of 刀)
+
+刀 (dāo) = curved stroke + vertical with hook
+         = curved blade + two-handed handle
+         = complete scythe geometry
+
+∴ 利 = blade arcing through grain field = harvest = path-cutting benefit
+```
+
+The scythe executes Euler's identity physically: planted feet (origin) → handle (radius) → blade ⊥ handle (i) → half-circle sweep (π) → void created (0) in standing grain (1).
 
 **Guodian validation:** 利 (A01), 反/返 (A37), 復 (A24). The π-operation is ~300 BCE core.
 
@@ -52,7 +82,7 @@ Use this index to find all characters encoding a given principle.
 
 ## Non-Occupation Characters
 
-**Principle:** 弗居 (doesn't dwell). Not claiming, not possessing, not defending position.
+**Principle:** 弗居 (fú jū, doesn't dwell). Not claiming, not possessing, not defending position.
 
 | Character | Pinyin | What It Encodes | Chapters |
 |-----------|--------|-----------------|----------|
@@ -139,7 +169,7 @@ Each pair demonstrates co-emergence in different domains:
 
 ## Void/Function Characters
 
-**Principle:** 無之以為用 (emptiness provides function). The hub, the pot, the room.
+**Principle:** 無之以為用 (wú zhī yǐ wéi yòng, emptiness provides function). The hub, the pot, the room.
 
 | Character | Pinyin | What It Encodes | Chapters |
 |-----------|--------|-----------------|----------|
@@ -152,21 +182,21 @@ Each pair demonstrates co-emergence in different domains:
 
 ### The Chapter 11 Demonstrations
 
-| Object | 有 Component | 無 Component | Function |
+| Object | 有 (yǒu) Component | 無 (wú) Component | Function |
 |--------|-------------|--------------|----------|
-| Wheel | Spokes, rim | Hub hole | Rolling |
-| Pot | Clay walls | Interior hollow | Containing |
-| Room | Walls, roof | Door/window openings | Dwelling |
+| Wheel 輪 (lún) | Spokes 輻 (fú), rim | Hub hole 轂 (gǔ) | Rolling |
+| Pot 器 (qì) | Clay walls | Interior hollow | Containing |
+| Room 室 (shì) | Walls, roof | Door/window openings | Dwelling |
 
-**Formula:** 有之以為利，無之以為用
-- 有 provides 利 (constraint, structure)
-- 無 provides 用 (function, capacity)
+**Formula:** 有之以為利，無之以為用 (yǒu zhī yǐ wéi lì, wú zhī yǐ wéi yòng)
+- 有 (yǒu) provides 利 (lì, constraint, structure)
+- 無 (wú) provides 用 (yòng, function, capacity)
 
 ---
 
 ## Return/Reversal Characters
 
-**Principle:** 反者道之動 (reversal is pattern's movement). The 2π completion.
+**Principle:** 反者道之動 (fǎn zhě dào zhī dòng, reversal is pattern's movement). The 2π completion.
 
 | Character | Pinyin | What It Encodes | Chapters |
 |-----------|--------|-----------------|----------|
@@ -176,12 +206,26 @@ Each pair demonstrates co-emergence in different domains:
 | **還** | huán | Circle back | — |
 | **迴** | huí | Revolve | — |
 
+### Key Radical Breakdown: 反 (fǎn)
+
+```
+反 (fǎn) = 厂 (hǎn) + 又 (yòu)
+         = cliff + hand
+
+厂 (hǎn) = pictograph of cliff/overhang
+又 (yòu) = pictograph of right hand
+
+∴ 反 = hand reaching back against cliff = reversal, arriving at opposite
+     = NOT "return through traversal" but structural polarity
+     = π radians in structure, not distance
+```
+
 ### The Chapter 25 Cycle
 
-大 → 逝/潰 → 遠 → 反
+大 (dà) → 逝/潰 (shì/kuì) → 遠 (yuǎn) → 反 (fǎn)
 Great → Overflows → Far → Returns
 
-**Guodian variant:** Uses 潰 (overflow/burst dam) instead of 逝 (depart). More hydraulic, more geometric.
+**Guodian variant:** Uses 潰 (kuì, overflow/burst dam) instead of 逝 (shì, depart). More hydraulic, more geometric.
 
 ---
 
@@ -212,7 +256,7 @@ The prescription: 慎終如慎始 (end-care equals beginning-care).
 
 ## Constancy Characters
 
-**Principle:** 知常曰明 (knowing the constant is called clarity). Frame-independent invariance.
+**Principle:** 知常曰明 (zhī cháng yuē míng, knowing the constant is called clarity). Frame-independent invariance.
 
 | Character | Pinyin | What It Encodes | Chapters |
 |-----------|--------|-----------------|----------|
@@ -223,18 +267,18 @@ The prescription: 慎終如慎始 (end-care equals beginning-care).
 
 ### The Constancy Formulas
 
-| Formula | Translation | Chapter |
-|---------|-------------|---------|
-| 常道 | Constant pattern | 1 |
-| 常名 | Constant name | 1 |
-| 知常曰明 | Knowing constant = clarity | 16 |
-| 知和曰常 | Knowing harmony = constant | 55 |
+| Formula | Pinyin | Translation | Chapter |
+|---------|--------|-------------|---------|
+| 常道 | cháng dào | Constant pattern | 1 |
+| 常名 | cháng míng | Constant name | 1 |
+| 知常曰明 | zhī cháng yuē míng | Knowing constant = clarity | 16 |
+| 知和曰常 | zhī hé yuē cháng | Knowing harmony = constant | 55 |
 
 ---
 
 ## Knowing Characters
 
-**Principle:** 知 as targeted articulation. Arrow + mouth = directed attention.
+**Principle:** 知 (zhī) as targeted articulation. Arrow + mouth = directed attention.
 
 | Character | Pinyin | What It Encodes | Chapters |
 |-----------|--------|-----------------|----------|
@@ -244,22 +288,35 @@ The prescription: 慎終如慎始 (end-care equals beginning-care).
 | **惑** | huò | Confused | 22, 44 |
 | **愚** | yú | Foolish (structurally) | 20, 65 |
 
+### Key Radical Breakdown: 知 (zhī)
+
+```
+知 (zhī) = 矢 (shǐ) + 口 (kǒu)
+         = arrow + mouth
+
+矢 (shǐ) = pictograph of arrow = directed, targeted
+口 (kǒu) = pictograph of open mouth = articulation
+
+∴ 知 = arrow given mouth = targeted articulation = knowing
+     = directional, intentional attention
+```
+
 ### The Knowing Hierarchy
 
-| Term | What It Is | Valence |
-|------|-----------|---------|
-| 明 | Clarity (seeing constant) | Positive |
-| 知 | Knowing (targeted) | Neutral |
-| 智 | Cleverness (surface) | Cautionary |
+| Term | Pinyin | What It Is | Valence |
+|------|--------|-----------|---------|
+| 明 | míng | Clarity (seeing constant) | Positive |
+| 知 | zhī | Knowing (targeted) | Neutral |
+| 智 | zhì | Cleverness (surface) | Cautionary |
 
-Chapter 33: 知人者智，自知者明
+Chapter 33: 知人者智，自知者明 (zhī rén zhě zhì, zì zhī zhě míng)
 "Knowing others = clever; self-knowing = clear"
 
 ---
 
 ## Yielding Characters
 
-**Principle:** 柔之勝剛 (soft overcomes hard). What arcs vs. what breaks.
+**Principle:** 柔之勝剛 (róu zhī shèng gāng, soft overcomes hard). What arcs vs. what breaks.
 
 | Character | Pinyin | What It Encodes | Chapters |
 |-----------|--------|-----------------|----------|
@@ -272,9 +329,11 @@ Chapter 33: 知人者智，自知者明
 
 | At Birth | At Death |
 |----------|----------|
-| 柔弱 (soft, yielding) | 堅強 (hard, stiff) |
+| 柔弱 (róu ruò, soft, yielding) | 堅強 (jiān qiáng, hard, stiff) |
 
 **Structural reading:** Life = what can arc. Death = what can't arc.
+
+**Metallurgical parallel:** 柔 (róu) and 剛 (gāng) are properties distributed by cooling rate. Fast quench = 剛 (hard, brittle). Slow cool = 柔 (soft, flexible). The Wu-Yue bimetallic bronze sword encodes this: 剛 edge for cutting, 柔 spine for resilience.
 
 ---
 
@@ -294,17 +353,17 @@ Chapter 33: 知人者智，自知者明
 ### Why Water
 
 Water demonstrates all principles:
-- Finds lowest path (處眾人之所惡)
-- Cuts paths without forcing (利萬物)
-- Takes shape of container (外其身)
-- Returns in cycles (反)
-- Soft overcomes hard (柔之勝剛)
+- Finds lowest path: 處眾人之所惡 (chǔ zhòng rén zhī suǒ wù, dwells where the crowd dislikes)
+- Cuts paths without forcing: 利萬物 (lì wàn wù, benefits all things)
+- Takes shape of container: 外其身 (wài qí shēn, puts body outside)
+- Returns in cycles: 反 (fǎn)
+- Soft overcomes hard: 柔之勝剛 (róu zhī shèng gāng)
 
 ---
 
 ## Pattern/Alignment Characters
 
-**Principle:** 道 and 德 as the core relationship.
+**Principle:** 道 (dào) and 德 (dé) as the core relationship.
 
 | Character | Pinyin | What It Encodes | Chapters |
 |-----------|--------|-----------------|----------|
@@ -313,15 +372,43 @@ Water demonstrates all principles:
 | **法** | fǎ | Method/law | 25 |
 | **理** | lǐ | Principle | — |
 
+### Key Radical Breakdowns
+
+**道 (dào) — Pattern/Way:**
+```
+道 (dào) = 辶 (chuò) + 首 (shǒu)
+         = walking + head
+
+辶 (chuò) = pictograph of walking/movement
+首 (shǒu) = pictograph of head = first, leading
+
+∴ 道 = walking with head leading = the way, path, pattern
+     = continuous aligned movement
+```
+
+**德 (dé) — Alignment:**
+```
+德 (dé) = 彳 (chì) + 直 (zhí) + 心 (xīn)
+        = step + straight + heart
+
+彳 (chì) = pictograph of left step = movement
+直 (zhí) = eye looking straight = straight, upright
+心 (xīn) = pictograph of heart
+
+∴ 德 = heart stepping straight = alignment with pattern
+     = NOT "virtue" (moral quality)
+     = operational alignment (geometric accuracy)
+```
+
 ### The Chapter 51 Formula
 
-> 道生之，德畜之
+> 道生之，德畜之 (dào shēng zhī, dé xù zhī)
 > "Pattern generates, alignment nurtures"
 
 | Function | What Does It |
 |----------|-------------|
-| 道 (pattern) | Generates (生) |
-| 德 (alignment) | Nurtures (畜) |
+| 道 dào (pattern) | Generates 生 (shēng) |
+| 德 dé (alignment) | Nurtures 畜 (xù) |
 
 **德 is not virtue.** 德 is structural alignment with 道—like a spoke maintaining correct angle to hub.
 
@@ -329,17 +416,17 @@ Water demonstrates all principles:
 
 ## Summary: Index by Function
 
-| Functional Domain | Key Characters | Core Chapter |
+| Functional Domain | Key Characters (with pinyin) | Core Chapter |
 |-------------------|---------------|--------------|
-| π-operation | 利, 曲, 輪, 反 | 22, 11 |
-| Boundary management | 塞閉挫解和同 | 56 |
-| Non-occupation | 弗居, 不爭, 不積 | 2, 81 |
-| Self-organization | 自化, 自然, 自正 | 37, 57 |
-| Co-emergence | 相生, 相成, 相形 | 2 |
-| Void/function | 虛, 沖, 用, 谷 | 11, 4 |
-| Return/reversal | 反, 復, 歸 | 40, 16 |
-| Constancy | 常/恆, 久 | 1, 16 |
-| Yielding | 柔, 弱 vs. 剛, 強 | 76, 78 |
+| π-operation | 利 (lì), 曲 (qū), 輪 (lún), 反 (fǎn) | 22, 11 |
+| Boundary management | 塞 (sāi) 閉 (bì) 挫 (cuò) 解 (jiě) 和 (hé) 同 (tóng) | 56 |
+| Non-occupation | 弗居 (fú jū), 不爭 (bù zhēng), 不積 (bù jī) | 2, 81 |
+| Self-organization | 自化 (zì huà), 自然 (zì rán), 自正 (zì zhèng) | 37, 57 |
+| Co-emergence | 相生 (xiāng shēng), 相成 (xiāng chéng), 相形 (xiāng xíng) | 2 |
+| Void/function | 虛 (xū), 沖 (chōng), 用 (yòng), 谷 (gǔ) | 11, 4 |
+| Return/reversal | 反 (fǎn), 復 (fù), 歸 (guī) | 40, 16 |
+| Constancy | 常/恆 (cháng/héng), 久 (jiǔ) | 1, 16 |
+| Yielding | 柔 (róu), 弱 (ruò) vs. 剛 (gāng), 強 (qiáng) | 76, 78 |
 
 ---
 

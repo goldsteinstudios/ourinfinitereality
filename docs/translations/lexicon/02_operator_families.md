@@ -8,27 +8,44 @@
 
 Operator radicals encode **what happens to substrates**. The same operator applied to different substrates produces related but distinct transformations—this consistency proves the algebra is real.
 
+### Radical Breakdown Convention
+
+Throughout this lexicon, radicals are decomposed to their pictographic origins:
+
+```
+Character (pinyin) = Component₁ (pinyin) + Component₂ (pinyin)
+                   = pictographic meaning + pictographic meaning
+                   = combined structural meaning
+```
+
+All breakdowns use traditional radicals, traced to pictographic sources where possible.
+
 ---
 
 ## 刂/刀 (dāo) — The Blade Operator
+
+**Pictographic origin:** 刀 (dāo) depicts a blade with handle—the curved stroke is the blade edge, the vertical with hook is the grip.
 
 **Domain:** Cutting, arc-sweeping, boundary-making, distinction-creating
 
 **Geometric Principle:** The π-operation—the curved sweep that traverses what straight lines cannot.
 
-### The 刀 Radical Encodes Tool Geometry
+### Full Radical Breakdown
 
-Looking at 刀 properly:
 ```
-刀
-├── curved stroke at top = blade (curved, like scythe)
-└── vertical + hook = handle, held with two hands
+刀 (dāo) = curved stroke + vertical with hook
+         = blade + two-handed handle
+         = complete scythe geometry
+
+刂 (dāo) = simplified form of 刀, used as right-side radical
 ```
 
-The radical itself encodes:
-- Two-handed grip (vertical stroke with hook)
-- Curved blade (arc at top)
-- Orthogonal relationship between them (blade ⊥ handle)
+**The 刀 radical encodes complete tool geometry:**
+- Curved stroke at top = blade (curved, like scythe)
+- Vertical + hook = handle, held with two hands
+- Orthogonal relationship = blade ⊥ handle
+
+This is NOT a knife (linear push). This is a scythe (arc sweep).
 
 ### Knife vs Scythe: 為 vs 無為
 
@@ -112,9 +129,53 @@ Result = hardening, rigidity (failed transformation)
 
 ## 口 (kǒu) — The Opening Operator
 
+**Pictographic origin:** 口 (kǒu) depicts an open mouth—a square opening, the original passage.
+
 **Domain:** Distribution, naming, articulation, passage-creation
 
 **Geometric Principle:** Creates channels for flow, articulates distinctions, enables passage.
+
+### Full Radical Breakdown
+
+```
+口 (kǒu) = pictograph of open mouth
+         = square enclosure with hollow center
+         = the archetypal opening/passage
+```
+
+The 口 (kǒu) radical marks passage-creation. When added to substrates, it enables flow, distribution, or articulation where there was none.
+
+### Key Character Breakdowns
+
+**名 (míng) — Name:**
+```
+名 (míng) = 夕 (xī) + 口 (kǒu)
+          = evening/darkness + mouth
+
+夕 (xī) = pictograph of crescent moon = evening, darkness, obscurity
+
+∴ 名 = mouth articulating darkness = to name = making explicit what was implicit
+```
+
+**可 (kě) — Expressible:**
+```
+可 (kě) = 丁 (dīng) + 口 (kǒu)
+        = nail/fixed point + mouth
+
+丁 (dīng) = pictograph of nail head = fixed, definite
+
+∴ 可 = fixed point given mouth = can be expressed = the 可/常 (kě/cháng) axis
+```
+
+**知 (zhī) — Knowing:**
+```
+知 (zhī) = 矢 (shǐ) + 口 (kǒu)
+         = arrow + mouth
+
+矢 (shǐ) = pictograph of arrow = directed, targeted
+
+∴ 知 = arrow given mouth = targeted articulation = knowing
+```
 
 ### Transformations by Substrate
 
@@ -155,15 +216,31 @@ Result = unification, merging
 
 ## 反 (fǎn) — The Reversal Operator
 
-**Domain:** Return, oscillation, cycle completion, 2π closure
+**Pictographic origin:** 反 (fǎn) depicts a hand reaching back against a cliff—the gesture of reversal, return, or arriving at the opposite.
 
-**Geometric Principle:** The arc that closes the circle. If 曲 (curving) is the π-operation, 反 is what happens when the arc comes back.
+**Domain:** Arriving at opposite, structural polarity, cycle completion
+
+**Geometric Principle:** Not "return through traversal" but structural co-emergence of opposition. When you establish a position, the opposite pole co-emerges. 反 describes arriving at that opposite—π radians in structure, not distance.
+
+### Full Radical Breakdown
+
+```
+反 (fǎn) = 厂 (hǎn/chǎng) + 又 (yòu)
+         = cliff/overhang + hand
+
+厂 (hǎn) = pictograph of cliff or overhanging rock
+又 (yòu) = pictograph of right hand
+
+∴ 反 = hand against cliff = reaching back = reversal/arriving at opposite
+```
+
+**Critical framing:** 反 describes "arriving at opposite," not "= π." Mathematics and DDJ are parallel notation systems. Both needed vocabulary for arriving at the structural complement.
 
 ### Core Character
 
 | Character | Pinyin | Components | Meaning | DDJ Chapters | Guodian? |
 |-----------|--------|------------|---------|--------------|----------|
-| **反** | fǎn | 厂 + 又 | Cliff + hand reaching back → reversal | 25, 40, 65, 78 | ✓ A22, A37 |
+| **反** | fǎn | 厂 (hǎn) + 又 (yòu) | Cliff + hand reaching back → arriving at opposite | 25, 40, 65, 78 | ✓ A22, A37 |
 
 ### Related Transformations
 
@@ -205,9 +282,42 @@ Outward arc (π) → 反 → Return arc (π) → Full cycle (2π)
 
 ## 氵 (shuǐ) — The Water Operator
 
+**Pictographic origin:** 氵 (shuǐ) is the three-stroke form of 水 (shuǐ)—the middle stroke is main current, outer strokes are splashing/eddies.
+
 **Domain:** Flow, descent, finding path, continuous transformation
 
-**Geometric Principle:** Does the π-operation naturally. Water arcs around obstacles without forcing. Water IS 無為 in physical form.
+**Geometric Principle:** Does the π-operation naturally. Water arcs around obstacles without forcing. Water IS 無為 (wú wéi) in physical form.
+
+### Full Radical Breakdown
+
+```
+水 (shuǐ) = pictograph of flowing water
+          = central current + side eddies
+          = the pattern of natural flow
+
+氵 (shuǐ) = three-stroke variant used as left-side radical
+```
+
+### Key Character Breakdown: 治 (zhì)
+
+```
+治 (zhì) = 氵 (shuǐ) + 台 (tái)
+         = water + platform
+
+台 (tái) = 厶 (sī) + 口 (kǒu)
+         = coiled/contained + opening
+
+厶 (sī) = pictograph of coiled form (private, contained)
+口 (kǒu) = pictograph of open mouth
+
+台 = stable-top (厶) over passage-below (口) = aqueduct cross-section
+
+∴ 治 = water flowing through aqueduct
+     = governance as aligned infrastructure
+     = build correctly, let gravity work
+```
+
+This is why 治水 (zhì shuǐ, water management) came before 治國 (zhì guó, state governance). The aqueduct builders understood: you don't push water, you build channels and let gravity work. 天地不仁 (tiān dì bù rén)—gravity doesn't care if you're a good ruler.
 
 ### When Water Operates on Substrates
 
@@ -246,9 +356,34 @@ Result = transparency or primordiality
 
 ## 宀 (mián) — The Roof/Enclosure Operator
 
+**Pictographic origin:** 宀 (mián) depicts a roof or shelter—the covering that creates interior space.
+
 **Domain:** Covering, housing, containing, creating interior space
 
-**Geometric Principle:** Creates the void-space (無) where function (用) can operate. The roof makes the room.
+**Geometric Principle:** Creates the void-space 無 (wú) where function 用 (yòng) can operate. The roof makes the room.
+
+### Full Radical Breakdown
+
+```
+宀 (mián) = pictograph of roof/shelter
+          = protective covering
+          = what creates interior space
+```
+
+### Key Character Breakdown: 室 (shì)
+
+```
+室 (shì) = 宀 (mián) + 至 (zhì)
+         = roof + arrive
+
+至 (zhì) = 一 (yī) + 矢 (shǐ)
+         = one/ground + arrow
+         = arrow reaching ground = arrival
+
+∴ 室 = roof you can arrive into = room
+     = the void-space created by covering
+     = Chapter 11's third example: "carve doors and windows to make a room"
+```
 
 ### Transformations by Substrate
 
@@ -286,9 +421,51 @@ Result = harm (blocked void)
 
 ## 彳 (chì) — The Step/Path Operator
 
+**Pictographic origin:** 彳 (chì) depicts a left footstep or half-step—the mark of walking, continuous movement along a path.
+
 **Domain:** Movement, progression, way-following, behavioral pattern
 
 **Geometric Principle:** Continuous motion along path. The step that maintains direction.
+
+### Full Radical Breakdown
+
+```
+彳 (chì) = pictograph of left step/footprint
+         = half of 行 (xíng, walk)
+         = continuous directional movement
+```
+
+### Key Character Breakdowns
+
+**德 (dé) — Alignment:**
+```
+德 (dé) = 彳 (chì) + 直 (zhí) + 心 (xīn)
+        = stepping + straight + heart
+
+彳 (chì) = pictograph of left step
+直 (zhí) = 十 (shí) + 目 (mù) + 乚 (yǐn)
+         = ten + eye + hook
+         = eye looking straight ahead
+
+心 (xīn) = pictograph of heart
+
+∴ 德 = heart stepping straight = alignment with pattern
+     = NOT "virtue" (moral quality)
+     = operational alignment (geometric accuracy)
+```
+
+**道 (dào) — Pattern/Way:**
+```
+道 (dào) = 辶 (chuò) + 首 (shǒu)
+         = walking + head
+
+辶 (chuò) = pictograph of walking/movement (related to 彳)
+首 (shǒu) = 𦣻 (head pictograph)
+          = head/leader/first
+
+∴ 道 = walking with head leading = the way, path, pattern
+     = continuous aligned movement
+```
 
 ### Transformations by Substrate
 

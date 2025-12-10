@@ -1,16 +1,18 @@
 # Part V: Pinyin Index
 
-*Alphabetical lookup*
+*Alphabetical lookup by pronunciation*
 
 ---
 
 ## How to Use This Index
 
-Find the character by pinyin. The index points to:
+Find the character by pinyin (romanized pronunciation). The index points to:
 - **Part**: Which lexicon section contains the primary entry
 - **Family**: Which radical/concept family it belongs to
 - **Chapters**: DDJ chapters where it appears
 - **Guodian**: ✓ if validated in ~300 BCE manuscripts
+
+For full radical breakdowns and pictographic analyses, see Parts I-III.
 
 ---
 

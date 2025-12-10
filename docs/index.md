@@ -28,6 +28,11 @@ That sounded almost too elegant. Almost too strange. But once I had the idea, I 
 
 ## The Pattern Everywhere
 
+<figure markdown="span">
+  ![Our Infinite Reality logo - a modified taijitu with spiral recursion](assets/logo.svg){ width="200" }
+  <figcaption>The traditional taijitu shows balance. This one shows recursion—the spiral that goes deeper, approaching but never reaching the center.</figcaption>
+</figure>
+
 It started showing up in physics. Atoms are mostly empty space organized around centers that can't be pinned down. Electrons don't orbit like little planets—they exist as probability clouds that never collapse to a definite point. Black holes organize entire galaxies around singularities we can never directly measure.
 
 It showed up in biology. Trees grow outward from hollow piths. The living part of a tree—the cambium—is a boundary with essentially zero thickness. The tree isn't held up by its core. The core can rot away completely and the tree keeps standing.
@@ -114,20 +119,26 @@ Here's what's accumulated so far:
 
 ## Where to Start
 
-**If you're drawn to ancient texts:**
-Start with the [Dao De Jing translations](./translations/README.md). [Chapter 11](./translations/chapters/chapter11_2025-11-27.md) shows the wheel, cup, and room. [Chapter 25](./translations/chapters/chapter25_sphere_proof_2025-12-01.md) is where the text most explicitly describes its own recursive structure.
+See **[Reading Paths](./reading_paths.md)** for guided entry points based on your background:
 
-**If you want the formal framework:**
-The [RSM documentation](./translations/meta/recursive_structural_model.md) lays out the model in more technical terms.
+- **[The Casual Reader](./reading_paths.md#the-casual-reader)** — 30 minutes, first taste
+- **[The Sinologist](./reading_paths.md#the-sinologist)** — Character-level analysis
+- **[The Physicist](./reading_paths.md#the-physicist)** — Mathematical framework
+- **[The Skeptic](./reading_paths.md#the-skeptic)** — Show me the evidence
+- **[The Biologist](./reading_paths.md#the-biologist)** — Living systems
+- **[The Deep Dive](./reading_paths.md#the-deep-dive)** — Full immersion
 
-**If you want to see cross-domain evidence:**
-The [Framework Synthesis](./translations/meta/framework_synthesis_2025-12-07.md) collects instances across disciplines.
+Or jump directly:
 
-**If you want to wander:**
-The [Lexicon](./translations/lexicon/00_lexicon_introduction.md) catalogs concepts by operational family.
+**Quick start:** [Chapter 11](./translations/chapters/chapter11_2025-11-27.md) (wheel, pot, room) → [Chapter 25](./translations/chapters/chapter25_sphere_proof_2025-12-01.md) (recursion cycle)
 
-**If you want to see the evolution:**
-The [GitHub repository](https://github.com/goldsteinstudios/dao-de-jing-analyzer) has the full history.
+**Formal framework:** [RSM documentation](./translations/meta/recursive_structural_model.md)
+
+**Cross-domain evidence:** [Academic Parallels](./framework/academic_parallels.md) | [Framework Synthesis](./translations/meta/framework_synthesis_2025-12-07.md)
+
+**What would disprove this:** [Falsification Criteria](./framework/falsification.md)
+
+**Full history:** [GitHub repository](https://github.com/goldsteinstudios/dao-de-jing-analyzer)
 
 ---
 
