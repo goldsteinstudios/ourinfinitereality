@@ -83,17 +83,17 @@ The RSM uses five elements in a co-emergent relationship. These are not sequenti
 
 The double arrows (⟺) indicate mutual entailment: each element implies and requires the others. There is no "first" element that exists independently.
 
-### P₀ — True Void (玄牝, 自然)
+### P₀ — True Void (常無)
 
-The **true void** is the unframeable paradox preceding all distinction—the primordial condition that enables structure without itself being structure.
+The **true void** is the pre-frame paradox—the primordial condition that enables structure without itself being structure.
 
 **Properties:**
 - Logically necessary but never achievable
 - Not "nothing" (which would be a something—that's 無名/O₁)
-- The self-so ground (自然) at the center of every recursion level
+- Implicit, frame-independent
 - What remains when all frames dissolve
 
-**DDJ encoding:** 玄牝 (xuán pìn) — "mysterious female," the generative void. 自然 (zì rán) — "self-so," the condition that is its own ground.
+**DDJ encoding:** 常無 (cháng wú) — "implicit nothing," the condition before framing is possible.
 
 **Key insight:** P₀ is not empty space. It's the *condition* for space—what makes distinction possible by being prior to distinction.
 
@@ -102,13 +102,15 @@ The **true void** is the unframeable paradox preceding all distinction—the pri
 谷神不死，是謂玄牝。
 玄牝之門，是謂天地根。
 ```
-"The recursion principle never fails—this is called the generative void. The gate of the generative void—this is called the root of the coordinate system."
+"The recursion principle never fails—this is called the generative paradox. The gate of the generative paradox—this is called the root of the coordinate system."
+
+Note: 玄牝 here refers to the paradox point (Pₙ) as generative—where recursion occurs.
 
 ---
 
-### O — Origin (無名, 玄, 道)
+### O — Origin (無名)
 
-The **origin** is the first named reference point—the "named nothing," the inaccessible center around which structure circulates.
+The **origin** is the first named reference point—the "named-nothing," the inaccessible center around which structure circulates.
 
 **Properties:**
 - Cannot be directly occupied or measured
@@ -117,11 +119,13 @@ The **origin** is the first named reference point—the "named nothing," the ina
 - Contains P₀ at its center (origins nest infinitely)
 
 **Physical examples:**
-- The geometric center of a rotating wheel
-- The hollow core of a tree trunk
+- The geometric center of a rotating wheel (hub)
+- The hollow core of a tree trunk (pith)
 - The hub that makes the wheel turn
 
-**DDJ encoding:** 無名 (wú míng) — "nameless," the named nothing (contrasted with 有名). 玄 (xuán) — the paradoxical, dark, mysterious origin point. 道 (dào) — pattern, the continuous process. Also 虛 (xū) — emptiness, void.
+**DDJ encoding:** 無名 (wú míng) — "nameless," the named-nothing (contrasted with 有名). Also 虛 (xū) — emptiness, void.
+
+**Important:** 道 (dào) is the *whole pattern*, not O₁ specifically. Do not map 道 to a single element.
 
 **Key insight:** O is not a thing that fails to exist. O is the *condition* for thingness—a different category entirely.
 
@@ -133,9 +137,9 @@ P₀ is at the center of every recursion level.
 
 ---
 
-### G — Gradient (天地, 道之動)
+### G — Gradient (天地)
 
-The **gradient** is the hyperbolic field of potential/contrast—the surface along which transformation flows.
+The **gradient** is the curved surface along which transformation flows—the hyperbolic field of potential/contrast.
 
 **Mathematical form:**
 
@@ -158,11 +162,11 @@ This is a hyperbola (2D) or hyperboloid of one sheet (3D). The curve never touch
 - Scale-invariant (same form for all k values)
 
 **Physical examples:**
+- Cambium layer in a tree (curved growth surface)
+- Rim of a wheel
 - Water flowing downhill along the path of least resistance
-- Heat moving from hot to cold
-- Nutrients flowing through a tree's vascular system
 
-**DDJ encoding:** 天地 (tiān dì) — heaven-earth, the vertical/horizontal coordinate system. 反者道之動 (fǎn zhě dào zhī dòng) — "Arc-completion IS pattern's movement." The gradient is where the oscillation happens.
+**DDJ encoding:** 天地 (tiān dì) — heaven-earth, the coordinate system whose product defines the curved surface.
 
 **The 天地 structure:**
 - 天 (heaven) = vertical axis, the y-component
@@ -172,34 +176,34 @@ This is a hyperbola (2D) or hyperboloid of one sheet (3D). The curve never touch
 
 ---
 
-### B — Balance Axis (和/中)
+### B — Balance (Radial Lines)
 
-The **balance axis** is the line of equilibrium where complementary aspects are equal—neither pole dominates.
+The **balance** consists of the radial lines from origin—where complementary aspects are equal, neither pole dominates.
 
 **Mathematical form:**
 ```
-y = x
+y = x  (and other radial lines through origin)
 ```
 
-In 3D, this extends to the plane containing the line y = x.
+In 3D, these extend as planes through the central axis.
 
 **Properties:**
 - Where complementary forces are in equilibrium
 - The condition of neither-excess-nor-deficiency
-- The reference against which gradient position is measured
+- Radial lines from center to periphery
 
 **Physical examples:**
+- Spokes of a wheel
+- Medullary rays in a tree (radial lines from pith to bark)
 - The fulcrum of a balanced lever
-- The point where inhale transitions to exhale
-- The equinox where day equals night
 
-**DDJ encoding:** 和 (hé) — harmony, balance. 中 (zhōng) — center, middle. 沖氣以為和 — "Surging energy makes harmony."
+**DDJ encoding:** 和 (hé) — harmony, balance. 中 (zhōng) — center, middle.
 
 ---
 
-### P — Paradox Point / Valley (谷, 有名)
+### P — Paradox Point (玄, 玄牝)
 
-The **paradox point** is where the gradient curve intersects the balance axis—the stable position in the system, and the point that can become a new origin.
+The **paradox point** is where the gradient curve intersects the balance lines—the stable position in the system, and the point that can become a new origin.
 
 **Mathematical form:**
 ```
@@ -218,15 +222,17 @@ In 3D, this is the circle x² + z² = 1 at y = 1—the "waist" of the hyperboloi
 - Maximum stability—movement in any direction moves away from balance
 - Where both observation stances (妙/徼) would have to be simultaneously true
 - Logical paradox, geometric stability
-- **Can become a new origin** (P₁ → O₂)
+- **Can become a new origin** (Pₙ → Oₙ₊₁)
 
 **Physical examples:**
+- Spoke-rim intersection on a wheel
+- Ray-cambium intersection in a tree
+- Branch nodes (where divergence recursion occurs)
 - The valley where water naturally gathers
-- The ground state of a quantum system
-- The resting position of a pendulum
-- The annual ring in a tree
 
-**DDJ encoding:** 谷 (gǔ) — valley. 有名 (yǒu míng) — "named," the condition after distinction. 谷神不死 — "The recursion principle never fails." The valley is the stable configuration that persists AND the junction where recursion occurs.
+**DDJ encoding:** 玄 (xuán) — the paradoxical, dark, mysterious. 玄牝 (xuán pìn) — "mysterious female," the generative paradox point. 有名 (yǒu míng) — "named," the named-something (contrasted with 無名).
+
+**谷神不死** — "The recursion principle never fails." The paradox point is the junction where recursion occurs.
 
 ---
 
@@ -311,31 +317,31 @@ The **iteration operator** marks "apply recursively"—the same operation applie
 - 玄之又玄 = O₁ containing O₂ containing O₃... (nested origins)
 - The 又 explicitly marks that this is iteration
 
-### 反 (fǎn) — Cycle Completion
+### 反 (fǎn) — Arriving at Opposite
 
-The **completion operator** marks 2π closure—the arc that returns to origin without reversal.
+The **反 operator** describes arriving at the structural complement—the opposite pole.
 
 **Graphic structure:** 厂 (cliff/boundary) + 又 (hand/again) = hand reaching back around a boundary.
 
-**Function:** Arc → closed loop (topological completion)
+**Function:** Arriving at opposite pole
 
 **Key instance:** 反者道之動 (Chapter 40)
 ```
 反者道之動，弱者道之用
 ```
-"Arc-completion IS pattern's movement; yielding IS pattern's function."
+"Arriving-at-opposite IS how pattern moves; yielding IS how pattern functions."
+
+**Mathematical parallel:** Mathematics describes this same operation as e^(iπ) = -1. But 反 is NOT "equal to" π—they're different notations pointing at the same geometric fact.
 
 **Critical distinction:**
-- **反** = topological closure (the arc completes whether or not you're aware)
+- **反** = arriving at structural complement
 - **復** = sequential return (you consciously return along a path)
 
-Chapter 25 proves the sphere:
+Chapter 25:
 ```
 大曰潰，潰曰遠，遠曰反
 ```
-"Infinite → overflow → extends → returns"
-
-If space extends uniformly in all directions from any point, going infinitely far brings you back. 反 encodes this topological necessity.
+"Infinite → overflow → extends → arrives-at-opposite"
 
 ### 門 (mén) — Threshold
 
@@ -617,18 +623,28 @@ You can navigate G skillfully. You cannot reach the axis G wraps around.
 
 ---
 
-## Physical Validation: The Tree
+## Physical Instantiations
 
-The tree demonstrates every component of the RSM:
+### The Tree
 
-| RSM Component | Tree Manifestation |
-|---------------|-------------------|
-| O (origin) | Hollow center (pith can rot away) |
-| G (gradient) | Nutrient/water flow through vascular system |
-| B (balance) | Seasonal equilibrium points |
-| P (paradox) | Cambium—dimensionless living boundary |
-| Gₙ ∩ Bₙ = Pₙ | Ring formation at perpendicular intersection |
-| Pₙ → Oₙ₊₁ | Each ring becomes foundation for next |
+| RSM | Tree Structure | Function |
+|-----|----------------|----------|
+| O₁ | Pith / hollow center | Center origin |
+| Gₙ | Cambium | Curved growth surface |
+| Bₙ | Medullary rays | Radial balance lines |
+| Pₙ | Ray-cambium intersection | Paradox point |
+| Pₙ→Oₙ₊₁ | Branch node | Divergence recursion |
+
+### The Wheel (Chapter 11)
+
+| RSM | Wheel Structure | Function |
+|-----|-----------------|----------|
+| O₁ | Hub (hollow) | Center origin (無) |
+| Gₙ | Rim | Curved surface |
+| Bₙ | Spokes | Radial balance lines |
+| Pₙ | Spoke-rim intersection | Attachment/paradox point |
+
+**Same geometry:** Hollow center, radial lines, curved surface, intersections.
 
 The perpendicularity constraint manifests as the ring boundary:
 
@@ -660,7 +676,10 @@ All confirmed by botanical observation.
 
 ## Two Parallel Notations
 
-Euler's identity and DDJ vocabulary both encode the same recursion mechanics—parallel observations of the same geometry, not direct symbol mappings.
+**Critical framing:** DDJ and mathematics are parallel notation systems describing the same geometry. They are NOT translations of each other. Neither derives from the other. The convergence validates the underlying pattern.
+
+**Do NOT write:** "道 = e" or "可 = i"
+**DO write:** "道 and e both describe continuous self-reference"
 
 ### Euler's Identity
 
@@ -670,23 +689,25 @@ e^(iπ) + 1 = 0
 
 This equation relates the five fundamental constants through a single operation.
 
-### DDJ Structural Vocabulary
+### Structural Operations — Both Systems Needed Vocabulary For:
 
-| Mathematical | Function | DDJ Parallel | Function |
-|--------------|----------|--------------|----------|
-| e | Continuous self-referential process | 道 | Pattern/continuous process |
-| i | Orthogonal rotation (√-1) | 可 | Possibility/transformation |
-| π | Half-cycle completion | 反 | Arc completion/return |
-| 1 | Unity/reference point | 有 | Existence/form |
-| 0 | Void/undefined point | 無 | Absence/void |
+| Structural Operation | Math Notation | DDJ Notation |
+|---------------------|---------------|--------------|
+| Continuous self-reference | e | 道 |
+| Orthogonal transformation | i | 可 |
+| Arriving at opposite | π (half-turn) | 反 |
+| Measurable reference | 1 | 有 |
+| Unreachable center | 0 | 無 |
+
+**Both systems needed vocabulary for the same five operations. The convergence is the evidence.**
 
 ### The Structural Rhyme
 
 Both systems encode:
-- **Rotation around inaccessible centers** (i rotates; 可 transforms)
-- **Cycle completion** (π completes half-cycle; 反 closes arcs)
-- **Void-form relationship** (0 and 1 sum; 無 and 有 co-emerge)
-- **Continuous process** (e is self-derivative; 道 generates continuously)
+- **Continuous self-reference** (e is its own derivative; 道 is the self-generating pattern)
+- **Orthogonal transformation** (i rotates into perpendicular dimension; 可 makes explicit what was implicit)
+- **Arriving at opposite** (e^(iπ) = -1; 反 reaches the structural complement)
+- **Void-form relationship** (0 and 1; 無 and 有 co-emerge)
 
 Neither derives from the other. They're independent observations of the same geometry from different cultural laboratories—one mathematical, one observational.
 
@@ -719,12 +740,13 @@ What would disprove the RSM:
 The Recursive Structural Model:
 
 1. **One axiom:** Reality is infinite (infinitely divisible)
-2. **Five elements:** P₀ (true void), O (origin), G (gradient), B (balance), P (paradox)
+2. **Five elements:** P₀ (常無), O (無名), G (天地), B (radial balance), P (玄)
 3. **One formula:** Gₙ ∩ Bₙ = Pₙ, with recursion Pₙ → Oₙ₊₁
 4. **One constraint:** Perpendicularity required for recursion (∇G · ∇B = 0)
 5. **One shape:** Hyperbola xy = k (2D) or hyperboloid x² + z² = 1/y² (3D)
-6. **Three operators:** 又 (iteration), 反 (completion), 門 (transition)
+6. **Three operators:** 又 (iteration), 反 (arriving-at-opposite), 門 (transition)
 7. **One throughline:** 谷神 (recursion identity never fails)
+8. **道 = the whole pattern**, not any single element
 
 The model explains:
 - Why centers cannot be occupied (four impossibilities, plug problem)
@@ -743,24 +765,29 @@ The Dao De Jing encodes this geometry in characters, radicals, and chapter struc
 ### Structural Elements
 | Symbol | Name | Description | DDJ |
 |--------|------|-------------|-----|
-| **P₀** | True Void | Unframeable paradox, self-so ground | 玄牝, 自然 |
-| **O** | Origin | Inaccessible center, named nothing | 無名, 玄, 道, 虛 |
-| **G** | Gradient | Hyperbolic flow surface | 天地, 道之動 |
-| **B** | Balance | Equilibrium axis y=x | 和, 中 |
-| **P** | Paradox | Intersection point, valley | 谷, 有名 |
+| **P₀** | True Void | Pre-frame paradox | 常無 (cháng wú) |
+| **O** | Origin | Inaccessible center, named-nothing | 無名 (wú míng) |
+| **G** | Gradient | Curved surface (xy = k) | 天地 (tiān dì) |
+| **B** | Balance | Radial lines (y = x) | — |
+| **P** | Paradox | Intersection (G ∩ B) | 玄 (xuán), 玄牝 (xuán pìn) |
+| **R** | Recursion operator | Pₙ → Oₙ₊₁ | 谷神 (gǔ shén) |
 
-### Recursion Operators
-| Operator | Function | DDJ |
+**道 (dào)** = The whole pattern. NOT a single element.
+
+### DDJ Operators
+| Operator | Function | NOT |
 |----------|----------|-----|
-| **又** | Iteration (f∘f) | 玄之又玄 |
-| **反** | Completion (2π closure) | 反者道之動 |
-| **門** | Transition (P → O) | 玄牝之門 |
+| **又** | Iteration—same operation again | |
+| **反** | Arriving at opposite pole | ~~= π~~ |
+| **門** | Transition interface (P → O) | |
+| **可** | Explicit/expressible | ~~= i~~ |
+| **常** | Implicit/frame-independent | |
 
 ### Equations
 ```
 Gradient (2D):     xy = k
 Gradient (3D):     x² + z² = 1/y²
-Valley point:      P = (√k, √k)
+Paradox point:     P = (√k, √k)
 Core formula:      Gₙ ∩ Bₙ = Pₙ
 Recursion:         Pₙ → Oₙ₊₁
 Perpendicularity:  ∇G · ∇B = 0
@@ -768,12 +795,12 @@ Co-emergence:      { P₀ ⟺ O ⟺ G ⟺ B ⟺ P }
 Nesting:           Oₙ ⊃ Oₙ₋₁ ⊃ ... ⊃ O₁ ⊃ P₀
 ```
 
-### The Pattern
+### The Promotion Sequence
 ```
-P₀ → O₁ → G₁ → P₁ → O₂ → G₂ → P₂ → ... → Oₙ → Gₙ → Pₙ → ...
-     ↑__________________|
-        (recursion)
+P₀ (常無) → O₁ (無名) → Gₙ ∩ Bₙ = Pₙ (玄) → Oₙ₊₁ → ...
 ```
+
+At perpendicular intersection (∇G · ∇B = 0), paradox can promote to new origin.
 
 ### DDJ Chapter Index by RSM Concept
 | RSM Concept | Primary Chapters |
