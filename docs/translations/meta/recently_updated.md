@@ -6,12 +6,13 @@
 
 | Document | Last Updated |
 |----------|--------------|
+| [The Recursive Structural Model (RSM)](/translations/meta/recursive_structural_model/) | 2025-12-09 |
+| [Part II: Operator Families](/translations/lexicon/02_operator_families/) | 2025-12-09 |
 | [Chapter 34: The Pattern That Doesn't Claim](/translations/chapters/chapter34_2025-11-26/) | 2025-12-09 |
 | [Chapter 22: The Geometry of Yielding](/translations/chapters/chapter22_2025-11-26/) | 2025-12-09 |
 | [Chapter 14: The Three Imperceptibles](/translations/chapters/chapter14_2025-11-26/) | 2025-12-09 |
 | [The Rosetta Stone Document](/translations/meta/chapter25_rosetta_stone_2025-12-07/) | 2025-12-09 |
 | [Framework Synthesis: How the Pieces Fit](/translations/meta/framework_synthesis_2025-12-07/) | 2025-12-09 |
-| [The Recursive Structural Model (RSM)](/translations/meta/recursive_structural_model/) | 2025-12-09 |
 | [Recent Changes](/translations/meta/recent_changes/) | 2025-12-09 |
 | [Chapter 76: The Living Are Yielding](/translations/chapters/chapter76_2025-11-26/) | 2025-12-09 |
 | [Part III: Structural Positions](/translations/lexicon/03_structural_positions_2025-12-07/) | 2025-12-07 |
@@ -43,7 +44,6 @@
 | [The Scythe-Not-Knife Distinction](/translations/meta/scythe_not_knife_2025-11-27/) | 2025-11-27 |
 | [Part V: Pinyin Index](/translations/lexicon/05_pinyin_index/) | 2025-11-27 |
 | [Part IV: Concept Index](/translations/lexicon/04_concept_index/) | 2025-11-27 |
-| [Part II: Operator Families](/translations/lexicon/02_operator_families/) | 2025-11-27 |
 | [Part I: Substrate Families](/translations/lexicon/01_substrate_families/) | 2025-11-27 |
 | [Dao De Jing Structural Lexicon](/translations/lexicon/00_lexicon_introduction/) | 2025-11-27 |
 | [Chapter 81: Trustworthy Words Aren't Beautiful](/translations/chapters/chapter81_2025-11-26/) | 2025-11-27 |

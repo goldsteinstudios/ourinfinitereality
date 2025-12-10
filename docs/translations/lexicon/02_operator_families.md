@@ -16,9 +16,66 @@ Operator radicals encode **what happens to substrates**. The same operator appli
 
 **Geometric Principle:** The π-operation—the curved sweep that traverses what straight lines cannot.
 
-**Critical Distinction:** This is the SCYTHE blade, not the knife blade.
-- Knife = linear push (A→B), one thing at a time
-- Scythe = arc sweep (O→G→π→P), swath per stroke
+### The 刀 Radical Encodes Tool Geometry
+
+Looking at 刀 properly:
+```
+刀
+├── curved stroke at top = blade (curved, like scythe)
+└── vertical + hook = handle, held with two hands
+```
+
+The radical itself encodes:
+- Two-handed grip (vertical stroke with hook)
+- Curved blade (arc at top)
+- Orthogonal relationship between them (blade ⊥ handle)
+
+### Knife vs Scythe: 為 vs 無為
+
+The same blade radical can operate two ways:
+
+| Tool | Motion | Effort | Result | DDJ Term |
+|------|--------|--------|--------|----------|
+| Knife | Linear push (A→B) | Force against resistance | One thing at a time | 為 (wéi) |
+| Scythe | Arc sweep (O→π→P) | Flow with rotation | Swath per stroke | 無為 (wú wéi) |
+
+**The knife:**
+- Push against the grain
+- Each cut is a separate act of will
+- Resistance accumulates (blade dulls, arm tires)
+- One stalk at a time
+
+**The scythe:**
+- Rotate with the arc
+- Each swing is pattern continuation
+- Resistance distributed across sweep
+- Entire swath per stroke
+
+**無為 isn't "non-action"—it's scythe-action vs knife-action.** Arc rotation with the field, not linear force against it.
+
+### The Scythe as Physical Computer
+
+The scythe executes Euler's identity physically:
+
+| Component | Scythe | RSM | Euler |
+|-----------|--------|-----|-------|
+| Planted feet | Origin anchor | O₁ | — |
+| Handle length | Radius/extension | Gₙ | e (extension) |
+| Blade ⊥ handle | Orthogonal connection | ∇G ⊥ ∇B | i (90° rotation) |
+| Arc of blade | Half-circle sweep | Pₙ | π (half-turn) |
+| Harvested area | Void created | 無 | 0 |
+| Standing grain | Beyond arc | 有 | 1 |
+| Edge of cut | Boundary | Pₙ (paradox) | — |
+
+The sweep creates a half-circle of void (無) in an infinite field—defined simultaneously by harvested grain AND standing grain beyond. This is 有無相生 enacted physically.
+
+### φ and 無為: The Golden Overlap
+
+The efficient harvester knows the optimal stepping ratio (φ, ~1.618):
+- Overlap enough to miss no grain
+- Overlap no more than necessary
+
+This IS 無為: not "non-action" but "no excess action." The one who knows 知足 sweeps exactly the golden overlap. The inefficient harvester over-sweeps (多則惑).
 
 ### Transformations by Substrate
 

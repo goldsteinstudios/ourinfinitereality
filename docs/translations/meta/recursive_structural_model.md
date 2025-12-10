@@ -623,7 +623,111 @@ You can navigate G skillfully. You cannot reach the axis G wraps around.
 
 ---
 
+## The Scythe: Euler's Identity in Action
+
+### 利 Documents the Arc Operation
+
+**利 (lì) = 禾 (grain) + 刀 (blade)** documents the scythe operation, not knife-cutting.
+
+You cannot harvest a field with a knife. The scythe is a physical computer executing the recursive pattern.
+
+**The 刀 radical encodes the complete tool geometry:**
+- Curved stroke at top = blade (curved, like scythe)
+- Vertical stroke with hook = handle, held with two hands
+- The relationship between them = orthogonal connection
+
+**利 places this tool IN the grain field (禾)**, showing the complete operation:
+
+| Component | Scythe | RSM | Euler |
+|-----------|--------|-----|-------|
+| Planted feet | Origin anchor | O₁ | — |
+| Handle length | Radius/extension | Gₙ | e (extension) |
+| Blade ⊥ handle | Orthogonal connection | ∇G ⊥ ∇B | i (90° rotation) |
+| Arc of blade | Half-circle sweep | Pₙ | π (half-turn) |
+| Harvested area | Void created | 無 | 0 |
+| Standing grain | Beyond arc | 有 | 1 |
+| Edge of cut | Boundary | Pₙ (paradox) | — |
+
+### The Scythe Sweep Creates:
+
+- A half-circle of void (無) in an infinite field
+- Defined simultaneously by harvested grain AND standing grain beyond
+- The boundary between them IS the paradox point
+
+This is 有無相生 enacted physically. The void and the presence mutually define each other. Neither exists independently.
+
+### Knife vs Scythe: 為 vs 無為
+
+The same blade radical (刀/刂) can operate two ways:
+
+| Tool | Motion | Effort | Result | DDJ Term |
+|------|--------|--------|--------|----------|
+| Knife | Linear push (A→B) | Force against resistance | One thing at a time | 為 (wéi) |
+| Scythe | Arc sweep (O→π→P) | Flow with rotation | Swath per stroke | 無為 (wú wéi) |
+
+**The knife:**
+- Push against the grain
+- Each cut is a separate act of will
+- Resistance accumulates (blade dulls, arm tires)
+- One stalk at a time
+
+**The scythe:**
+- Rotate with the arc
+- Each swing is pattern continuation
+- Resistance distributed across sweep
+- Entire swath per stroke
+
+**無為 isn't "non-action"—it's scythe-action vs knife-action.** Arc rotation with the field, not linear force against it.
+
+### φ (Phi), Phyllotaxis, and Optimal Stepping
+
+The efficient harvester knows the golden overlap:
+
+Each successive swing must:
+- Overlap enough to miss no grain
+- Overlap no more than necessary (no wasted effort)
+
+This optimal stepping ratio IS φ (the golden ratio, ~1.618).
+
+**Phyllotaxis** (leaf/seed arrangement) follows the same principle:
+- Each new element positioned to maximize coverage
+- Minimize overlap/competition
+- The golden angle (137.5°) emerges naturally
+
+**This IS 無為 in action:**
+- Not "non-action" but "no excess action"
+- Acting with the arc, not against the field
+- The minimum necessary sweep that completes the harvest
+- 知足 (knowing sufficiency) as geometric optimum
+
+The inefficient harvester over-sweeps (多則惑). The one who knows 知足 sweeps exactly the golden overlap.
+
+### The 利/用 Formula (Chapter 11)
+
+```
+有之以為利，無之以為用
+```
+
+"Form provides the constraint (利), void provides the function (用)."
+
+- 利 = the scythe arc that shapes void into usable space
+- 用 = the function that emerges from shaped void
+
+The scythe doesn't create grain; it creates the cleared space where work can happen. 利 is the path-cutting constraint; 用 is what the cleared path enables.
+
+---
+
 ## Physical Instantiations
+
+### The Scythe (利 operation)
+
+| RSM | Structure | Function |
+|-----|-----------|----------|
+| O₁ | Planted feet | Origin anchor |
+| Gₙ | Handle + blade arc | Gradient/radius |
+| Bₙ | Blade ⊥ handle | Balance (orthogonal connection) |
+| Pₙ | Edge of cut | Boundary between 無 and 有 |
+| φ | Optimal step overlap | 無為—minimum excess |
 
 ### The Tree
 
@@ -782,6 +886,10 @@ The Dao De Jing encodes this geometry in characters, radicals, and chapter struc
 | **門** | Transition interface (P → O) | |
 | **可** | Explicit/expressible | ~~= i~~ |
 | **常** | Implicit/frame-independent | |
+| **利** | Path-cutting constraint (scythe arc) | ~~benefit~~, ~~advantage~~ |
+| **用** | Function emerging from shaped void | |
+| **為** | Linear force against (knife-action) | |
+| **無為** | Arc rotation with (scythe-action) | ~~non-action~~ |
 
 ### Equations
 ```
