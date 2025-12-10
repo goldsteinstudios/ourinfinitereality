@@ -1,138 +1,166 @@
 /* Custom styles for Our Infinite Reality */
 
 /* ==========================================================================
-   TYPOGRAPHY
-
-   1950s industrial report aesthetic
-   IBM Plex Serif - headers and body (loaded via MkDocs theme)
-   IBM Plex Mono - code blocks
+   TYPOGRAPHY - Cormorant Garamond
    ========================================================================== */
 
-/* Font family variables */
 :root {
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Cormorant Garamond', Georgia, serif;
   --font-mono: 'IBM Plex Mono', monospace;
 }
 
-/* Page Title - ALL CAPS, wide tracking */
+/* Page Title */
 .md-typeset h1 {
   font-family: var(--font-display);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 2.25rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
 }
 
-/* Subheading (h2) - Italic */
+/* Section headers (h2) */
 .md-typeset h2 {
   font-family: var(--font-display);
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.25rem;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding-bottom: 0.25rem;
 }
 
-/* Section Header (h3) - Medium weight, slight tracking */
+/* Sub-section headers (h3) */
 .md-typeset h3 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Sub-header (h4) - Italic */
-.md-typeset h4 {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-style: italic;
-  font-size: 0.9rem;
-}
-
-/* Sub-header (h5) - Italic, smaller */
+/* Minor headers (h4, h5) */
+.md-typeset h4,
 .md-typeset h5 {
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Body text */
-.md-typeset,
-.md-typeset p,
-.md-typeset li {
+.md-typeset {
   font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
-/* Block quotes - Italic, indented */
+.md-typeset p {
+  margin-bottom: 1rem;
+}
+
+/* Bold text - make it actually visible */
+.md-typeset strong,
+.md-typeset b {
+  font-weight: 700;
+}
+
+/* Block quotes */
 .md-typeset blockquote {
   font-family: var(--font-body);
-  font-weight: 400;
   font-style: italic;
-  font-size: 0.85rem;
-  border-left: 2px solid #666;
-  padding-left: 1.5em;
-  margin-left: 0;
-  color: #555;
+  font-size: 1rem;
+  border-left: 3px solid rgba(128, 128, 128, 0.5);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: inherit;
+  opacity: 0.9;
 }
 
 .md-typeset blockquote p {
-  font-size: inherit;
-  font-style: inherit;
+  margin-bottom: 0.5rem;
 }
 
-/* Code blocks - Mono */
+/* Code */
 .md-typeset code,
 .md-typeset pre {
   font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+/* Horizontal rules */
+.md-typeset hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
 }
 
 /* ==========================================================================
-   LIST FIXES
+   LISTS
    ========================================================================== */
 
-/* Fix bullet list line breaking - ensure list items display on separate lines */
-ul li,
-ol li,
-.md-typeset ul li,
-.md-typeset ol li {
-  display: list-item !important;
-}
-
-ul,
-ol,
 .md-typeset ul,
 .md-typeset ol {
-  display: block !important;
+  display: block;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Ensure proper list styling */
 .md-typeset ul {
   list-style-type: disc;
-  margin-left: 1.25em;
 }
 
 .md-typeset ol {
   list-style-type: decimal;
-  margin-left: 1.25em;
 }
 
-.md-typeset ul li,
-.md-typeset ol li {
-  margin-bottom: 0.5em;
+.md-typeset li {
+  display: list-item;
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
 }
 
-/* Nested lists */
-.md-typeset ul ul,
-.md-typeset ol ul {
+.md-typeset ul ul {
   list-style-type: circle;
+  margin-top: 0.4rem;
 }
 
-.md-typeset ul ul ul,
-.md-typeset ol ul ul {
+.md-typeset ul ul ul {
   list-style-type: square;
+}
+
+/* ==========================================================================
+   TABLES
+   ========================================================================== */
+
+.md-typeset table {
+  font-size: 0.95rem;
+  margin: 1.5rem 0;
+}
+
+.md-typeset th {
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
+.md-typeset a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.md-typeset a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* ==========================================================================
+   CONTENT WIDTH
+   ========================================================================== */
+
+.md-content {
+  max-width: 50rem;
 }
