@@ -8,15 +8,40 @@
 
 Substrate radicals encode **what domain receives the operation**. The grain field, the water, the heart, the value—these are the materials that operators transform. Understanding the substrate tells you what KIND of transformation is happening.
 
+### Radical Breakdown Convention
+
+Throughout this lexicon, radicals are decomposed to their pictographic origins:
+
+```
+Character (pinyin) = Component₁ (pinyin) + Component₂ (pinyin)
+                   = pictographic meaning + pictographic meaning
+                   = combined structural meaning
+```
+
+Example:
+```
+治 (zhì) = 氵 (shuǐ) + 台 (tái)
+         = water + platform
+
+台 (tái) = 厶 (sī) + 口 (kǒu)
+         = coiled/contained + opening
+         = stable-above + passage-below
+         = aqueduct cross-section
+
+∴ 治 = water flowing through aqueduct = governance through aligned infrastructure
+```
+
 ---
 
 ## 禾 (hé) — The Grain Substrate
+
+**Pictographic origin:** 禾 depicts a grain plant with drooping head—millet or rice ready for harvest.
 
 **Domain:** Discrete, countable, harvestable resources. Standing field. Distributed potential.
 
 **Geometric Principle:** The undifferentiated field awaiting arc-operation. Infinite stalks, each distinct, yet forming unified expanse. What exists before the scythe sweeps.
 
-**Key insight:** 禾 represents what CAN be harvested but hasn't been yet. It's potential held in distributed form.
+**Key insight:** 禾 (hé) represents what CAN be harvested but hasn't been yet. It's potential held in distributed form.
 
 ### Characters Built on 禾
 
@@ -33,35 +58,73 @@ Substrate radicals encode **what domain receives the operation**. The grain fiel
 | **委** | wěi | 女 (woman) | Grain + woman → entrust/delegate | — | — |
 | **香** | xiāng | 日 (sun) | Grain + sun → fragrance | — | — |
 
+### Full Radical Breakdowns
+
+**利 (lì) — Scythe harvest:**
+```
+利 (lì) = 禾 (hé) + 刂 (dāo)
+        = grain + blade
+
+刂/刀 (dāo) = pictograph of blade with handle
+            = curved stroke (blade) + vertical with hook (two-handed grip)
+            = complete scythe geometry: blade ⊥ handle
+
+∴ 利 = scythe arcing through grain field = π-operation = harvest-capacity
+```
+
+**和 (hé) — Harmonious distribution:**
+```
+和 (hé) = 禾 (hé) + 口 (kǒu)
+        = grain + mouth/opening
+
+口 (kǒu) = pictograph of open mouth
+
+∴ 和 = grain distributed through openings = harmony through sharing
+```
+
+**積 (jī) — Accumulated store:**
+```
+積 (jī) = 禾 (hé) + 責 (zé)
+        = grain + burden/obligation
+
+責 (zé) = 朿 (cì, thorns) + 貝 (bèi, value)
+        = thorns + shell/value
+        = obligation that pricks
+
+∴ 積 = grain under obligation = accumulated burden = what 聖人不積 warns against
+```
+
 ### Pattern Analysis
 
-**When 禾 receives cutting operator (刂):**
-- 利: The scythe sweeps, the grain falls, paths are cut through the field
+**When 禾 (hé) receives cutting operator 刂 (dāo):**
+- 利 (lì): The scythe sweeps, the grain falls, paths are cut through the field
 - This is the π-operation—productive transformation through arc
 
-**When 禾 receives distribution operator (口):**
-- 和: Grain flows through mouths, harmony emerges from distribution
+**When 禾 (hé) receives distribution operator 口 (kǒu):**
+- 和 (hé): Grain flows through mouths, harmony emerges from distribution
 - This is sharing—not cutting but allocating
 
-**When 禾 receives burden/obligation (責):**
-- 積: Grain becomes accumulated store, burden of holdings
-- This is 不積 (non-accumulation) principle's target
+**When 禾 (hé) receives burden/obligation 責 (zé):**
+- 積 (jī): Grain becomes accumulated store, burden of holdings
+- This is 不積 (bù jī, non-accumulation) principle's target
 
-**When 禾 receives privacy (厶):**
-- 私: Grain becomes personal portion, separated from common
+**When 禾 (hé) receives privacy 厶 (sī):**
+- 私 (sī): Grain becomes personal portion, separated from common
 - This is what Chapter 7 warns against (self-interested hoarding)
 
-**Structural insight:** 禾 substrate characters cluster around harvest, distribution, and accumulation—the fundamental economic operations. The text's position: 利 (arc-harvest) good; 積 (accumulation) problematic; 和 (distribution) optimal.
+**Structural insight:** 禾 (hé) substrate characters cluster around harvest, distribution, and accumulation—the fundamental economic operations. The text's position: 利 (lì, arc-harvest) good; 積 (jī, accumulation) problematic; 和 (hé, distribution) optimal.
 
 ---
 
 ## 氵 (shuǐ) — The Water Substrate
 
+**Pictographic origin:** 氵 is the three-stroke form of 水 (shuǐ), depicting flowing water—the middle stroke is the main current, outer strokes are splashing/eddies.
+
 **Domain:** Continuous, flowing, transforming medium. What seeks lowest path naturally.
 
-**Geometric Principle:** Does the π-operation without effort. Water IS 無為 made physical—it arcs around obstacles, finds paths, transforms without forcing.
+**Geometric Principle:** Does the π-operation without effort. Water IS 無為 (wú wéi) made physical—it arcs around obstacles, finds paths, transforms without forcing.
 
-**Key insight:** 氵 represents continuous potential in motion. Unlike 禾 (discrete, standing), water is already flowing, already finding path.
+**Key insight:** 氵 (shuǐ) represents continuous potential in motion. Unlike 禾 (hé, discrete, standing), water is already flowing, already finding path.
 
 ### Characters Built on 氵
 
@@ -83,37 +146,76 @@ Substrate radicals encode **what domain receives the operation**. The grain fiel
 | **漸** | jiàn | 斬 (cut) | Water cutting → gradual | — | — |
 | **溪** | xī | 奚 (servant) | Water serving → mountain stream | — | — |
 
+### Full Radical Breakdowns
+
+**治 (zhì) — Governance through infrastructure:**
+```
+治 (zhì) = 氵 (shuǐ) + 台 (tái)
+         = water + platform
+
+台 (tái) = 厶 (sī) + 口 (kǒu)
+         = coiled/contained + opening
+
+厶 (sī) = pictograph of coiled/private form (silkworm? enclosure?)
+口 (kǒu) = pictograph of open mouth
+
+台 = stable-top (厶) over passage-below (口) = aqueduct cross-section
+
+∴ 治 = water flowing through aqueduct = governance as aligned infrastructure
+      = build correctly, let gravity work
+```
+
+**淵 (yuān) — Generative abyss:**
+```
+淵 (yuān) = 氵 (shuǐ) + 囦 (yuān, archaic "abyss")
+          = water + deep enclosure
+
+∴ 淵 = water in deep enclosure = the source-depth (Ch.4: 淵兮似萬物之宗)
+```
+
+**沖 (chōng) — Hollow center:**
+```
+沖 (chōng) = 氵 (shuǐ) + 中 (zhōng)
+           = water + center
+
+中 (zhōng) = pictograph of arrow through center of target
+
+∴ 沖 = water at center = hollow, concentrated flow = 道沖 (dào chōng, pattern is hollow)
+```
+
 ### Pattern Analysis
 
-**When 氵 receives depth operators:**
-- 淵: Deep water → the generative abyss (Chapter 4: 淵兮似萬物之宗)
-- 深: Probed water → depth itself
+**When 氵 (shuǐ) receives depth operators:**
+- 淵 (yuān): Deep water → the generative abyss (Chapter 4: 淵兮似萬物之宗, yuān xī sì wàn wù zhī zōng)
+- 深 (shēn): Probed water → depth itself
 - These are source-characters, pointing to the generative void
 
-**When 氵 receives centering operator (中):**
-- 沖: Water at center → hollow, concentrated flow
-- This IS Chapter 4's 道沖 (pattern is hollow)
+**When 氵 (shuǐ) receives centering operator 中 (zhōng):**
+- 沖 (chōng): Water at center → hollow, concentrated flow
+- This IS Chapter 4's 道沖 (dào chōng, pattern is hollow)
 
-**When 氵 receives clarity operators:**
-- 清: Clarified → transparent, settled
-- 渾: Mingled → murky, undifferentiated
-- These are observation-state characters (Chapter 15: 孰能濁以靜之徐清)
+**When 氵 (shuǐ) receives clarity operators:**
+- 清 (qīng): Clarified → transparent, settled
+- 渾 (hún): Mingled → murky, undifferentiated
+- These are observation-state characters (Chapter 15: 孰能濁以靜之徐清, shú néng zhuó yǐ jìng zhī xú qīng)
 
-**When 氵 receives channeling operator (台):**
-- 治: Water channeled → governance
-- This is 無為 governance—water organizes by finding level, not by forcing
+**When 氵 (shuǐ) receives channeling operator 台 (tái):**
+- 治 (zhì): Water channeled → governance
+- This is 無為 (wú wéi) governance—water organizes by finding level, not by forcing
 
-**Structural insight:** 氵 characters form a complete vocabulary for the Dao De Jing's teaching on flow, depth, clarity, and self-organization. Water doesn't appear as metaphor—water IS the demonstration.
+**Structural insight:** 氵 (shuǐ) characters form a complete vocabulary for the Dao De Jing's (道德經, dào dé jīng) teaching on flow, depth, clarity, and self-organization. Water doesn't appear as metaphor—water IS the demonstration.
 
 ---
 
 ## 心 (xīn) — The Heart/Mind Substrate
 
+**Pictographic origin:** 心 depicts the heart organ with chambers/vessels—the physical heart understood as seat of mind and intention.
+
 **Domain:** Internal states, cognitive dynamics, emotional orientation, intentionality.
 
-**Geometric Principle:** What happens inside the observer. The internal field where alignment (德) or misalignment occurs.
+**Geometric Principle:** What happens inside the observer. The internal field where alignment 德 (dé) or misalignment occurs.
 
-**Key insight:** 心 substrate determines quality of engagement with pattern. The heart can align (德), can constant (恆/常), can expand (慈), or can harden.
+**Key insight:** 心 (xīn) substrate determines quality of engagement with pattern. The heart can align 德 (dé), can constant 恆/常 (héng/cháng), can expand 慈 (cí), or can harden.
 
 ### Characters Built on 心
 
@@ -132,35 +234,74 @@ Substrate radicals encode **what domain receives the operation**. The grain fiel
 | **情** | qíng | 青 (clear) | Heart clarified → emotion/situation | — | — |
 | **惟** | wéi | 隹 (bird) | Heart + bird → only/consider | 21 | ✓ |
 
+### Full Radical Breakdowns
+
+**德 (dé) — Alignment with pattern:**
+```
+德 (dé) = 彳 (chì) + 直 (zhí) + 心 (xīn)
+        = stepping + straight + heart
+
+彳 (chì) = pictograph of left step/walking
+直 (zhí) = 十 (shí, ten) + 目 (mù, eye) + 乚 (hook)
+         = eye looking straight ahead
+心 (xīn) = pictograph of heart
+
+∴ 德 = heart stepping straight = alignment with pattern = NOT "virtue"
+```
+
+**恆 (héng) — Frame-independent constancy:**
+```
+恆 (héng) = 忄 (xīn variant) + 亘 (gèn)
+          = heart + spanning/stretching across
+
+亘 (gèn) = 二 (èr, two) + 日 (rì, sun)
+         = sun spanning between two bounds = stretching across time
+
+∴ 恆 = heart spanning frames = constant across contexts = 常 (cháng)
+```
+
+**慈 (cí) — Expansive care:**
+```
+慈 (cí) = 茲 (zī) + 心 (xīn)
+        = multiplying + heart
+
+茲 (zī) = 艹 (cǎo, grass) + 幺幺 (yāo yāo, double threads)
+        = grass multiplying = proliferation
+
+∴ 慈 = heart multiplied = expansive care (one of Three Treasures, Ch.67)
+```
+
 ### Pattern Analysis
 
-**When 心 receives stepping operator (彳+直):**
-- 德: Heart steps straight → alignment with pattern
-- This is the key character: 德 isn't virtue but structural alignment
+**When 心 (xīn) receives stepping operator 彳+直 (chì + zhí):**
+- 德 (dé): Heart steps straight → alignment with pattern
+- This is the key character: 德 (dé) isn't virtue but structural alignment
 
-**When 心 receives spanning operator (亘):**
-- 恆/常: Heart spans frames → frame-independent constancy
-- This is the 常 that can't be named (常道, 常名)
+**When 心 (xīn) receives spanning operator 亘 (gèn):**
+- 恆/常 (héng/cháng): Heart spans frames → frame-independent constancy
+- This is the 常 (cháng) that can't be named (常道 cháng dào, 常名 cháng míng)
 
-**When 心 receives multiplication (茲):**
-- 慈: Heart multiplied → expansive care (not sentimental but structural)
+**When 心 (xīn) receives multiplication 茲 (zī):**
+- 慈 (cí): Heart multiplied → expansive care (not sentimental but structural)
 - One of the Three Treasures (Chapter 67)
 
-**When 心 receives truth operator (真):**
-- 慎: Heart held true → careful, cautious
-- Chapter 64: 慎終若始 (careful-end as careful-beginning)
+**When 心 (xīn) receives truth operator 真 (zhēn):**
+- 慎 (shèn): Heart held true → careful, cautious
+- Chapter 64: 慎終若始 (shèn zhōng ruò shǐ, careful-end as careful-beginning)
 
-**Structural insight:** 心 characters encode the OBSERVER'S state. Whether the heart is aligned (德), constant (恆), careful (慎), or blocked (悶) determines how pattern is perceived and engaged. The text isn't about feelings—it's about observer-configuration.
+**Structural insight:** 心 (xīn) characters encode the OBSERVER'S state. Whether the heart is aligned 德 (dé), constant 恆 (héng), careful 慎 (shèn), or blocked 悶 (mèn) determines how pattern is perceived and engaged. The text isn't about feelings—it's about observer-configuration.
 
 ---
 
 ## 貝 (bèi) — The Value/Exchange Substrate
 
+**Pictographic origin:** 貝 depicts a cowrie shell—the original currency in ancient China. The shell's form is still visible: two halves with ridged interior.
+
 **Domain:** Worth, exchange, trade, what can be measured against other things.
 
 **Geometric Principle:** What has agreed equivalence. The shell (original currency) marks stable exchange value.
 
-**Key insight:** 貝 substrate is about commensurability—what can be weighed, traded, compared. When operators act on value, they produce social/economic structures.
+**Key insight:** 貝 (bèi) substrate is about commensurability—what can be weighed, traded, compared. When operators act on value, they produce social/economic structures.
 
 ### Characters Built on 貝
 
@@ -177,36 +318,51 @@ Substrate radicals encode **what domain receives the operation**. The grain fiel
 | **費** | fèi | 弗 (not) | Value negated → expense/waste | — | — |
 | **資** | zī | 次 (order) | Value ordered → resources | — | — |
 
+### Full Radical Breakdowns
+
+**則 (zé) — Consequent pattern:**
+```
+則 (zé) = 貝 (bèi) + 刂 (dāo)
+        = shell/value + blade
+
+刂 (dāo) = pictograph of blade
+
+∴ 則 = blade cuts through value = consequent pattern emerges = rule/law
+     = how social rules emerge: value-distinctions cut into pattern
+```
+
 ### Pattern Analysis
 
-**When 貝 receives cutting operator (刂):**
-- 則: Value cut → consequent pattern, rule established
+**When 貝 (bèi) receives cutting operator 刂 (dāo):**
+- 則 (zé): Value cut → consequent pattern, rule established
 - This is how social rules emerge: value-distinctions cut into pattern
 
-**When 貝 receives elevation/diminishment:**
-- 貴: Value elevated → precious (what's highly valued)
-- 賤: Value diminished → cheap (what's lowly valued)
-- Chapter 56: 不可得而貴，不可得而賤 (cannot be made precious or cheap)
+**When 貝 (bèi) receives elevation/diminishment:**
+- 貴 (guì): Value elevated → precious (what's highly valued)
+- 賤 (jiàn): Value diminished → cheap (what's lowly valued)
+- Chapter 56: 不可得而貴，不可得而賤 (bù kě dé ér guì, bù kě dé ér jiàn — cannot be made precious or cheap)
 
-**When 貝 receives transformation (化):**
-- 貨: Value transformed → goods, merchandise
-- Chapter 12: 難得之貨 (hard-to-get goods) cause people to harm themselves
+**When 貝 (bèi) receives transformation 化 (huà):**
+- 貨 (huò): Value transformed → goods, merchandise
+- Chapter 12: 難得之貨 (nán dé zhī huò, hard-to-get goods) cause people to harm themselves
 
-**When 貝 receives weapons (戎):**
-- 賊: Value weaponized → thief
-- Chapter 19: 盜賊無有 (robbers and thieves will not exist)
+**When 貝 (bèi) receives weapons 戎 (róng):**
+- 賊 (zéi): Value weaponized → thief
+- Chapter 19: 盜賊無有 (dào zéi wú yǒu, robbers and thieves will not exist)
 
-**Structural insight:** 貝 characters encode the VALUE SYSTEM—what society prizes, trades, hoards. The text's position: 貴 and 賤 are frame-dependent (玄同 is beyond them); 貨 (goods-accumulation) distorts; 賊 (value-theft) follows from scarcity-creation.
+**Structural insight:** 貝 (bèi) characters encode the VALUE SYSTEM—what society prizes, trades, hoards. The text's position: 貴 (guì) and 賤 (jiàn) are frame-dependent (玄同 xuán tóng is beyond them); 貨 (huò, goods-accumulation) distorts; 賊 (zéi, value-theft) follows from scarcity-creation.
 
 ---
 
 ## 木 (mù) — The Wood/Tree Substrate
 
+**Pictographic origin:** 木 depicts a tree with trunk (vertical), branches (upper strokes), and roots (lower strokes). The complete organic structure in one character.
+
 **Domain:** Organic structure, growth patterns, material that was once alive.
 
 **Geometric Principle:** Demonstrates growth rings—the cambium principle. Living structure that records time through continuous boundary operation.
 
-**Key insight:** 木 represents organic pattern—what grows, what has structure, what demonstrates living geometry.
+**Key insight:** 木 (mù) represents organic pattern—what grows, what has structure, what demonstrates living geometry.
 
 ### Characters Built on 木
 
@@ -223,36 +379,67 @@ Substrate radicals encode **what domain receives the operation**. The grain fiel
 | **枝** | zhī | 支 (branch) | Wood branched → limb | — | — |
 | **樸** | pǔ | 菐 (humble) | Wood humbled → uncarved simplicity | (variant of 朴) | ✓ |
 
+### Full Radical Breakdowns
+
+**本 (běn) — Root/Origin:**
+```
+本 (běn) = 木 (mù) + 一 (yī, one stroke at base)
+         = tree + mark at root
+
+∴ 本 = the root of the tree = origin, source, foundation
+```
+
+**末 (mò) — Tip/End:**
+```
+末 (mò) = 木 (mù) + 一 (yī, one stroke at top)
+         = tree + mark at tip
+
+∴ 末 = the tip of the tree = end, surface, periphery
+```
+
+**朴/樸 (pǔ) — Uncarved block:**
+```
+朴 (pǔ) = 木 (mù) + 卜 (bǔ)
+        = wood + divination/simple
+
+卜 (bǔ) = pictograph of crack pattern in oracle bone divination
+
+∴ 朴 = wood in natural state = uncarved block = simplicity before distinction
+     = 道 (dào) before it's cut into 名 (míng)
+```
+
 ### Pattern Analysis
 
-**When 木 receives root/tip marking:**
-- 本: Root → origin, source, what grounds
-- 末: Tip → end, surface, what extends
-- Chapter 38: 忠信之薄而亂之首 / 前識者，道之華而愚之始 (substance/display, root/flower)
+**When 木 (mù) receives root/tip marking:**
+- 本 (běn): Root → origin, source, what grounds
+- 末 (mò): Tip → end, surface, what extends
+- Chapter 38: substance/display, root/flower
 
-**When 木 receives uncarved state (卜):**
-- 朴/樸: Uncarved block → simplicity before distinction
-- This is 道 before it's cut into 名—potential before articulation
+**When 木 (mù) receives uncarved state 卜 (bǔ):**
+- 朴/樸 (pǔ): Uncarved block → simplicity before distinction
+- This is 道 (dào) before it's cut into 名 (míng)—potential before articulation
 
-**When 木 receives limit operator (艮):**
-- 根: Root → what anchors, what grounds
-- Chapter 16: 歸根曰靜 (returning to root is called stillness)
+**When 木 (mù) receives limit operator 艮 (gèn):**
+- 根 (gēn): Root → what anchors, what grounds
+- Chapter 16: 歸根曰靜 (guī gēn yuē jìng, returning to root is called stillness)
 
-**When 木 receives eye operator (目):**
-- 相: Wood + eye → mutual seeing/each other
-- The 相X operations (相生, 相成, etc.) build on this root
+**When 木 (mù) receives eye operator 目 (mù):**
+- 相 (xiāng): Wood + eye → mutual seeing/each other
+- The 相X (xiāng) operations (相生 xiāng shēng, 相成 xiāng chéng, etc.) build on this root
 
-**Structural insight:** 木 characters encode ORGANIC STRUCTURE—roots, tips, growth, simplicity. The 朴 (uncarved block) is particularly important: it's pattern before cutting, potential before articulation. The text keeps returning to 朴 as the state before distinctions divide.
+**Structural insight:** 木 (mù) characters encode ORGANIC STRUCTURE—roots, tips, growth, simplicity. The 朴 (pǔ, uncarved block) is particularly important: it's pattern before cutting, potential before articulation. The text keeps returning to 朴 (pǔ) as the state before distinctions divide.
 
 ---
 
 ## 土 (tǔ) — The Earth/Ground Substrate
 
+**Pictographic origin:** 土 depicts a mound of earth or altar—the horizontal stroke is ground level, the vertical stroke represents earth rising up, the lower stroke is the base/foundation.
+
 **Domain:** Ground, soil, territory, what provides foundation.
 
 **Geometric Principle:** The substrate beneath substrates. What everything else stands on.
 
-**Key insight:** 土 represents grounding, foundation, place. Not flowing like water, not standing like grain, but the base that holds.
+**Key insight:** 土 (tǔ) represents grounding, foundation, place. Not flowing like water 水 (shuǐ), not standing like grain 禾 (hé), but the base that holds.
 
 ### Characters Built on 土
 
@@ -268,38 +455,61 @@ Substrate radicals encode **what domain receives the operation**. The grain fiel
 | **堂** | táng | 尚 (esteem) | Earth esteemed → hall | — | — |
 | **墓** | mù | 莫 (none) | Earth silenced → grave | — | — |
 
+### Full Radical Breakdowns
+
+**地 (dì) — Ground/Territory:**
+```
+地 (dì) = 土 (tǔ) + 也 (yě)
+        = earth + also/extending
+
+也 (yě) = pictograph possibly of a serpent or extending form
+
+∴ 地 = earth extending = ground, territory
+```
+
+**堅 (jiān) — Solid/Hard:**
+```
+堅 (jiān) = 臤 (qiān) + 土 (tǔ)
+          = firm/stern + earth
+
+臤 (qiān) = 臣 (chén, minister) + 又 (yòu, hand)
+          = minister controlled by hand = firmness
+
+∴ 堅 = firmed earth = solid, hard = what Chapter 76 warns against
+```
+
 ### Pattern Analysis
 
-**When 土 receives extension (也, 延):**
-- 地: Earth extended → ground, territory
-- 埏: Earth extended → molding (Chapter 11's potter)
+**When 土 (tǔ) receives extension 也 (yě), 延 (yán):**
+- 地 (dì): Earth extended → ground, territory
+- 埏 (shān): Earth extended → molding (Chapter 11's potter)
 
-**When 土 receives firmness (臤):**
-- 堅: Earth firmed → solid, hard
-- Chapter 76: 堅強者死之徒 (the hard and stiff are death's followers)
+**When 土 (tǔ) receives firmness 臤 (qiān):**
+- 堅 (jiān): Earth firmed → solid, hard
+- Chapter 76: 堅強者死之徒 (jiān qiáng zhě sǐ zhī tú, the hard and stiff are death's followers)
 
-**When 土 receives covering/sealing:**
-- 塞: Earth sealed → blocked
-- Chapter 56: 塞其兌，閉其門 (block openings, close gates)
+**When 土 (tǔ) receives covering/sealing:**
+- 塞 (sāi): Earth sealed → blocked
+- Chapter 56: 塞其兌，閉其門 (sāi qí duì, bì qí mén — block openings, close gates)
 
-**When 土 receives evening (匀):**
-- 均: Earth evened → equal, uniform
-- Chapter 57: 民自均 (people self-equalize)
+**When 土 (tǔ) receives evening 匀 (yún):**
+- 均 (jūn): Earth evened → equal, uniform
+- Chapter 57: 民自均 (mín zì jūn, people self-equalize)
 
-**Structural insight:** 土 characters encode FOUNDATION and SOLIDITY. The text's ambivalence: 地 (ground) is necessary foundation; but 堅 (hardness) leads to death. The earth that yields (allows molding, allows blocking) works; the earth that rigidifies fails.
+**Structural insight:** 土 (tǔ) characters encode FOUNDATION and SOLIDITY. The text's ambivalence: 地 (dì, ground) is necessary foundation; but 堅 (jiān, hardness) leads to death. The earth that yields (allows molding, allows blocking) works; the earth that rigidifies fails.
 
 ---
 
 ## Summary: The Substrate Grammar
 
-| Substrate | Domain | What It Awaits | Key Transformation |
-|-----------|--------|----------------|-------------------|
-| 禾 (grain) | Discrete resources | Arc-operation | 利 (harvest through π-sweep) |
-| 氵 (water) | Continuous flow | Self-finds path | 治 (governance through natural channeling) |
-| 心 (heart) | Internal state | Alignment | 德 (stepping straight with pattern) |
-| 貝 (value) | Exchange worth | Cutting into rules | 則 (consequent pattern) |
-| 木 (wood) | Organic structure | Grounding | 朴 (uncarved potential) |
-| 土 (earth) | Foundation | Yielding | 均 (self-equalizing) |
+| Substrate | Pinyin | Domain | What It Awaits | Key Transformation |
+|-----------|--------|--------|----------------|-------------------|
+| 禾 | hé | Discrete resources | Arc-operation | 利 lì (harvest through π-sweep) |
+| 氵 | shuǐ | Continuous flow | Self-finds path | 治 zhì (governance through natural channeling) |
+| 心 | xīn | Internal state | Alignment | 德 dé (stepping straight with pattern) |
+| 貝 | bèi | Exchange worth | Cutting into rules | 則 zé (consequent pattern) |
+| 木 | mù | Organic structure | Grounding | 朴 pǔ (uncarved potential) |
+| 土 | tǔ | Foundation | Yielding | 均 jūn (self-equalizing) |
 
 ### The Prediction Test
 
@@ -308,19 +518,19 @@ If this substrate grammar is real, then:
 2. The substrate should predict what KIND of operation makes sense
 3. Character combinations should be semantically consistent
 
-**Test: What can 刂 (blade) usefully operate on?**
-- 禾 (grain) → 利 (harvest) ✓ makes sense
-- 貝 (value) → 則 (rule) ✓ makes sense
-- 岡 (ridge) → 剛 (rigid) ✓ makes sense (failure mode)
-- 水 (water) → ? (you can't scythe water—and there's no such character)
+**Test: What can 刂 (dāo, blade) usefully operate on?**
+- 禾 (hé, grain) → 利 (lì, harvest) ✓ makes sense
+- 貝 (bèi, value) → 則 (zé, rule) ✓ makes sense
+- 岡 (gāng, ridge) → 剛 (gāng, rigid) ✓ makes sense (failure mode)
+- 水 (shuǐ, water) → ? (you can't scythe water—and there's no such character)
 
 **Prediction confirmed.** The blade operates on what can be arc-cut. Water flows around; it can't be scythed. The character system knows this.
 
-**Test: What can 口 (opening) usefully distribute?**
-- 禾 (grain) → 和 (harmony) ✓ distributed grain
-- 夕 (darkness) → 名 (name) ✓ articulated darkness
-- 矢 (arrow) → 知 (knowing) ✓ targeted articulation
-- 水 (water) → ? (water doesn't need mouth to flow—it finds path naturally)
+**Test: What can 口 (kǒu, opening) usefully distribute?**
+- 禾 (hé, grain) → 和 (hé, harmony) ✓ distributed grain
+- 夕 (xī, darkness) → 名 (míng, name) ✓ articulated darkness
+- 矢 (shǐ, arrow) → 知 (zhī, knowing) ✓ targeted articulation
+- 水 (shuǐ, water) → ? (water doesn't need mouth to flow—it finds path naturally)
 
 **Prediction confirmed.** The opening operates on what needs passage-creation. Water is already flowing.
 

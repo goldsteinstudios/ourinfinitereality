@@ -65,6 +65,7 @@ copyright: >
 nav:
   - Home: index.md
   - Recently Updated: translations/meta/recently_updated.md
+  - Selected Essays: translations/selected_essays.md
   - Translations:
     - Overview: translations/README.md
     - Chapters:

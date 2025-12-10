@@ -6,6 +6,9 @@
 
 | Document | Last Updated |
 |----------|--------------|
+| [Selected Essays](/translations/selected_essays/) | 2025-12-09 |
+| [Part I: Substrate Families](/translations/lexicon/01_substrate_families/) | 2025-12-09 |
+| [Dao De Jing Structural Lexicon](/translations/lexicon/00_lexicon_introduction/) | 2025-12-09 |
 | [The Laozi: What Our Ancient Ancestors Knew](/translations/00_introduction/) | 2025-12-09 |
 | [Framework Synthesis: How the Pieces Fit](/translations/meta/framework_synthesis_2025-12-07/) | 2025-12-09 |
 | [Part VI: Technology Index](/translations/lexicon/06_technology_index/) | 2025-12-09 |
@@ -44,8 +47,6 @@
 | [The Scythe-Not-Knife Distinction](/translations/meta/scythe_not_knife_2025-11-27/) | 2025-11-27 |
 | [Part V: Pinyin Index](/translations/lexicon/05_pinyin_index/) | 2025-11-27 |
 | [Part IV: Concept Index](/translations/lexicon/04_concept_index/) | 2025-11-27 |
-| [Part I: Substrate Families](/translations/lexicon/01_substrate_families/) | 2025-11-27 |
-| [Dao De Jing Structural Lexicon](/translations/lexicon/00_lexicon_introduction/) | 2025-11-27 |
 | [Chapter 81: Trustworthy Words Aren't Beautiful](/translations/chapters/chapter81_2025-11-26/) | 2025-11-27 |
 | [Chapter 78: Nothing Under Heaven Is Softer Than...](/translations/chapters/chapter78_2025-11-26/) | 2025-11-27 |
 | [Chapter 65 — The Law of Subtle Orientation](/translations/chapters/chapter65_2025-11-26/) | 2025-11-27 |
