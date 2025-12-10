@@ -196,17 +196,17 @@ The sword visibly demonstrates the bimetallic technique through its two-color zo
 
 **This is not coincidence.** The Chu cultural sphere was the recipient of Wu-Yue metallurgical technology through conquest and cultural exchange. The same artisans who understood that a blade requires both hard edges and yielding spines to persist were the inheritors and transmitters of the Dao De Jing tradition.
 
-### The Japanese Sword Parallel
+### The 剛/柔 Gradient
 
-The Japanese sword demonstrates the same principle:
+The Wu-Yue bimetallic bronze sword IS the Chapter 76 formula made visible:
 
 | Zone | Property | Function |
 |------|----------|----------|
-| Edge (ha) | Hard (剛) | Cuts, holds sharpness |
-| Spine (mune) | Soft (柔) | Flexes, absorbs shock |
-| Transition (hamon) | Gradient | Visible boundary between states |
+| Edge | Hard (剛) | Cuts, holds sharpness |
+| Spine | Soft (柔) | Flexes, absorbs shock |
+| Transition | Gradient | Visible color boundary between states |
 
-The hamon (the wavy line on a katana) is literally the visible trace of where 剛 becomes 柔.
+The color boundary (red-yellow spine meeting white-yellow edge) is literally the visible trace of where 柔 becomes 剛.
 
 Not either/or. Both, with geometry determining which goes where.
 
@@ -274,7 +274,7 @@ The forge knows:
 ## Questions for Further Investigation
 
 1. Does 火 family contain complete combustion grammar?
-2. Is there a character for the *transition zone* itself (the hamon)?
+2. Is there a character for the *transition zone* itself (the color boundary)?
 3. What encodes the *temperature* of phase change vs the rate?
 4. How do forge characters interact with other radical families?
 

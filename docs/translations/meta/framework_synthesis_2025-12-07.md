@@ -209,10 +209,14 @@ Constraint shapes void into function. The spokes don't "benefit" the wheel—the
 The analyzer confirmed:
 
 ```
-利 = 禾 (grain) + 刀 (knife) = path-cutting through field
+利 = 禾 (grain) + 刀 (blade) = scythe arc through field
 ```
 
-This isn't metaphor. 利 is **literally** the paths cut through substrate—the parametric constraints that shape possibility into navigable structure.
+The 刀 radical encodes the complete scythe geometry: curved blade at top, two-handed handle (vertical + hook), orthogonal relationship between them. This isn't metaphor. 利 is **literally** the scythe sweep—the arc operation that cuts paths through substrate.
+
+**Knife vs Scythe = 為 vs 無為:**
+- Knife: linear push, one stalk at a time, exhausting (為)
+- Scythe: arc sweep, swath per stroke, completing (無為)
 
 ---
 

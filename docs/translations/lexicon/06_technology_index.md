@@ -59,9 +59,9 @@
 - Same boundary crossed at different rates → different results
 - Pure 剛 shatters, pure 柔 useless, gradient succeeds
 - The clay shapes how the operator applies
-- You can't force the hamon
+- You can't force the 剛/柔 boundary
 
-**Readable on the tool:** Hamon, temper color, grain structure, edge geometry
+**Readable on the tool:** Color boundary (剛/柔 gradient), temper color, grain structure, edge geometry
 
 ---
 
@@ -115,11 +115,11 @@
 
 ### 5. Agriculture (禾 Family)
 
-**Core principle:** Harvest timing through π-operation. Cyclical completion.
+**Core principle:** Harvest timing through π-operation. Cyclical completion. Scythe vs knife = 無為 vs 為.
 
 | Key Term | Character | What It Encodes |
 |----------|-----------|-----------------|
-| Harvest-capacity | 利 | Grain + blade = scythe arc |
+| Harvest-capacity | 利 | Grain + blade = scythe arc (NOT knife cut) |
 | Harmony | 和 | Grain + mouth = proper distribution |
 | Autumn/Completion | 秋 | Grain + fire = harvest time |
 | Plant | 種 | Grain + heavy = seed placement |
@@ -127,13 +127,28 @@
 
 **Entry chapters:** 11 (有/無 relationship), 22 (曲則全)
 
+**The 刀 radical encodes the complete scythe:**
+- Curved stroke at top = blade
+- Vertical + hook = two-handed handle
+- Orthogonal relationship = blade ⊥ handle
+
+**Knife vs Scythe = 為 vs 無為:**
+
+| Tool | Motion | Result | DDJ Term |
+|------|--------|--------|----------|
+| Knife | Linear push | One stalk at a time, exhausting | 為 |
+| Scythe | Arc sweep | Swath per stroke, completing | 無為 |
+
+**φ and 無為:** The efficient harvester knows the golden overlap (φ, ~1.618). Each swing overlaps enough to miss no grain, no more. This IS 知足 as geometric optimum. The inefficient harvester over-sweeps (多則惑).
+
 **What the field teaches:**
 - Scythe arcs, doesn't push (π-operation)
 - Timing matters—too early fails, too late fails
 - You can't force ripeness
-- The field wins against linear effort
+- The field wins against linear (knife) effort
+- 無為 = scythe-action, not "non-action"
 
-**Readable on the tool:** Scythe curve, sickle angle, seed drill spacing, harvest timing markers
+**Readable on the tool:** Scythe curve, blade-handle angle (orthogonal), step overlap ratio (φ), harvest timing markers
 
 ---
 

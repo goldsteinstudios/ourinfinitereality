@@ -113,21 +113,21 @@ Where clay is thin: rapid cooling. Steel locks into a hard crystalline state. �
 
 Where clay is thick: slow cooling. Steel relaxes into flexible equilibrium. 柔 (róu)—yielding.
 
-And at the boundary—where the clay gradient transitions—something beautiful appears: the *hamon*. That wavy line on a Japanese sword. The visible record of where hard becomes soft.
+And at the boundary—where the alloy composition transitions—something beautiful appears: a visible color gradient. The red-yellow spine meeting the white-yellow edge. The visible record of where 柔 becomes 剛.
 
-The hamon IS Chapter 76 written in steel.
+This color boundary IS Chapter 76 written in bronze.
 
-The smith was reading the Laozi every time they applied clay. And the blade was writing it every time it emerged from water.
+The Wu-Yue smiths were reading the Laozi every time they designed the two-casting sequence. And the blade was writing it every time it emerged from the mold.
 
 ---
 
-## You Can't Force the Hamon
+## You Can't Force the Boundary
 
 Here's the thing the smith knows that we forgot:
 
-You can't force the hamon. You can't dictate exactly where the line will form. You control the clay mixture, the pattern, the water temperature, the timing—you create *conditions*—and then you let go.
+You can't force the 剛/柔 boundary. You can't dictate exactly where the transition will form. You control the alloy ratios, the casting sequence, the cooling rate—you create *conditions*—and then you let go.
 
-The steel does what steel does. The crystalline transformation follows physics, not intention. The hamon emerges where it emerges.
+The metal does what metal does. The crystalline transformation follows physics, not intention. The boundary emerges where it emerges.
 
 That's 無為 (wú wéi).
 
