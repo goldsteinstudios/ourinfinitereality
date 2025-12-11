@@ -1,10 +1,10 @@
 # ============================================
-# OUR INFINITE REALITY - Simplified Navigation
+# OUR INFINITE REALITY - Six Branches
 # ============================================
 #
-# Design principle: Four doors, minimal nesting.
-# The landing page is the threshold; this is the depth.
-# Progressive disclosure - don't show everything at once.
+# Design principle: Six branches from a common center.
+# Each shows the same pattern from a different angle.
+# Follow any branch far enough and find the same shape.
 #
 # ============================================
 
@@ -24,25 +24,12 @@ theme:
     text: Inter
     code: JetBrains Mono
   features:
-    # DISABLED - we don't want tabs, they duplicate sidebar
-    # - navigation.tabs
-
-    # Keep these for usability
     - navigation.top
     - search.suggest
     - content.code.copy
-
-    # DISABLED - we want collapsed by default
-    # - navigation.expand
-
-    # This makes clicking a section go to its index page
     - navigation.indexes
-
   icon:
     repo: fontawesome/brands/github
-
-  # Hide the "Table of Contents" right sidebar title
-  # (we're hiding the whole sidebar via CSS anyway)
 
 extra_css:
   - stylesheets/extra.css
@@ -57,7 +44,7 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
-      toc_depth: 2  # Limit depth to reduce noise
+      toc_depth: 2
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -70,39 +57,47 @@ plugins:
 copyright: Enter anywhere. The center is everywhere.
 
 # ============================================
-# NAVIGATION - Four Doors, Flat Structure
-# ============================================
-#
-# Each door has an index page that orients the reader.
-# Sub-pages are accessible but not all visible at once.
-# The section index pages do the heavy lifting of organization.
-#
+# NAVIGATION - Six Branches
 # ============================================
 
 nav:
-  - Pattern:
-    - pattern/index.md
-    - Framework: pattern/framework.md
-    - Physics: pattern/physics.md
-    - Biology: pattern/biology.md
-    - Geometry: pattern/geometry.md
-    - Falsification: pattern/falsification.md
+  - Living:
+    - living/index.md
+    - Plants: living/plants.md
+    - Cells: living/cells.md
+    - Ecosystems: living/ecosystems.md
+
+  - Physics:
+    - physics/index.md
+    - Energy: physics/energy.md
+    - Spacetime: physics/spacetime.md
+    - Quantum: physics/quantum.md
+    - Black Holes: physics/black_holes.md
+    - Formalism: physics/formalism.md
 
   - Text:
     - text/index.md
     - Chapters: text/chapters.md
     - Lexicon: text/lexicon.md
-    - Character Algebra: text/characters.md
+    - Characters: text/characters.md
     - Archaeology: text/archaeology.md
 
-  - Practice:
-    - practice/index.md
-    - The Walk: practice/walk.md
-    - Embodied: practice/embodied.md
-    - Breath: practice/breath.md
+  - Geometry:
+    - geometry/index.md
+    - The Sphere: geometry/sphere.md
+    - Recursion: geometry/recursion.md
+    - Falsification: geometry/falsification.md
 
-  - Story:
-    - story/index.md
-    - About: story/about.md
-    - Essays: story/essays.md
-    - Methodology: story/methodology.md
+  - Human:
+    - human/index.md
+    - Consciousness: human/consciousness.md
+    - Practice: human/practice.md
+    - Story: human/story.md
+
+  - Lore:
+    - lore/index.md
+    - Myths: lore/myths.md
+    - Symbols: lore/symbols.md
+
+  - Weave:
+    - weave/index.md
