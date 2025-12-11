@@ -17,6 +17,27 @@ What would disprove RSM. A framework that cannot be wrong cannot be right. Speci
 
 ---
 
+## Physics Synthesis
+
+**The central thesis: Energy is rotation.**
+
+The RSM framework reinterprets fundamental physics through a single lens: reality cannot occupy its own center, so it turns. These five synthesis documents demonstrate the consequences:
+
+### [Physics Hub — Entry Point](./physics_synthesis_hub.md)
+Navigation document explaining how all physics reduces to one question: What is Zₙ (rotation) doing?
+
+| Document | Core Finding |
+|----------|--------------|
+| [1. Energy Conservation](./energy_conservation_synthesis.md) | Energy is the structural turning required to preserve paradox |
+| [2. Time as Recursion](./time_recursion_synthesis.md) | Time is what successful rotation feels like from inside |
+| [3. Black Holes](./black_hole_synthesis.md) | Black holes are what happens when rotation fails |
+| [4. Quantum Measurement](./quantum_measurement_synthesis.md) | Quantum states are rotation before angle selection |
+| [5. Mathematical Formalism](./formalism_synthesis.md) | The Lagrangian IS Wu Wei in mathematical form |
+
+**Key insight:** These are not separate phenomena requiring separate explanations. They are structural consequences of the same geometric necessity.
+
+---
+
 ## Cross-Domain Validation
 
 ### [Academic Parallels (18 Frameworks)](./academic_parallels.md)
@@ -27,17 +48,34 @@ Wheeler, Bohm, Rovelli, Hofstadter, Kauffman, Varela, and 12 more. Where establi
 
 ---
 
-## Technical Documents
+## Character Algebra
 
-These documents analyze specific aspects of the character algebra and structural mappings:
+These documents analyze how Chinese characters encode structural operations via radical composition:
 
-- [Synthesis](../translations/meta/framework_synthesis_2025-12-07.md) — Cross-domain integration
-- [Chapter 25 — Rosetta Stone](../translations/meta/chapter25_rosetta_stone_2025-12-07.md) — The decoder key
-- [Convergent Geometries](../translations/meta/chapter25_convergent_geometries_2025-12-08.md)
+- [Radical Technology Encoding](../translations/meta/radical_technology_encoding_2025-11-27.md) — How radicals function as operators
+- [Scythe Not Knife](../translations/meta/scythe_not_knife_2025-11-27.md) — Key etymological discovery: 利 = arc operation
+- [Forge Transformation Grammar](../translations/meta/forge_transformation_grammar_2025-12-07.md)
+- [Radical Families](../translations/meta/radical_families_grain_blade_2025-12-07.md)
+- [Loom Axiom Identity](../translations/meta/loom_axiom_identity_2025-11-27.md)
+- [Focusing Operation](../translations/meta/focusing_operation_2025-11-27.md)
+
+---
+
+## Governance
+
+How the text encodes governance as channeling, not ruling:
+
 - [Wei Wu Wei vs Wu Wei](../translations/meta/wei_wu_wei_vs_wu_wei_2025-12-08.md)
 - [Governance as Hydraulics](../translations/meta/governance_hydraulic_etymology_2025-12-08.md)
-- [Radical Technology Encoding](../translations/meta/radical_technology_encoding_2025-11-27.md)
-- [Scythe Not Knife](../translations/meta/scythe_not_knife_2025-11-27.md) — Key etymological discovery
+- [Hydraulic Origin of Governance](../translations/meta/hydraulic_origin_of_governance_2025-11-27.md)
+
+---
+
+## Key Documents
+
+- [Chapter 25 — Rosetta Stone](../translations/meta/chapter25_rosetta_stone_2025-12-07.md) — The decoder key
+- [Convergent Geometries](../translations/meta/chapter25_convergent_geometries_2025-12-08.md)
+- [Synthesis](../translations/meta/framework_synthesis_2025-12-07.md) — Cross-domain integration
 
 ---
 
@@ -45,8 +83,10 @@ These documents analyze specific aspects of the character algebra and structural
 
 **For the skeptic:** Start with [Falsification Criteria](./falsification.md), then [Academic Parallels](./academic_parallels.md).
 
-**For the physicist:** Start with [Geometry](./geometry.md), then [RSM Core](../translations/meta/recursive_structural_model.md).
+**For the physicist:** Start with [Physics Hub](./physics_synthesis_hub.md), then work through the five synthesis documents.
 
 **For the biologist:** Start with [Plant Axioms](./plant_axioms.md).
+
+**For the sinologist:** Start with [Radical Technology Encoding](../translations/meta/radical_technology_encoding_2025-11-27.md), then [Scythe Not Knife](../translations/meta/scythe_not_knife_2025-11-27.md).
 
 **For everyone:** See [Reading Paths](../reading_paths.md) for guided routes.

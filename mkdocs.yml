@@ -130,18 +130,27 @@ nav:
     - Falsification Criteria: framework/falsification.md
     - Academic Parallels (18 Frameworks): framework/academic_parallels.md
     - Plant Axioms (Biology): framework/plant_axioms.md
-    - Synthesis: translations/meta/framework_synthesis_2025-12-07.md
+    - Physics Synthesis:
+      - "Hub — Energy Is Rotation": framework/physics_synthesis_hub.md
+      - "1. Energy Conservation": framework/energy_conservation_synthesis.md
+      - "2. Time as Recursion": framework/time_recursion_synthesis.md
+      - "3. Black Holes — Rotation Failure": framework/black_hole_synthesis.md
+      - "4. Quantum Measurement": framework/quantum_measurement_synthesis.md
+      - "5. Mathematical Formalism": framework/formalism_synthesis.md
     - Chapter 25 — Rosetta Stone: translations/meta/chapter25_rosetta_stone_2025-12-07.md
     - Convergent Geometries: translations/meta/chapter25_convergent_geometries_2025-12-08.md
-    - Wei Wu Wei vs Wu Wei: translations/meta/wei_wu_wei_vs_wu_wei_2025-12-08.md
-    - Governance as Hydraulics: translations/meta/governance_hydraulic_etymology_2025-12-08.md
-    - Radical Technology Encoding: translations/meta/radical_technology_encoding_2025-11-27.md
-    - Forge Transformation Grammar: translations/meta/forge_transformation_grammar_2025-12-07.md
-    - Radical Families: translations/meta/radical_families_grain_blade_2025-12-07.md
-    - Scythe Not Knife: translations/meta/scythe_not_knife_2025-11-27.md
-    - Loom Axiom Identity: translations/meta/loom_axiom_identity_2025-11-27.md
-    - Focusing Operation: translations/meta/focusing_operation_2025-11-27.md
-    - Hydraulic Origin of Governance: translations/meta/hydraulic_origin_of_governance_2025-11-27.md
+    - Character Algebra:
+      - Radical Technology Encoding: translations/meta/radical_technology_encoding_2025-11-27.md
+      - Forge Transformation Grammar: translations/meta/forge_transformation_grammar_2025-12-07.md
+      - Radical Families: translations/meta/radical_families_grain_blade_2025-12-07.md
+      - Scythe Not Knife: translations/meta/scythe_not_knife_2025-11-27.md
+      - Loom Axiom Identity: translations/meta/loom_axiom_identity_2025-11-27.md
+      - Focusing Operation: translations/meta/focusing_operation_2025-11-27.md
+    - Governance:
+      - Wei Wu Wei vs Wu Wei: translations/meta/wei_wu_wei_vs_wu_wei_2025-12-08.md
+      - Governance as Hydraulics: translations/meta/governance_hydraulic_etymology_2025-12-08.md
+      - Hydraulic Origin of Governance: translations/meta/hydraulic_origin_of_governance_2025-11-27.md
+    - Synthesis: translations/meta/framework_synthesis_2025-12-07.md
   - Archaeology:
     - Guodian Bundle A: translations/archaeology/guodian_bundle_a_inventory.md
     - Guodian Bundle B: translations/archaeology/guodian_bundle_b_inventory.md
