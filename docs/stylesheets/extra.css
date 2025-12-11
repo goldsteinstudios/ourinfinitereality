@@ -1,101 +1,374 @@
-/* Custom styles for Our Infinite Reality */
+/* ============================================
+   OUR INFINITE REALITY - Custom Theme Overrides
+   ============================================
 
-/* ==========================================================================
-   TYPOGRAPHY
+   Goal: Make MkDocs Material feel like a continuation
+   of the landing page experience - dark, spacious,
+   minimal chrome, progressive disclosure.
 
-   1950s industrial report aesthetic
-   IBM Plex Serif - headers and body (loaded via MkDocs theme)
-   IBM Plex Mono - code blocks
-   ========================================================================== */
+   ============================================ */
 
-/* Font family variables */
+/* --------------------------------------------
+   ROOT VARIABLES - Match landing page
+   -------------------------------------------- */
+
 :root {
-  --font-display: 'IBM Plex Serif', Georgia, serif;
-  --font-body: 'IBM Plex Serif', Georgia, serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --md-primary-fg-color: #0a0a0b;
+  --md-primary-bg-color: #f5f4f2;
+  --md-accent-fg-color: #a89f91;
+
+  /* Dark scheme as default */
+  --md-default-bg-color: #141416;
+  --md-default-fg-color: #e8e6e3;
+  --md-default-fg-color--light: #a0a0a0;
+  --md-default-fg-color--lighter: #6b6b70;
+
+  /* Code blocks */
+  --md-code-bg-color: #1a1a1d;
+  --md-code-fg-color: #e8e6e3;
+
+  /* Typography */
+  --md-text-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --md-code-font: "JetBrains Mono", monospace;
 }
 
-/* Page Title - ALL CAPS, wide tracking */
-.md-typeset h1 {
-  font-family: var(--font-display);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 2rem;
+/* Force dark scheme */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #141416;
+  --md-default-fg-color: #e8e6e3;
+  --md-typeset-color: #e8e6e3;
 }
 
-/* Subheading (h2) - Italic */
-.md-typeset h2 {
-  font-family: var(--font-display);
+/* --------------------------------------------
+   HIDE UNNECESSARY ELEMENTS
+   -------------------------------------------- */
+
+/* Hide right-side table of contents - too much noise */
+.md-sidebar--secondary {
+  display: none;
+}
+
+/* Expand content to fill the space */
+.md-content {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+/* Hide the top navigation tabs - redundant with sidebar */
+.md-tabs {
+  display: none;
+}
+
+/* Hide "Source Archive" repo link in header */
+.md-header__source {
+  display: none;
+}
+
+/* Simplify header */
+.md-header {
+  background: #0a0a0b;
+  box-shadow: none;
+}
+
+/* --------------------------------------------
+   LEFT SIDEBAR - Simplify radically
+   -------------------------------------------- */
+
+/* Sidebar background */
+.md-sidebar--primary {
+  background: #0a0a0b;
+}
+
+.md-sidebar__scrollwrap {
+  background: #0a0a0b;
+}
+
+/* Nav items - more breathing room */
+.md-nav__item {
+  padding: 0.15rem 0;
+}
+
+.md-nav__link {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  transition: color 0.2s ease;
+}
+
+.md-nav__link:hover {
+  color: #e8e6e3;
+}
+
+.md-nav__link--active {
+  color: #e8e6e3;
+  font-weight: 500;
+}
+
+/* Top-level nav items (the four doors) - more prominent */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item > label {
+  font-size: 1rem;
   font-weight: 400;
-  font-style: italic;
-  font-size: 1.25rem;
+  color: #e8e6e3;
+  padding: 0.6rem 0;
   letter-spacing: 0.02em;
 }
 
-/* Section Header (h3) - Medium weight, slight tracking */
-.md-typeset h3 {
-  font-family: var(--font-display);
-  font-weight: 500;
+/* Collapse nested items by default - only show top level */
+.md-nav__item--nested > .md-nav {
+  display: none;
+}
+
+.md-nav__item--nested.md-nav__item--active > .md-nav {
+  display: block;
+}
+
+/* Remove expansion arrows for cleaner look */
+.md-nav__icon {
+  display: none;
+}
+
+/* Indent nested items less aggressively */
+.md-nav--secondary .md-nav__list {
+  padding-left: 0.75rem;
+}
+
+/* --------------------------------------------
+   CONTENT AREA - More breathing room
+   -------------------------------------------- */
+
+.md-content__inner {
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* Main content background */
+.md-main {
+  background: #141416;
+}
+
+.md-main__inner {
+  max-width: 100%;
+}
+
+/* --------------------------------------------
+   TYPOGRAPHY - Match landing page feel
+   -------------------------------------------- */
+
+.md-typeset {
   font-size: 1rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  line-height: 1.75;
+  color: #e8e6e3;
 }
 
-/* Sub-header (h4) - Italic */
-.md-typeset h4 {
-  font-family: var(--font-body);
+.md-typeset h1 {
+  font-size: 2rem;
   font-weight: 400;
-  font-style: italic;
-  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+  color: #f5f4f2;
 }
 
-/* Sub-header (h5) - Italic, smaller */
-.md-typeset h5 {
-  font-family: var(--font-body);
+.md-typeset h2 {
+  font-size: 1.4rem;
   font-weight: 400;
-  font-style: italic;
-  font-size: 0.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f5f4f2;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 0.5rem;
 }
 
-/* Body text */
-.md-typeset,
-.md-typeset p,
-.md-typeset li {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1.7;
+.md-typeset h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: #e8e6e3;
 }
 
-/* Block quotes - Italic, indented */
+.md-typeset p {
+  margin-bottom: 1.25rem;
+}
+
+/* Links */
+.md-typeset a {
+  color: #a89f91;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.md-typeset a:hover {
+  color: #e8e6e3;
+  border-bottom-color: #e8e6e3;
+}
+
+/* Blockquotes - for Chinese text, citations */
 .md-typeset blockquote {
-  font-family: var(--font-body);
-  font-weight: 400;
+  border-left: 2px solid #a89f91;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: #a0a0a0;
   font-style: italic;
-  font-size: 0.85rem;
-  border-left: 2px solid #666;
-  padding-left: 1.5em;
-  margin-left: 0;
-  color: #555;
 }
 
-.md-typeset blockquote p {
-  font-size: inherit;
-  font-style: inherit;
-}
-
-/* Code blocks - Mono */
-.md-typeset code,
+/* Code blocks */
 .md-typeset pre {
-  font-family: var(--font-mono);
+  background: #1a1a1d;
+  border-radius: 4px;
+  padding: 1rem;
 }
 
-/* ==========================================================================
-   LIST FIXES
-   ========================================================================== */
+.md-typeset code {
+  background: #1a1a1d;
+  color: #e8e6e3;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
 
-/* Fix bullet list line breaking - ensure list items display on separate lines */
+/* Tables */
+.md-typeset table:not([class]) {
+  background: #1a1a1d;
+  border: none;
+}
+
+.md-typeset table:not([class]) th {
+  background: #0a0a0b;
+  color: #e8e6e3;
+  font-weight: 500;
+}
+
+.md-typeset table:not([class]) td {
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* --------------------------------------------
+   HORIZONTAL RULE - Breathing space
+   -------------------------------------------- */
+
+.md-typeset hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin: 3rem 0;
+}
+
+/* --------------------------------------------
+   ADMONITIONS - Tone down
+   -------------------------------------------- */
+
+.md-typeset .admonition {
+  background: #1a1a1d;
+  border: none;
+  border-left: 3px solid #a89f91;
+  box-shadow: none;
+}
+
+.md-typeset .admonition-title {
+  background: transparent;
+  font-weight: 500;
+}
+
+/* --------------------------------------------
+   FOOTER - Minimal
+   -------------------------------------------- */
+
+.md-footer {
+  background: #0a0a0b;
+}
+
+.md-footer-meta {
+  background: #0a0a0b;
+}
+
+/* Hide "Made with Material for MkDocs" */
+.md-footer-meta__inner {
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------------------------------------
+   MOBILE ADJUSTMENTS
+   -------------------------------------------- */
+
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    background: #0a0a0b;
+  }
+
+  .md-nav--primary .md-nav__title {
+    background: #0a0a0b;
+  }
+}
+
+/* --------------------------------------------
+   SPECIAL ELEMENTS
+   -------------------------------------------- */
+
+/* Chapter titles with Chinese */
+.chapter-chinese {
+  font-size: 1.4rem;
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+}
+
+/* Pinyin */
+.pinyin {
+  font-style: italic;
+  color: #6b6b70;
+  font-size: 0.9em;
+}
+
+/* Structural notation */
+.structural {
+  font-family: var(--md-code-font);
+  color: #a89f91;
+}
+
+/* Cross-domain markers */
+.domain-physics,
+.domain-biology,
+.domain-text {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.domain-physics { background: rgba(100, 149, 237, 0.2); color: #6495ed; }
+.domain-biology { background: rgba(144, 238, 144, 0.2); color: #90ee90; }
+.domain-text { background: rgba(255, 182, 108, 0.2); color: #ffb66c; }
+
+/* --------------------------------------------
+   BACK TO TOP - Style it
+   -------------------------------------------- */
+
+.md-top {
+  background: #0a0a0b;
+  color: #e8e6e3;
+}
+
+/* --------------------------------------------
+   SEARCH - When visible
+   -------------------------------------------- */
+
+.md-search__form {
+  background: #1a1a1d;
+}
+
+.md-search__input {
+  color: #e8e6e3;
+}
+
+.md-search__input::placeholder {
+  color: #6b6b70;
+}
+
+/* --------------------------------------------
+   LIST FIXES (preserved from original)
+   -------------------------------------------- */
+
 ul li,
 ol li,
 .md-typeset ul li,
@@ -110,7 +383,6 @@ ol,
   display: block !important;
 }
 
-/* Ensure proper list styling */
 .md-typeset ul {
   list-style-type: disc;
   margin-left: 1.25em;
@@ -126,7 +398,6 @@ ol,
   margin-bottom: 0.5em;
 }
 
-/* Nested lists */
 .md-typeset ul ul,
 .md-typeset ol ul {
   list-style-type: circle;
