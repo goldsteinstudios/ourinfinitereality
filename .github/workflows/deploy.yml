@@ -36,6 +36,15 @@
         - name: Build site
           run: mkdocs build
 
+        - name: Swap in custom landing page
+          run: |
+            if [ -f "docs/landing.html" ]; then
+              cp docs/landing.html site/index.html
+              echo "✓ Custom landing page installed"
+            else
+              echo "⚠ No custom landing page found, using MkDocs default"
+            fi
+
         - name: Upload artifact
           uses: actions/upload-pages-artifact@v3
           with:
@@ -51,4 +60,3 @@
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v4
-
