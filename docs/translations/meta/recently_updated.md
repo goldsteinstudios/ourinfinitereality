@@ -6,6 +6,7 @@
 
 | Document | Last Updated |
 |----------|--------------|
+| [可/常: Scale-Recursive Epistemology](/translations/meta/ke_chang_scale_recursion_2025-12-11/) | 2025-12-11 |
 | [Glossary](/translations/glossary/) | 2025-12-09 |
 | [Part VI: Technology Index](/translations/lexicon/06_technology_index/) | 2025-12-09 |
 | [Part V: Pinyin Index](/translations/lexicon/05_pinyin_index/) | 2025-12-09 |
