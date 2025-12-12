@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[Plant Axioms](../../framework/plant_axioms.md)**
+- **[Plant Axioms](../framework/plant_axioms.md)**
   Plants as pattern-aligned systems. Growth as recursive structure.
 
 ---

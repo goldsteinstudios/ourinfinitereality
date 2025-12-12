@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[The Paradox Sphere](../../framework/geometry.md)**
+- **[The Paradox Sphere](../framework/geometry.md)**
 
 ---
 
@@ -24,4 +24,4 @@ The "center" of the sphere — the paradoxical point where all opposites meet �
 
 ## Related
 
-- **[Chapter 25 — Spherical Recursion](../../translations/chapters/chapter25_sphere_proof_2025-12-01.md)** — The ancient text describing this geometry explicitly.
+- **[Chapter 25 — Spherical Recursion](../translations/chapters/chapter25_sphere_proof_2025-12-01.md)** — The ancient text describing this geometry explicitly.

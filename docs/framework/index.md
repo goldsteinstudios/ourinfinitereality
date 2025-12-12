@@ -65,8 +65,6 @@ These documents analyze how Chinese characters encode structural operations via 
 
 How the text encodes governance as channeling, not ruling:
 
-- [Wei Wu Wei vs Wu Wei](../translations/meta/wei_wu_wei_vs_wu_wei_2025-12-08.md)
-- [Governance as Hydraulics](../translations/meta/governance_hydraulic_etymology_2025-12-08.md)
 - [Hydraulic Origin of Governance](../translations/meta/hydraulic_origin_of_governance_2025-11-27.md)
 
 ---
@@ -74,7 +72,6 @@ How the text encodes governance as channeling, not ruling:
 ## Key Documents
 
 - [Chapter 25 — Rosetta Stone](../translations/meta/chapter25_rosetta_stone_2025-12-07.md) — The decoder key
-- [Convergent Geometries](../translations/meta/chapter25_convergent_geometries_2025-12-08.md)
 - [Synthesis](../translations/meta/framework_synthesis_2025-12-07.md) — Cross-domain integration
 
 ---

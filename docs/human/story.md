@@ -6,7 +6,7 @@
 
 ## About
 
-- **[About This Project](../../about.md)** — Who made this, how, why.
+- **[About This Project](../about.md)** — Who made this, how, why.
 
 ---
 
@@ -20,11 +20,11 @@
 
 Deeper explorations:
 
-- **[Why Water?](../../essays/why_water.md)** — Why water is the central metaphor. Not poetry — physics.
+- **[Why Water?](../essays/why_water.md)** — Why water is the central metaphor. Not poetry — physics.
 
-- **[Euler and the Tao](../../essays/euler_tao.md)** — The same structure, different languages.
+- **[Euler and the Tao](../essays/euler_tao.md)** — The same structure, different languages.
 
-- **[Scale Invariance](../../essays/scale_invariance.md)** — Why patterns repeat across scales.
+- **[Scale Invariance](../essays/scale_invariance.md)** — Why patterns repeat across scales.
 
 ---
 

@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[Falsification Criteria](../../framework/falsification.md)**
+- **[Falsification Criteria](../framework/falsification.md)**
   The specific conditions under which this reading would be falsified.
 
 ---

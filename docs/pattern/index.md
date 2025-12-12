@@ -55,7 +55,6 @@ Life as pattern-following.
 Where the threads meet.
 
 - [Framework Synthesis](../translations/meta/framework_synthesis_2025-12-07.md) — Full integration
-- [Convergent Geometries](../translations/meta/chapter25_convergent_geometries_2025-12-08.md) — Multiple approaches, same shape
 - [Chapter 25 as Rosetta Stone](../translations/meta/chapter25_rosetta_stone_2025-12-07.md) — One chapter decoding all domains
 - [可/常 Scale Recursion](../translations/meta/ke_chang_scale_recursion_2025-12-11.md) — Every expressible is an invariant at its own level
 

@@ -14,7 +14,7 @@ The pith — the central core — doesn't fill. It organizes. The tree grows out
 
 ## Core Document
 
-- **[Plant Axioms](../../framework/plant_axioms.md)** — How plant architecture demonstrates recursive structural principles.
+- **[Plant Axioms](../framework/plant_axioms.md)** — How plant architecture demonstrates recursive structural principles.
 
 ---
 

@@ -35,7 +35,7 @@ This section contains structural translations of the chapters we've completed, p
 | 1 | [Coordinate System](../translations/chapters/chapter01_2025-12-07.md) | The 無/有, 常/可, 妙/徼 axes |
 | 11 | [Void and Function](../translations/chapters/chapter11_2025-11-27.md) | Emptiness enables function |
 | 25 | [Spherical Recursion](../translations/chapters/chapter25_sphere_proof_2025-12-01.md) | The 大→逝→遠→反 cycle |
-| 40 | [Oscillation Engine](../translations/chapters/chapter40_clean_2025-12-08.md) | 反者道之動 — reversal is how pattern moves |
+| 40 | [Oscillation Engine](../translations/chapters/chapter40_2025-11-26.md) | 反者道之動 — reversal is how pattern moves |
 | 42 | [Dimensional Proof](../translations/chapters/chapter42_2025-11-26.md) | 道生一，一生二... the generation sequence |
 
 ### Pattern Dynamics
@@ -67,7 +67,7 @@ This section contains structural translations of the chapters we've completed, p
 
 | Ch | Title | What It Documents |
 |----|-------|-------------------|
-| 8 | [Water](../translations/chapters/chapter08_clean_2025-12-08.md) | 上善若水 — water as pattern exemplar |
+| 8 | [Water](../translations/chapters/chapter08_2025-11-26.md) | 上善若水 — water as pattern exemplar |
 | 76 | [Soft and Hard](../translations/chapters/chapter76_2025-11-26.md) | 柔弱 overcomes 剛強 |
 | 78 | [Water Overcomes](../translations/chapters/chapter78_2025-11-26.md) | Why yielding wins |
 

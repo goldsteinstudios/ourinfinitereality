@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[Time as Recursion](../../framework/time_recursion_synthesis.md)**
+- **[Time as Recursion](../framework/time_recursion_synthesis.md)**
 
 ---
 

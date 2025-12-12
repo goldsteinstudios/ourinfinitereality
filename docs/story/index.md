@@ -48,8 +48,6 @@ Pieces written along the way. Different angles on the same pattern.
 
 How the pattern applies to human organization. Not prescription—observation.
 
-- [Wei Wu Wei vs Wu Wei](../translations/meta/wei_wu_wei_vs_wu_wei_2025-12-08.md) — The difference matters
-- [Governance as Hydraulics](../translations/meta/governance_hydraulic_etymology_2025-12-08.md) — 治 = water + platform
 - [Hydraulic Origin of Governance](../translations/meta/hydraulic_origin_of_governance_2025-11-27.md) — Why water management shaped Chinese political thought
 
 ---

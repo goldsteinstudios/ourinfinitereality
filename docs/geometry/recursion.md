@@ -16,6 +16,6 @@ This is why the same patterns show up across such different domains. Not because
 
 ## Related Documents
 
-- **[Scale Invariance](../../essays/scale_invariance.md)** — Why the pattern looks the same at all scales.
+- **[Scale Invariance](../essays/scale_invariance.md)** — Why the pattern looks the same at all scales.
 
-- **[Chapter 25 — Spherical Recursion](../../translations/chapters/chapter25_sphere_proof_2025-12-01.md)** — 大曰逝，逝曰遠，遠曰反. Great means departing, departing means far, far means returning.
+- **[Chapter 25 — Spherical Recursion](../translations/chapters/chapter25_sphere_proof_2025-12-01.md)** — 大曰逝，逝曰遠，遠曰反. Great means departing, departing means far, far means returning.

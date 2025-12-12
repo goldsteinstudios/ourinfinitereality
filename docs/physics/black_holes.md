@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[Black Holes — Rotation Failure](../../framework/black_hole_synthesis.md)**
+- **[Black Holes — Rotation Failure](../framework/black_hole_synthesis.md)**
 
 ---
 

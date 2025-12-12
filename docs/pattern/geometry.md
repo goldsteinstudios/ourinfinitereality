@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[The Paradox Sphere](../../framework/geometry.md)**
+- **[The Paradox Sphere](../framework/geometry.md)**
   How apparent paradoxes (being/non-being, one/many, same/different) resolve as positions on a unified geometric structure.
 
 ---

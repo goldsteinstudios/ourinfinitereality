@@ -32,7 +32,7 @@ The closest thing to practice documentation currently lives in:
 
 **[Chapter 5 — The Bellows](../translations/chapters/chapter05_2025-11-26.md)** — Then breathe.
 
-**[Chapter 8 — Water](../translations/chapters/chapter08_clean_2025-12-08.md)** — Then pour water into a glass and watch what it does.
+**[Chapter 8 — Water](../translations/chapters/chapter08_2025-11-26.md)** — Then pour water into a glass and watch what it does.
 
 The text IS practice instruction, if you let it be.
 

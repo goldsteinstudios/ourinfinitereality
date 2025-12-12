@@ -16,23 +16,23 @@ The differences are significant. Not minor scribal variations, but structural di
 
 The Guodian manuscripts were found in three distinct bundles, possibly representing different collecting or organizing principles:
 
-- **[Guodian Bundle A](../../translations/archaeology/guodian_bundle_a_inventory.md)**
+- **[Guodian Bundle A](../translations/archaeology/guodian_bundle_a_inventory.md)**
   Chapters focused on 道 and cosmological structure.
 
-- **[Guodian Bundle B](../../translations/archaeology/guodian_bundle_b_inventory.md)**
+- **[Guodian Bundle B](../translations/archaeology/guodian_bundle_b_inventory.md)**
   Chapters focused on 德 and alignment.
 
-- **[Guodian Bundle C](../../translations/archaeology/guodian_bundle_c_inventory.md)**
+- **[Guodian Bundle C](../translations/archaeology/guodian_bundle_c_inventory.md)**
   Chapters focused on governance and application.
 
 ---
 
 ## Analysis
 
-- **[Cross-Reference Report](../../translations/archaeology/guodian_cross_reference_report.md)**
+- **[Cross-Reference Report](../translations/archaeology/guodian_cross_reference_report.md)**
   Character-by-character comparison between Guodian and received text.
 
-- **[Section Break Analysis](../../translations/archaeology/guodian_section_break_analysis.md)**
+- **[Section Break Analysis](../translations/archaeology/guodian_section_break_analysis.md)**
   How the original scribes marked section divisions — and what that reveals about chapter boundaries.
 
 ---

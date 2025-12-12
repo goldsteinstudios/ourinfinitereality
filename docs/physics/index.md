@@ -26,7 +26,7 @@ This is what energy is. Not a substance that flows, but a pattern that rotates. 
 
 ## The Hub Document
 
-- **[Energy Is Rotation](../../framework/physics_synthesis_hub.md)** — The complete physics synthesis.
+- **[Energy Is Rotation](../framework/physics_synthesis_hub.md)** — The complete physics synthesis.
 
 ---
 

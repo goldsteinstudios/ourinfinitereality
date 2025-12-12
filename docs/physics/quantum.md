@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[Quantum Measurement](../../framework/quantum_measurement_synthesis.md)**
+- **[Quantum Measurement](../framework/quantum_measurement_synthesis.md)**
 
 ---
 

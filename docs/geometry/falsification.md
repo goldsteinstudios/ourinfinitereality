@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[Falsification Criteria](../../framework/falsification.md)**
+- **[Falsification Criteria](../framework/falsification.md)**
 
 ---
 

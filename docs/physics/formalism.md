@@ -6,7 +6,7 @@
 
 ## Core Document
 
-- **[Mathematical Formalism](../../framework/formalism_synthesis.md)**
+- **[Mathematical Formalism](../framework/formalism_synthesis.md)**
 
 ---
 
