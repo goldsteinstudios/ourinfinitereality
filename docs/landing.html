@@ -1,569 +1,743 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Infinite Reality</title>
-  <meta name="description" content="What if reality really is infinite? A pattern discovered across physics, biology, ancient Chinese, and the shape of good conversations.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
-  <style>
-    /* ============================================
-       ROOT & RESET
-       ============================================ */
-
-    :root {
-      --color-void: #0a0a0b;
-      --color-dark: #141416;
-      --color-mid: #1a1a1d;
-      --color-text-dim: #6b6b70;
-      --color-text: #e8e6e3;
-      --color-text-bright: #f5f4f2;
-      --color-accent: #a89f91;
-
-      --font-serif: 'Cormorant Garamond', Georgia, serif;
-      --font-sans: 'Inter', -apple-system, sans-serif;
-
-      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      font-size: 18px;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: var(--font-serif);
-      background: var(--color-void);
-      color: var(--color-text);
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    /* ============================================
-       SECTIONS
-       ============================================ */
-
-    section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 4rem 2rem;
-      position: relative;
-    }
-
-    .section-inner {
-      max-width: 44rem;
-      width: 100%;
-    }
-
-    .section-wide {
-      max-width: 64rem;
-      width: 100%;
-    }
-
-    /* ============================================
-       TYPOGRAPHY
-       ============================================ */
-
-    h1 {
-      font-size: clamp(1.8rem, 5vw, 2.8rem);
-      font-weight: 400;
-      line-height: 1.3;
-      letter-spacing: -0.01em;
-    }
-
-    h2 {
-      font-size: clamp(1.3rem, 3vw, 1.6rem);
-      font-weight: 400;
-      line-height: 1.4;
-    }
-
-    p {
-      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
-      font-weight: 400;
-      margin-bottom: 1.5rem;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    .text-dim { color: var(--color-text-dim); }
-    .text-bright { color: var(--color-text-bright); }
-    .text-center { text-align: center; }
-
-    .text-small {
-      font-size: 0.95rem;
-      font-family: var(--font-sans);
-      font-weight: 300;
-    }
-
-    /* ============================================
-       REVEAL ANIMATIONS
-       ============================================ */
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(2rem);
-      transition: opacity 0.9s var(--ease-out),
-                  transform 0.9s var(--ease-out);
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .reveal-delay-1 { transition-delay: 0.15s; }
-    .reveal-delay-2 { transition-delay: 0.3s; }
-    .reveal-delay-3 { transition-delay: 0.45s; }
-
-    .reveal-stagger .reveal-item {
-      opacity: 0;
-      transform: translateY(1.5rem);
-      transition: opacity 0.7s var(--ease-out),
-                  transform 0.7s var(--ease-out);
-    }
-
-    .reveal-stagger.visible .reveal-item:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0s; }
-    .reveal-stagger.visible .reveal-item:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
-    .reveal-stagger.visible .reveal-item:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
-    .reveal-stagger.visible .reveal-item:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.45s; }
-    .reveal-stagger.visible .reveal-item:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 0.6s; }
-    .reveal-stagger.visible .reveal-item:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 0.75s; }
-    .reveal-stagger.visible .reveal-item:nth-child(7) { opacity: 1; transform: translateY(0); transition-delay: 0.9s; }
-
-    /* ============================================
-       SCROLL INDICATOR
-       ============================================ */
-
-    .scroll-indicator {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0.4;
-      animation: pulse 2s var(--ease-in-out) infinite;
-    }
-
-    .scroll-indicator svg {
-      width: 24px;
-      height: 24px;
-      stroke: var(--color-text);
-      stroke-width: 1.5;
-      fill: none;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
-      50% { opacity: 0.7; transform: translateX(-50%) translateY(6px); }
-    }
-
-    /* ============================================
-       CIRCULAR MOTIFS / DOORS
-       ============================================ */
-
-    .doors-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    @media (min-width: 768px) {
-      .doors-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .doors-grid {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 2rem;
-      }
-    }
-
-    .door {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      color: var(--color-text);
-      transition: all 0.4s var(--ease-out);
-    }
-
-    .door:hover {
-      transform: translateY(-4px);
-    }
-
-    .door:hover .door-icon {
-      opacity: 1;
-    }
-
-    .door:hover .door-title {
-      color: var(--color-text-bright);
-    }
-
-    .door-icon {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 1rem;
-      opacity: 0.7;
-      transition: opacity 0.4s var(--ease-out);
-    }
-
-    .door-icon svg {
-      width: 100%;
-      height: 100%;
-      stroke: var(--color-text);
-      stroke-width: 0.75;
-      fill: none;
-    }
-
-    .door-title {
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
-      margin-bottom: 0.25rem;
-      transition: color 0.3s ease;
-    }
-
-    .door-subtitle {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      color: var(--color-text-dim);
-      text-align: center;
-      line-height: 1.4;
-    }
-
-    /* ============================================
-       WEAVE SECTION
-       ============================================ */
-
-    .weave-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--color-accent);
-      text-decoration: none;
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
-      padding: 0.75rem 1.5rem;
-      border: 1px solid var(--color-text-dim);
-      border-radius: 2px;
-      margin-top: 2rem;
-      transition: all 0.3s ease;
-    }
-
-    .weave-link:hover {
-      border-color: var(--color-text);
-      color: var(--color-text);
-    }
-
-    /* ============================================
-       FOOTER
-       ============================================ */
-
-    footer {
-      padding: 3rem 2rem;
-      text-align: center;
-      background: var(--color-void);
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
-
-    footer p {
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: var(--color-text-dim);
-      margin-bottom: 0.5rem;
-    }
-
-    footer a {
-      color: var(--color-text-dim);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: all 0.3s ease;
-    }
-
-    footer a:hover {
-      color: var(--color-text);
-      border-bottom-color: var(--color-text);
-    }
-
-    /* ============================================
-       UTILITIES
-       ============================================ */
-
-    .mb-2 { margin-bottom: 1rem; }
-    .mb-3 { margin-bottom: 2rem; }
-    .mb-4 { margin-bottom: 3rem; }
-    .mt-3 { margin-top: 2rem; }
-    .mt-4 { margin-top: 3rem; }
-
-    /* ============================================
-       RESPONSIVE
-       ============================================ */
-
-    @media (max-width: 600px) {
-      html { font-size: 16px; }
-      section { padding: 3rem 1.5rem; }
-      .door-icon { width: 80px; height: 80px; }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- ==========================================
-       THRESHOLD
-       ========================================== -->
-  <section id="threshold">
-    <div class="section-inner text-center">
-      <h1 class="reveal">What if reality really is infinite?</h1>
-    </div>
-    <div class="scroll-indicator">
-      <svg viewBox="0 0 24 24">
-        <path d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       CLARIFICATION
-       ========================================== -->
-  <section id="clarification">
-    <div class="section-inner text-center reveal-stagger">
-      <p class="reveal-item text-dim">Not metaphorically. Actually infinite.</p>
-      <p class="reveal-item text-dim">No edge. No floor. No foundation.</p>
-      <p class="reveal-item text-bright mt-3">Then how does anything persist at all?</p>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       THE ANSWER
-       ========================================== -->
-  <section id="answer">
-    <div class="section-inner text-center">
-      <p class="reveal">I followed that question for three years.</p>
-      <p class="reveal reveal-delay-1">The same answer kept showing up — in physics, in biology, in ancient texts, in the shape of good conversations.</p>
-      <h2 class="reveal reveal-delay-2 mt-4 text-bright">Stable structures don't stand on foundations.</h2>
-      <h2 class="reveal reveal-delay-3">They circulate around centers that stay empty.</h2>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       THE BRANCHES
-       ========================================== -->
-  <section id="branches">
-    <div class="section-wide text-center">
-      <div class="reveal mb-4">
-        <p>This is a pattern that shows up everywhere.</p>
-        <p class="text-dim">Every way you look at it shows something a little different.<br>
-        But follow any branch far enough and you find the same shape underneath.</p>
-      </div>
-
-      <p class="reveal reveal-delay-1 text-bright mb-3">Follow a branch.</p>
-
-      <div class="doors-grid reveal reveal-delay-2">
-
-        <!-- BIOLOGY: Tree Rings -->
-        <a href="living/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Tree rings - concentric circles with hollow center -->
-              <circle cx="50" cy="50" r="45" />
-              <circle cx="50" cy="50" r="36" />
-              <circle cx="50" cy="50" r="27" />
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="50" r="9" />
-              <!-- Hollow pith (dashed) -->
-              <circle cx="50" cy="50" r="3" stroke-dasharray="1.5 1.5" opacity="0.5" />
-            </svg>
-          </div>
-          <span class="door-title">The Living</span>
-          <span class="door-subtitle">Trees, cells, ecosystems</span>
-        </a>
-
-        <!-- PHYSICS: Wheel/Galaxy -->
-        <a href="physics/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Wheel with spokes - hollow hub -->
-              <circle cx="50" cy="50" r="45" />
-              <circle cx="50" cy="50" r="8" />
-              <!-- Spokes -->
-              <line x1="50" y1="5" x2="50" y2="42" />
-              <line x1="50" y1="58" x2="50" y2="95" />
-              <line x1="5" y1="50" x2="42" y2="50" />
-              <line x1="58" y1="50" x2="95" y2="50" />
-              <line x1="18" y1="18" x2="44" y2="44" />
-              <line x1="56" y1="56" x2="82" y2="82" />
-              <line x1="82" y1="18" x2="56" y2="44" />
-              <line x1="44" y1="56" x2="18" y2="82" />
-            </svg>
-          </div>
-          <span class="door-title">The Physics</span>
-          <span class="door-subtitle">Energy, spacetime, quantum</span>
-        </a>
-
-        <!-- DDJ: Taijitu -->
-        <a href="text/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Taijitu -->
-              <circle cx="50" cy="50" r="45" />
-              <!-- S-curve -->
-              <path d="M50 5
-                       C 50 27.5, 72.5 27.5, 72.5 50
-                       C 72.5 72.5, 50 72.5, 50 95
-                       C 50 72.5, 27.5 72.5, 27.5 50
-                       C 27.5 27.5, 50 27.5, 50 5" />
-              <!-- Dots -->
-              <circle cx="50" cy="27.5" r="5" fill="currentColor" stroke="none" />
-              <circle cx="50" cy="72.5" r="5" />
-            </svg>
-          </div>
-          <span class="door-title">The Text</span>
-          <span class="door-subtitle">Ancient field guide, decoded</span>
-        </a>
-
-        <!-- GEOMETRY: Hyperbola/Sphere -->
-        <a href="geometry/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Hyperbolic curves suggesting xy=1 -->
-              <path d="M5 95 Q 30 50, 95 5" />
-              <path d="M95 95 Q 70 50, 5 5" />
-              <!-- Central point (paradox) -->
-              <circle cx="50" cy="50" r="3" />
-              <!-- Asymptotic approach lines (subtle) -->
-              <line x1="50" y1="5" x2="50" y2="95" opacity="0.2" />
-              <line x1="5" y1="50" x2="95" y2="50" opacity="0.2" />
-            </svg>
-          </div>
-          <span class="door-title">The Geometry</span>
-          <span class="door-subtitle">Mathematical structure</span>
-        </a>
-
-        <!-- HUMAN: Breath/Cycle -->
-        <a href="human/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Breath cycle - wave that returns -->
-              <path d="M10 50
-                       Q 25 20, 50 50
-                       Q 75 80, 90 50" />
-              <path d="M10 50
-                       Q 25 80, 50 50
-                       Q 75 20, 90 50" opacity="0.4" />
-              <!-- Center point -->
-              <circle cx="50" cy="50" r="3" />
-              <!-- Circular container -->
-              <circle cx="50" cy="50" r="45" />
-            </svg>
-          </div>
-          <span class="door-title">The Human</span>
-          <span class="door-subtitle">Consciousness, choice, story</span>
-        </a>
-
-        <!-- LORE: Threshold/Ouroboros -->
-        <a href="lore/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Ouroboros - snake eating tail -->
-              <circle cx="50" cy="50" r="38" />
-              <!-- Head eating tail suggestion -->
-              <path d="M88 50
-                       C 88 30, 70 25, 60 35"
-                    stroke-width="6"
-                    stroke-linecap="round" />
-              <!-- Eye -->
-              <circle cx="78" cy="42" r="2" fill="currentColor" stroke="none" />
-              <!-- Inner circle (what's enclosed) -->
-              <circle cx="50" cy="50" r="20" opacity="0.3" />
-            </svg>
-          </div>
-          <span class="door-title">The Lore</span>
-          <span class="door-subtitle">Myth and meaning, reread</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       THE WEAVE
-       ========================================== -->
-  <section id="weave">
-    <div class="section-inner text-center">
-      <p class="reveal text-dim">Or wander between them.</p>
-      <p class="reveal reveal-delay-1">Watch the branches rhyme.<br>See the same shape in different light.</p>
-      <a href="weave/" class="weave-link reveal reveal-delay-2">
-        <span>Enter the weave</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       FOOTER
-       ========================================== -->
-  <footer>
-    <p>A living project, built in collaboration with AI.</p>
-    <p>Enter anywhere. The center is everywhere.</p>
-    <p class="mt-3"><a href="https://github.com/goldsteinstudios/dao-de-jing-analyzer">Source</a> · <a href="about/">About</a></p>
-  </footer>
-
-  <!-- ==========================================
-       JAVASCRIPT
-       ========================================== -->
-  <script>
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.15
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Infinite Reality</title>
+    <meta name="description" content="What if reality really is infinite? A pattern discovered across physics, biology, ancient Chinese, and the shape of good conversations.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-      });
-    }, observerOptions);
 
-    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
-      observer.observe(el);
-    });
+        body {
+            background: #0a0a0c;
+            color: #e8e4d9;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+        }
 
-    // Hide scroll indicator after first scroll
-    const scrollIndicator = document.querySelector('.scroll-indicator');
-    let hasScrolled = false;
+        /* Opening symbol */
+        #opening {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            transition: opacity 0.8s ease;
+        }
 
-    window.addEventListener('scroll', () => {
-      if (!hasScrolled && window.scrollY > 100) {
-        hasScrolled = true;
-        scrollIndicator.style.opacity = '0';
-        scrollIndicator.style.transition = 'opacity 0.5s ease';
-      }
-    }, { passive: true });
-  </script>
+        #opening.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
 
+        #symbol {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        #symbol-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #c9a959;
+            border-radius: 50%;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 0.5s;
+        }
+
+        #symbol-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            background: #c9a959;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 0s;
+            box-shadow: 0 0 20px rgba(201, 169, 89, 0.4);
+        }
+
+        #symbol-orbiter {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: #e8e4d9;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 1.5s, orbit 12s linear infinite 2s;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes orbit {
+            from { transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg); }
+        }
+
+        #hint {
+            position: absolute;
+            bottom: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: #555;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 3s;
+        }
+
+        /* Sphere container */
+        #sphere-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        #sphere-container.visible {
+            opacity: 1;
+        }
+
+        /* UI Overlay */
+        #ui-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.5s ease 0.5s;
+        }
+
+        #ui-overlay.visible {
+            opacity: 1;
+        }
+
+        /* Realm label on hover */
+        #realm-label {
+            position: absolute;
+            padding: 0.6rem 1.2rem;
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid #333;
+            color: #c9a959;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        #realm-label.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #realm-label .subtitle {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        /* Navigation hint */
+        #nav-hint {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.85rem;
+            color: #555;
+            text-align: center;
+        }
+
+        /* Title */
+        #site-title {
+            position: absolute;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.4rem;
+            color: #c9a959;
+            letter-spacing: 0.1em;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 320px;
+            height: 100%;
+            background: rgba(10, 10, 12, 0.95);
+            border-left: 1px solid #222;
+            padding: 2rem;
+            overflow-y: auto;
+            pointer-events: auto;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.5s ease;
+        }
+
+        #sidebar.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        #sidebar h2 {
+            color: #c9a959;
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #222;
+        }
+
+        #sidebar .start-section {
+            margin-bottom: 2rem;
+        }
+
+        #sidebar .start-item {
+            margin-bottom: 1rem;
+        }
+
+        #sidebar .start-item a {
+            color: #e8e4d9;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        #sidebar .start-item a:hover {
+            color: #c9a959;
+        }
+
+        #sidebar .start-item .why {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.2rem;
+        }
+
+        #sidebar h3 {
+            color: #888;
+            font-size: 0.85rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        #sidebar .realm-list {
+            list-style: none;
+        }
+
+        #sidebar .realm-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #1a1a1c;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        #sidebar .realm-list li:hover {
+            color: #c9a959;
+        }
+
+        #sidebar .realm-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        /* Adjust sphere container when sidebar visible */
+        #sphere-container.with-sidebar {
+            width: calc(100% - 320px);
+        }
+
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 45vh;
+                top: auto;
+                bottom: 0;
+                border-left: none;
+                border-top: 1px solid #222;
+                transform: translateY(20px);
+            }
+
+            #sidebar.visible {
+                transform: translateY(0);
+            }
+
+            #sphere-container.with-sidebar {
+                width: 100%;
+                height: 55vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Opening Symbol -->
+    <div id="opening">
+        <div id="symbol">
+            <div id="symbol-center"></div>
+            <div id="symbol-circle"></div>
+            <div id="symbol-orbiter"></div>
+        </div>
+        <div id="hint">click to enter</div>
+    </div>
+
+    <!-- Sphere -->
+    <div id="sphere-container"></div>
+
+    <!-- UI -->
+    <div id="ui-overlay">
+        <div id="site-title">Our Infinite Reality</div>
+        <div id="realm-label">
+            <div class="name"></div>
+            <div class="subtitle">click to explore</div>
+        </div>
+        <div id="nav-hint">drag to orbit · click realm to enter</div>
+
+        <div id="sidebar">
+            <h2>Start Here</h2>
+            <div class="start-section">
+                <div class="start-item">
+                    <a href="translations/chapters/chapter01.html">Chapter 1: The Coordinate System</a>
+                    <span class="why">Where everything begins. The two axes.</span>
+                </div>
+                <div class="start-item">
+                    <a href="translations/chapters/chapter11.html">Chapter 11: Void and Function</a>
+                    <span class="why">The wheel, the pot, the room. Function IS emptiness.</span>
+                </div>
+                <div class="start-item">
+                    <a href="framework/recursive_structural_model.html">The Recursive Structural Model</a>
+                    <span class="why">The core pattern connecting everything.</span>
+                </div>
+                <div class="start-item">
+                    <a href="essays/why_water.html">Why Water?</a>
+                    <span class="why">The metaphor that runs through the text.</span>
+                </div>
+            </div>
+
+            <h3>The Five Realms</h3>
+            <ul class="realm-list" id="realm-list"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+    // ═══════════════════════════════════════════════════════════════
+    // DATA - The five realms
+    // ═══════════════════════════════════════════════════════════════
+
+    const realms = [
+        {
+            id: 'ddj',
+            name: 'Dao De Jing',
+            subtitle: '道德經 · The ancient text',
+            color: 0xc9a959,
+            position: { x: -3.2, y: 0.5, z: 0 },
+            link: 'domains/ddj.html'
+        },
+        {
+            id: 'math',
+            name: 'Mathematics',
+            subtitle: 'e^iπ + 1 = 0 · The formal language',
+            color: 0x6495ed,
+            position: { x: 0, y: -2.8, z: 1.5 },
+            link: 'domains/math.html'
+        },
+        {
+            id: 'physics',
+            name: 'Physics',
+            subtitle: 'Energy is rotation',
+            color: 0x90ee90,
+            position: { x: 0, y: 2.8, z: -1.5 },
+            link: 'domains/physics.html'
+        },
+        {
+            id: 'bio',
+            name: 'Biology',
+            subtitle: 'Self/Other · The living pattern',
+            color: 0xdda0dd,
+            position: { x: 3.2, y: 0.5, z: 0.5 },
+            link: 'domains/bio.html'
+        },
+        {
+            id: 'rsm',
+            name: 'RSM',
+            subtitle: 'Recursive Structural Model',
+            color: 0xffa07a,
+            position: { x: 0, y: 0, z: 3.5 },
+            link: 'domains/rsm.html'
+        }
+    ];
+
+    // ═══════════════════════════════════════════════════════════════
+    // STATE
+    // ═══════════════════════════════════════════════════════════════
+
+    let scene, camera, renderer;
+    let sceneGroup;
+    let realmMeshes = [];
+    let hoveredRealm = null;
+    let isDragging = false;
+    let lastMouse = { x: 0, y: 0 };
+
+    // Visual constants
+    const REALM_RADIUS = 0.6;
+    const CAMERA_DISTANCE = 10;
+    const ROTATION_SPEED = 0.003;
+
+    // ═══════════════════════════════════════════════════════════════
+    // THREE.JS SETUP
+    // ═══════════════════════════════════════════════════════════════
+
+    function init() {
+        const container = document.getElementById('sphere-container');
+
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = CAMERA_DISTANCE;
+
+        renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setClearColor(0x0a0a0c);
+        container.appendChild(renderer.domElement);
+
+        // Group for rotation
+        sceneGroup = new THREE.Group();
+        scene.add(sceneGroup);
+
+        // Central origin glow
+        createCenterGlow();
+
+        // Create realm spheres
+        realms.forEach(createRealmSphere);
+
+        // Create connecting threads
+        createThreads();
+
+        // Populate sidebar realm list
+        populateSidebarRealms();
+
+        // Events
+        renderer.domElement.addEventListener('mousedown', onMouseDown);
+        renderer.domElement.addEventListener('mousemove', onMouseMove);
+        renderer.domElement.addEventListener('mouseup', () => isDragging = false);
+        renderer.domElement.addEventListener('mouseleave', () => { isDragging = false; hideRealmLabel(); });
+        renderer.domElement.addEventListener('wheel', onWheel);
+        renderer.domElement.addEventListener('click', onClick);
+        window.addEventListener('resize', onResize);
+
+        // Touch support
+        renderer.domElement.addEventListener('touchstart', onTouchStart, { passive: false });
+        renderer.domElement.addEventListener('touchmove', onTouchMove, { passive: false });
+        renderer.domElement.addEventListener('touchend', onTouchEnd);
+
+        animate();
+    }
+
+    function createCenterGlow() {
+        // Core
+        const coreGeo = new THREE.SphereGeometry(0.15, 32, 32);
+        const coreMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.9 });
+        sceneGroup.add(new THREE.Mesh(coreGeo, coreMat));
+
+        // Halo
+        const haloGeo = new THREE.SphereGeometry(0.4, 32, 32);
+        const haloMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.1 });
+        sceneGroup.add(new THREE.Mesh(haloGeo, haloMat));
+
+        // Outer ring
+        const ringGeo = new THREE.RingGeometry(0.5, 0.52, 64);
+        const ringMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.15, side: THREE.DoubleSide });
+        const ring = new THREE.Mesh(ringGeo, ringMat);
+        sceneGroup.add(ring);
+    }
+
+    function createRealmSphere(realm) {
+        const group = new THREE.Group();
+        group.position.set(realm.position.x, realm.position.y, realm.position.z);
+
+        // Main sphere
+        const sphereGeo = new THREE.SphereGeometry(REALM_RADIUS, 32, 32);
+        const sphereMat = new THREE.MeshBasicMaterial({
+            color: realm.color,
+            transparent: true,
+            opacity: 0.7
+        });
+        const sphere = new THREE.Mesh(sphereGeo, sphereMat);
+        group.add(sphere);
+
+        // Wireframe
+        const wireGeo = new THREE.SphereGeometry(REALM_RADIUS * 1.02, 16, 16);
+        const wireMat = new THREE.MeshBasicMaterial({
+            color: realm.color,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.3
+        });
+        group.add(new THREE.Mesh(wireGeo, wireMat));
+
+        // Glow halo
+        const glowGeo = new THREE.SphereGeometry(REALM_RADIUS * 1.3, 32, 32);
+        const glowMat = new THREE.MeshBasicMaterial({
+            color: realm.color,
+            transparent: true,
+            opacity: 0.1
+        });
+        group.add(new THREE.Mesh(glowGeo, glowMat));
+
+        sceneGroup.add(group);
+        realmMeshes.push({ group, sphere, realm, baseMaterial: sphereMat });
+    }
+
+    function createThreads() {
+        // Connect each realm to center with subtle curved lines
+        realms.forEach(realm => {
+            const points = [];
+            const start = new THREE.Vector3(0, 0, 0);
+            const end = new THREE.Vector3(realm.position.x, realm.position.y, realm.position.z);
+
+            // Create curved path
+            const mid = new THREE.Vector3().lerpVectors(start, end, 0.5);
+            mid.y += 0.5; // slight curve
+
+            const curve = new THREE.QuadraticBezierCurve3(start, mid, end);
+            const curvePoints = curve.getPoints(30);
+
+            const lineGeo = new THREE.BufferGeometry().setFromPoints(curvePoints);
+            const lineMat = new THREE.LineBasicMaterial({
+                color: realm.color,
+                transparent: true,
+                opacity: 0.15
+            });
+            sceneGroup.add(new THREE.Line(lineGeo, lineMat));
+        });
+    }
+
+    function populateSidebarRealms() {
+        const list = document.getElementById('realm-list');
+        list.innerHTML = realms.map(r => `
+            <li data-realm="${r.id}">
+                <span class="realm-dot" style="background: #${r.color.toString(16).padStart(6, '0')}"></span>
+                <span>${r.name}</span>
+            </li>
+        `).join('');
+
+        list.querySelectorAll('li').forEach(li => {
+            li.onclick = () => {
+                const realm = realms.find(r => r.id === li.dataset.realm);
+                if (realm) window.location.href = realm.link;
+            };
+        });
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // INPUT HANDLERS
+    // ═══════════════════════════════════════════════════════════════
+
+    function onMouseDown(e) {
+        isDragging = true;
+        lastMouse = { x: e.clientX, y: e.clientY };
+    }
+
+    function onMouseMove(e) {
+        if (isDragging) {
+            const dx = e.clientX - lastMouse.x;
+            const dy = e.clientY - lastMouse.y;
+            sceneGroup.rotation.y += dx * ROTATION_SPEED;
+            sceneGroup.rotation.x += dy * ROTATION_SPEED;
+            // Clamp vertical rotation
+            sceneGroup.rotation.x = Math.max(-Math.PI / 3, Math.min(Math.PI / 3, sceneGroup.rotation.x));
+            lastMouse = { x: e.clientX, y: e.clientY };
+        }
+
+        // Hover detection
+        const hit = raycast(e);
+        if (hit) {
+            if (hoveredRealm !== hit.realm) {
+                hoveredRealm = hit.realm;
+                showRealmLabel(hit.realm, e);
+                highlightRealm(hit);
+                renderer.domElement.style.cursor = 'pointer';
+            }
+        } else {
+            if (hoveredRealm) {
+                unhighlightRealm(hoveredRealm);
+                hoveredRealm = null;
+            }
+            hideRealmLabel();
+            renderer.domElement.style.cursor = isDragging ? 'grabbing' : 'grab';
+        }
+    }
+
+    let touchStart = null;
+    function onTouchStart(e) {
+        if (e.touches.length === 1) {
+            e.preventDefault();
+            touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            isDragging = true;
+            lastMouse = touchStart;
+        }
+    }
+
+    function onTouchMove(e) {
+        if (e.touches.length === 1 && isDragging) {
+            e.preventDefault();
+            const dx = e.touches[0].clientX - lastMouse.x;
+            const dy = e.touches[0].clientY - lastMouse.y;
+            sceneGroup.rotation.y += dx * ROTATION_SPEED;
+            sceneGroup.rotation.x += dy * ROTATION_SPEED;
+            sceneGroup.rotation.x = Math.max(-Math.PI / 3, Math.min(Math.PI / 3, sceneGroup.rotation.x));
+            lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+        }
+    }
+
+    function onTouchEnd(e) {
+        if (touchStart && e.changedTouches.length === 1) {
+            const dx = Math.abs(e.changedTouches[0].clientX - touchStart.x);
+            const dy = Math.abs(e.changedTouches[0].clientY - touchStart.y);
+            if (dx < 10 && dy < 10) {
+                const hit = raycastTouch(e.changedTouches[0]);
+                if (hit) window.location.href = hit.realm.link;
+            }
+        }
+        isDragging = false;
+        touchStart = null;
+    }
+
+    function onWheel(e) {
+        camera.position.z += e.deltaY * 0.01;
+        camera.position.z = Math.max(6, Math.min(15, camera.position.z));
+    }
+
+    function onClick(e) {
+        const hit = raycast(e);
+        if (hit) {
+            window.location.href = hit.realm.link;
+        }
+    }
+
+    function raycast(e) {
+        const rect = renderer.domElement.getBoundingClientRect();
+        const mouse = new THREE.Vector2(
+            ((e.clientX - rect.left) / rect.width) * 2 - 1,
+            -((e.clientY - rect.top) / rect.height) * 2 + 1
+        );
+        const raycaster = new THREE.Raycaster();
+        raycaster.setFromCamera(mouse, camera);
+
+        const spheres = realmMeshes.map(r => r.sphere);
+        const hits = raycaster.intersectObjects(spheres);
+        if (hits.length) {
+            return realmMeshes.find(r => r.sphere === hits[0].object);
+        }
+        return null;
+    }
+
+    function raycastTouch(touch) {
+        const rect = renderer.domElement.getBoundingClientRect();
+        const mouse = new THREE.Vector2(
+            ((touch.clientX - rect.left) / rect.width) * 2 - 1,
+            -((touch.clientY - rect.top) / rect.height) * 2 + 1
+        );
+        const raycaster = new THREE.Raycaster();
+        raycaster.setFromCamera(mouse, camera);
+
+        const spheres = realmMeshes.map(r => r.sphere);
+        const hits = raycaster.intersectObjects(spheres);
+        if (hits.length) {
+            return realmMeshes.find(r => r.sphere === hits[0].object);
+        }
+        return null;
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // UI UPDATES
+    // ═══════════════════════════════════════════════════════════════
+
+    function showRealmLabel(realm, e) {
+        const label = document.getElementById('realm-label');
+        label.querySelector('.name').textContent = realm.name;
+        label.querySelector('.subtitle').textContent = realm.subtitle;
+        label.style.left = (e.clientX + 20) + 'px';
+        label.style.top = (e.clientY - 20) + 'px';
+        label.classList.add('visible');
+    }
+
+    function hideRealmLabel() {
+        document.getElementById('realm-label').classList.remove('visible');
+    }
+
+    function highlightRealm(hit) {
+        hit.baseMaterial.opacity = 0.9;
+    }
+
+    function unhighlightRealm(realm) {
+        const mesh = realmMeshes.find(r => r.realm === realm);
+        if (mesh) mesh.baseMaterial.opacity = 0.7;
+    }
+
+    function onResize() {
+        const container = document.getElementById('sphere-container');
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        // Gentle auto-rotation when not dragging
+        if (!isDragging) {
+            sceneGroup.rotation.y += 0.001;
+        }
+
+        renderer.render(scene, camera);
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // INITIALIZATION
+    // ═══════════════════════════════════════════════════════════════
+
+    document.getElementById('opening').onclick = () => {
+        document.getElementById('opening').classList.add('hidden');
+        document.getElementById('sphere-container').classList.add('visible');
+        document.getElementById('sphere-container').classList.add('with-sidebar');
+        document.getElementById('ui-overlay').classList.add('visible');
+        document.getElementById('sidebar').classList.add('visible');
+        init();
+    };
+    </script>
 </body>
 </html>
