@@ -37,12 +37,14 @@ This project is not peer-reviewed scholarship. It's an experiment in reading old
 ## What This Claims
 
 **Claims:**
+
 - Characters encode operations through radical composition
 - The DDJ can be read as pattern documentation rather than philosophy
 - Structural readings recover information that traditional translations obscure
 - The approach produces testable, verifiable interpretations
 
 **Does not claim:**
+
 - This is the "correct" or "original" meaning
 - Ancient authors intended these readings
 - Traditional translations are wrong
@@ -55,11 +57,13 @@ This project is not peer-reviewed scholarship. It's an experiment in reading old
 This work is offered freely. There's no copyright enforcement.
 
 **You may:**
+
 - Read, share, quote, copy, adapt, translate, remix
 - Use commercially or non-commercially
 - Credit or not credit (though attribution is appreciated)
 
 **You may not:**
+
 - Claim you wrote it when you didn't
 - Prevent others from using it
 
