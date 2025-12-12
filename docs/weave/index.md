@@ -47,7 +47,7 @@ Some suggested sequences:
 
 **If you want embodied experience:**
 1. [Chapter 5 — The Bellows](../translations/chapters/chapter05_2025-11-26.md)
-2. [Practice — Breath](../practice/breath.md)
+2. [Chapter 11 — Void and Function](../translations/chapters/chapter11_2025-11-27.md)
 3. [Living — Plants](../living/plants.md)
 
 ---

@@ -61,11 +61,48 @@ copyright: Enter anywhere. The center is everywhere.
 # ============================================
 
 nav:
-  - Living:
-    - living/index.md
-    - Plants: living/plants.md
-    - Cells: living/cells.md
-    - Ecosystems: living/ecosystems.md
+  - Home: index.md
+  - Reading Paths: reading_paths.md
+
+  - Pattern:
+    - pattern/index.md
+    - Physics: pattern/physics.md
+    - Biology: pattern/biology.md
+    - Geometry: pattern/geometry.md
+    - Framework: pattern/framework.md
+    - Falsification: pattern/falsification.md
+
+  - Text:
+    - text/index.md
+    - Chapters: text/chapters.md
+    - Lexicon: text/lexicon.md
+    - Characters: text/characters.md
+    - Archaeology: text/archaeology.md
+
+  - Practice:
+    - practice/index.md
+
+  - Story:
+    - story/index.md
+    - About: story/about.md
+    - Methodology: story/methodology.md
+    - Essays: story/essays.md
+
+  - Essays:
+    - essays/index.md
+    - Why Water?: essays/why_water.md
+    - Euler and the Tao: essays/euler_tao.md
+    - Scale Invariance: essays/scale_invariance.md
+    - Universal Patterns: essays/universal_patterns.md
+    - Energy as Orbital Density: essays/energy_orbital_density.md
+
+  - Framework:
+    - framework/index.md
+    - Geometry: framework/geometry.md
+    - Falsification: framework/falsification.md
+    - Academic Parallels: framework/academic_parallels.md
+    - Plant Axioms: framework/plant_axioms.md
+    - Physics Hub: framework/physics_synthesis_hub.md
 
   - Physics:
     - physics/index.md
@@ -75,12 +112,9 @@ nav:
     - Black Holes: physics/black_holes.md
     - Formalism: physics/formalism.md
 
-  - Text:
-    - text/index.md
-    - Chapters: text/chapters.md
-    - Lexicon: text/lexicon.md
-    - Characters: text/characters.md
-    - Archaeology: text/archaeology.md
+  - Living:
+    - living/index.md
+    - Plants: living/plants.md
 
   - Geometry:
     - geometry/index.md
@@ -90,14 +124,11 @@ nav:
 
   - Human:
     - human/index.md
-    - Consciousness: human/consciousness.md
     - Practice: human/practice.md
     - Story: human/story.md
 
   - Lore:
     - lore/index.md
-    - Myths: lore/myths.md
-    - Symbols: lore/symbols.md
 
   - Weave:
     - weave/index.md

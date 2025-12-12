@@ -14,10 +14,6 @@ Living systems don't build from foundations up. They grow outward from centers t
 
 - **[Plants](plants.md)** — Trees, vines, root systems. How plant architecture demonstrates the pattern.
 
-- **[Cells](cells.md)** — The basic unit of life as rotation around emptiness.
-
-- **[Ecosystems](ecosystems.md)** — How stability emerges from circulation, not control.
-
 ---
 
 ## The Connection

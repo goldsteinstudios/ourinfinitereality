@@ -8,16 +8,6 @@ Understanding the pattern intellectually is one thing. Feeling it is another.
 
 ---
 
-## Entry Points
-
-- **[The Walk](../practice/walk.md)** — A specific practice. Not mystical. Just walking.
-
-- **[Embodied](../practice/embodied.md)** — What the pattern feels like in the body.
-
-- **[Breath](../practice/breath.md)** — The bellows of Chapter 5.
-
----
-
 ## From the Text
 
 The closest thing to practice instruction in the translations:

@@ -10,14 +10,6 @@ The oldest stories we tell aren't random. They encode the same patterns that sho
 
 ---
 
-## What's Here
-
-- **[Myths](myths.md)** — Creation stories, hero journeys, cycles of death and rebirth — reread through the structural lens.
-
-- **[Symbols](symbols.md)** — The ouroboros, the wheel, the tree, the void. Why these images persist across cultures.
-
----
-
 ## The Connection
 
 The ouroboros shows the pattern directly: circulation that maintains itself by consuming its own output. The end feeds the beginning. The structure sustains itself through its own activity.

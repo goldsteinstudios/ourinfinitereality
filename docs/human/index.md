@@ -12,8 +12,6 @@ The pattern shows up in physics and trees. But it also shows up in you. In how y
 
 ## What's Here
 
-- **[Consciousness](consciousness.md)** — Awareness as circulation, not substance.
-
 - **[Practice](practice.md)** — Embodied experience. Walking, breathing, sensing the pattern.
 
 - **[Story](story.md)** — How this project began. What it isn't.
