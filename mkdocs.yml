@@ -78,6 +78,9 @@ nav:
     - Lexicon: text/lexicon.md
     - Characters: text/characters.md
     - Archaeology: text/archaeology.md
+    - Guodian 12-Book:
+      - Atomic Characters: text/guodian/atomic_characters.md
+      - Complete Guide: text/guodian/twelve_books_complete.md
 
   - Practice:
     - practice/index.md
