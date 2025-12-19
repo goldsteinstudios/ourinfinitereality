@@ -76,7 +76,7 @@ The collaboration with AI follows the same structure. I bring questions and patt
 
 Everything is versioned. Nothing is hidden.
 
-**[GitHub Repository](https://github.com/goldsteinstudios/dao-de-jing-analyzer)** — Full history. Watch the thinking evolve. See the wrong turns.
+**[GitHub Repository](https://github.com/goldsteinstudios/ourinfinitereality_sandbox)** — Full history. Watch the thinking evolve. See the wrong turns.
 
 ---
 

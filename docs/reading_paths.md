@@ -150,4 +150,4 @@ These chapters have direct manuscript confirmation from Guodian (~300 BCE):
 **Framework documents**: 12 meta-analyses
 **Cross-domain essays**: 5
 
-*This is a living project. Check [GitHub](https://github.com/goldsteinstudios/dao-de-jing-analyzer) for latest updates.*
+*This is a living project. Check [GitHub](https://github.com/goldsteinstudios/ourinfinitereality_sandbox) for latest updates.*

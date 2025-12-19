@@ -54,7 +54,7 @@ This project is undergoing a major reorganization.
 
 **The workflow:**
 
-- Private repo: `dao-de-jing-analyzer` — where work happens
+- Private repo: `ourinfinitereality_sandbox` — where work happens
 - Public site: `ourinfinitereality.com` — what you're reading now
 - Everything versioned, nothing lost
 
@@ -64,7 +64,7 @@ This project is undergoing a major reorganization.
 
 I'm a pattern-recognition enthusiast with no academic credentials. This project is a collaboration with AI — I bring the questions and observations, AI helps test them systematically.
 
-Everything here is alive and changing. If you want to see the thinking evolve, including wrong turns: [GitHub repository](https://github.com/goldsteinstudios/dao-de-jing-analyzer)
+Everything here is alive and changing. If you want to see the thinking evolve, including wrong turns: [GitHub repository](https://github.com/goldsteinstudios/ourinfinitereality_sandbox)
 
 ---
 

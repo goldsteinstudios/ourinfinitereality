@@ -20,7 +20,7 @@ Most of this work happens in conversation. Will and Claude discuss a chapter, ar
 
 The conversations are messy. Ideas get proposed and abandoned. Mistakes get made and corrected. What you see here is the output of that process, not the process itself.
 
-The full archive—including revision history and alternate versions—is available on [GitHub](https://github.com/goldsteinstudios/dao-de-jing-analyzer).
+The full archive—including revision history and alternate versions—is available on [GitHub](https://github.com/goldsteinstudios/ourinfinitereality_sandbox).
 
 ---
 
@@ -83,7 +83,7 @@ If you find errors, have questions, or want to discuss: [r/ourinfinitereality](h
 
 **Site generator:** MkDocs with Material theme
 **Hosting:** GitHub Pages
-**Source:** [github.com/goldsteinstudios/dao-de-jing-analyzer](https://github.com/goldsteinstudios/dao-de-jing-analyzer)
+**Source:** [github.com/goldsteinstudios/ourinfinitereality_sandbox](https://github.com/goldsteinstudios/ourinfinitereality_sandbox)
 **Domain:** ourinfinitereality.com
 
 The site rebuilds automatically when changes are pushed to the repository. What you're reading is typically within minutes of the latest revision.
