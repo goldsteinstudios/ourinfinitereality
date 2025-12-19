@@ -1,0 +1,374 @@
+# Radical Families: The Character Algebra
+# Characters = Substrate + Operator → Transformation
+
+# Substrate families: what gets acted upon
+substrates:
+  禾:
+    pinyin: hé
+    meaning: "grain plant with drooping head"
+    domain: "Discrete, countable, harvestable resources"
+    geometry: "Undifferentiated field awaiting arc-operation"
+    key_insight: "Represents what CAN be harvested but hasn't yet — potential in distributed form"
+    characters:
+      利:
+        pinyin: lì
+        operator: "刂 (dāo, blade)"
+        meaning: "scythe arcs through → harvest/path-cutting"
+        breakdown: "禾 (hé, grain) + 刂 (dāo, blade) = scythe arcing through grain = π-operation"
+        chapters: [8, 11, 22, 56, 81]
+        guodian: true
+      和:
+        pinyin: hé
+        operator: "口 (kǒu, mouth)"
+        meaning: "grain distributed → harmonious flow"
+        breakdown: "禾 (hé, grain) + 口 (kǒu, mouth) = grain distributed through openings"
+        chapters: [2, 4, 42, 55, 56]
+        guodian: true
+      積:
+        pinyin: jī
+        operator: "責 (zé, burden)"
+        meaning: "grain + obligation → accumulated store"
+        breakdown: "禾 (hé) + 責 (zé) = grain under obligation = what 聖人不積 warns against"
+        chapters: [9, 81]
+        guodian: true
+      私:
+        pinyin: sī
+        operator: "厶 (sī, private)"
+        meaning: "grain privatized → personal portion"
+        breakdown: "禾 (hé) + 厶 (sī) = grain separated from common"
+        chapters: [7]
+      穀:
+        pinyin: gǔ
+        operator: "殳 (shū, strike) + 禾"
+        meaning: "striker + grain → valley/worthiness"
+        chapters: [39, 42]
+        guodian: true
+
+  氵:
+    pinyin: shuǐ
+    meaning: "three-stroke water (main current + eddies)"
+    domain: "Continuous, flowing, transforming medium"
+    geometry: "Does π-operation without effort — IS 無為 made physical"
+    key_insight: "Already flowing, already finding path — unlike 禾 which is discrete and standing"
+    characters:
+      治:
+        pinyin: zhì
+        operator: "台 (tái, platform)"
+        meaning: "water channeled → governance"
+        breakdown: |
+          台 (tái) = 厶 (sī, coiled) + 口 (kǒu, opening) = aqueduct cross-section
+          ∴ 治 = water flowing through aqueduct = governance through aligned infrastructure
+        chapters: [3, 17, 60, 64]
+        guodian: true
+      淵:
+        pinyin: yuān
+        operator: "(deep enclosure)"
+        meaning: "water deepened → profound source/abyss"
+        breakdown: "氵 (shuǐ) + 囦 (yuān, archaic abyss) = source-depth"
+        chapters: [4, 8]
+        guodian: true
+      沖:
+        pinyin: chōng
+        operator: "中 (zhōng, center)"
+        meaning: "water centered → hollow/concentrated"
+        breakdown: "氵 (shuǐ) + 中 (zhōng, arrow through target) = water at center = 道沖"
+        chapters: [4, 42]
+        guodian: true
+      清:
+        pinyin: qīng
+        operator: "青 (qīng, clear)"
+        meaning: "water clarified → transparency"
+        chapters: [15, 45]
+        guodian: true
+      渾:
+        pinyin: hún
+        operator: "昆 (kūn, mingle)"
+        meaning: "water mingled → murky/primordial"
+        chapters: [15, 25]
+        guodian: true
+      泮:
+        pinyin: pàn
+        operator: "半 (bàn, half)"
+        meaning: "water halving → dissolve/melt"
+        chapters: [64]
+        guodian: true
+      法:
+        pinyin: fǎ
+        operator: "去 (qù, remove)"
+        meaning: "water removes → law/method"
+        chapters: [25]
+        guodian: true
+
+  心:
+    pinyin: xīn
+    meaning: "heart organ with chambers"
+    domain: "Internal states, cognitive dynamics, intentionality"
+    geometry: "The internal field where alignment 德 or misalignment occurs"
+    key_insight: "Determines quality of engagement with pattern — observer configuration"
+    characters:
+      德:
+        pinyin: dé
+        operator: "彳 (chì, step) + 直 (zhí, straight)"
+        meaning: "heart stepping straight → alignment with pattern"
+        breakdown: |
+          彳 (chì) = left step/walking
+          直 (zhí) = 十 (shí) + 目 (mù) + 乚 = eye looking straight ahead
+          ∴ 德 = heart stepping straight = NOT "virtue" = operational alignment
+        chapters: [38, 51]
+        guodian: true
+      恆:
+        pinyin: héng
+        operator: "亘 (gèn, span)"
+        meaning: "heart spanning → constant"
+        breakdown: "忄 (xīn variant) + 亘 (gèn, sun spanning two bounds) = constant across frames = 常"
+        chapters: "throughout"
+        guodian: true
+      慈:
+        pinyin: cí
+        operator: "茲 (zī, multiply)"
+        meaning: "heart multiplied → expansive care"
+        breakdown: "茲 (zī, grass multiplying) + 心 (xīn) = heart multiplied = one of Three Treasures"
+        chapters: [67]
+        guodian: true
+      慎:
+        pinyin: shèn
+        operator: "真 (zhēn, true)"
+        meaning: "heart true → careful/cautious"
+        chapters: [64]
+        guodian: true
+      惟:
+        pinyin: wéi
+        operator: "隹 (zhuī, bird)"
+        meaning: "heart + bird → only/consider"
+        chapters: [21]
+        guodian: true
+
+  貝:
+    pinyin: bèi
+    meaning: "cowrie shell (original currency)"
+    domain: "Worth, exchange, commensurability"
+    geometry: "What has agreed equivalence — stable exchange value"
+    key_insight: "About what can be weighed, traded, compared"
+    characters:
+      則:
+        pinyin: zé
+        operator: "刂 (dāo, blade)"
+        meaning: "value cut → consequent pattern/rule"
+        breakdown: "貝 (bèi) + 刂 (dāo) = blade cuts through value = how social rules emerge"
+        chapters: [3, 22, 64]
+        guodian: true
+      貴:
+        pinyin: guì
+        operator: "(elevated)"
+        meaning: "value elevated → precious/honored"
+        chapters: [13, 56, 72, 81]
+        guodian: true
+      賤:
+        pinyin: jiàn
+        operator: "戔 (jiān, small)"
+        meaning: "value diminished → cheap/lowly"
+        chapters: [39, 56]
+        guodian: true
+      貨:
+        pinyin: huò
+        operator: "化 (huà, change)"
+        meaning: "value changed → goods/merchandise"
+        chapters: [3, 12, 53, 64]
+        guodian: true
+      賊:
+        pinyin: zéi
+        operator: "戎 (róng, weapons)"
+        meaning: "value weaponized → thief/traitor"
+        chapters: [19]
+        guodian: true
+
+  木:
+    pinyin: mù
+    meaning: "tree with trunk, branches, roots"
+    domain: "Organic structure, growth patterns"
+    geometry: "Demonstrates growth rings — cambium principle"
+    key_insight: "Organic pattern — what grows, demonstrates living geometry"
+    characters:
+      本:
+        pinyin: běn
+        operator: "一 (yī, mark at base)"
+        meaning: "wood rooted → root/origin"
+        breakdown: "木 (mù) + mark at root = origin, source, foundation"
+        chapters: [26, 39]
+        guodian: true
+      末:
+        pinyin: mò
+        operator: "一 (yī, mark at tip)"
+        meaning: "wood tipped → tip/end"
+        breakdown: "木 (mù) + mark at tip = end, surface, periphery"
+        chapters: [38, 64]
+        guodian: true
+      朴:
+        pinyin: pǔ
+        operator: "卜 (bǔ, divine/simple)"
+        meaning: "wood uncarved → simplicity/uncarved block"
+        breakdown: "木 (mù) + 卜 (bǔ, oracle crack pattern) = wood in natural state = 道 before cut into 名"
+        chapters: [15, 19, 28, 32, 37, 57]
+        guodian: true
+      根:
+        pinyin: gēn
+        operator: "艮 (gèn, limit)"
+        meaning: "wood limited → root"
+        breakdown: "木 (mù) + 艮 (gèn) = what anchors, what grounds"
+        chapters: [16, 26, 59]
+        guodian: true
+      果:
+        pinyin: guǒ
+        operator: "田 (tián, field)"
+        meaning: "wood fielded → fruit/result"
+        chapters: [30, 73]
+        guodian: true
+      相:
+        pinyin: xiāng
+        operator: "目 (mù, eye)"
+        meaning: "wood eyed → mutual/each other"
+        breakdown: "木 (mù, tree) + 目 (mù, eye) = eye observing tree = mutual observation"
+        chapters: [2]
+        guodian: true
+
+  土:
+    pinyin: tǔ
+    meaning: "mound of earth or altar"
+    domain: "Ground, soil, territory, foundation"
+    geometry: "The substrate beneath substrates"
+    key_insight: "Not flowing like 水, not standing like 禾 — the base that holds"
+    characters:
+      地:
+        pinyin: dì
+        operator: "也 (yě, extending)"
+        meaning: "earth extended → ground/territory"
+        chapters: [1, 7, 25, 39]
+        guodian: true
+      堅:
+        pinyin: jiān
+        operator: "臤 (qiān, firm)"
+        meaning: "earth firmed → solid/hard"
+        breakdown: "臤 (qiān, minister controlled) + 土 (tǔ) = what Chapter 76 warns against"
+        chapters: [76, 78]
+        guodian: true
+      塞:
+        pinyin: sāi
+        operator: "宀 + 土 (roof + earth)"
+        meaning: "earth under roof → block/seal"
+        chapters: [52, 56]
+        guodian: true
+      埏:
+        pinyin: shān
+        operator: "延 (yán, extend)"
+        meaning: "earth extended → mold (pottery)"
+        chapters: [11]
+        guodian: true
+
+# Operator families: what does the transforming
+operators:
+  刂:
+    pinyin: dāo
+    meaning: "blade with handle — scythe geometry"
+    domain: "Cutting, arc-sweeping, boundary-making"
+    geometry: "The π-operation — curved sweep that traverses what straight lines cannot"
+    breakdown: |
+      刀 (dāo) = curved stroke (blade) + vertical with hook (two-handed grip)
+                = complete scythe geometry: blade ⊥ handle
+      刂 = simplified form as right-side radical
+    key_insight: |
+      NOT a knife (linear push). This is a scythe (arc sweep).
+      無為 isn't "non-action" — it's scythe-action vs knife-action.
+    substrates_operated: [禾, 貝, 岡]
+    results:
+      organic: "productive cutting (利, 解)"
+      value: "consequent pattern (則)"
+      rigid: "failure/hardening (剛)"
+
+  口:
+    pinyin: kǒu
+    meaning: "open mouth — archetypal opening"
+    domain: "Distribution, naming, articulation"
+    geometry: "Creates channels for flow, articulates distinctions"
+    breakdown: "pictograph of open mouth = square enclosure with hollow center"
+    substrates_operated: [禾, 夕, 丁, 矢]
+    results:
+      discrete: "distributed (和), targeted (知)"
+      darkness: "articulated (名)"
+      fixed: "expressible (可)"
+
+  反:
+    pinyin: fǎn
+    meaning: "hand reaching back against cliff"
+    domain: "Arriving at opposite, structural polarity"
+    geometry: "Not 'return through traversal' but co-emergence of opposition"
+    breakdown: |
+      反 (fǎn) = 厂 (hǎn, cliff/overhang) + 又 (yòu, right hand)
+              = hand against cliff = reaching back = arriving at opposite
+    key_insight: |
+      反 describes "arriving at opposite," not "= π"
+      Mathematics and DDJ are parallel notation systems
+      Both needed vocabulary for structural complement
+    related:
+      返: "反 + 辶 (movement) = reversal in motion → return journey"
+      復: "彳 + 复 = step + return → restore/return to root"
+      歸: "帚 + 止 = broom + stop → return home"
+
+  氵:
+    pinyin: shuǐ
+    meaning: "flowing water (main current + eddies)"
+    domain: "Flow, descent, finding path"
+    geometry: "Does π-operation naturally — IS 無為 in physical form"
+    substrates_operated: [台, 中, 深, 青]
+    results:
+      structure: "channeled flow (治, 沖)"
+      depth: "profound source (淵, 深)"
+      clarity: "transparency or primordiality (清, 渾)"
+
+  宀:
+    pinyin: mián
+    meaning: "roof/shelter"
+    domain: "Covering, housing, containing"
+    geometry: "Creates void-space 無 where function 用 operates"
+    breakdown: "pictograph of protective covering = what creates interior space"
+    substrates_operated: [至, 豕, 女, 示]
+    results:
+      arrival: "functional interior (室)"
+      source: "ancestral origin (宗)"
+      stability: "settledness (定, 安)"
+      obstruction: "harm (害) — blocked void"
+
+  彳:
+    pinyin: chì
+    meaning: "left footstep — continuous movement"
+    domain: "Movement, progression, way-following"
+    geometry: "Continuous motion along path"
+    breakdown: "pictograph of left step = half of 行 (xíng, walk)"
+    substrates_operated: [直+心, 复, 敫, 首]
+    results:
+      interior: "alignment (德)"
+      return: "restoration (復)"
+      boundary: "edge-orientation (徼)"
+      direction: "way/pattern (道)"
+
+# Algebra verification
+algebra_tests:
+  - test: "What can 刂 (blade) usefully operate on?"
+    predictions:
+      - "禾 (grain) → 利 (harvest) ✓"
+      - "貝 (value) → 則 (rule) ✓"
+      - "岡 (ridge) → 剛 (rigid) ✓ (failure mode)"
+      - "水 (water) → ? (can't scythe water — no such character)"
+    conclusion: "Blade operates on what can be arc-cut. Water flows around."
+
+  - test: "What can 口 (opening) usefully distribute?"
+    predictions:
+      - "禾 (grain) → 和 (harmony) ✓"
+      - "夕 (darkness) → 名 (name) ✓"
+      - "矢 (arrow) → 知 (knowing) ✓"
+      - "水 (water) → ? (water doesn't need mouth — already flowing)"
+    conclusion: "Opening operates on what needs passage-creation."
+
+summary: |
+  The substrate grammar is real. The radicals encode domains.
+  The combinations follow rules. Characters ARE equations:
+  Character = f(substrate, operator) → structural transformation

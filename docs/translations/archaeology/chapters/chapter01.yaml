@@ -1,0 +1,195 @@
+# Chapter 1: The Coordinate System
+# 道德經 第一章
+
+id: 1
+title: "The Coordinate System"
+chinese_title: "道德經 第一章"
+guodian: false
+rsm_concepts: [P0, O1, G1, P1]
+source_file: "translations/chapters/chapter01_2025-12-07.md"
+updated: "2025-12-07"
+
+lines:
+  - line: 1
+    chinese: "道可道，非常道"
+    pinyin: "dào kě dào, fēi cháng dào"
+    translation: "Manifest dao ←非→ implicit dao"
+    rsm_mapping: "可/常 axis establishment"
+    note: "非 diagrams divergence from undrawn center"
+
+  - line: 2
+    chinese: "名可名，非常名"
+    pinyin: "míng kě míng, fēi cháng míng"
+    translation: "Manifest distinction ←非→ implicit distinction"
+    rsm_mapping: "名 as distinction operator exists in both registers"
+
+  - line: 3
+    chinese: "無名天地之始"
+    pinyin: "wú míng tiān dì zhī shǐ"
+    translation: "Named-nothing — void distinguished from form — origins the dimensional field"
+    rsm_mapping: "無名 = O₁ → 天地 = G₁"
+    note: "始 marks beginning point"
+
+  - line: 4
+    chinese: "有名萬物之母"
+    pinyin: "yǒu míng wàn wù zhī mǔ"
+    translation: "Named-something — form distinguished from void — mothers all measurable things"
+    rsm_mapping: "有名 → 萬物 = P₁"
+    note: "母 marks ongoing generation"
+
+  - line: 5
+    chinese: "故常無欲以觀其妙"
+    pinyin: "gù cháng wú yù yǐ guān qí miào"
+    translation: "Therefore: orient toward implicit-nothing (absolute void, pre-distinction) to observe relational patterns"
+    rsm_mapping: "常無 = P₀ stance → perceives 妙 (relational patterns)"
+
+  - line: 6
+    chinese: "常有欲以觀其徼"
+    pinyin: "cháng yǒu yù yǐ guān qí jiǎo"
+    translation: "Orient toward implicit-something (absolute form, pre-distinction) to observe boundaries"
+    rsm_mapping: "常有 stance → perceives 徼 (boundaries)"
+    note: "Orthogonal to 常無; neither derivable from other"
+
+  - line: 7
+    chinese: "此兩者同出而異名"
+    pinyin: "cǐ liǎng zhě tóng chū ér yì míng"
+    translation: "These two emerge together yet illuminate differently"
+    rsm_mapping: "Co-emergence; distinction itself emergent from relationship"
+
+  - line: 8
+    chinese: "同謂之玄"
+    pinyin: "tóng wèi zhī xuán"
+    translation: "Together they are called the paradoxical origin"
+    rsm_mapping: "玄 = paradoxical origin where axes cross = O₁"
+
+  - line: 9
+    chinese: "玄之又玄，眾妙之門"
+    pinyin: "xuán zhī yòu xuán, zhòng miào zhī mén"
+    translation: "Paradox within paradox — the gateway to all patterns"
+    rsm_mapping: "Recursive structure; any 玄 contains another 玄; P⇔O promotion"
+
+key_terms:
+  - char: "道"
+    pinyin: "dào"
+    structural: "dao (untranslated — exists in both modes)"
+    rsm: "the pattern itself"
+    breakdown: "辶 (chuò, movement) + 首 (shǒu, head) = head/chief directing movement = guided path"
+
+  - char: "可"
+    pinyin: "kě"
+    structural: "manifest / explicit mode"
+    rsm: "P₁ (measurable surface)"
+    breakdown: "口 (kǒu, mouth) + 丁 (dīng, nail/male) = mouth affirming = can/may"
+
+  - char: "常"
+    pinyin: "cháng"
+    structural: "implicit / frame-independent mode / pre-distinction"
+    rsm: "P₀ (paradox substrate)"
+    breakdown: "尚 (shàng, still/yet) + 巾 (jīn, cloth) = that which persists under all coverings"
+
+  - char: "非"
+    pinyin: "fēi"
+    structural: "←非→ divergence from shared center"
+    rsm: "operator marking axis between poles"
+    breakdown: "pictograph of two wings spreading from center"
+
+  - char: "名"
+    pinyin: "míng"
+    structural: "distinction / the operation that differentiates"
+    rsm: "distinction operator"
+    breakdown: "夕 (xī, evening) + 口 (kǒu, mouth) = calling out in darkness = naming/distinguishing"
+
+  - char: "無"
+    pinyin: "wú"
+    structural: "nothing / void"
+    rsm: "void pole"
+    breakdown: "舞 (wǔ, dance) simplified — original shows person dancing, absence of grounded form"
+
+  - char: "有"
+    pinyin: "yǒu"
+    structural: "something / form"
+    rsm: "form pole"
+    breakdown: "又 (yòu, hand/again) + 月 (yuè, moon/flesh) = hand holding substance"
+
+  - char: "無名"
+    pinyin: "wú míng"
+    structural: "named-nothing: void-as-distinguished-from-form"
+    rsm: "O₁"
+    note: "post-distinction coordinate"
+
+  - char: "有名"
+    pinyin: "yǒu míng"
+    structural: "named-something: form-as-distinguished-from-void"
+    rsm: "complement to O₁"
+    note: "post-distinction coordinate"
+
+  - char: "常無"
+    pinyin: "cháng wú"
+    structural: "implicit-nothing: absolute void before distinction operates"
+    rsm: "P₀"
+    note: "observation stance, not coordinate"
+
+  - char: "常有"
+    pinyin: "cháng yǒu"
+    structural: "implicit-something: absolute form before distinction operates"
+    rsm: "complement stance to P₀"
+    note: "observation stance, not coordinate"
+
+  - char: "欲"
+    pinyin: "yù"
+    structural: "orientation / focus / observational stance"
+    rsm: "frame selection operator"
+    breakdown: "谷 (gǔ, valley) + 欠 (qiàn, lack/yawn) = valley lacking = desire/orientation toward"
+
+  - char: "妙"
+    pinyin: "miào"
+    structural: "relational patterns (perceived via 常無 stance)"
+    rsm: "pattern visibility"
+    breakdown: "女 (nǚ, woman) + 少 (shǎo, few/young) = subtle/wonderful"
+
+  - char: "徼"
+    pinyin: "jiǎo"
+    structural: "boundaries (perceived via 常有 stance)"
+    rsm: "boundary visibility"
+    breakdown: "彳 (chì, step) + 敫 (jiǎo, bright) = walking to edge = boundary"
+
+  - char: "玄"
+    pinyin: "xuán"
+    structural: "paradoxical origin / center where axes meet"
+    rsm: "O₁ / center where measurement = 0"
+    breakdown: "幺 (yāo, tiny) doubled and twisted = profound darkness = paradoxical depth"
+
+  - char: "門"
+    pinyin: "mén"
+    structural: "gateway"
+    rsm: "threshold between registers"
+    breakdown: "pictograph of double door"
+
+axes_established:
+  - name: "可/常"
+    description: "explicit ↔ implicit"
+    note: "vertical axis: whether distinction has operated"
+
+  - name: "無/有"
+    description: "nothing ↔ something"
+    note: "horizontal axis: poles distinction produces"
+
+  - name: "妙/徼"
+    description: "relational ↔ boundary perception"
+    note: "orthogonal observation stances"
+
+registers:
+  - name: "常"
+    mode: "implicit / pre-distinction"
+    contents: "常無 (absolute void), 常有 (absolute form) — observation stances"
+
+  - name: "可"
+    mode: "manifest / post-distinction"
+    contents: "無名 (O₁), 有名, 天地 (G₁), 萬物 (P₁) — coordinates and structures"
+
+structural_summary: |
+  The chapter establishes the coordinate system for all that follows.
+  Two registers (常/可) mark whether distinction has operated.
+  Two poles (無/有) mark what distinction produces.
+  玄 marks where axes cross — the paradoxical origin preserved.
+  The structure is recursive: 玄之又玄 = any point can become new origin.
