@@ -1,0 +1,20 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ring { fill: none; stroke: currentColor; stroke-width: 1; }
+    .center { fill: none; stroke: currentColor; stroke-width: 2; }
+    .pulsing { transform-origin: 50px 50px; }
+    svg:hover .pulsing { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+    }
+  </style>
+  <g class="pulsing">
+    <circle class="ring" cx="50" cy="50" r="40" opacity="0.2" />
+    <circle class="ring" cx="50" cy="50" r="32" opacity="0.3" />
+    <circle class="ring" cx="50" cy="50" r="24" opacity="0.4" />
+    <circle class="ring" cx="50" cy="50" r="16" opacity="0.6" />
+    <circle class="center" cx="50" cy="50" r="8" />
+    <circle cx="50" cy="50" r="2" fill="currentColor" />
+  </g>
+</svg>

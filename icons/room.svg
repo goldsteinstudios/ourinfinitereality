@@ -1,0 +1,13 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .wall { fill: none; stroke: currentColor; stroke-width: 2; }
+    .opening { fill: currentColor; opacity: 0.2; }
+  </style>
+  <g>
+    <rect class="wall" x="15" y="20" width="70" height="65" />
+    <polygon class="wall" points="50,5 15,20 85,20" />
+    <rect class="opening" x="25" y="50" width="20" height="35" />
+    <rect class="opening" x="55" y="35" width="20" height="20" />
+    <line class="wall" x1="35" y1="50" x2="35" y2="85" />
+  </g>
+</svg>

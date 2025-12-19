@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .nucleus { fill: currentColor; }
+    .orbit { fill: none; stroke: currentColor; stroke-width: 1.5; opacity: 0.6; }
+    .electron { fill: currentColor; }
+    .orbiting { transform-origin: 50px 50px; }
+    svg:hover .orbiting { animation: orbit 3s linear infinite; }
+    @keyframes orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  </style>
+  <g>
+    <ellipse class="orbit" cx="50" cy="50" rx="40" ry="15" />
+    <ellipse class="orbit" cx="50" cy="50" rx="40" ry="15" transform="rotate(60 50 50)" />
+    <ellipse class="orbit" cx="50" cy="50" rx="40" ry="15" transform="rotate(120 50 50)" />
+    <circle class="nucleus" cx="50" cy="50" r="6" />
+    <g class="orbiting">
+      <circle class="electron" cx="90" cy="50" r="3" />
+    </g>
+    <g class="orbiting" style="animation-delay: -1s;">
+      <circle class="electron" cx="30" cy="33" r="3" />
+    </g>
+    <g class="orbiting" style="animation-delay: -2s;">
+      <circle class="electron" cx="30" cy="67" r="3" />
+    </g>
+  </g>
+</svg>
