@@ -1,28 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>RSM v0981 Complete</title>
-<style>
-body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-pre, code { background: #f4f4f4; padding: 2px 6px; }
-pre { padding: 12px; overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-h1, h2, h3 { margin-top: 1.5em; }
-</style>
-</head>
-<body>
-<pre style="white-space: pre-wrap; font-family: inherit; background: none;">
-# RSM v0981 Document Set — 2025-12-26
+# RSM v0.981 Document Set — 2025-12-26
 
-Documents audited and aligned with RSM v0981 operator grammar.
+Documents audited and aligned with RSM v0.981 operator grammar.
 
 ## Contents
 
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm.md | Complete formal treatment (v0981) |
+| 01 | rsm_v0981.md | Complete formal treatment (refined from deep review) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
@@ -45,7 +29,7 @@ Documents audited and aligned with RSM v0981 operator grammar.
 
 
 # ═══════════════════════════════════════════════════════════════
-# FILE: 01_rsm.md
+# FILE: 01_rsm_v0981.md
 # ═══════════════════════════════════════════════════════════════
 
 # The Recursive Structural Model v0.981
@@ -4863,6 +4847,3 @@ The cosmos speaks in **two formulae** — one for **circulation**, one for **gro
 ---
 
 
-</pre>
-</body>
-</html>

@@ -1,12 +1,12 @@
-# RSM v0.981 Document Set — 2025-12-26
+# RSM v0981 Document Set — 2025-12-26
 
-Documents audited and aligned with RSM v0.981 operator grammar.
+Documents audited and aligned with RSM v0981 operator grammar.
 
 ## Contents
 
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm_v0981.md | Complete formal treatment (refined from deep review) |
+| 01 | rsm.md | Complete formal treatment (v0981) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
