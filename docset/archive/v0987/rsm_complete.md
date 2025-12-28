@@ -1,12 +1,12 @@
-# RSM v0988 Document Set — 2025-12-28
+# RSM v0987 Document Set — 2025-12-27
 
-Documents audited and aligned with RSM v0988 operator grammar.
+Documents audited and aligned with RSM v0987 operator grammar.
 
 ## Contents
 
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm.md | Complete formal treatment (v0988) |
+| 01 | rsm.md | Complete formal treatment (v0987) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
@@ -32,7 +32,7 @@ Documents audited and aligned with RSM v0988 operator grammar.
 # FILE: 01_rsm.md
 # ═══════════════════════════════════════════════════════════════
 
-# The Recursive Structural Model v0.988
+# The Recursive Structural Model v0.987
 
 ## A Constraint-Based Structural Theory
 
@@ -55,7 +55,6 @@ Documents audited and aligned with RSM v0988 operator grammar.
 | v0.985 | Russell's paradox analogy for V₀; IVT formalization of O₁; two registers derived from O₁ structure; minimax framing for φ selection; universality class for constants; n=4 downgraded to conjecture; compression code hypothesis for DDJ; eight-point synthesis |
 | v0.986 | **Locked corrections:** O₁ as generative (not empty); infinite divisibility as mathematical basis for unoccupiability; measurement crisis → rotation necessity; continuous transformation (no origin, no collapse); Euler's identity as Contrast/Rotation/Closure; three requirements formalized |
 | v0.987 | **Integration round:** QED compression (derivation summary); Kleiber's Law as second empirical domain; 異名 as result (not operator); π structural necessity (irrationality requirement); Spring Coil visualization |
-| v0.988 | **Postulate 4:** Reciprocal Constraint (X·Y=k); **Part VI:** Temporal extension (present moment as O₁); **Appendix F:** Epistemic status classification; **Appendix G:** Dependency graph |
 
 ---
 
@@ -681,42 +680,13 @@ The V₀ prohibition establishes *that* duality exists and *that* rotation must 
 
 **Consequence:** Any detectable periodicity or near-periodicity violates frame invariance.
 
-### 1.4 Postulate 4: Reciprocal Constraint
-
-**Postulate 4 (Reciprocal Constraint):** The gradient between complementary poles satisfies X · Y = k for some constant k > 0.
-
-**Status:** Modeling choice.
-
-**Justification:**
-
-If X and Y are genuine opposites in the sense required by contrast—where the existence of each depends on distinction from the other—then a structural relationship between them is necessary. The question is: what form?
-
-Consider what "opposite" means operationally. If you increase X while holding the system stable, Y must respond. The simplest continuous relationship capturing this mutual constraint is multiplicative: as one grows, the other shrinks proportionally, their product remaining constant.
-
-This is the mathematical shape of complementarity itself. Not X + Y = k (which allows both to shrink toward zero together), but X · Y = k (which forces reciprocal relationship).
-
-**Consequence:**
-
-At any balance point where X = Y, we have X² = k, yielding X = √k.
-
-With the coordinate choice k = 1 (normalization, not additional postulate), the balance point sits at (1, 1).
-
-This grounds the claim that P₁ = 1: unity through coexistence, not nullity through cancellation.
-
-**Dependency note:**
-
-- P₁ ≠ 0 is **locked** (follows directly from V₀ prohibition—cancellation would produce V₀)
-- P₁ = 1 specifically is **conditional** on Postulate 4 plus normalization
-
-**Modularity:** Postulate 4 can be rejected without affecting V₀ prohibition, O₁ construction, rotation necessity, or the three requirements. The core derivation chain remains intact; only the specific value at balance points changes.
-
-### 1.5 Axiom: Closure
+### 1.4 Axiom: Closure
 
 **Axiom 2 (Closure):** The structure is closed under its natural operations. Identity is preserved through return, not positional specification.
 
 **Status:** Additional axiom. (Note: Closure is derived as necessary for persistence in Theorem 0.9, but its specific mathematical form is axiomatic.)
 
-### 1.6 Postulate Summary
+### 1.5 Postulate Summary
 
 | Element | Status | Modular Independence |
 |---------|--------|---------------------|
@@ -731,11 +701,8 @@ This grounds the claim that P₁ = 1: unity through coexistence, not nullity thr
 | Contrast/Rotation/Closure | Structural requirements | Core + Postulate 1 |
 | Self-similarity | Postulate | Can be rejected without affecting V₀, O₁, or rotation |
 | Frame invariance | Postulate | Can be rejected without affecting V₀, O₁, or rotation |
-| Reciprocal Constraint | Postulate 4 | Can be rejected without affecting V₀, O₁, rotation, or three requirements |
 
-**Critical:** A critic can reject self-similarity, frame-invariance, or reciprocal constraint without undermining the V₀ argument, O₁ construction, rotation necessity, or three requirements. The framework is modular.
-
-For detailed epistemic status of all claims, see Appendix F.
+**Critical:** A critic can reject self-similarity or frame-invariance without undermining the V₀ argument, O₁ construction, rotation necessity, or three requirements. The framework is modular.
 
 ---
 
@@ -1109,143 +1076,6 @@ The 3/4 exponent is geometric consequence of:
 
 ---
 
-# PART VI: EXTENSIONS
-
-## 6.1 Temporal Extension
-
-The core RSM derivation concerns spatial structure. This section extends the framework to temporal structure, requiring one additional postulate.
-
-### 6.1.1 Postulate 1T: Temporal Continuity
-
-**Postulate 1T (Temporal Continuity):** Temporal gradients are continuous.
-
-**Status:** Postulate extension. Applies the logic of Postulate 1 to the temporal domain.
-
-**Justification:** If spatial gradients must be continuous to avoid privileged discontinuities, temporal gradients face the same constraint. A temporal "gap" would constitute a privileged moment—violating the spirit of frame invariance extended to time.
-
-**Modularity:** This postulate can be rejected without affecting the spatial derivation. The temporal extension is optional.
-
----
-
-### 6.1.2 Theorem 0.1T: Temporal V₀ Unspecifiable
-
-**Claim:** The absence of all temporal distinction (no before/after, no duration, no change) is unspecifiable within contrast-based representation.
-
-**Proof:**
-
-1. Let temporal V₀ denote "the complete absence of temporal distinction"
-2. To specify temporal V₀, we must distinguish it from "temporal distinction present"
-3. This distinction is itself a temporal contrast (the difference between temporal void and temporal structure)
-4. Therefore specifying temporal V₀ requires temporal contrast
-5. But temporal V₀ is defined as the absence of all temporal contrast
-6. The specification is self-undermining ∎
-
-**Parallel:** This exactly mirrors Theorem 0.1 for spatial V₀. The self-referential impossibility has the same logical structure.
-
----
-
-### 6.1.3 Meta-Theorem 0.2T: Temporal Contrast Necessary
-
-**Claim:** If temporal V₀ is unspecifiable, temporal contrast is necessary within any admissible representation.
-
-**Proof:** Direct parallel to Meta-Theorem 0.2. If "no temporal distinction" cannot be coherently specified, then temporal distinction must be present in any specifiable state. ∎
-
----
-
-### 6.1.4 Theorem 0.3T: Present Moment as Temporal O₁
-
-**Claim:** Given Postulate 1T, the present moment exists structurally but cannot be occupied.
-
-**Proof:**
-
-1. Temporal contrast (from 0.2T) requires poles. Designate these as past-orientation and future-orientation (or "before-leaning" and "after-leaning").
-
-2. By Postulate 1T (temporal continuity), the gradient between these poles is continuous.
-
-3. By the Intermediate Value Theorem, a balance point must exist where past-orientation and future-orientation are equal.
-
-4. At this balance point, temporal orientations would cancel completely—producing temporal V₀.
-
-5. But temporal V₀ is unspecifiable (Theorem 0.1T).
-
-6. Therefore the balance point exists structurally but cannot be instantiated as a state.
-
-7. Designate this as temporal O₁: the present moment. ∎
-
-**Structural character:** The present moment is not a location in time but a limit that structures temporal experience. It is referenced by all temporal positions (everything is "before" or "after" relative to now) but cannot itself be occupied as a fixed position.
-
-**Parallel to spatial O₁:** Just as spatial O₁ is the generative center that all positions orbit without occupying, temporal O₁ is the generative center that all moments approach without reaching.
-
----
-
-### 6.1.5 The Zoom Paradox (Temporal)
-
-Try to locate "now" precisely:
-
-- This second? But which millisecond?
-- This millisecond? But which microsecond?
-- This microsecond? But which nanosecond?
-
-No matter how finely you divide, "now" recedes. You're always just-past or just-future, never exactly present.
-
-This is the temporal manifestation of infinite divisibility. The present moment cannot be located at any scale, yet remains structurally present—the reference point that makes "before" and "after" meaningful.
-
-**Mathematical parallel:**
-
-lim(Δt→0) "now" remains a limit, not a location.
-
-You approach the present; you never occupy it.
-
----
-
-### 6.1.6 Implications (Derived)
-
-**From temporal O₁, these follow:**
-
-1. **No temporal position is privileged:** Every moment is equally displaced from the unoccupiable present.
-
-2. **Temporal reference is dynamic:** Since the present cannot be occupied, temporal orientation must be maintained through movement, not static position. (Parallel to spatial rotation necessity.)
-
-3. **Memory and anticipation are structural:** Past-orientation and future-orientation are not psychological accidents but structural requirements for temporal existence.
-
----
-
-### 6.1.7 Open Questions (Not Derived)
-
-The following are suggested by the temporal extension but NOT derived from it. They remain hypotheses for investigation:
-
-**Q1: What is temporal rotation?**
-
-Spatial persistence requires rotation around O₁. What is the temporal analogue? Oscillation between memory and anticipation? Neural integration across time windows? This requires formalization.
-
-**Q2: What determines "experienced duration"?**
-
-If the present is a limit, experienced "now" may be an integrated average across some temporal window. What sets the window size? This is an empirical question, not a structural derivation.
-
-**Q3: How does temporal O₁ relate to consciousness?**
-
-RSM makes no claims about consciousness. The structural parallel between temporal O₁ and experienced "now" is suggestive but does not constitute a theory of consciousness.
-
-**Q4: Does temporal structure recurse?**
-
-Spatial structure recurses (P → O promotion). Does temporal structure? What would temporal recursion look like? This remains open.
-
----
-
-### 6.1.8 Epistemic Status Summary
-
-| Claim | Status | Dependency |
-|-------|--------|------------|
-| Temporal V₀ unspecifiable | **Derivable** | Parallel to Theorem 0.1 |
-| Temporal contrast necessary | **Derivable** | Parallel to Meta-Theorem 0.2 |
-| Temporal continuity | **Postulate 1T** | Extension of Postulate 1 |
-| Present moment = temporal O₁ | **Derivable** | Given Postulate 1T |
-| Temporal rotation mechanism | **Open question** | Not derived |
-| Experienced duration | **Open question** | Empirical, not structural |
-| Consciousness connections | **Outside framework** | RSM makes no claims |
-
----
-
 ## APPENDICES
 
 ### Appendix A: Locked Definitions
@@ -1328,243 +1158,6 @@ You approach zero; you never occupy it. Zero is the limit that structures the se
 
 ---
 
-### Appendix F: Epistemic Status Classification
-
-RSM makes many claims. They don't all have the same epistemic status. This appendix provides explicit classification to prevent conflation.
-
-#### Tier 1: Locked (Derivable from First Principles)
-
-These claims follow necessarily from the postulates. Rejecting them requires rejecting the framework itself.
-
-| Claim | Derivation Path | Status |
-|-------|-----------------|--------|
-| V₀ is unspecifiable | Theorem 0.1 (contrast requires content) | **Locked** |
-| Contrast is necessary | Meta-Theorem 0.2 (distinguishability requires difference) | **Locked** |
-| O₁ exists as minimal structure | Theorem 0.3 (generative center from contrast) | **Locked** |
-| O₁ is unoccupiable | Theorem 0.5 (infinite divisibility) | **Locked** |
-| Rotation is necessary | Theorem 2.1 (measurement crisis) | **Locked** |
-| Three requirements (Contrast, Rotation, Closure) | Part III synthesis | **Locked** |
-| P₁ ≠ 0 | V₀ prohibition (cancellation would produce V₀) | **Locked** |
-
-**Key point:** P₁ ≠ 0 is locked. P₁ = 1 specifically depends on Postulate 4.
-
-#### Tier 2: Postulate-Dependent
-
-These claims are derivable given the postulates, but the postulates themselves are modeling choices.
-
-| Claim | Required Postulate | Can Be Rejected? |
-|-------|-------------------|------------------|
-| e emerges from continuous generation | Postulate 2 (Continuity) | Yes—framework becomes discrete |
-| π emerges from closure in continuous field | Postulate 3 (Frame Invariance) | Yes—closure might not require π |
-| P₁ = 1 (balance via coexistence) | Postulate 4 (Reciprocal Constraint) | Yes—V₀ prohibition unaffected |
-| Present moment as temporal O₁ | Postulate 1T (Temporal Continuity) | Yes—temporal extension optional |
-
-**Rejecting a postulate changes what follows, but doesn't invalidate the locked tier.**
-
-#### Tier 3: Empirical Validation
-
-These claims involve mappings to physical/biological systems. They can be falsified by observation.
-
-| Claim | Domain | Falsification Condition |
-|-------|--------|------------------------|
-| Root tips maintain functional quiescent center | Plant biology | If QC removal enhances rather than disrupts growth |
-| Kleiber's Law (M^0.75 scaling) | Biology (metabolism) | If alternative scaling fits better without RSM structure |
-| Atomic orbital structure maps to O₁ framework | Physics | If orbitals don't exhibit unoccupiable-center geometry |
-| Standing wave nodes are physical O₁ | Physics | If nodes can be occupied without destroying wave |
-
-**These are predictions, not premises. RSM is strengthened if they hold, weakened if they fail.**
-
-#### Tier 4: Structural Analogies
-
-These are pattern recognitions—interesting, possibly insightful, but not derivations.
-
-| Analogy | Status | Epistemic Note |
-|---------|--------|----------------|
-| DDJ Chapter 1 as coordinate system | Interpretive | Depends on translation choices; may reflect RSM back onto DDJ |
-| DDJ Chapter 11 as O₁ geometry | Interpretive | 有/無 structure aligns, but this isn't proof |
-| Euler's identity as "Contrast, Rotation, Closure" | Suggestive | The mapping works mathematically; the naming is interpretation |
-| Zero as "generative, not empty" | Conceptual reframe | Mathematically equivalent; philosophically different |
-| Hurricane eye as O₁ | Illustrative | Useful analogy, not derivation |
-
-**Analogies invite investigation. They don't constitute evidence.**
-
-#### Tier 5: Outside the Framework
-
-These are questions RSM does not address, regardless of how adjacent they seem.
-
-| Topic | RSM Position |
-|-------|--------------|
-| What consciousness is | No claim—pattern recognition doesn't explain experience |
-| Whether O₁ "exists" metaphysically | No claim—RSM describes structure, not ontology |
-| Whether universe "requires" this structure | No claim—RSM doesn't derive cosmology |
-| How to live or what to value | No claim—description, not prescription |
-| Whether ancient authors "knew" this | No claim—parallel patterns, not mind-reading |
-
-**The framework's silence on these topics is deliberate, not an oversight.**
-
-#### Using This Classification
-
-When evaluating an RSM claim:
-
-1. **Identify tier.** Is this locked, postulate-dependent, empirical, analogical, or out of scope?
-2. **Trace dependencies.** What would have to be false for this to be false?
-3. **Check conflation.** Are you treating a Tier 4 analogy as if it were Tier 1 derivation?
-4. **Apply appropriate skepticism.** Tier 1 claims need foundational critique; Tier 3 claims need data.
-
-**Summary Principle:**
-
-> The core derivation chain (V₀ → Contrast → O₁ → Rotation → Three Requirements) is **locked** given the framework.
->
-> Everything else—from specific constants to biological mappings to ancient text interpretations—carries its own burden of proof.
->
-> RSM doesn't ask you to believe the analogies. It asks you to check the derivations and test the predictions.
-
----
-
-### Appendix G: Dependency Graph
-
-This graph shows what depends on what. Follow the arrows to trace any claim back to its foundations.
-
-```
-FOUNDATIONS
-═══════════════════════════════════════════════════════════════════════
-
-                    ┌─────────────────────────────┐
-                    │     AXIOM: CLOSURE          │
-                    │  "System must be           │
-                    │   self-contained"           │
-                    └─────────────┬───────────────┘
-                                  │
-                                  ▼
-                    ┌─────────────────────────────┐
-                    │   POSTULATE 1: CONTRAST     │
-                    │  "Distinguishability        │
-                    │   requires opposition"      │
-                    └─────────────┬───────────────┘
-                                  │
-        ┌─────────────────────────┼─────────────────────────┐
-        │                         │                         │
-        ▼                         ▼                         ▼
-┌───────────────┐     ┌───────────────────┐     ┌───────────────────┐
-│ THEOREM 0.1   │     │  META-THEOREM 0.2 │     │  [POSTULATE 2]    │
-│ V₀ Unspecifi- │     │  Contrast is      │     │  Continuity       │
-│ able          │     │  Necessary        │     │  (optional)       │
-└───────┬───────┘     └─────────┬─────────┘     └─────────┬─────────┘
-        │                       │                         │
-        │                       │                         │
-        └───────────┬───────────┘                         │
-                    │                                     │
-                    ▼                                     │
-        ┌───────────────────────┐                         │
-        │     THEOREM 0.3       │                         │
-        │  O₁ as Generative     │                         │
-        │  Center               │◄────────────────────────┘
-        └───────────┬───────────┘
-                    │
-        ┌───────────┴───────────┐
-        │                       │
-        ▼                       ▼
-┌───────────────────┐   ┌───────────────────┐
-│   THEOREM 0.5     │   │  [POSTULATE 3]    │
-│   Infinite        │   │  Frame Invariance │
-│   Divisibility    │   │  (optional)       │
-└───────────┬───────┘   └─────────┬─────────┘
-            │                     │
-            │     ┌───────────────┘
-            │     │
-            ▼     ▼
-    ┌───────────────────────┐
-    │     THEOREM 2.1       │
-    │  Measurement Crisis / │
-    │  Rotation Necessary   │
-    └───────────┬───────────┘
-                │
-                ▼
-    ┌───────────────────────┐
-    │   THREE REQUIREMENTS  │
-    │                       │
-    │  • Contrast           │
-    │  • Rotation           │
-    │  • Closure            │
-    └───────────┬───────────┘
-                │
-    ════════════╧════════════════════════════════════════════════════
-
-POSTULATE-DEPENDENT BRANCHES
-═══════════════════════════════════════════════════════════════════════
-
-From POSTULATE 2 (Continuity):
-        │
-        ▼
-┌───────────────────┐     ┌───────────────────┐
-│   THEOREM 3.1     │────▶│  e as continuous  │
-│   e derivation    │     │  generation rate  │
-└───────────────────┘     └───────────────────┘
-
-From POSTULATE 3 (Frame Invariance):
-        │
-        ▼
-┌───────────────────┐     ┌───────────────────┐
-│   THEOREM 4.1     │────▶│  π as closure of  │
-│   π derivation    │     │  curvature        │
-└───────────────────┘     └───────────────────┘
-
-From POSTULATE 4 (Reciprocal Constraint):
-        │
-        ▼
-┌───────────────────┐     ┌───────────────────┐
-│   X · Y = k       │────▶│  P₁ = 1 at        │
-│   constraint      │     │  balance point    │
-└───────────────────┘     └───────────────────┘
-
-From POSTULATE 1T (Temporal Continuity):
-        │
-        ▼
-┌───────────────────┐     ┌───────────────────┐
-│   THEOREM 0.3T    │────▶│  Present moment   │
-│   Temporal O₁     │     │  as temporal O₁   │
-└───────────────────┘     └───────────────────┘
-
-═══════════════════════════════════════════════════════════════════════
-
-EMPIRICAL VALIDATION (Independent of Derivation Chain)
-═══════════════════════════════════════════════════════════════════════
-
-┌─────────────────────────────────────────────────────────────────────┐
-│                                                                     │
-│   Plant QC Geometry ──────┐                                         │
-│                           │                                         │
-│   Kleiber's Law ──────────┼──────▶  EMPIRICAL TEST OF O₁ PATTERN   │
-│                           │                                         │
-│   Atomic Orbitals ────────┘                                         │
-│                                                                     │
-│   (These test predictions, not premises)                            │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-#### Reading the Graph
-
-**Solid arrows (│ ▼ ▶):** Derivation dependency. The conclusion requires the premise.
-
-**Bracketed items [POSTULATE N]:** Optional modeling choices. Can be accepted or rejected without affecting what comes before them.
-
-**Double lines (═══):** Section boundaries in the document.
-
-#### Modularity Check
-
-| If you reject... | What breaks | What survives |
-|-----------------|-------------|---------------|
-| Postulate 2 (Continuity) | e derivation, continuous-field claims | V₀, O₁, rotation, three requirements |
-| Postulate 3 (Frame Invariance) | π derivation, scale-invariance claims | V₀, O₁, rotation (but closure might take different form) |
-| Postulate 4 (Reciprocal Constraint) | P₁ = 1 specifically | V₀, O₁, rotation, P₁ ≠ 0, three requirements |
-| Postulate 1T (Temporal) | Present-moment O₁, temporal extension | All spatial claims intact |
-| Any Tier 3/4 claim | That specific mapping/analogy | All Tier 1 and 2 claims |
-
-**The core chain (V₀ prohibition → Contrast necessity → O₁ construction → Rotation necessity → Three Requirements) depends only on the Closure axiom and Contrast postulate.**
-
----
-
 ## Conclusion
 
 The Recursive Structural Model derives the necessity of existence and fundamental mathematical constants from the impossibility of specifying absolute void within contrast-based representation.
@@ -1591,7 +1184,7 @@ That's the grammar. That's the bedrock.
 
 ---
 
-*Draft v0.988 — December 2025*
+*Draft v0.987 — December 2025*
 *AL-AN Project: Algorithmic Logic of Asymptotic Nothing*
 
 
