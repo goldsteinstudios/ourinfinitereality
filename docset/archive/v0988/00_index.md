@@ -1,4 +1,4 @@
-# RSM v0988 Document Set — 2025-12-29
+# RSM v0988 Document Set — 2025-12-28
 
 Documents audited and aligned with RSM v0988 operator grammar.
 
@@ -19,7 +19,6 @@ Documents audited and aligned with RSM v0988 operator grammar.
 | 11 | ddj_chapter51.md | 道生/德畜 formula (玄德) |
 | 12 | ddj_chapter81.md | Closure validation (三 paradoxes) |
 | 13 | euler_tao_identity.md | Both canonical identities |
-| 14 | between_e_and_phi.md | e/φ architecture, 非 grammar, 玄牝=φ |
 
 ## Canonical Identities
 
