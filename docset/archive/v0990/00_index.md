@@ -47,17 +47,16 @@ Documents audited and aligned with RSM v0990 operator grammar.
 | 25 | trans_chapter64.md | Chapter 64 — Assist self-so-ness |
 | 26 | trans_chapter76.md | Chapter 76 — Soft overcomes hard |
 
-### Essays (27-29)
+### Essays (27-28)
 | # | File | Description |
 |---|------|-------------|
 | 27 | euler_tao_identity.md | Both canonical identities |
 | 28 | between_e_and_phi.md | e/φ architecture, 非 grammar, 玄牝=φ |
-| 29 | grammar_of_existence.md | Complete RSM introduction for general audience |
 
-### Assessments (30)
+### Assessments (29)
 | # | File | Description |
 |---|------|-------------|
-| 30 | between_e_phi_assessment.md | Steelman analysis: claim tiers, defensibility |
+| 29 | between_e_phi_assessment.md | Steelman analysis: claim tiers, defensibility |
 
 ## Canonical Identities
 
