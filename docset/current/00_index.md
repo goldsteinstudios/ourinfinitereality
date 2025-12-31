@@ -53,6 +53,11 @@ Documents audited and aligned with RSM v0988 operator grammar.
 | 27 | euler_tao_identity.md | Both canonical identities |
 | 28 | between_e_and_phi.md | e/φ architecture, 非 grammar, 玄牝=φ |
 
+### Assessments (29)
+| # | File | Description |
+|---|------|-------------|
+| 29 | between_e_phi_assessment.md | Steelman analysis: claim tiers, defensibility |
+
 ## Canonical Identities
 
 **Euler:** e^(iπ) + 1 = 0

@@ -754,16 +754,15 @@ The scythe doesn't create grain; it creates the cleared space where work can hap
 
 **Same geometry:** Hollow center, radial lines, curved surface, intersections.
 
-The perpendicularity constraint manifests as the ring boundary:
+Tree rings record **rate variation** in continuous recursion:
 
-| Season | Gradient-Balance Angle | State |
-|--------|------------------------|-------|
-| Spring | θ ≈ 0° | Aligned, fast growth |
-| Summer | θ increasing | Diverging |
-| Late summer | θ = 90° | **Perpendicular → ring boundary** |
-| Fall/winter | θ > 90° | Growth cessation |
+| Season | Resources in tree mass | Cell size | Ring appearance |
+|--------|------------------------|-----------|-----------------|
+| Spring | High water, high sugar | Large cells | Light, wide (earlywood) |
+| Summer | Moderate | Medium cells | Transitional |
+| Fall/winter | Frozen water, limited sugar | Small cells | Dark, dense (latewood) |
 
-The ring boundary is not caused by seasonal oscillation—it's **triggered** by perpendicular intersection. The oscillation modulates *when* perpendicularity occurs; the geometry determines *where* recursion is possible.
+**Critical:** Recursion is continuous—the tree never stops transforming. The ring "boundary" is where cell density changes visibly, recording the rate at which recursion occurred relative to available resources. Seasonal oscillation modulates *throughput*, not whether recursion occurs.
 
 ### The Meristem as Throughline
 
