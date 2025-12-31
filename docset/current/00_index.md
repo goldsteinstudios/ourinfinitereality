@@ -1,13 +1,13 @@
-# RSM v0988 Document Set — 2025-12-30
+# RSM v0990 Document Set — 2025-12-30
 
-Documents audited and aligned with RSM v0988 operator grammar.
+Documents audited and aligned with RSM v0990 operator grammar.
 
 ## Contents
 
 ### Core RSM (01-04)
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm.md | Complete formal treatment (v0988) |
+| 01 | rsm.md | Complete formal treatment (v0990) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
