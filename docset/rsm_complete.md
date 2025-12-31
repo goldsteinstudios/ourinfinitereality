@@ -1,13 +1,13 @@
-# RSM v0990 Document Set — 2025-12-31
+# RSM v0991 Document Set — 2025-12-31
 
-Documents audited and aligned with RSM v0990 operator grammar.
+Documents audited and aligned with RSM v0991 operator grammar.
 
 ## Contents
 
 ### Core RSM (01-04)
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm.md | Complete formal treatment (v0990) |
+| 01 | rsm.md | Complete formal treatment (v0991) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
@@ -76,7 +76,7 @@ Documents audited and aligned with RSM v0990 operator grammar.
 # FILE: 01_rsm.md
 # ═══════════════════════════════════════════════════════════════
 
-# The Recursive Structural Model v0.990
+# The Recursive Structural Model v0.991
 
 ## A Constraint-Based Structural Theory
 
@@ -101,6 +101,7 @@ Documents audited and aligned with RSM v0990 operator grammar.
 | v0.987 | **Integration round:** QED compression (derivation summary); Kleiber's Law as second empirical domain; 異名 as result (not operator); π structural necessity (irrationality requirement); Spring Coil visualization |
 | v0.988 | **Postulate 4:** Reciprocal Constraint (X·Y=k); **Part VI:** Temporal extension (present moment as O₁); **Appendix F:** Epistemic status classification; **Appendix G:** Dependency graph |
 | v0.990 | **Session consolidation:** V₀ terminology lock (Absolute Void); tree ring correction (continuous recursion, rate variation); steelman assessment integration; tree structural recursion document |
+| v0.991 | **Key term refinements:** 玄=paradox (not mystery); 牝=recursive generative capacity (φ); 玄牝=generative paradox; 生=bidirectional emergence; 根 vs 母 distinction; 天地 vs 天下 distinction; Chapter 6 structural reading |
 
 ---
 

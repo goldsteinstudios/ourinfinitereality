@@ -1,4 +1,4 @@
-# The Recursive Structural Model v0.990
+# The Recursive Structural Model v0.991
 
 ## A Constraint-Based Structural Theory
 
@@ -23,6 +23,7 @@
 | v0.987 | **Integration round:** QED compression (derivation summary); Kleiber's Law as second empirical domain; 異名 as result (not operator); π structural necessity (irrationality requirement); Spring Coil visualization |
 | v0.988 | **Postulate 4:** Reciprocal Constraint (X·Y=k); **Part VI:** Temporal extension (present moment as O₁); **Appendix F:** Epistemic status classification; **Appendix G:** Dependency graph |
 | v0.990 | **Session consolidation:** V₀ terminology lock (Absolute Void); tree ring correction (continuous recursion, rate variation); steelman assessment integration; tree structural recursion document |
+| v0.991 | **Key term refinements:** 玄=paradox (not mystery); 牝=recursive generative capacity (φ); 玄牝=generative paradox; 生=bidirectional emergence; 根 vs 母 distinction; 天地 vs 天下 distinction; Chapter 6 structural reading |
 
 ---
 
