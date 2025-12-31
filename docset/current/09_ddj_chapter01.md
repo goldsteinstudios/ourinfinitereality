@@ -97,10 +97,16 @@ Now the chapter shifts to methodology. How do you observe from the **常** (impl
 
 These are not coordinates within a frame. These are stances *prior to* framing — ways of looking that reveal different structural information:
 
-- 常無 stance → perceives **妙** (relational patterns, how things connect)
-- 常有 stance → perceives **徼** (boundaries, where things separate)
+| Stance | Geometric Operation | What You Perceive |
+|--------|---------------------|-------------------|
+| **常無欲** | Fix center, vary boundary | **妙** — relational patterns, flows, what persists through change |
+| **常有欲** | Fix boundary, vary center | **徼** — edges, boundaries, where things stop |
 
-Neither stance produces knowledge derivable from the other. They are orthogonal operations.
+**妙-observation** (fix center, vary boundary): You hold the reference point stable and watch what flows through it. The tree is carbon cycling through a standing pattern. The wheel is spokes maintaining rotation around a fixed hub. You see *persistence as process*.
+
+**徼-observation** (fix boundary, vary center): You hold the edge stable and look inward. Where exactly is the tree's boundary? The bark is dead, the interior is dead — only the cambium (a dimensionless edge) is alive. You see *boundaries as paradoxes*.
+
+Neither stance produces knowledge derivable from the other. They are geometrically orthogonal operations — two ways of looking that reveal genuinely different structural information.
 
 ### Lines 7–9: Synthesis
 
