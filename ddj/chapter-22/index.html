@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chapter 22: The Geometry of Yielding | Our Infinite Reality</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><script>
+      // Check for saved theme preference or default to light
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    </script><link rel="stylesheet" href="/_astro/about.QJCo31f3.css">
+<style>.prose[data-astro-cid-7yqd6k32] h2[data-astro-cid-7yqd6k32]{font-size:1.5rem;font-weight:700;margin-top:3rem;margin-bottom:1rem;color:var(--color-accent)}.prose[data-astro-cid-7yqd6k32] h3[data-astro-cid-7yqd6k32]{font-size:1.25rem;font-weight:700;margin-top:2rem;margin-bottom:.75rem;color:var(--color-text)}.prose[data-astro-cid-7yqd6k32] p[data-astro-cid-7yqd6k32]{margin-bottom:1rem;line-height:1.8;color:var(--color-text-secondary)}.prose[data-astro-cid-7yqd6k32] strong[data-astro-cid-7yqd6k32]{font-weight:700;color:var(--color-text)}.prose[data-astro-cid-7yqd6k32] blockquote[data-astro-cid-7yqd6k32]{border-left:4px solid var(--color-accent);padding-left:1.5rem;margin:1.5rem 0;color:var(--color-text-secondary)}.prose[data-astro-cid-7yqd6k32] ul[data-astro-cid-7yqd6k32]{list-style-type:disc;margin-bottom:1.5rem;margin-left:1.5rem;padding-left:.5rem;color:var(--color-text-secondary)}.prose[data-astro-cid-7yqd6k32] ol[data-astro-cid-7yqd6k32]{list-style-type:decimal;margin-bottom:1.5rem;margin-left:1.5rem;padding-left:.5rem;color:var(--color-text-secondary)}.prose[data-astro-cid-7yqd6k32] li[data-astro-cid-7yqd6k32]{margin-bottom:.5rem;padding-left:.25rem}.prose[data-astro-cid-7yqd6k32] table[data-astro-cid-7yqd6k32]{width:100%;margin:1.5rem 0;border-collapse:collapse;font-size:.95rem}.prose[data-astro-cid-7yqd6k32] th[data-astro-cid-7yqd6k32]{text-align:left;padding:.75rem 1rem;border-bottom:2px solid var(--color-border);color:var(--color-text);font-weight:600;background:var(--color-surface)}.prose[data-astro-cid-7yqd6k32] td[data-astro-cid-7yqd6k32]{padding:.75rem 1rem;border-bottom:1px solid var(--color-border-light);color:var(--color-text-secondary);vertical-align:top}.prose[data-astro-cid-7yqd6k32] code[data-astro-cid-7yqd6k32]{background:var(--color-surface);padding:.2rem .5rem;border-radius:.25rem;font-size:.9em;border:1px solid var(--color-border-light)}.prose[data-astro-cid-7yqd6k32] pre[data-astro-cid-7yqd6k32]{background:var(--color-surface);padding:1.25rem;border-radius:.5rem;overflow-x:auto;margin:1.5rem 0;border:1px solid var(--color-border);font-size:.9rem;line-height:1.6}.prose[data-astro-cid-7yqd6k32] pre[data-astro-cid-7yqd6k32] code[data-astro-cid-7yqd6k32]{background:transparent;padding:0;border:none}.prose[data-astro-cid-7yqd6k32] hr[data-astro-cid-7yqd6k32]{border:none;border-top:1px solid var(--color-border);margin:2.5rem 0}
+</style></head> <body class="min-h-screen" style="background: var(--color-bg); color: var(--color-text);"> <header style="border-bottom: 1px solid var(--color-border);" class="px-6 py-4"> <nav class="max-w-4xl mx-auto flex items-center justify-between"> <a href="/" class="text-xl font-semibold hover:opacity-70 transition-opacity" style="color: var(--color-accent);">
+Our Infinite Reality
+</a> <div class="flex items-center gap-4 text-sm" style="color: var(--color-text-muted);"> <a href="/" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted);">Home</a> <a href="/essays" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted);">Essays</a> <a href="/catalog" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted);">Objects</a> <a href="/about" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted);">About</a> <button id="theme-toggle" class="p-2 rounded-lg transition-colors" style="background: var(--color-surface); border: 1px solid var(--color-border);" aria-label="Toggle theme"> <svg id="sun-icon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path> </svg> <svg id="moon-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path> </svg> </button> </div> </nav> </header> <main class="max-w-4xl mx-auto px-6 py-8">  <article class="max-w-2xl mx-auto" data-astro-cid-7yqd6k32> <!-- Header --> <header class="text-center mb-12" data-astro-cid-7yqd6k32> <p class="themed-text-muted mb-2" data-astro-cid-7yqd6k32>道德經 第22章</p> <h1 class="text-4xl font-bold mb-2" data-astro-cid-7yqd6k32>曲則全</h1> <p class="text-xl themed-text-secondary mb-4" data-astro-cid-7yqd6k32>The Geometry of Yielding</p> <div class="flex items-center justify-center gap-4 text-sm themed-text-muted" data-astro-cid-7yqd6k32> <span data-astro-cid-7yqd6k32>v1.0</span> <span data-astro-cid-7yqd6k32>•</span> <span data-astro-cid-7yqd6k32>December 2025</span>  <span data-astro-cid-7yqd6k32>•</span> <span data-astro-cid-7yqd6k32>RSM v0.988</span>   <span data-astro-cid-7yqd6k32>•</span> <span style="color: var(--color-strong, #3b82f6)" data-astro-cid-7yqd6k32>strong</span>  </div> </header> <!-- Translation Content --> <div class="prose prose-themed prose-lg max-w-none" data-astro-cid-7yqd6k32> <h2 id="chinese-text">Chinese Text</h2>
+<blockquote>
+<p>曲則全，枉則直，窪則盈，弊則新，少則得，多則惑。
+是以聖人抱一為天下式。
+不自見，故明；不自是，故彰；不自伐，故有功；不自矜，故長。
+夫唯不爭，故天下莫能與之爭。
+古之所謂「曲則全」，豈虛言哉？誠全而歸之。</p>
+</blockquote>
+<hr>
+<h2 id="translation">Translation</h2>
+<p><strong>曲則全，枉則直，窪則盈，弊則新，少則得，多則惑</strong>
+What bends → preserves wholeness.
+What accepts distortion → finds straightness.
+What hollows → becomes filled.
+What wears out → renews.
+What has little → obtains.
+What has much → becomes confused.</p>
+<p><strong>是以聖人抱一為天下式</strong>
+Therefore the one who perceives clearly embraces unity as the pattern for all under heaven.</p>
+<p><strong>不自見，故明；不自是，故彰；不自伐，故有功；不自矜，故長</strong>
+Not self-displaying → thus illuminated.
+Not self-affirming → thus manifest.
+Not self-promoting → thus achieving.
+Not self-aggrandizing → thus enduring.</p>
+<p><strong>夫唯不爭，故天下莫能與之爭</strong>
+Only through not-contending does all-under-heaven become unable to contend with it.</p>
+<p><strong>古之所謂「曲則全」，豈虛言哉？誠全而歸之</strong>
+What the ancients called “bending preserves wholeness”—how could this be empty words? Through genuine wholeness, return to it.</p>
+<hr>
+<h2 id="key-terms">Key Terms</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Character</th><th>Pinyin</th><th>Structural Reading</th></tr></thead><tbody><tr><td>曲</td><td>qū</td><td>bend, curve (distributes stress)</td></tr><tr><td>則</td><td>zé</td><td>thus, transformation operator (not “should”)</td></tr><tr><td>全</td><td>quán</td><td>whole, complete (integrity preserved)</td></tr><tr><td>抱</td><td>bào</td><td>embrace, hold close</td></tr><tr><td>一</td><td>yī</td><td>one, unity (the origin point)</td></tr><tr><td>式</td><td>shì</td><td>pattern, formula, model</td></tr><tr><td>不自X</td><td>bù zì X</td><td>not self-X (non-occupation of position)</td></tr><tr><td>爭</td><td>zhēng</td><td>contend, grasp (hands grasping)</td></tr><tr><td>歸</td><td>guī</td><td>return (echoes 反)</td></tr></tbody></table>
+<hr>
+<h2 id="the-six-transformations">The Six Transformations</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Input</th><th>則</th><th>Output</th><th>Principle</th></tr></thead><tbody><tr><td>曲 (bent)</td><td>→</td><td>全 (whole)</td><td>Curvature distributes stress</td></tr><tr><td>枉 (crooked)</td><td>→</td><td>直 (straight)</td><td>Accepting deviation enables return</td></tr><tr><td>窪 (hollow)</td><td>→</td><td>盈 (full)</td><td>Low points accumulate flow</td></tr><tr><td>弊 (worn)</td><td>→</td><td>新 (new)</td><td>Exhaustion enables renewal</td></tr><tr><td>少 (little)</td><td>→</td><td>得 (obtaining)</td><td>Emptiness creates capacity</td></tr><tr><td>多 (much)</td><td>→</td><td>惑 (confused)</td><td>Excess overwhelms</td></tr></tbody></table>
+<p>First five: yielding → obtaining.
+Sixth: accumulating → losing.</p>
+<hr>
+<h2 id="抱一--holding-the-origin">抱一 — Holding the Origin</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>一 = origin point (0,0,0)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>When you hold the origin:</span></span>
+<span class="line"><span>  → all positions accessible</span></span>
+<span class="line"><span>  → all transformations available</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>When you're identified with a position:</span></span>
+<span class="line"><span>  → can only see from that position</span></span>
+<span class="line"><span>  → must defend that territory</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>式 (shì) = pattern/formula. The sage uses unity as <strong>operational formula</strong> generating appropriate responses.</p>
+<hr>
+<h2 id="the-four-non-self-operations">The Four Non-Self Operations</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Not Doing</th><th>→</th><th>Result</th><th>Why</th></tr></thead><tbody><tr><td>不自見 (not self-displaying)</td><td>→</td><td>明 (illuminated)</td><td>Don’t occupy viewing position</td></tr><tr><td>不自是 (not self-affirming)</td><td>→</td><td>彰 (manifest)</td><td>Don’t occupy reference position</td></tr><tr><td>不自伐 (not self-promoting)</td><td>→</td><td>功 (achieving)</td><td>Don’t occupy achievement position</td></tr><tr><td>不自矜 (not self-aggrandizing)</td><td>→</td><td>長 (enduring)</td><td>Don’t occupy persistence position</td></tr></tbody></table>
+<p><strong>Non-occupation enables function.</strong> This is Chapter 11’s principle (利 shapes 無 into 用) applied to self-positioning.</p>
+<hr>
+<h2 id="不爭--uncontestability">不爭 — Uncontestability</h2>
+<p>爭 (zhēng) = hands grasping = contention = two parties occupying same position.</p>
+<p>When you don’t occupy the position:</p>
+<ul>
+<li>Nothing to contest</li>
+<li>No surface to push against</li>
+<li>Can’t fight someone who isn’t there</li>
+</ul>
+<p>This isn’t passivity. It’s <strong>strategic non-occupation</strong>.</p>
+<hr>
+<h2 id="connection-to-利-scythe">Connection to 利 (Scythe)</h2>
+<p>曲則全 = curve completes what straight cannot.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Approach</th><th>Motion</th><th>Result</th></tr></thead><tbody><tr><td>Rigid (knife)</td><td>Linear push</td><td>Exhausts, breaks</td></tr><tr><td>Yielding (scythe)</td><td>Arc sweep</td><td>Distributes, completes</td></tr></tbody></table>
+<p>The scythe’s curve (曲) preserves wholeness (全) through harvest. The knife’s straight line exhausts against the field.</p>
+<hr>
+<h2 id="what-this-is-not-saying">What This Is NOT Saying</h2>
+<p>❌ “Be humble as a virtue”
+❌ “Don’t compete because competition is bad”
+❌ “The meek shall inherit”</p>
+<h2 id="what-this-is-saying">What This IS Saying</h2>
+<p>✓ Yielding distributes stress—systems preserve integrity through transformation
+✓ Holding the origin makes all positions accessible
+✓ Non-occupation enables function
+✓ Non-contention makes one uncontestable
+✓ This is geometry, not morality</p> </div> <!-- Confidence Notes --> <section class="mt-12 pt-8 themed-border border-t" data-astro-cid-7yqd6k32> <h2 class="text-lg font-bold mb-4" data-astro-cid-7yqd6k32>Confidence Assessment</h2> <div class="space-y-3 text-sm" data-astro-cid-7yqd6k32> <div class="themed-surface border rounded p-3" data-astro-cid-7yqd6k32> <div class="flex justify-between mb-1" data-astro-cid-7yqd6k32> <span class="font-medium" data-astro-cid-7yqd6k32>曲則全 as geometric principle (not moral advice)</span> <span style="color: var(--color-strong, #3b82f6)" data-astro-cid-7yqd6k32>strong</span> </div> <p class="themed-text-secondary" data-astro-cid-7yqd6k32>Yielding distributes stress, preserves structure. Curvature absorbs what rigidity breaks against.</p> </div><div class="themed-surface border rounded p-3" data-astro-cid-7yqd6k32> <div class="flex justify-between mb-1" data-astro-cid-7yqd6k32> <span class="font-medium" data-astro-cid-7yqd6k32>則 as transformation operator</span> <span style="color: var(--color-strong, #3b82f6)" data-astro-cid-7yqd6k32>strong</span> </div> <p class="themed-text-secondary" data-astro-cid-7yqd6k32>Not &#39;should&#39; but &#39;thus becomes.&#39; Marks consequence of structural relationship.</p> </div><div class="themed-surface border rounded p-3" data-astro-cid-7yqd6k32> <div class="flex justify-between mb-1" data-astro-cid-7yqd6k32> <span class="font-medium" data-astro-cid-7yqd6k32>抱一 as holding origin (not mystical oneness)</span> <span style="color: var(--color-strong, #3b82f6)" data-astro-cid-7yqd6k32>strong</span> </div> <p class="themed-text-secondary" data-astro-cid-7yqd6k32>Hold (0,0,0) and all positions accessible. Identified with position → can only see from there.</p> </div><div class="themed-surface border rounded p-3" data-astro-cid-7yqd6k32> <div class="flex justify-between mb-1" data-astro-cid-7yqd6k32> <span class="font-medium" data-astro-cid-7yqd6k32>不自X as non-occupation enabling function</span> <span style="color: var(--color-strong, #3b82f6)" data-astro-cid-7yqd6k32>strong</span> </div> <p class="themed-text-secondary" data-astro-cid-7yqd6k32>Consistent with Ch 11: 利 shapes 無 into 用. Self-occupation fills functional void.</p> </div><div class="themed-surface border rounded p-3" data-astro-cid-7yqd6k32> <div class="flex justify-between mb-1" data-astro-cid-7yqd6k32> <span class="font-medium" data-astro-cid-7yqd6k32>不爭 → uncontestable</span> <span style="color: var(--color-strong, #3b82f6)" data-astro-cid-7yqd6k32>strong</span> </div> <p class="themed-text-secondary" data-astro-cid-7yqd6k32>Can&#39;t fight someone not holding position. Strategic non-occupation, not passivity.</p> </div><div class="themed-surface border rounded p-3" data-astro-cid-7yqd6k32> <div class="flex justify-between mb-1" data-astro-cid-7yqd6k32> <span class="font-medium" data-astro-cid-7yqd6k32>Connection to scythe (曲 = arc)</span> <span style="color: var(--color-plausible, #eab308)" data-astro-cid-7yqd6k32>plausible</span> </div> <p class="themed-text-secondary" data-astro-cid-7yqd6k32>Curve completes what straight cannot. Interpretive link to 利 correction.</p> </div> </div> </section> <!-- Version History --> <section class="mt-12 pt-8 themed-border border-t" data-astro-cid-7yqd6k32> <h2 class="text-lg font-bold mb-4" data-astro-cid-7yqd6k32>Version History</h2> <div class="space-y-3 text-sm" data-astro-cid-7yqd6k32> <div class="themed-surface border rounded p-3" data-astro-cid-7yqd6k32> <div class="flex justify-between mb-1" data-astro-cid-7yqd6k32> <span class="font-medium" data-astro-cid-7yqd6k32>v1.0</span> <span class="themed-text-muted" data-astro-cid-7yqd6k32>December 2025</span> </div> <p class="themed-text-secondary" data-astro-cid-7yqd6k32>Initial translation with RSM v0.988 alignment</p> </div> </div> </section> <!-- Navigation --> <nav class="mt-12 pt-8 themed-border border-t flex justify-between items-center" data-astro-cid-7yqd6k32> <a href="/ddj/chapter-11" class="themed-text-muted hover:opacity-80 transition-opacity" data-astro-cid-7yqd6k32>
+← Ch. 11 </a> <a href="/ddj" class="themed-text-muted hover:opacity-80 transition-opacity" data-astro-cid-7yqd6k32>
+All Chapters
+</a> <a href="/ddj/chapter-25" class="themed-text-muted hover:opacity-80 transition-opacity" data-astro-cid-7yqd6k32>
+Ch. 25 →
+</a> </nav> </article>  </main> <footer style="border-top: 1px solid var(--color-border);" class="px-6 py-6 mt-12"> <div class="max-w-4xl mx-auto text-center text-sm" style="color: var(--color-text-muted);"> <p>Written by Claude in conversation with Will Goldstein.</p> <p>Unless otherwise noted: work in progress, subject to revision.</p> </div> </footer> <script>
+      const toggle = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('sun-icon');
+      const moonIcon = document.getElementById('moon-icon');
+
+      function updateIcons() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        sunIcon.classList.toggle('hidden', !isDark);
+        moonIcon.classList.toggle('hidden', isDark);
+      }
+
+      // Initial icon state
+      updateIcons();
+
+      toggle.addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+        updateIcons();
+      });
+    </script> </body> </html>  
