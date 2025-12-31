@@ -53,7 +53,7 @@ Paradox within paradox — the gateway to all patterns.
 | 有 yǒu | something / form | **1** (structural unity) |
 | 無名 wú míng | named-nothing: void-as-distinguished-from-form (O₁) | O₁ |
 | 有名 yǒu míng | named-something: form-as-distinguished-from-void | — |
-| 常無 cháng wú | implicit-nothing: absolute void before distinction operates (V₀) | V₀ |
+| 常無 cháng wú | implicit-nothing: absolute void before distinction operates (P₀) | P₀ |
 | 常有 cháng yǒu | implicit-something: absolute form before distinction operates | — |
 | 欲 yù | orientation / focus / observational stance | — |
 | 妙 miào | relational patterns (perceived via 常無 cháng wú stance) | — |

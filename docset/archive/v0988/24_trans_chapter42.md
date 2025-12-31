@@ -12,7 +12,7 @@ confidenceNotes:
     note: "Consistent with Ch 2 (相生), Ch 40 (有生於無). Present tense, continuous operation."
   - element: "道生一 as paradox → distinction"
     level: "strong"
-    note: "V₀ → O₁. Absolute void (V₀) is unspecifiable, forces structural placeholder (O₁). This IS the V₀ prohibition."
+    note: "P₀ → O₁. Absolute void is unspecifiable, forces structural placeholder. Consistent with V₀ prohibition."
   - element: "三 as dimensional closure"
     level: "plausible"
     note: "3D is minimal for spherical closure. Interpretive but geometrically sound."
@@ -84,7 +84,7 @@ Blending circulation to create harmony.
 
 | Sequence | RSM | What Happens |
 |----------|-----|--------------|
-| 道生一 | V₀ → O₁ | Absolute void (V₀) necessitates structural placeholder (O₁) |
+| 道生一 | P₀ → O₁ | Paradox necessitates structural placeholder |
 | 一生二 | O₁ → G₁ | Origin creates gradient (center/periphery) |
 | 二生三 | G₁ → P₁ | Polarity requires closure (3D minimum) |
 | 三生萬物 | P₁ → O₂... | Each point becomes new origin (recursion) |
