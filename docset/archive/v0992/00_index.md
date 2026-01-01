@@ -1,13 +1,13 @@
-# RSM v0993 Document Set — 2026-01-01
+# RSM v0992 Document Set — 2025-12-31
 
-Documents audited and aligned with RSM v0993 operator grammar.
+Documents audited and aligned with RSM v0992 operator grammar.
 
 ## Contents
 
 ### Core RSM (01-04)
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm.md | Complete formal treatment (v0993) |
+| 01 | rsm.md | Complete formal treatment (v0992) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
@@ -60,11 +60,10 @@ Documents audited and aligned with RSM v0993 operator grammar.
 |---|------|-------------|
 | 31 | between_e_phi_assessment.md | Steelman analysis: claim tiers, defensibility |
 
-### Formal Derivations (32-33)
+### Formal Derivations (32)
 | # | File | Description |
 |---|------|-------------|
 | 32 | ex_nihilo_impossibility.md | Creation ex nihilo impossible (V₀ + conservation proof) |
-| 33 | euler_single_operation.md | Single-operation identity: e^(iπ) + e^(i·0) = 0 |
 
 ## Canonical Identities
 
