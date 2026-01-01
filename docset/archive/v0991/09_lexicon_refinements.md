@@ -340,6 +340,66 @@ That's geometry. That's O₁ → G₁. That's RSM.
 
 ---
 
+## 9. 有/無 = FORM/SPACE (THE HYPERBOLIC GRADIENT)
+
+### Standard Reading: "Being/Non-being"
+
+### The Geometric Correction
+
+有 and 無 are not opposite poles like +1 and -1 (two forms pointing opposite directions).
+
+They are **categorically different**:
+- 無 (wú) = space (the medium)
+- 有 (yǒu) = form (what occupies the medium)
+
+This is the distinction between *where things can be* and *what is there*.
+
+### The Gradient Structure
+
+```
+無 pole                        玄                         有 pole
+(space >> form)               (form = space)              (form >> space)
+     ∞:1 ←───────────────────── 1:1 ─────────────────────→ 1:∞
+```
+
+Movement along this gradient is not oscillation between two forms. It's adjustment of the **ratio** between categorically different quantities.
+
+### The Hyperbolic Constraint
+
+**space · form = k** (Postulate 4)
+
+This is X·Y = k — the reciprocal constraint that structures the entire gradient.
+
+As form increases, space must decrease proportionally (and vice versa). Neither can reach zero without the other going to infinity. Neither can reach infinity without the other going to zero.
+
+### Why 玄 Is V₀
+
+At the center of this gradient, space = form.
+
+If space + form = 0 (the constraint for locating center), and space = form:
+- 2 · form = 0
+- form = 0 (and therefore space = 0)
+
+The center requires **both to be zero**. That's V₀—the absolute void that cannot be occupied because specifying it would give it form.
+
+### 反 (fǎn) as Gradient Movement
+
+反 isn't oscillation between two opposite forms. It's **movement along the space/form gradient**.
+
+When the DDJ says 反者道之動 ("return is the movement of pattern"), it's describing the natural tendency of systems to move back toward equilibrium along this gradient—not bouncing between poles, but adjusting the space/form ratio.
+
+### RSM Mapping
+
+| DDJ | Mathematical | Structural |
+|-----|--------------|------------|
+| 無 (wú) | space axis (asymptote) | Medium; where form isn't |
+| 有 (yǒu) | form axis (asymptote) | Content; what occupies space |
+| 玄 (xuán) | origin (0,0) | V₀ where both = 0 |
+| G₁ gradient | hyperbola xy = k | Field of possible positions |
+| 反 (fǎn) | gradient movement | Adjustment of space/form ratio |
+
+---
+
 ## Summary: The Corrected Operator Grammar
 
 | DDJ Term | Standard | Structural Reading | RSM Mapping |
@@ -355,6 +415,9 @@ That's geometry. That's O₁ → G₁. That's RSM.
 | 天地 | heaven-earth | dimensional gradient | G₁ |
 | 天下 | under heaven | manifest realm | P₁ surface |
 | 天地根 | root of heaven-earth | origin of dimensional frame | O₁ → G₁ |
+| 無 (wú) | non-being | space (medium) | asymptote |
+| 有 (yǒu) | being | form (content) | asymptote |
+| 反 (fǎn) | return | gradient movement | space/form ratio adjustment |
 
 ---
 
@@ -372,5 +435,5 @@ These refinements restore the structural precision that was always there.
 
 *Document Status: LOCKED*
 *Part VII of DDJ Canonical Lexicon*
-*Version: 1.0*
+*Version: 1.1*
 *Date: December 2025*
