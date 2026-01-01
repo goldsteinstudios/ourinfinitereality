@@ -4,7 +4,7 @@ chineseTitle: "人之生也柔弱"
 englishTitle: "The Material Physics of Yielding"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "柔弱 = yielding (not 'weak')"

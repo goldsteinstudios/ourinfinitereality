@@ -4,7 +4,7 @@ chineseTitle: "三十輻"
 englishTitle: "The Wheel, Pot, and Room"
 version: "2.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "有/無 complementarity"

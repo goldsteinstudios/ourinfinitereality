@@ -60,6 +60,11 @@ Documents audited and aligned with RSM v0991 operator grammar.
 |---|------|-------------|
 | 31 | between_e_phi_assessment.md | Steelman analysis: claim tiers, defensibility |
 
+### Formal Derivations (32)
+| # | File | Description |
+|---|------|-------------|
+| 32 | ex_nihilo_impossibility.md | Creation ex nihilo impossible (V₀ + conservation proof) |
+
 ## Canonical Identities
 
 **Euler:** e^(iπ) + 1 = 0

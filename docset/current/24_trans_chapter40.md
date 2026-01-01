@@ -4,7 +4,7 @@ chineseTitle: "反者道之動"
 englishTitle: "The Oscillation Engine"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "反 = +1 (return/completion)"

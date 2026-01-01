@@ -4,7 +4,7 @@ chineseTitle: "有物混成"
 englishTitle: "The Recursion Formula"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "大→逝→遠→反 as recursion cycle"

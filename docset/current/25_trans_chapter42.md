@@ -4,7 +4,7 @@ chineseTitle: "道生一"
 englishTitle: "The Generation Sequence"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "生 as co-emergence (not linear causation)"

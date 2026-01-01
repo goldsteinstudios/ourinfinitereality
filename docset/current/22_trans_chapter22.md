@@ -4,7 +4,7 @@ chineseTitle: "曲則全"
 englishTitle: "The Geometry of Yielding"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "曲則全 as geometric principle (not moral advice)"

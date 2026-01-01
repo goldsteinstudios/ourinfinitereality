@@ -8,6 +8,8 @@ order: 0
 tags: ["rsm", "mathematics", "philosophy", "introduction"]
 ---
 
+> **RSM v0.992 Alignment:** This essay provides the complete introduction to the Recursive Structural Model—from the impossibility of absolute void to the three requirements for persistence (Contrast, Rotation, Closure).
+
 ## Introduction: The Illusion of Stillness
 
 Take a moment and be still. Utterly still.

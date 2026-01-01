@@ -4,7 +4,7 @@ chineseTitle: "天下皆知"
 englishTitle: "Co-Generation of Poles"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "相生 as co-generation (Postulate 4)"

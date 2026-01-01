@@ -4,7 +4,7 @@ chineseTitle: "道可道"
 englishTitle: "The Coordinate System"
 version: "1.2"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "可/常 as frame-dependent/frame-independent"

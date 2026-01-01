@@ -4,7 +4,7 @@ chineseTitle: "上善若水"
 englishTitle: "Water as Demonstration"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "善 as optimal function (not moral goodness)"

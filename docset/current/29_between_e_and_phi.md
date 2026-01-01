@@ -8,6 +8,8 @@ order: 1
 tags: ["mathematics", "philosophy", "rsm", "ddj"]
 ---
 
+> **RSM v0.992 Alignment:** This essay explores the structural boundaries between crystalline stability (φ) and dynamic transformation (e). Key concepts: 有/無 as form/space gradient; 玄牝 as generative paradox (φ at O₁); 常 as implicit register.
+
 ## Part I: The Crystal's Gift and Curse
 
 Here's something strange about crystals: they're immortal.

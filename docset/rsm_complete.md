@@ -1,13 +1,13 @@
-# RSM v0991 Document Set — 2025-12-31
+# RSM v0992 Document Set — 2025-12-31
 
-Documents audited and aligned with RSM v0991 operator grammar.
+Documents audited and aligned with RSM v0992 operator grammar.
 
 ## Contents
 
 ### Core RSM (01-04)
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm.md | Complete formal treatment (v0991) |
+| 01 | rsm.md | Complete formal treatment (v0992) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
@@ -81,7 +81,7 @@ Documents audited and aligned with RSM v0991 operator grammar.
 # FILE: 01_rsm.md
 # ═══════════════════════════════════════════════════════════════
 
-# The Recursive Structural Model v0.991
+# The Recursive Structural Model v0.992
 
 ## A Constraint-Based Structural Theory
 
@@ -107,6 +107,7 @@ Documents audited and aligned with RSM v0991 operator grammar.
 | v0.988 | **Postulate 4:** Reciprocal Constraint (X·Y=k); **Part VI:** Temporal extension (present moment as O₁); **Appendix F:** Epistemic status classification; **Appendix G:** Dependency graph |
 | v0.990 | **Session consolidation:** V₀ terminology lock (Absolute Void); tree ring correction (continuous recursion, rate variation); steelman assessment integration; tree structural recursion document |
 | v0.991 | **Key term refinements:** 玄=paradox (not mystery); 牝=recursive generative capacity (φ); 玄牝=generative paradox; 生=bidirectional emergence; 根 vs 母 distinction; 天地 vs 天下 distinction; Chapter 6 structural reading |
+| v0.992 | **Gradient geometry:** 有/無 as form/space (hyperbolic, not ±1 poles); conservation constraint (有+無=0); V₀≠無 locked distinction (absolute void ≠ space pole); 反 as gradient movement; ex nihilo impossibility theorem integration |
 
 ---
 
@@ -456,6 +457,83 @@ This is exactly what the imaginary unit i accomplishes in complex analysis:
 The real line alone has the measurement crisis. The complex plane, by adding an orthogonal axis, enables rotation. Rotation provides dynamic reference without requiring fixed position.
 
 **i is the operator that converts the unsolvable measurement problem into the solvable rotation solution.**
+
+### 0.5d The 有/無 Gradient Geometry
+
+**Theorem 0.5 (Form/Space Gradient):** The 有/無 pair constitutes a hyperbolic gradient between form and space, not oscillation between opposite poles.
+
+**Critical Distinction:**
+
+有 (yǒu) and 無 (wú) are **categorically different**, not opposite forms:
+
+| Term | Category | Definition |
+|------|----------|------------|
+| 無 (wú) | Space | The medium; where form isn't; that in which form can occur |
+| 有 (yǒu) | Form | Content; what occupies space; manifest distinction |
+
+This is the distinction between *where things can be* and *what is there*.
+
+**The Gradient Structure:**
+
+```
+無 pole                        O₁ (玄)                      有 pole
+(space >> form)              (space = form)              (form >> space)
+     ∞:1 ←───────────────────── 1:1 ─────────────────────→ 1:∞
+
+     ↑                          ↑                          ↑
+ asymptotic                unoccupiable               asymptotic
+ (approaches V₀)           (requires both = 0)        (approaches V₁)
+```
+
+Movement along this gradient is adjustment of the **ratio** between categorically different quantities, not oscillation between two forms.
+
+**Postulate 4a (Hyperbolic Constraint):** space · form = k
+
+This is X·Y = k — the reciprocal constraint that structures the gradient.
+
+**Properties:**
+- As form increases, space decreases proportionally (and vice versa)
+- Neither can reach zero without the other going to infinity
+- Neither can reach infinity without the other going to zero
+- Poles are asymptotic, not occupiable
+
+**Conservation Constraint (有 + 無 = 0):**
+
+Form and space are complementary aspects of a single conserved structure:
+
+$有 + 無 = 0$
+$d(有) = -d(無)$
+
+Any change in form is exactly compensated by opposite change in space. This is not cancellation but **conservation**: the total (form + space) remains invariant at zero.
+
+**Why the Center Is Unoccupiable:**
+
+At center: space = form. Given conservation (有 + 無 = 0):
+
+- space + form = 0
+- form = space
+- 2 · form = 0
+- form = 0 (therefore space = 0)
+
+The center requires **both to equal zero**. This is V₀ — which is unspecifiable (Theorem 0.1). The center is structurally present (defines the gradient) but unoccupiable (would require V₀).
+
+**Corollary (V₀ ≠ 無):**
+
+| Property | V₀ (Absolute Void) | 無 (Space) |
+|----------|-------------------|------------|
+| Contrast | None | Contrasts with 有 |
+| Specifiability | Unspecifiable | Specifiable (as "not-form") |
+| Role in structure | Cannot participate | One pole of gradient |
+| Relation to form | None possible | Conservation partner |
+| Ontological status | Incoherent | Coherent; necessary |
+
+**無 is half of existence, not its absence.** This distinction is critical: conflating 無 with V₀ underlies claims of creation ex nihilo (see Appendix H).
+
+**反 (fǎn) as Gradient Movement:**
+
+反 is not oscillation between two opposite forms. It is **movement along the space/form gradient** — adjustment of the ratio back toward equilibrium.
+
+When DDJ says 反者道之動 ("return is the movement of pattern"), it describes systems' natural tendency to move along the gradient toward center — not bouncing between poles, but adjusting the space/form ratio.
 
 ### 0.6 O₁ Properties
 
@@ -1031,12 +1109,12 @@ The DDJ mapping is an interpretive overlay, not a foundation for RSM. The strong
 | DDJ Operator | Mathematical | Function |
 |--------------|--------------|----------|
 | 名 (míng) | i | Orthogonal distinction (contrast) |
-| 反 (fǎn) | +1 | Return operation (closure) |
+| 反 (fǎn) | gradient movement | Return along form/space gradient toward equilibrium (not ±1 oscillation) |
 | 復 (fù) | Full cycle | Completed rotation |
 | 相生 | e | Continuous mutual generation |
-| 玄 | O₁ | Generative center |
-| 有 | 1 | First manifestation |
-| 無 | 0 (as origin) | Pre-distinction (not "nothing" but generative position) |
+| 玄 | O₁ | Generative center (paradox; unoccupiable) |
+| 有 (yǒu) | form pole | Form; content that occupies space (≠ +1) |
+| 無 (wú) | space pole | Space; medium for form (≠ 0 as nothing; ≠ V₀) |
 
 ### 3.3 Results (States, Not Operators)
 
@@ -1303,10 +1381,15 @@ Spatial structure recurses (P → O promotion). Does temporal structure? What wo
 
 | Term | Definition |
 |------|------------|
-| **V₀** | Absolute void. Unspecifiable within contrast-based representation. Cannot be a state, location, origin, or destination. |
+| **V₀** | Absolute void. Unspecifiable within contrast-based representation. Cannot be a state, location, origin, or destination. Categorically distinct from 無. |
 | **O₁** | Generative center. The structural position of continuous transformation. Not empty—generative. The 玄牝. |
+| **無 (wú)** | Space pole of the 有/無 gradient. The medium for form; "where form isn't." Specifiable and measurable (indirectly). **Not V₀.** One half of existence. |
+| **有 (yǒu)** | Form pole of the 有/無 gradient. Content; what occupies space. Specifiable and measurable (directly). |
+| **有 + 無 = 0** | Conservation constraint. Form and space are complementary aspects of conserved structure. d(有) = −d(無). No net creation. |
+| **反 (fǎn)** | Gradient movement. Adjustment of space/form ratio toward equilibrium. Not oscillation between poles. |
 | **Collapse** | **Incoherent concept.** There is no void to collapse into. When structures cease, they become other structures. |
 | **Origin (from void)** | **Incoherent concept.** There is no prior void to emerge from. Transformation is continuous. |
+| **Creation ex nihilo** | **Incoherent concept.** V₀ is unspecifiable; cannot serve as origin. All "creation" is transformation along conserved gradient. |
 | **Zero** | The generative center of the number line. Origin, not absence. |
 | **Infinite divisibility** | The mathematical reason O₁ is unoccupiable. Always on one side or the other, never at center. |
 | **Measurement crisis** | Static position is incoherent because neither O₁ nor your position can be fixed. |
@@ -1616,6 +1699,56 @@ EMPIRICAL VALIDATION (Independent of Derivation Chain)
 
 ---
 
+### Appendix H: The Ex Nihilo Impossibility Theorem
+
+**Theorem (Ex Nihilo Impossibility):** Creation from absolute nothing is structurally impossible.
+
+**Proof Summary (Three Routes):**
+
+**Route A: V₀ Cannot Serve as Origin**
+1. Creation ex nihilo requires origination from V₀ (absolute void)
+2. V₀ is unspecifiable (Theorem 0.1)
+3. "Origination from X" requires X to be specifiable as starting condition
+4. V₀ cannot be specified as a starting condition
+5. Therefore, creation ex nihilo is impossible ∎
+
+**Route B: Conservation Prohibits Net Creation**
+1. Assume creation ex nihilo is possible
+2. Then: some form (有) comes into existence where none was before
+3. By conservation: 有 + 無 = 0 (constant)
+4. If 有 increases, 無 must decrease by equal amount
+5. The "creation" is transformation of 無 into 有
+6. This is not ex nihilo but ex spatio (from space/potential)
+7. True ex nihilo would require: Δ有 > 0 while Δ無 = 0
+8. This violates conservation
+9. Therefore, creation ex nihilo is impossible ∎
+
+**Route C: The Conflation Error**
+1. Claims of ex nihilo creation invariably begin from 無, not V₀
+2. 無 ≠ V₀ (Section 0.5d)
+3. 無 is one pole of a conserved structure, not "nothing"
+4. Beginning from 無 is beginning from *something* (half of the 有/無 pair)
+5. Therefore, claimed ex nihilo creation is actually transformation ∎
+
+**Corollaries:**
+- **No First Cause:** No "first cause" can originate from V₀
+- **Eternal Gradient:** The 有/無 gradient has no temporal origin
+- **Conservation Absolute:** 有 + 無 = 0 cannot be violated
+- **Transformation Universality:** All "creation" is transformation
+
+**Domain Implications:**
+| Domain | Standard Claim | Structural Correction |
+|--------|----------------|----------------------|
+| Cosmology | "Universe from nothing" | Universe IS the gradient, not created from V₀ |
+| Economics | "Wealth creation" | Value transformation along gradient |
+| Information | "Computation creates output" | Information transforms, not creates |
+| Biology | "Life from non-life" | Reorganization along organization gradient |
+| Philosophy | "Why something rather than nothing?" | Question ill-posed; V₀ not a coherent alternative |
+
+**Full derivation:** See `rsm/canonical/ex_nihilo_impossibility.md`
+
+---
+
 ## Conclusion
 
 The Recursive Structural Model derives the necessity of existence and fundamental mathematical constants from the impossibility of specifying absolute void within contrast-based representation.
@@ -1642,7 +1775,7 @@ That's the grammar. That's the bedrock.
 
 ---
 
-*Draft v0.988 — December 2025*
+*RSM v0.992 — December 2025*
 *AL-AN Project: Algorithmic Logic of Asymptotic Nothing*
 
 
@@ -9089,7 +9222,7 @@ chineseTitle: "道可道"
 englishTitle: "The Coordinate System"
 version: "1.2"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "可/常 as frame-dependent/frame-independent"
@@ -9219,7 +9352,7 @@ chineseTitle: "天下皆知"
 englishTitle: "Co-Generation of Poles"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "相生 as co-generation (Postulate 4)"
@@ -9390,7 +9523,7 @@ chineseTitle: "上善若水"
 englishTitle: "Water as Demonstration"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "善 as optimal function (not moral goodness)"
@@ -9586,7 +9719,7 @@ chineseTitle: "三十輻"
 englishTitle: "The Wheel, Pot, and Room"
 version: "2.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "有/無 complementarity"
@@ -9722,7 +9855,7 @@ chineseTitle: "曲則全"
 englishTitle: "The Geometry of Yielding"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "曲則全 as geometric principle (not moral advice)"
@@ -9904,7 +10037,7 @@ chineseTitle: "有物混成"
 englishTitle: "The Recursion Formula"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "大→逝→遠→反 as recursion cycle"
@@ -10056,7 +10189,7 @@ chineseTitle: "反者道之動"
 englishTitle: "The Oscillation Engine"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "反 = +1 (return/completion)"
@@ -10204,7 +10337,7 @@ chineseTitle: "道生一"
 englishTitle: "The Generation Sequence"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "生 as co-emergence (not linear causation)"
@@ -10360,7 +10493,7 @@ chineseTitle: "其安易持"
 englishTitle: "The Definition of 無為"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "輔萬物之自然而不敢為 as 無為 definition"
@@ -10534,7 +10667,7 @@ chineseTitle: "人之生也柔弱"
 englishTitle: "The Material Physics of Yielding"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.988"
+rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "柔弱 = yielding (not 'weak')"
@@ -11022,6 +11155,8 @@ date: "December 2025"
 order: 1
 tags: ["mathematics", "philosophy", "rsm", "ddj"]
 ---
+
+> **RSM v0.992 Alignment:** This essay explores the structural boundaries between crystalline stability (φ) and dynamic transformation (e). Key concepts: 有/無 as form/space gradient; 玄牝 as generative paradox (φ at O₁); 常 as implicit register.
 
 ## Part I: The Crystal's Gift and Curse
 
@@ -11967,6 +12102,8 @@ date: "December 2025"
 order: 0
 tags: ["rsm", "mathematics", "philosophy", "introduction"]
 ---
+
+> **RSM v0.992 Alignment:** This essay provides the complete introduction to the Recursive Structural Model—from the impossibility of absolute void to the three requirements for persistence (Contrast, Rotation, Closure).
 
 ## Introduction: The Illusion of Stillness
 
