@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Infinite Reality</title>
+  <meta name="description" content="What if reality really is infinite? A pattern discovered across physics, biology, ancient Chinese, and the shape of good conversations.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       ROOT & RESET
+       ============================================ */
+
+    :root {
+      --color-void: #0a0a0b;
+      --color-dark: #141416;
+      --color-mid: #1a1a1d;
+      --color-text-dim: #6b6b70;
+      --color-text: #e8e6e3;
+      --color-text-bright: #f5f4f2;
+      --color-accent: #a89f91;
+
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, sans-serif;
+
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-serif);
+      background: var(--color-void);
+      color: var(--color-text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ============================================
+       SECTIONS
+       ============================================ */
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+
+    .section-inner {
+      max-width: 44rem;
+      width: 100%;
+    }
+
+    .section-wide {
+      max-width: 64rem;
+      width: 100%;
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-size: clamp(1.3rem, 3vw, 1.6rem);
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .text-dim { color: var(--color-text-dim); }
+    .text-bright { color: var(--color-text-bright); }
+    .text-center { text-align: center; }
+
+    .text-small {
+      font-size: 0.95rem;
+      font-family: var(--font-sans);
+      font-weight: 300;
+    }
+
+    /* ============================================
+       REVEAL ANIMATIONS
+       ============================================ */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(2rem);
+      transition: opacity 0.9s var(--ease-out),
+                  transform 0.9s var(--ease-out);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.15s; }
+    .reveal-delay-2 { transition-delay: 0.3s; }
+    .reveal-delay-3 { transition-delay: 0.45s; }
+
+    .reveal-stagger .reveal-item {
+      opacity: 0;
+      transform: translateY(1.5rem);
+      transition: opacity 0.7s var(--ease-out),
+                  transform 0.7s var(--ease-out);
+    }
+
+    .reveal-stagger.visible .reveal-item:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0s; }
+    .reveal-stagger.visible .reveal-item:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+    .reveal-stagger.visible .reveal-item:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
+    .reveal-stagger.visible .reveal-item:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.45s; }
+    .reveal-stagger.visible .reveal-item:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 0.6s; }
+    .reveal-stagger.visible .reveal-item:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 0.75s; }
+    .reveal-stagger.visible .reveal-item:nth-child(7) { opacity: 1; transform: translateY(0); transition-delay: 0.9s; }
+
+    /* ============================================
+       SCROLL INDICATOR
+       ============================================ */
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.4;
+      animation: pulse 2s var(--ease-in-out) infinite;
+    }
+
+    .scroll-indicator svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--color-text);
+      stroke-width: 1.5;
+      fill: none;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+      50% { opacity: 0.7; transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ============================================
+       CIRCULAR MOTIFS / DOORS
+       ============================================ */
+
+    .doors-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .doors-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .doors-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    .door {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: var(--color-text);
+      transition: all 0.4s var(--ease-out);
+    }
+
+    .door:hover {
+      transform: translateY(-4px);
+    }
+
+    .door:hover .door-icon {
+      opacity: 1;
+    }
+
+    .door:hover .door-title {
+      color: var(--color-text-bright);
+    }
+
+    .door-icon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+      opacity: 0.7;
+      transition: opacity 0.4s var(--ease-out);
+    }
+
+    .door-icon svg {
+      width: 100%;
+      height: 100%;
+      stroke: var(--color-text);
+      stroke-width: 0.75;
+      fill: none;
+    }
+
+    .door-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+      transition: color 0.3s ease;
+    }
+
+    .door-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: var(--color-text-dim);
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* ============================================
+       WEAVE SECTION
+       ============================================ */
+
+    .weave-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-accent);
+      text-decoration: none;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--color-text-dim);
+      border-radius: 2px;
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .weave-link:hover {
+      border-color: var(--color-text);
+      color: var(--color-text);
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+
+    footer {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: var(--color-void);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer p {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--color-text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    footer a {
+      color: var(--color-text-dim);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--color-text);
+      border-bottom-color: var(--color-text);
+    }
+
+    /* ============================================
+       UTILITIES
+       ============================================ */
+
+    .mb-2 { margin-bottom: 1rem; }
+    .mb-3 { margin-bottom: 2rem; }
+    .mb-4 { margin-bottom: 3rem; }
+    .mt-3 { margin-top: 2rem; }
+    .mt-4 { margin-top: 3rem; }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+
+    @media (max-width: 600px) {
+      html { font-size: 16px; }
+      section { padding: 3rem 1.5rem; }
+      .door-icon { width: 80px; height: 80px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========================================
+       THRESHOLD
+       ========================================== -->
+  <section id="threshold">
+    <div class="section-inner text-center">
+      <h1 class="reveal">What if reality really is infinite?</h1>
+    </div>
+    <div class="scroll-indicator">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CLARIFICATION
+       ========================================== -->
+  <section id="clarification">
+    <div class="section-inner text-center reveal-stagger">
+      <p class="reveal-item text-dim">Not metaphorically. Actually infinite.</p>
+      <p class="reveal-item text-dim">No edge. No floor. No foundation.</p>
+      <p class="reveal-item text-bright mt-3">Then how does anything persist at all?</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       THE ANSWER
+       ========================================== -->
+  <section id="answer">
+    <div class="section-inner text-center">
+      <p class="reveal">I followed that question for three years.</p>
+      <p class="reveal reveal-delay-1">The same answer kept showing up — in physics, in biology, in ancient texts, in the shape of good conversations.</p>
+      <h2 class="reveal reveal-delay-2 mt-4 text-bright">Stable structures don't stand on foundations.</h2>
+      <h2 class="reveal reveal-delay-3">They circulate around centers that stay empty.</h2>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       THE BRANCHES
+       ========================================== -->
+  <section id="branches">
+    <div class="section-wide text-center">
+      <div class="reveal mb-4">
+        <p>This is a pattern that shows up everywhere.</p>
+        <p class="text-dim">Every way you look at it shows something a little different.<br>
+        But follow any branch far enough and you find the same shape underneath.</p>
+      </div>
+
+      <p class="reveal reveal-delay-1 text-bright mb-3">Follow a branch.</p>
+
+      <div class="doors-grid reveal reveal-delay-2">
+
+        <!-- BIOLOGY: Tree Rings -->
+        <a href="living/" class="door">
+          <div class="door-icon">
+            <svg viewBox="0 0 100 100">
+              <!-- Tree rings - concentric circles with hollow center -->
+              <circle cx="50" cy="50" r="45" />
+              <circle cx="50" cy="50" r="36" />
+              <circle cx="50" cy="50" r="27" />
+              <circle cx="50" cy="50" r="18" />
+              <circle cx="50" cy="50" r="9" />
+              <!-- Hollow pith (dashed) -->
+              <circle cx="50" cy="50" r="3" stroke-dasharray="1.5 1.5" opacity="0.5" />
+            </svg>
+          </div>
+          <span class="door-title">The Living</span>
+          <span class="door-subtitle">Trees, cells, ecosystems</span>
+        </a>
+
+        <!-- PHYSICS: Wheel/Galaxy -->
+        <a href="physics/" class="door">
+          <div class="door-icon">
+            <svg viewBox="0 0 100 100">
+              <!-- Wheel with spokes - hollow hub -->
+              <circle cx="50" cy="50" r="45" />
+              <circle cx="50" cy="50" r="8" />
+              <!-- Spokes -->
+              <line x1="50" y1="5" x2="50" y2="42" />
+              <line x1="50" y1="58" x2="50" y2="95" />
+              <line x1="5" y1="50" x2="42" y2="50" />
+              <line x1="58" y1="50" x2="95" y2="50" />
+              <line x1="18" y1="18" x2="44" y2="44" />
+              <line x1="56" y1="56" x2="82" y2="82" />
+              <line x1="82" y1="18" x2="56" y2="44" />
+              <line x1="44" y1="56" x2="18" y2="82" />
+            </svg>
+          </div>
+          <span class="door-title">The Physics</span>
+          <span class="door-subtitle">Energy, spacetime, quantum</span>
+        </a>
+
+        <!-- DDJ: Taijitu -->
+        <a href="text/" class="door">
+          <div class="door-icon">
+            <svg viewBox="0 0 100 100">
+              <!-- Taijitu -->
+              <circle cx="50" cy="50" r="45" />
+              <!-- S-curve -->
+              <path d="M50 5
+                       C 50 27.5, 72.5 27.5, 72.5 50
+                       C 72.5 72.5, 50 72.5, 50 95
+                       C 50 72.5, 27.5 72.5, 27.5 50
+                       C 27.5 27.5, 50 27.5, 50 5" />
+              <!-- Dots -->
+              <circle cx="50" cy="27.5" r="5" fill="currentColor" stroke="none" />
+              <circle cx="50" cy="72.5" r="5" />
+            </svg>
+          </div>
+          <span class="door-title">The Text</span>
+          <span class="door-subtitle">Ancient field guide, decoded</span>
+        </a>
+
+        <!-- GEOMETRY: Hyperbola/Sphere -->
+        <a href="geometry/" class="door">
+          <div class="door-icon">
+            <svg viewBox="0 0 100 100">
+              <!-- Hyperbolic curves suggesting xy=1 -->
+              <path d="M5 95 Q 30 50, 95 5" />
+              <path d="M95 95 Q 70 50, 5 5" />
+              <!-- Central point (paradox) -->
+              <circle cx="50" cy="50" r="3" />
+              <!-- Asymptotic approach lines (subtle) -->
+              <line x1="50" y1="5" x2="50" y2="95" opacity="0.2" />
+              <line x1="5" y1="50" x2="95" y2="50" opacity="0.2" />
+            </svg>
+          </div>
+          <span class="door-title">The Geometry</span>
+          <span class="door-subtitle">Mathematical structure</span>
+        </a>
+
+        <!-- HUMAN: Breath/Cycle -->
+        <a href="human/" class="door">
+          <div class="door-icon">
+            <svg viewBox="0 0 100 100">
+              <!-- Breath cycle - wave that returns -->
+              <path d="M10 50
+                       Q 25 20, 50 50
+                       Q 75 80, 90 50" />
+              <path d="M10 50
+                       Q 25 80, 50 50
+                       Q 75 20, 90 50" opacity="0.4" />
+              <!-- Center point -->
+              <circle cx="50" cy="50" r="3" />
+              <!-- Circular container -->
+              <circle cx="50" cy="50" r="45" />
+            </svg>
+          </div>
+          <span class="door-title">The Human</span>
+          <span class="door-subtitle">Consciousness, choice, story</span>
+        </a>
+
+        <!-- LORE: Threshold/Ouroboros -->
+        <a href="lore/" class="door">
+          <div class="door-icon">
+            <svg viewBox="0 0 100 100">
+              <!-- Ouroboros - snake eating tail -->
+              <circle cx="50" cy="50" r="38" />
+              <!-- Head eating tail suggestion -->
+              <path d="M88 50
+                       C 88 30, 70 25, 60 35"
+                    stroke-width="6"
+                    stroke-linecap="round" />
+              <!-- Eye -->
+              <circle cx="78" cy="42" r="2" fill="currentColor" stroke="none" />
+              <!-- Inner circle (what's enclosed) -->
+              <circle cx="50" cy="50" r="20" opacity="0.3" />
+            </svg>
+          </div>
+          <span class="door-title">The Lore</span>
+          <span class="door-subtitle">Myth and meaning, reread</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       THE WEAVE
+       ========================================== -->
+  <section id="weave">
+    <div class="section-inner text-center">
+      <p class="reveal text-dim">Or wander between them.</p>
+      <p class="reveal reveal-delay-1">Watch the branches rhyme.<br>See the same shape in different light.</p>
+      <a href="weave/" class="weave-link reveal reveal-delay-2">
+        <span>Enter the weave</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <p>A living project, built in collaboration with AI.</p>
+    <p>Enter anywhere. The center is everywhere.</p>
+    <p class="mt-3"><a href="https://github.com/goldsteinstudios/dao-de-jing-analyzer">Source</a> · <a href="about/">About</a></p>
+  </footer>
+
+  <!-- ==========================================
+       JAVASCRIPT
+       ========================================== -->
+  <script>
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Hide scroll indicator after first scroll
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    let hasScrolled = false;
+
+    window.addEventListener('scroll', () => {
+      if (!hasScrolled && window.scrollY > 100) {
+        hasScrolled = true;
+        scrollIndicator.style.opacity = '0';
+        scrollIndicator.style.transition = 'opacity 0.5s ease';
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
