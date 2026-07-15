@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Zoom prototype | Our Infinite Reality</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><script>
+      // Check for saved theme preference or default to light
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    </script><link rel="stylesheet" href="/_astro/about.CgL806aI.css">
+<style>.zoom-wrap[data-astro-cid-5fu6e57v]{position:relative;height:460vh}.zoom-stage[data-astro-cid-5fu6e57v]{position:sticky;top:0;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}#zoomsvg[data-astro-cid-5fu6e57v]{width:min(82vw,74vh);height:min(82vw,74vh);color:var(--color-accent);display:block}.zoom-cards[data-astro-cid-5fu6e57v]{position:absolute;left:0;right:0;bottom:12%;display:flex;justify-content:center;pointer-events:none}.zoom-card[data-astro-cid-5fu6e57v]{position:absolute;max-width:22rem;text-align:center;opacity:0;color:var(--color-text);font-family:var(--font-body);font-size:var(--text-lg);line-height:var(--leading-relaxed);padding:0 1.5rem}.zoom-hint[data-astro-cid-5fu6e57v]{position:absolute;bottom:4%;left:0;right:0;text-align:center;color:var(--color-text-muted);font-size:var(--text-sm);font-family:var(--font-heading);letter-spacing:var(--tracking-wide)}@media (prefers-reduced-motion: reduce){.zoom-wrap[data-astro-cid-5fu6e57v]{height:auto}.zoom-stage[data-astro-cid-5fu6e57v]{position:static;height:auto;padding:3rem 0}.zoom-hint[data-astro-cid-5fu6e57v]{display:none}.zoom-cards[data-astro-cid-5fu6e57v]{position:static;flex-direction:column;gap:1.5rem;margin-top:2rem}.zoom-card[data-astro-cid-5fu6e57v]{position:static;opacity:1}}
+</style><script type="module">const a="http://www.w3.org/2000/svg";const A=2.380952380952381,p=137.5*Math.PI/180,f=document.getElementById("cam");document.getElementById("zoomsvg");const w=Array.from(document.querySelectorAll(".zoom-card")),d=document.querySelector(".zoom-hint"),u=document.querySelector(".zoom-wrap"),h=[];let s=190,m=0;for(;s>.22;){const e=document.createElementNS(a,"g"),o=document.createElementNS(a,"circle");o.setAttribute("cx","0"),o.setAttribute("cy","0"),o.setAttribute("r",String(s)),o.setAttribute("fill","none"),o.setAttribute("stroke","currentColor"),o.setAttribute("stroke-width","1"),o.setAttribute("vector-effect","non-scaling-stroke");const n=m*p,t=document.createElementNS(a,"circle");t.setAttribute("cx",(s*Math.cos(n)).toFixed(2)),t.setAttribute("cy",(s*Math.sin(n)).toFixed(2)),t.setAttribute("r",(s*.05).toFixed(3)),t.setAttribute("fill","currentColor"),e.appendChild(o),e.appendChild(t),e.dataset.r=String(s),f.appendChild(e),h.push(e),s*=.42,m++}const g=(e,o,n)=>Math.max(o,Math.min(n,e)),c=(e,o,n)=>{const t=g((n-e)/(o-e),0,1);return t*t*(3-2*t)};function b(e){let o,n;if(e<.35){const t=e/.35;o=t*2,n=t*70}else if(e<.55){const t=(e-.35)/.2;o=2,n=70+t*200}else{const t=(e-.55)/.45;o=2-t*4.6,n=270+t*80}return{S:Math.pow(A,o),rot:n}}function l(e){const{S:o,rot:n}=b(e);f.setAttribute("transform",`rotate(${n.toFixed(2)}) scale(${o.toFixed(4)})`);for(const t of h){const r=parseFloat(t.dataset.r)*o,i=c(1.2,7,r)*(1-c(60,108,r));t.style.opacity=i.toFixed(3)}for(const t of w){const r=parseFloat(t.dataset.a),i=parseFloat(t.dataset.b);t.style.opacity=(c(r,r+.07,e)*(1-c(i-.07,i,e))).toFixed(3)}d&&(d.style.opacity=String(1-c(0,.12,e)))}const y=window.matchMedia("(prefers-reduced-motion: reduce)");if(y.matches)l(.28);else{let e=function(){o||(o=!0,requestAnimationFrame(()=>{const n=u.getBoundingClientRect(),t=u.offsetHeight-window.innerHeight,r=g(-n.top/t,0,1);l(r),o=!1}))},o=!1;window.addEventListener("scroll",e,{passive:!0}),window.addEventListener("resize",e,{passive:!0}),l(0)}
+</script></head> <body class="min-h-screen" style="background: var(--color-bg); color: var(--color-text);"> <header style="border-bottom: 1px solid var(--color-border);" class="px-6 py-4"> <nav class="max-w-4xl mx-auto flex items-center justify-between"> <a href="/" class="text-xl font-semibold hover:opacity-70 transition-opacity" style="color: var(--color-accent);">
+Our Infinite Reality
+</a> <div class="flex items-center gap-4 text-sm"> <div class="hidden sm:flex items-center gap-4"> <a href="/" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Home</a><a href="/essays" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Essays</a><a href="/ddj" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">DDJ</a><a href="/catalog" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Catalog</a><a href="/about" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">About</a> </div> <button id="theme-toggle" class="p-2 rounded-lg transition-colors" style="background: var(--color-surface); border: 1px solid var(--color-border);" aria-label="Toggle theme"> <svg id="sun-icon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path> </svg> <svg id="moon-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path> </svg> </button> <button id="menu-toggle" class="sm:hidden p-2 rounded-lg transition-colors" style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text);" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"> <svg id="menu-open-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> <svg id="menu-close-icon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> </nav> <div id="mobile-menu" class="hidden sm:hidden max-w-4xl mx-auto mt-4 flex flex-col gap-1 text-sm"> <a href="/" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Home</a><a href="/essays" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Essays</a><a href="/ddj" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">DDJ</a><a href="/catalog" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Catalog</a><a href="/about" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">About</a> </div> </header> <main class="max-w-4xl mx-auto px-6 py-8">  <p class="text-center themed-text-muted text-sm mb-2" style="margin-top:-1rem;" data-astro-cid-5fu6e57v>
+prototype · the camera is the scroll
+</p> <div class="zoom-wrap" data-astro-cid-5fu6e57v> <div class="zoom-stage" data-astro-cid-5fu6e57v> <svg id="zoomsvg" viewBox="-50 -50 100 100" aria-hidden="true" data-astro-cid-5fu6e57v> <g id="cam" data-astro-cid-5fu6e57v></g> </svg> <div class="zoom-cards" data-astro-cid-5fu6e57v> <p class="zoom-card" data-a="0.02" data-b="0.33" data-astro-cid-5fu6e57v>
+Push in — and the center only recedes. There's always another ring between you and the middle.
+</p> <p class="zoom-card" data-a="0.37" data-b="0.57" data-astro-cid-5fu6e57v>
+You can't reach it, and you can't cross it. So everything circles.
+</p> <p class="zoom-card" data-a="0.62" data-b="0.98" data-astro-cid-5fu6e57v>
+Pull back — and the whole world was one point inside a larger one. No smallest, no largest. The middle is everywhere.
+</p> </div> <div class="zoom-hint" data-astro-cid-5fu6e57v>scroll ↓</div> </div> </div> <p class="text-center themed-text-muted text-sm mt-8" data-astro-cid-5fu6e57v>
+(prototype for the front-page film — reacting to feel, not final)
+</p>  </main> <footer style="border-top: 1px solid var(--color-border);" class="px-6 py-6 mt-12"> <div class="max-w-4xl mx-auto text-center text-sm" style="color: var(--color-text-muted);"> <p>Written by Claude in conversation with Will Goldstein.</p> <p>Unless otherwise noted: work in progress, subject to revision.</p> </div> </footer> <script>
+      const toggle = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('sun-icon');
+      const moonIcon = document.getElementById('moon-icon');
+
+      function updateIcons() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        sunIcon.classList.toggle('hidden', !isDark);
+        moonIcon.classList.toggle('hidden', isDark);
+      }
+
+      // Initial icon state
+      updateIcons();
+
+      toggle.addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+        updateIcons();
+      });
+
+      // Mobile menu
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpenIcon = document.getElementById('menu-open-icon');
+      const menuCloseIcon = document.getElementById('menu-close-icon');
+
+      menuToggle.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        const open = !isHidden;
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuOpenIcon.classList.toggle('hidden', open);
+        menuCloseIcon.classList.toggle('hidden', !open);
+      });
+    </script> </body> </html>   
