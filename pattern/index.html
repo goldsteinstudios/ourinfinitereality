@@ -27,18 +27,36 @@ I can't prove reality is like that. So this is the <strong data-astro-cid-dnohxs
     .divi.go .g3, .divi:hover .g3 { animation-delay: 0.7s; }
     .divi.go .g4, .divi:hover .g4 { animation-delay: 1.05s; }
     @keyframes divi-in { to { opacity: 1; transform: scaleY(1); } }
-  </style> <line class="base" x1="6" y1="20" x2="94" y2="20"></line> <g style="opacity:1;transform:none"> <line x1="6" y1="9" x2="6" y2="31" stroke-width="1.5"></line> <line x1="94" y1="9" x2="94" y2="31" stroke-width="1.5"></line> </g> <g class="g g2"><line x1="50" y1="11" x2="50" y2="29" stroke-width="1.2" opacity="0.9"></line></g> <g class="g g3"> <line x1="28" y1="13" x2="28" y2="27" opacity="0.7"></line> <line x1="72" y1="13" x2="72" y2="27" opacity="0.7"></line> </g> <g class="g g4"> <line x1="17" y1="15" x2="17" y2="25" opacity="0.5"></line> <line x1="39" y1="15" x2="39" y2="25" opacity="0.5"></line> <line x1="61" y1="15" x2="61" y2="25" opacity="0.5"></line> <line x1="83" y1="15" x2="83" y2="25" opacity="0.5"></line> </g> </svg> <h2 class="beat-head" data-astro-cid-dnohxsv3>No smallest thing.</h2> <p class="beat-line" data-astro-cid-dnohxsv3>However far you zoom in, you can always divide again. The floor never arrives.</p> </section> <!-- distinction --> <section class="beat" data-astro-cid-dnohxsv3> <svg viewBox="0 0 100 100" class="oir-diagram cut" role="img" aria-label="A field divided by a single cut into two sides, each defined by the other."> <style>
-    .cut { width: 100%; height: auto; display: block; color: var(--color-accent); }
-    .cut .field { fill: none; stroke: currentColor; stroke-width: 1; }
-    .cut .half { fill: currentColor; opacity: 0; }
-    .cut .line { stroke: currentColor; stroke-width: 1.8; stroke-dasharray: 72; stroke-dashoffset: 72; }
-    .cut.go .line, .cut:hover .line { animation: cut-draw 0.9s ease forwards; }
-    .cut.go .halfL, .cut:hover .halfL { animation: cut-l 0.7s ease 0.8s forwards; }
-    .cut.go .halfR, .cut:hover .halfR { animation: cut-r 0.7s ease 0.8s forwards; }
+  </style> <line class="base" x1="6" y1="20" x2="94" y2="20"></line> <g style="opacity:1;transform:none"> <line x1="6" y1="9" x2="6" y2="31" stroke-width="1.5"></line> <line x1="94" y1="9" x2="94" y2="31" stroke-width="1.5"></line> </g> <g class="g g2"><line x1="50" y1="11" x2="50" y2="29" stroke-width="1.2" opacity="0.9"></line></g> <g class="g g3"> <line x1="28" y1="13" x2="28" y2="27" opacity="0.7"></line> <line x1="72" y1="13" x2="72" y2="27" opacity="0.7"></line> </g> <g class="g g4"> <line x1="17" y1="15" x2="17" y2="25" opacity="0.5"></line> <line x1="39" y1="15" x2="39" y2="25" opacity="0.5"></line> <line x1="61" y1="15" x2="61" y2="25" opacity="0.5"></line> <line x1="83" y1="15" x2="83" y2="25" opacity="0.5"></line> </g> </svg> <h2 class="beat-head" data-astro-cid-dnohxsv3>No smallest thing.</h2> <p class="beat-line" data-astro-cid-dnohxsv3>However far you zoom in, you can always divide again. The floor never arrives.</p> </section> <!-- distinction --> <section class="beat" data-astro-cid-dnohxsv3> <svg viewBox="0 0 100 100" class="oir-diagram cut" role="img" aria-label="A circle on the left draws itself then floods solid with THIS inside; NOT THIS answers from the mirror position on the right."> <style>
+    .cut { width: 100%; height: auto; display: block; color: var(--color-text); }
+    .cut .gc-out {
+      fill: none; stroke: currentColor; stroke-width: 1.6;
+      stroke-dasharray: 100; stroke-dashoffset: 100;
+      transform: rotate(-90deg); transform-origin: 26px 50px;
+    }
+    .cut .gc-fill { fill: currentColor; opacity: 0; }
+    .cut .gc-notthis {
+      fill: currentColor; text-anchor: start; dominant-baseline: central; opacity: 0;
+      font-family: var(--font-heading); font-weight: 700; font-size: 10px; letter-spacing: 0.06em;
+    }
+    .cut .knock {
+      text-anchor: middle; dominant-baseline: central;
+      font-family: var(--font-heading); font-weight: 700; font-size: 11px; letter-spacing: 0.04em;
+    }
+
+    /* line traces first; the instant it closes (0.9s) the fill + both labels snap on together */
+    .cut.go .gc-out,     .cut:hover .gc-out     { animation: cut-draw 0.9s ease forwards; }
+    .cut.go .gc-fill,    .cut:hover .gc-fill    { animation: cut-snap 0.01s linear 0.9s forwards; }
+    .cut.go .gc-notthis, .cut:hover .gc-notthis { animation: cut-snap 0.01s linear 0.9s forwards; }
     @keyframes cut-draw { to { stroke-dashoffset: 0; } }
-    @keyframes cut-l { to { opacity: 0.13; } }
-    @keyframes cut-r { to { opacity: 0.05; } }
-  </style> <circle class="field" cx="50" cy="50" r="34"></circle> <path class="half halfL" d="M50 16 A34 34 0 0 0 50 84 Z"></path> <path class="half halfR" d="M50 16 A34 34 0 0 1 50 84 Z"></path> <line class="line" x1="50" y1="16" x2="50" y2="84"></line> </svg> <h2 class="beat-head" data-astro-cid-dnohxsv3>To be anything is to differ.</h2> <p class="beat-line" data-astro-cid-dnohxsv3>A thing with nothing it <em data-astro-cid-dnohxsv3>isn't</em> isn't there at all. To exist is to be a cut — this against not-this.</p> </section> <!-- two extremes impossible --> <section class="beat" data-astro-cid-dnohxsv3> <svg viewBox="0 0 100 46" class="oir-diagram ext" role="img" aria-label="A gradient between two forbidden extremes; neither end can be reached."> <style>
+    @keyframes cut-snap { to { opacity: 1; } }
+
+    /* no-JS / reduced-motion: show the settled end state (observer never adds .go here) */
+    @media (prefers-reduced-motion: reduce) {
+      .cut .gc-out { stroke-dashoffset: 0; }
+      .cut .gc-fill, .cut .gc-notthis { opacity: 1; }
+    }
+  </style> <defs> <mask id="cut-knock" maskUnits="userSpaceOnUse"> <rect x="0" y="0" width="100" height="100" fill="#fff"></rect> <text class="knock" x="26" y="49" fill="#000">THIS</text> </mask> </defs> <circle class="gc-out" cx="26" cy="50" r="18" pathLength="100"></circle> <circle class="gc-fill" cx="26" cy="50" r="18" mask="url(#cut-knock)"></circle> <text class="gc-notthis"><tspan x="56" y="45">NOT</tspan><tspan x="56" y="56">THIS</tspan></text> </svg> <h2 class="beat-head" data-astro-cid-dnohxsv3>To be anything is to differ.</h2> <p class="beat-line" data-astro-cid-dnohxsv3>A thing with nothing it <em data-astro-cid-dnohxsv3>isn't</em> isn't there at all. To exist is to be a cut — this against not-this.</p> </section> <!-- two extremes impossible --> <section class="beat" data-astro-cid-dnohxsv3> <svg viewBox="0 0 100 46" class="oir-diagram ext" role="img" aria-label="A gradient between two forbidden extremes; neither end can be reached."> <style>
     .ext { width: 100%; height: auto; display: block; color: var(--color-accent); }
     .ext line { stroke: currentColor; }
     .ext .axis { stroke-width: 1; opacity: 0.5; }
