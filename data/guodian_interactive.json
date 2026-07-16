@@ -4,7 +4,7 @@
     "name": "Guodian Laozi A (老子甲)",
     "date": "~300 BCE",
     "slips": 39,
-    "total_positions": 1179
+    "total_positions": 1073
   },
   "slips": {
     "1": {
@@ -2617,42 +2617,6 @@
           ]
         },
         {
-          "position": 1,
-          "guodian": "化",
-          "received": "化",
-          "display": "化",
-          "pinyin": "huà",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "transform, change",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-01.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0260/G_0260_乙2503合6650賓組.png",
-            "/glyphs/oracle/0260/G_0260_乙3422合151賓組.png",
-            "/glyphs/oracle/0260/G_0260_存2215合33195.png",
-            "/glyphs/oracle/0260/G_0260_林2.24.20.png",
-            "/glyphs/oracle/0260/G_0260_珠282合5441賓組.png"
-          ]
-        },
-        {
-          "position": 2,
-          "guodian": "莫",
-          "received": "莫",
-          "display": "莫",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-02.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 2,
           "guodian": "莫",
           "received": "莫",
@@ -2686,48 +2650,6 @@
             "/glyphs/oracle/0427/G_0427_京津3857合31198無名組.png",
             "/glyphs/oracle/0427/G_0427_京津4990合38171.png",
             "/glyphs/oracle/0427/G_0427_佚247合28628無名組.png"
-          ]
-        },
-        {
-          "position": 3,
-          "guodian": "大",
-          "received": "大",
-          "display": "大",
-          "pinyin": "dà",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "great, large",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-03.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0427/G_0427_乙2494合3216賓組.png",
-            "/glyphs/oracle/0427/G_0427_乙2653反合17337反賓組.png",
-            "/glyphs/oracle/0427/G_0427_京津3857合31198無名組.png",
-            "/glyphs/oracle/0427/G_0427_京津4990合38171.png",
-            "/glyphs/oracle/0427/G_0427_佚247合28628無名組.png"
-          ]
-        },
-        {
-          "position": 4,
-          "guodian": "唬",
-          "received": "乎",
-          "display": "唬",
-          "pinyin": "hǔ",
-          "is_variant": "乎",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "frighten",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-04.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0108/G_0108_乙6945合17257.png",
-            "/glyphs/oracle/0108/G_0108_乙7360合8796.png",
-            "/glyphs/oracle/0108/G_0108_乙8505合20472𠂤組.png",
-            "/glyphs/oracle/0108/G_0108_乙8896合22246子組.png",
-            "/glyphs/oracle/0108/G_0108_京津2222合11635.png"
           ]
         },
         {
@@ -2773,27 +2695,6 @@
           ]
         },
         {
-          "position": 5,
-          "guodian": "不",
-          "received": "不",
-          "display": "不",
-          "pinyin": "bù",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "not, no",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-05.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0089/G_0089_乙3400合1285賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙7672合9810賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙8685反合21031反𠂤組.png",
-            "/glyphs/oracle/0089/G_0089_乙9094合22446.png",
-            "/glyphs/oracle/0089/G_0089_京津3209合24895出組.png"
-          ]
-        },
-        {
           "position": 6,
           "guodian": "智",
           "received": "知",
@@ -2806,36 +2707,6 @@
           "meaning": "wisdom, intelligence",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-06.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 6,
-          "guodian": "智",
-          "received": "知",
-          "display": "智",
-          "pinyin": "zhì",
-          "is_variant": "知",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "wisdom, intelligence",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-06.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 7,
-          "guodian": "足",
-          "received": "足",
-          "display": "足",
-          "pinyin": "zú",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "foot, sufficient",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-07.png",
           "oracle_bone_paths": []
         },
         {
@@ -2869,21 +2740,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 8,
-          "guodian": "智",
-          "received": "知",
-          "display": "智",
-          "pinyin": "zhì",
-          "is_variant": "知",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "wisdom, intelligence",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-08.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 9,
           "guodian": "足",
           "received": "足",
@@ -2897,42 +2753,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-09.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 9,
-          "guodian": "足",
-          "received": "足",
-          "display": "足",
-          "pinyin": "zú",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "foot, sufficient",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-09.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 10,
-          "guodian": "之",
-          "received": "之",
-          "display": "之",
-          "pinyin": "zhī",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "of, it, go to",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-10.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0105/G_0105_乙570合14200.png",
-            "/glyphs/oracle/0105/G_0105_京津412合12474.png",
-            "/glyphs/oracle/0105/G_0105_京津413合12473.png",
-            "/glyphs/oracle/0105/G_0105_京津4600合31705無名組.png",
-            "/glyphs/oracle/0105/G_0105_京津4608合30113無名組.png"
-          ]
         },
         {
           "position": 10,
@@ -2977,27 +2797,6 @@
           ]
         },
         {
-          "position": 11,
-          "guodian": "爲",
-          "received": "爲",
-          "display": "爲",
-          "pinyin": "wéi",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "do, act, make (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-11.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1038/G_1038_乙1049(甲).png",
-            "/glyphs/oracle/1038/G_1038_前5.30.4(甲).png",
-            "/glyphs/oracle/1038/H_1038_608E5_0.png",
-            "/glyphs/oracle/1038/H_1038_608E5_1.png",
-            "/glyphs/oracle/1038/H_1038_608E5_10.png"
-          ]
-        },
-        {
           "position": 12,
           "guodian": "足",
           "received": "足",
@@ -3011,42 +2810,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-12.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 12,
-          "guodian": "足",
-          "received": "足",
-          "display": "足",
-          "pinyin": "zú",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "foot, sufficient",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-12.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 13,
-          "guodian": "此",
-          "received": "此",
-          "display": "此",
-          "pinyin": "cǐ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "this",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-13.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0897/G_0897_京津3995合27389無名組.png",
-            "/glyphs/oracle/0897/G_0897_庫1717合41490.png",
-            "/glyphs/oracle/0897/G_0897_戩17.4合27499無名組.png",
-            "/glyphs/oracle/0897/G_0897_拾10.13合31188何組.png",
-            "/glyphs/oracle/0897/G_0897_拾8.2合30789何組.png"
-          ]
         },
         {
           "position": 13,
@@ -3085,21 +2848,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 14,
-          "guodian": "亙",
-          "received": "亙",
-          "display": "亙",
-          "pinyin": "gèn",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "span, extend",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-14.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 15,
           "guodian": "足",
           "received": "足",
@@ -3112,36 +2860,6 @@
           "meaning": "foot, sufficient",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-15.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 15,
-          "guodian": "足",
-          "received": "足",
-          "display": "足",
-          "pinyin": "zú",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "foot, sufficient",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-15.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 16,
-          "guodian": "矣",
-          "received": "矣",
-          "display": "矣",
-          "pinyin": "yǐ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "(completion particle)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-16.png",
           "oracle_bone_paths": []
         },
         {
@@ -3175,21 +2893,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 18,
-          "guodian": "㠯",
-          "received": "以",
-          "display": "㠯",
-          "pinyin": "yǐ",
-          "is_variant": "以",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "use, by means of (archaic)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-18.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 19,
           "guodian": "{行人}",
           "received": "{行人}",
@@ -3202,36 +2905,6 @@
           "meaning": "",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-19.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 19,
-          "guodian": "{行人}",
-          "received": "{行人}",
-          "display": "{行人}",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-19.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 20,
-          "guodian": "差",
-          "received": "差",
-          "display": "差",
-          "pinyin": "chā",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "differ, mistake",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-20.png",
           "oracle_bone_paths": []
         },
         {
@@ -3271,27 +2944,6 @@
           ]
         },
         {
-          "position": 21,
-          "guodian": "人",
-          "received": "人",
-          "display": "人",
-          "pinyin": "rén",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "person, human",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-21.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0135/G_0135_乙1938反合14207反賓組.png",
-            "/glyphs/oracle/0135/G_0135_佚527合6459賓組.png",
-            "/glyphs/oracle/0135/G_0135_前2.15.3合36493.png",
-            "/glyphs/oracle/0135/G_0135_前2.40.7合36489黃組.png",
-            "/glyphs/oracle/0135/G_0135_前3.31.2合5825賓組.png"
-          ]
-        },
-        {
           "position": 22,
           "guodian": "宔",
           "received": "宔",
@@ -3305,40 +2957,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-22.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 22,
-          "guodian": "宔",
-          "received": "宔",
-          "display": "宔",
-          "pinyin": "zhǔ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "master (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-22.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 23,
-          "guodian": "者",
-          "received": "者",
-          "display": "者",
-          "pinyin": "zhě",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "one who, that which",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-23.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1270/G_1270_甲骨文.png",
-            "/glyphs/oracle/1270/G_1270_甲骨文0.png",
-            "/glyphs/oracle/1270/X_1270_1851_1.png"
-          ]
         },
         {
           "position": 23,
@@ -3381,27 +2999,6 @@
           ]
         },
         {
-          "position": 24,
-          "guodian": "不",
-          "received": "不",
-          "display": "不",
-          "pinyin": "bù",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "not, no",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-24.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0089/G_0089_乙3400合1285賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙7672合9810賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙8685反合21031反𠂤組.png",
-            "/glyphs/oracle/0089/G_0089_乙9094合22446.png",
-            "/glyphs/oracle/0089/G_0089_京津3209合24895出組.png"
-          ]
-        },
-        {
           "position": 25,
           "guodian": "谷",
           "received": "欲",
@@ -3414,36 +3011,6 @@
           "meaning": "valley",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-25.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 25,
-          "guodian": "谷",
-          "received": "欲",
-          "display": "谷",
-          "pinyin": "gǔ",
-          "is_variant": "欲",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "valley",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-25.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 26,
-          "guodian": "㠯",
-          "received": "以",
-          "display": "㠯",
-          "pinyin": "yǐ",
-          "is_variant": "以",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "use, by means of (archaic)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-26.png",
           "oracle_bone_paths": []
         },
         {
@@ -3481,42 +3048,6 @@
             "/glyphs/oracle/0204/G_0204_摭續89合27912.png",
             "/glyphs/oracle/0204/G_0204_甲骨文.png"
           ]
-        },
-        {
-          "position": 27,
-          "guodian": "兵",
-          "received": "兵",
-          "display": "兵",
-          "pinyin": "bīng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "weapon, soldier",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-27.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0204/G_0204_京津1531合7205.png",
-            "/glyphs/oracle/0204/G_0204_佚729合7204賓組.png",
-            "/glyphs/oracle/0204/G_0204_後2.29.6合9469賓組.png",
-            "/glyphs/oracle/0204/G_0204_摭續89合27912.png",
-            "/glyphs/oracle/0204/G_0204_甲骨文.png"
-          ]
-        },
-        {
-          "position": 28,
-          "guodian": "強",
-          "received": "強",
-          "display": "強",
-          "pinyin": "qiáng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "strong, force",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_6_01A-06-28.png",
-          "oracle_bone_paths": []
         },
         {
           "position": 28,
@@ -12464,21 +11995,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 1,
-          "guodian": "灋",
-          "received": "灋",
-          "display": "灋",
-          "pinyin": "fǎ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "law, method (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-01.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 2,
           "guodian": "地地",
           "received": "地地",
@@ -12491,36 +12007,6 @@
           "meaning": "",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-02.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 2,
-          "guodian": "地地",
-          "received": "地地",
-          "display": "地地",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-02.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 4,
-          "guodian": "灋",
-          "received": "灋",
-          "display": "灋",
-          "pinyin": "fǎ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "law, method (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-04.png",
           "oracle_bone_paths": []
         },
         {
@@ -12560,42 +12046,6 @@
           ]
         },
         {
-          "position": 5,
-          "guodian": "天",
-          "received": "天",
-          "display": "天",
-          "pinyin": "tiān",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "heaven, sky, nature",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-05.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0429/G_0429_乙1538合22055.png",
-            "/glyphs/oracle/0429/G_0429_乙3008合13804.png",
-            "/glyphs/oracle/0429/G_0429_乙4505合22093午組.png",
-            "/glyphs/oracle/0429/G_0429_乙5384合22077.png",
-            "/glyphs/oracle/0429/G_0429_乙6390合22103午組.png"
-          ]
-        },
-        {
-          "position": 7,
-          "guodian": "灋",
-          "received": "灋",
-          "display": "灋",
-          "pinyin": "fǎ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "law, method (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-07.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 7,
           "guodian": "灋",
           "received": "灋",
@@ -12623,36 +12073,6 @@
           "meaning": "",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-08.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 8,
-          "guodian": "道道",
-          "received": "道道",
-          "display": "道道",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-08.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 10,
-          "guodian": "灋",
-          "received": "灋",
-          "display": "灋",
-          "pinyin": "fǎ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "law, method (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-10.png",
           "oracle_bone_paths": []
         },
         {
@@ -12692,27 +12112,6 @@
           ]
         },
         {
-          "position": 11,
-          "guodian": "自",
-          "received": "自",
-          "display": "自",
-          "pinyin": "zì",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "self, from",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-11.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1310/G_1310_乙1126.png",
-            "/glyphs/oracle/1310/G_1310_乙1161合12324.png",
-            "/glyphs/oracle/1310/G_1310_乙18合21013𠂤組.png",
-            "/glyphs/oracle/1310/G_1310_乙40合20969.png",
-            "/glyphs/oracle/1310/G_1310_乙60合20967𠂤組.png"
-          ]
-        },
-        {
           "position": 12,
           "guodian": "肰",
           "received": "然",
@@ -12726,42 +12125,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-12.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 12,
-          "guodian": "肰",
-          "received": "然",
-          "display": "肰",
-          "pinyin": "rán",
-          "is_variant": "然",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "so (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-12.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 14,
-          "guodian": "天",
-          "received": "天",
-          "display": "天",
-          "pinyin": "tiān",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "heaven, sky, nature",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-14.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0429/G_0429_乙1538合22055.png",
-            "/glyphs/oracle/0429/G_0429_乙3008合13804.png",
-            "/glyphs/oracle/0429/G_0429_乙4505合22093午組.png",
-            "/glyphs/oracle/0429/G_0429_乙5384合22077.png",
-            "/glyphs/oracle/0429/G_0429_乙6390合22103午組.png"
-          ]
         },
         {
           "position": 14,
@@ -12800,42 +12163,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 15,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-15.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 16,
-          "guodian": "之",
-          "received": "之",
-          "display": "之",
-          "pinyin": "zhī",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "of, it, go to",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-16.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0105/G_0105_乙570合14200.png",
-            "/glyphs/oracle/0105/G_0105_京津412合12474.png",
-            "/glyphs/oracle/0105/G_0105_京津413合12473.png",
-            "/glyphs/oracle/0105/G_0105_京津4600合31705無名組.png",
-            "/glyphs/oracle/0105/G_0105_京津4608合30113無名組.png"
-          ]
-        },
-        {
           "position": 16,
           "guodian": "之",
           "received": "之",
@@ -12869,36 +12196,6 @@
           "meaning": "",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-17.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 17,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-17.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 18,
-          "guodian": "亓",
-          "received": "其",
-          "display": "亓",
-          "pinyin": "qí",
-          "is_variant": "其",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "its (archaic)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-18.png",
           "oracle_bone_paths": []
         },
         {
@@ -12938,27 +12235,6 @@
           ]
         },
         {
-          "position": 19,
-          "guodian": "猶",
-          "received": "猶",
-          "display": "猶",
-          "pinyin": "yóu",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "still, like",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-19.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1064/G_1064_存下731(甲).png",
-            "/glyphs/oracle/1064/G_1064_甲骨文0.png",
-            "/glyphs/oracle/1064/H_1064_6088A_0.png",
-            "/glyphs/oracle/1064/H_1064_6088A_1.png",
-            "/glyphs/oracle/1064/H_1064_6088A_10.png"
-          ]
-        },
-        {
           "position": 20,
           "guodian": "○",
           "received": "○",
@@ -12971,36 +12247,6 @@
           "meaning": "",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-20.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 20,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-20.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 21,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-21.png",
           "oracle_bone_paths": []
         },
         {
@@ -13034,21 +12280,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 22,
-          "guodian": "與",
-          "received": "與",
-          "display": "與",
-          "pinyin": "yǔ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "and, with, give",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-22.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 23,
           "guodian": "虛",
           "received": "虛",
@@ -13062,39 +12293,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-23.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 23,
-          "guodian": "虛",
-          "received": "虛",
-          "display": "虛",
-          "pinyin": "xū",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "empty, void",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-23.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 24,
-          "guodian": "而",
-          "received": "而",
-          "display": "而",
-          "pinyin": "ér",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "and, but, yet",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-24.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1273/G_1273_甲骨文.png",
-            "/glyphs/oracle/1273/G_1273_甲骨文0.png"
-          ]
         },
         {
           "position": 24,
@@ -13136,27 +12334,6 @@
           ]
         },
         {
-          "position": 25,
-          "guodian": "不",
-          "received": "不",
-          "display": "不",
-          "pinyin": "bù",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "not, no",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-25.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0089/G_0089_乙3400合1285賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙7672合9810賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙8685反合21031反𠂤組.png",
-            "/glyphs/oracle/0089/G_0089_乙9094合22446.png",
-            "/glyphs/oracle/0089/G_0089_京津3209合24895出組.png"
-          ]
-        },
-        {
           "position": 26,
           "guodian": "屈",
           "received": "屈",
@@ -13169,36 +12346,6 @@
           "meaning": "bend, wrong",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-26.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 26,
-          "guodian": "屈",
-          "received": "屈",
-          "display": "屈",
-          "pinyin": "qū",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "bend, wrong",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-26.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 27,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-27.png",
           "oracle_bone_paths": []
         },
         {
@@ -13235,24 +12382,6 @@
           ]
         },
         {
-          "position": 28,
-          "guodian": "而",
-          "received": "而",
-          "display": "而",
-          "pinyin": "ér",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "and, but, yet",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-28.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1273/G_1273_甲骨文.png",
-            "/glyphs/oracle/1273/G_1273_甲骨文0.png"
-          ]
-        },
-        {
           "position": 29,
           "guodian": "愈",
           "received": "愈",
@@ -13266,42 +12395,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-29.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 29,
-          "guodian": "愈",
-          "received": "愈",
-          "display": "愈",
-          "pinyin": "yù",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "recover, more",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-29.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 30,
-          "guodian": "出",
-          "received": "出",
-          "display": "出",
-          "pinyin": "chū",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "exit, go out",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_23_01A-23-30.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0226/G_0226_乙9091反合20045反𠂤組.png",
-            "/glyphs/oracle/0226/G_0226_京津1073合16064.png",
-            "/glyphs/oracle/0226/G_0226_京津1201合6698.png",
-            "/glyphs/oracle/0226/G_0226_京津4377合6718𠂤組.png",
-            "/glyphs/oracle/0226/G_0226_前3.21.2合24732.png"
-          ]
         },
         {
           "position": 30,
@@ -15610,48 +14703,6 @@
           ]
         },
         {
-          "position": 1,
-          "guodian": "不",
-          "received": "不",
-          "display": "不",
-          "pinyin": "bù",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "not, no",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-01.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0089/G_0089_乙3400合1285賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙7672合9810賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙8685反合21031反𠂤組.png",
-            "/glyphs/oracle/0089/G_0089_乙9094合22446.png",
-            "/glyphs/oracle/0089/G_0089_京津3209合24895出組.png"
-          ]
-        },
-        {
-          "position": 2,
-          "guodian": "可",
-          "received": "可",
-          "display": "可",
-          "pinyin": "kě",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "can, may",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-02.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0319/G_0319_乙5199反合11040反.png",
-            "/glyphs/oracle/0319/G_0319_乙8489反合18892反賓組.png",
-            "/glyphs/oracle/0319/G_0319_京津2247合18896.png",
-            "/glyphs/oracle/0319/G_0319_京津2248.png",
-            "/glyphs/oracle/0319/G_0319_京津4842.png"
-          ]
-        },
-        {
           "position": 2,
           "guodian": "可",
           "received": "可",
@@ -15688,21 +14739,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 3,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-03.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 4,
           "guodian": "而",
           "received": "而",
@@ -15719,39 +14755,6 @@
             "/glyphs/oracle/1273/G_1273_甲骨文.png",
             "/glyphs/oracle/1273/G_1273_甲骨文0.png"
           ]
-        },
-        {
-          "position": 4,
-          "guodian": "而",
-          "received": "而",
-          "display": "而",
-          "pinyin": "ér",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "and, but, yet",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-04.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1273/G_1273_甲骨文.png",
-            "/glyphs/oracle/1273/G_1273_甲骨文0.png"
-          ]
-        },
-        {
-          "position": 5,
-          "guodian": "貴",
-          "received": "貴",
-          "display": "貴",
-          "pinyin": "guì",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "貝",
-          "operator": "(elevated)",
-          "meaning": "value elevated → precious/honored",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-05.png",
-          "oracle_bone_paths": []
         },
         {
           "position": 5,
@@ -15787,48 +14790,6 @@
             "/glyphs/oracle/0130/G_0130_京津417合12720.png",
             "/glyphs/oracle/0130/G_0130_佚475合26383.png",
             "/glyphs/oracle/0130/G_0130_佚505合21767子組.png"
-          ]
-        },
-        {
-          "position": 6,
-          "guodian": "亦",
-          "received": "亦",
-          "display": "亦",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-06.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0130/G_0130_乙2100合6485賓組.png",
-            "/glyphs/oracle/0130/G_0130_京津175合19055.png",
-            "/glyphs/oracle/0130/G_0130_京津417合12720.png",
-            "/glyphs/oracle/0130/G_0130_佚475合26383.png",
-            "/glyphs/oracle/0130/G_0130_佚505合21767子組.png"
-          ]
-        },
-        {
-          "position": 7,
-          "guodian": "可",
-          "received": "可",
-          "display": "可",
-          "pinyin": "kě",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "can, may",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-07.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0319/G_0319_乙5199反合11040反.png",
-            "/glyphs/oracle/0319/G_0319_乙8489反合18892反賓組.png",
-            "/glyphs/oracle/0319/G_0319_京津2247合18896.png",
-            "/glyphs/oracle/0319/G_0319_京津2248.png",
-            "/glyphs/oracle/0319/G_0319_京津4842.png"
           ]
         },
         {
@@ -15874,48 +14835,6 @@
           ]
         },
         {
-          "position": 8,
-          "guodian": "不",
-          "received": "不",
-          "display": "不",
-          "pinyin": "bù",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "not, no",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-08.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0089/G_0089_乙3400合1285賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙7672合9810賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙8685反合21031反𠂤組.png",
-            "/glyphs/oracle/0089/G_0089_乙9094合22446.png",
-            "/glyphs/oracle/0089/G_0089_京津3209合24895出組.png"
-          ]
-        },
-        {
-          "position": 9,
-          "guodian": "可",
-          "received": "可",
-          "display": "可",
-          "pinyin": "kě",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "can, may",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-09.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0319/G_0319_乙5199反合11040反.png",
-            "/glyphs/oracle/0319/G_0319_乙8489反合18892反賓組.png",
-            "/glyphs/oracle/0319/G_0319_京津2247合18896.png",
-            "/glyphs/oracle/0319/G_0319_京津2248.png",
-            "/glyphs/oracle/0319/G_0319_京津4842.png"
-          ]
-        },
-        {
           "position": 9,
           "guodian": "可",
           "received": "可",
@@ -15952,21 +14871,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 10,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-10.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 11,
           "guodian": "而",
           "received": "而",
@@ -15983,39 +14887,6 @@
             "/glyphs/oracle/1273/G_1273_甲骨文.png",
             "/glyphs/oracle/1273/G_1273_甲骨文0.png"
           ]
-        },
-        {
-          "position": 11,
-          "guodian": "而",
-          "received": "而",
-          "display": "而",
-          "pinyin": "ér",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "and, but, yet",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-11.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1273/G_1273_甲骨文.png",
-            "/glyphs/oracle/1273/G_1273_甲骨文0.png"
-          ]
-        },
-        {
-          "position": 12,
-          "guodian": "戋",
-          "received": "戋",
-          "display": "戋",
-          "pinyin": "jiān",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "small",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-12.png",
-          "oracle_bone_paths": []
         },
         {
           "position": 12,
@@ -16051,48 +14922,6 @@
             "/glyphs/oracle/0315/G_0315_乙3481.png",
             "/glyphs/oracle/0315/G_0315_乙3774合3825.png",
             "/glyphs/oracle/0315/G_0315_乙3810反合8912反.png"
-          ]
-        },
-        {
-          "position": 13,
-          "guodian": "古",
-          "received": "古",
-          "display": "古",
-          "pinyin": "gǔ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "ancient, old",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-13.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0315/G_0315_乙1279.png",
-            "/glyphs/oracle/0315/G_0315_乙3475合17411.png",
-            "/glyphs/oracle/0315/G_0315_乙3481.png",
-            "/glyphs/oracle/0315/G_0315_乙3774合3825.png",
-            "/glyphs/oracle/0315/G_0315_乙3810反合8912反.png"
-          ]
-        },
-        {
-          "position": 14,
-          "guodian": "爲",
-          "received": "爲",
-          "display": "爲",
-          "pinyin": "wéi",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "do, act, make (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-14.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1038/G_1038_乙1049(甲).png",
-            "/glyphs/oracle/1038/G_1038_前5.30.4(甲).png",
-            "/glyphs/oracle/1038/H_1038_608E5_0.png",
-            "/glyphs/oracle/1038/H_1038_608E5_1.png",
-            "/glyphs/oracle/1038/H_1038_608E5_10.png"
           ]
         },
         {
@@ -16138,48 +14967,6 @@
           ]
         },
         {
-          "position": 15,
-          "guodian": "天",
-          "received": "天",
-          "display": "天",
-          "pinyin": "tiān",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "heaven, sky, nature",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-15.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0429/G_0429_乙1538合22055.png",
-            "/glyphs/oracle/0429/G_0429_乙3008合13804.png",
-            "/glyphs/oracle/0429/G_0429_乙4505合22093午組.png",
-            "/glyphs/oracle/0429/G_0429_乙5384合22077.png",
-            "/glyphs/oracle/0429/G_0429_乙6390合22103午組.png"
-          ]
-        },
-        {
-          "position": 16,
-          "guodian": "下",
-          "received": "下",
-          "display": "下",
-          "pinyin": "xià",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "below, lower, inferior",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-16.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0088/G_0088_乙6664合11497賓組.png",
-            "/glyphs/oracle/0088/G_0088_乙6672合11498賓組.png",
-            "/glyphs/oracle/0088/G_0088_佚979合6487賓組.png",
-            "/glyphs/oracle/0088/G_0088_前4.6.8合6521.png",
-            "/glyphs/oracle/0088/G_0088_戩13.2合6522.png"
-          ]
-        },
-        {
           "position": 16,
           "guodian": "下",
           "received": "下",
@@ -16216,36 +15003,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 17,
-          "guodian": "貴",
-          "received": "貴",
-          "display": "貴",
-          "pinyin": "guì",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "貝",
-          "operator": "(elevated)",
-          "meaning": "value elevated → precious/honored",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-17.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 19,
-          "guodian": "㠯",
-          "received": "以",
-          "display": "㠯",
-          "pinyin": "yǐ",
-          "is_variant": "以",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "use, by means of (archaic)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-19.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 19,
           "guodian": "㠯",
           "received": "以",
@@ -16279,48 +15036,6 @@
             "/glyphs/oracle/0896/G_0896_乙7773合5354.png",
             "/glyphs/oracle/0896/G_0896_乙834合22042子組.png",
             "/glyphs/oracle/0896/G_0896_乙8893合22323子組.png"
-          ]
-        },
-        {
-          "position": 20,
-          "guodian": "正",
-          "received": "正",
-          "display": "正",
-          "pinyin": "zhèng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "correct, upright",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-20.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0896/G_0896_乙1054合6828.png",
-            "/glyphs/oracle/0896/G_0896_乙2036合2273.png",
-            "/glyphs/oracle/0896/G_0896_乙7773合5354.png",
-            "/glyphs/oracle/0896/G_0896_乙834合22042子組.png",
-            "/glyphs/oracle/0896/G_0896_乙8893合22323子組.png"
-          ]
-        },
-        {
-          "position": 21,
-          "guodian": "之",
-          "received": "之",
-          "display": "之",
-          "pinyin": "zhī",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "of, it, go to",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-21.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0105/G_0105_乙570合14200.png",
-            "/glyphs/oracle/0105/G_0105_京津412合12474.png",
-            "/glyphs/oracle/0105/G_0105_京津413合12473.png",
-            "/glyphs/oracle/0105/G_0105_京津4600合31705無名組.png",
-            "/glyphs/oracle/0105/G_0105_京津4608合30113無名組.png"
           ]
         },
         {
@@ -16366,42 +15081,6 @@
           ]
         },
         {
-          "position": 22,
-          "guodian": "邦",
-          "received": "邦",
-          "display": "邦",
-          "pinyin": "bāng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "state, nation",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-22.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1497/G_1497_乙6978合9526.png",
-            "/glyphs/oracle/1497/G_1497_前4.17.3合846賓組.png",
-            "/glyphs/oracle/1497/G_1497_甲骨文.png",
-            "/glyphs/oracle/1497/G_1497_甲骨文0.png",
-            "/glyphs/oracle/1497/G_1497_簠歲17合10104賓組.png"
-          ]
-        },
-        {
-          "position": 23,
-          "guodian": "㠯",
-          "received": "以",
-          "display": "㠯",
-          "pinyin": "yǐ",
-          "is_variant": "以",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "use, by means of (archaic)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-23.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 23,
           "guodian": "㠯",
           "received": "以",
@@ -16430,42 +15109,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-24.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 24,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-24.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 25,
-          "guodian": "甬",
-          "received": "用",
-          "display": "甬",
-          "pinyin": "yǒng",
-          "is_variant": "用",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "use (archaic)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-25.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1082/G_1082_乙6410合232.png",
-            "/glyphs/oracle/1082/G_1082_乙7030合14賓組.png",
-            "/glyphs/oracle/1082/G_1082_乙7767合6647賓組.png",
-            "/glyphs/oracle/1082/G_1082_京津4293合34300歷組.png",
-            "/glyphs/oracle/1082/G_1082_京津4296合34313.png"
-          ]
         },
         {
           "position": 25,
@@ -16510,42 +15153,6 @@
           ]
         },
         {
-          "position": 26,
-          "guodian": "兵",
-          "received": "兵",
-          "display": "兵",
-          "pinyin": "bīng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "weapon, soldier",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-26.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0204/G_0204_京津1531合7205.png",
-            "/glyphs/oracle/0204/G_0204_佚729合7204賓組.png",
-            "/glyphs/oracle/0204/G_0204_後2.29.6合9469賓組.png",
-            "/glyphs/oracle/0204/G_0204_摭續89合27912.png",
-            "/glyphs/oracle/0204/G_0204_甲骨文.png"
-          ]
-        },
-        {
-          "position": 27,
-          "guodian": "㠯",
-          "received": "以",
-          "display": "㠯",
-          "pinyin": "yǐ",
-          "is_variant": "以",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "use, by means of (archaic)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-27.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 27,
           "guodian": "㠯",
           "received": "以",
@@ -16579,41 +15186,6 @@
             "/glyphs/oracle/1021/G_1021_甲骨文1.png",
             "/glyphs/oracle/1021/G_1021_鐵120.3(甲).png"
           ]
-        },
-        {
-          "position": 28,
-          "guodian": "亡",
-          "received": "無",
-          "display": "亡",
-          "pinyin": "wáng",
-          "is_variant": "無",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "perish, without",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-28.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1021/G_1021_甲2858(甲).png",
-            "/glyphs/oracle/1021/G_1021_甲骨文0.png",
-            "/glyphs/oracle/1021/G_1021_甲骨文1.png",
-            "/glyphs/oracle/1021/G_1021_鐵120.3(甲).png"
-          ]
-        },
-        {
-          "position": 29,
-          "guodian": "事",
-          "received": "事",
-          "display": "事",
-          "pinyin": "shì",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "affair, matter, serve",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_29_01A-29-29.png",
-          "oracle_bone_paths": []
         },
         {
           "position": 29,
@@ -19216,42 +17788,6 @@
           "oracle_bone_paths": []
         },
         {
-          "position": 1,
-          "guodian": "賹",
-          "received": "賹",
-          "display": "賹",
-          "pinyin": "yì",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "money (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-01.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 2,
-          "guodian": "生",
-          "received": "生",
-          "display": "生",
-          "pinyin": "shēng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "life, birth, arise",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-02.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1081/G_1081_乙3282合14127賓組.png",
-            "/glyphs/oracle/1081/G_1081_乙7288合10964賓組.png",
-            "/glyphs/oracle/1081/G_1081_乙7289反合10964反賓組.png",
-            "/glyphs/oracle/1081/G_1081_乙7396合904賓組.png",
-            "/glyphs/oracle/1081/G_1081_佚76合34086歷組.png"
-          ]
-        },
-        {
           "position": 2,
           "guodian": "生",
           "received": "生",
@@ -19294,42 +17830,6 @@
           ]
         },
         {
-          "position": 3,
-          "guodian": "曰",
-          "received": "曰",
-          "display": "曰",
-          "pinyin": "yuē",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "say, called",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-03.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0803/G_0803_乙3380反合17301反.png",
-            "/glyphs/oracle/0803/G_0803_乙7673反合9810反賓組.png",
-            "/glyphs/oracle/0803/G_0803_乙7736合419賓組.png",
-            "/glyphs/oracle/0803/G_0803_乙7795合6834賓組.png",
-            "/glyphs/oracle/0803/G_0803_乙8202反合18900反.png"
-          ]
-        },
-        {
-          "position": 4,
-          "guodian": "羕",
-          "received": "羕",
-          "display": "羕",
-          "pinyin": "yàng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "manner (variant)",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-04.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 4,
           "guodian": "羕",
           "received": "羕",
@@ -19366,27 +17866,6 @@
           ]
         },
         {
-          "position": 5,
-          "guodian": "心",
-          "received": "心",
-          "display": "心",
-          "pinyin": "xīn",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "heart-mind",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-05.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0684/G_0684_乙703合3217.png",
-            "/glyphs/oracle/0684/G_0684_前4.30.2合12賓組.png",
-            "/glyphs/oracle/0684/G_0684_拾7.11合16407.png",
-            "/glyphs/oracle/0684/G_0684_甲3510合6賓組.png",
-            "/glyphs/oracle/0684/G_0684_甲骨文.png"
-          ]
-        },
-        {
           "position": 6,
           "guodian": "史",
           "received": "史",
@@ -19399,36 +17878,6 @@
           "meaning": "history, scribe",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-06.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 6,
-          "guodian": "史",
-          "received": "史",
-          "display": "史",
-          "pinyin": "shǐ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "history, scribe",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-06.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 7,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-07.png",
           "oracle_bone_paths": []
         },
         {
@@ -19468,42 +17917,6 @@
           ]
         },
         {
-          "position": 8,
-          "guodian": "曰",
-          "received": "曰",
-          "display": "曰",
-          "pinyin": "yuē",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "say, called",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-08.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0803/G_0803_乙3380反合17301反.png",
-            "/glyphs/oracle/0803/G_0803_乙7673反合9810反賓組.png",
-            "/glyphs/oracle/0803/G_0803_乙7736合419賓組.png",
-            "/glyphs/oracle/0803/G_0803_乙7795合6834賓組.png",
-            "/glyphs/oracle/0803/G_0803_乙8202反合18900反.png"
-          ]
-        },
-        {
-          "position": 9,
-          "guodian": "勥",
-          "received": "勥",
-          "display": "勥",
-          "pinyin": "qiǎng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "force",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-09.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 9,
           "guodian": "勥",
           "received": "勥",
@@ -19540,27 +17953,6 @@
           ]
         },
         {
-          "position": 10,
-          "guodian": "勿",
-          "received": "物",
-          "display": "勿",
-          "pinyin": "wù",
-          "is_variant": "物",
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "do not",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-10.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1053/G_1053_甲58(甲).png",
-            "/glyphs/oracle/1053/G_1053_甲骨文.png",
-            "/glyphs/oracle/1053/G_1053_甲骨文0.png",
-            "/glyphs/oracle/1053/G_1053_甲骨文1.png",
-            "/glyphs/oracle/1053/H_1053_61695_0.png"
-          ]
-        },
-        {
           "position": 11,
           "guodian": "○",
           "received": "○",
@@ -19574,42 +17966,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-11.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 11,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-11.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 12,
-          "guodian": "鼎",
-          "received": "鼎",
-          "display": "鼎",
-          "pinyin": "dǐng",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "tripod cauldron",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-12.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1667/G_1667_乙1971合3171.png",
-            "/glyphs/oracle/1667/G_1667_乙745合6485賓組.png",
-            "/glyphs/oracle/1667/G_1667_乙8606合22528.png",
-            "/glyphs/oracle/1667/G_1667_乙9073合20577𠂤組.png",
-            "/glyphs/oracle/1667/G_1667_乙9085反合20463反𠂤組.png"
-          ]
         },
         {
           "position": 12,
@@ -19654,27 +18010,6 @@
           ]
         },
         {
-          "position": 13,
-          "guodian": "老",
-          "received": "老",
-          "display": "老",
-          "pinyin": "lǎo",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "old, venerable",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-13.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1268/G_1268_乙12合21021𠂤組.png",
-            "/glyphs/oracle/1268/G_1268_乙428合21321𠂤組.png",
-            "/glyphs/oracle/1268/G_1268_乙8712合22322子組.png",
-            "/glyphs/oracle/1268/G_1268_乙8896合22246子組.png",
-            "/glyphs/oracle/1268/G_1268_佚620合18973.png"
-          ]
-        },
-        {
           "position": 14,
           "guodian": "是",
           "received": "是",
@@ -19687,36 +18022,6 @@
           "meaning": "this, is",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-14.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 14,
-          "guodian": "是",
-          "received": "是",
-          "display": "是",
-          "pinyin": "shì",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "this, is",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-14.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 15,
-          "guodian": "{胃刀}",
-          "received": "{胃刀}",
-          "display": "{胃刀}",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-15.png",
           "oracle_bone_paths": []
         },
         {
@@ -19754,53 +18059,6 @@
             "/glyphs/oracle/0089/G_0089_乙9094合22446.png",
             "/glyphs/oracle/0089/G_0089_京津3209合24895出組.png"
           ]
-        },
-        {
-          "position": 16,
-          "guodian": "不",
-          "received": "不",
-          "display": "不",
-          "pinyin": "bù",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "not, no",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-16.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0089/G_0089_乙3400合1285賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙7672合9810賓組.png",
-            "/glyphs/oracle/0089/G_0089_乙8685反合21031反𠂤組.png",
-            "/glyphs/oracle/0089/G_0089_乙9094合22446.png",
-            "/glyphs/oracle/0089/G_0089_京津3209合24895出組.png"
-          ]
-        },
-        {
-          "position": 17,
-          "guodian": "道",
-          "received": "道",
-          "display": "道",
-          "pinyin": "dào",
-          "is_variant": false,
-          "radicals": [
-            {
-              "component": "辶",
-              "meaning": "movement",
-              "position": "bottom"
-            },
-            {
-              "component": "首",
-              "meaning": "head",
-              "position": "top"
-            }
-          ],
-          "substrate": "",
-          "operator": "",
-          "meaning": "way, path, pattern",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-17.png",
-          "oracle_bone_paths": []
         },
         {
           "position": 17,
@@ -19861,53 +18119,6 @@
           ]
         },
         {
-          "position": 19,
-          "guodian": "名",
-          "received": "名",
-          "display": "名",
-          "pinyin": "míng",
-          "is_variant": false,
-          "radicals": [
-            {
-              "component": "夕",
-              "meaning": "evening",
-              "position": "unknown"
-            },
-            {
-              "component": "口",
-              "meaning": "mouth",
-              "position": "unknown"
-            }
-          ],
-          "substrate": "",
-          "operator": "",
-          "meaning": "name, naming",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-19.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0332/G_0332_乙2461合9502賓組.png",
-            "/glyphs/oracle/0332/G_0332_乙3290合9503賓組.png",
-            "/glyphs/oracle/0332/G_0332_乙7808合9505賓組.png",
-            "/glyphs/oracle/0332/G_0332_前6.1.4合19617賓組.png",
-            "/glyphs/oracle/0332/G_0332_甲3488合19616賓組.png"
-          ]
-        },
-        {
-          "position": 20,
-          "guodian": "與",
-          "received": "與",
-          "display": "與",
-          "pinyin": "yǔ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "and, with, give",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-20.png",
-          "oracle_bone_paths": []
-        },
-        {
           "position": 20,
           "guodian": "與",
           "received": "與",
@@ -19944,27 +18155,6 @@
           ]
         },
         {
-          "position": 21,
-          "guodian": "身",
-          "received": "身",
-          "display": "身",
-          "pinyin": "shēn",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "body, self",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-21.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1455/G_1455_合13666正賓組.png",
-            "/glyphs/oracle/1455/G_1455_合13666正賓組副本0.png",
-            "/glyphs/oracle/1455/G_1455_合13666正賓組副本1.png",
-            "/glyphs/oracle/1455/G_1455_合13669賓組.png",
-            "/glyphs/oracle/1455/G_1455_合17978賓組.png"
-          ]
-        },
-        {
           "position": 22,
           "guodian": "○",
           "received": "○",
@@ -19978,42 +18168,6 @@
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-22.png",
           "oracle_bone_paths": []
-        },
-        {
-          "position": 22,
-          "guodian": "○",
-          "received": "○",
-          "display": "○",
-          "pinyin": "",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-22.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 23,
-          "guodian": "新",
-          "received": "新",
-          "display": "新",
-          "pinyin": "xīn",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "new",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-23.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/0763/G_0763_乙4603合22073何組.png",
-            "/glyphs/oracle/0763/G_0763_乙4603合22073何組副本0.png",
-            "/glyphs/oracle/0763/G_0763_乙4603合22073何組副本1.png",
-            "/glyphs/oracle/0763/G_0763_京津4230合30977.png",
-            "/glyphs/oracle/0763/G_0763_京津4231合30978何組.png"
-          ]
         },
         {
           "position": 23,
@@ -20058,27 +18212,6 @@
           ]
         },
         {
-          "position": 24,
-          "guodian": "身",
-          "received": "身",
-          "display": "身",
-          "pinyin": "shēn",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "body, self",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-24.png",
-          "oracle_bone_paths": [
-            "/glyphs/oracle/1455/G_1455_合13666正賓組.png",
-            "/glyphs/oracle/1455/G_1455_合13666正賓組副本0.png",
-            "/glyphs/oracle/1455/G_1455_合13666正賓組副本1.png",
-            "/glyphs/oracle/1455/G_1455_合13669賓組.png",
-            "/glyphs/oracle/1455/G_1455_合17978賓組.png"
-          ]
-        },
-        {
           "position": 25,
           "guodian": "與",
           "received": "與",
@@ -20091,36 +18224,6 @@
           "meaning": "and, with, give",
           "breakdown": "",
           "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-25.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 25,
-          "guodian": "與",
-          "received": "與",
-          "display": "與",
-          "pinyin": "yǔ",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "",
-          "operator": "",
-          "meaning": "and, with, give",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-25.png",
-          "oracle_bone_paths": []
-        },
-        {
-          "position": 26,
-          "guodian": "貨",
-          "received": "貨",
-          "display": "貨",
-          "pinyin": "huò",
-          "is_variant": false,
-          "radicals": [],
-          "substrate": "貝",
-          "operator": "化 (huà, change)",
-          "meaning": "value changed → goods/merchandise",
-          "breakdown": "",
-          "glyph_path": "/glyphs/guodian/郭店簡_01A-老子甲_35_01A-35-26.png",
           "oracle_bone_paths": []
         },
         {
