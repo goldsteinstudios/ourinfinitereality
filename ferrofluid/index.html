@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ferrofluid Sphere | Our Infinite Reality</title><meta name="description" content="A physics simulation of a ferrofluid film on a glass sphere, pulled up by orbiting magnets. Find the combination that keeps the fluid up between passes."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><script>
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    </script><link rel="stylesheet" href="/_astro/about.AZYFB_nE.css">
+<link rel="stylesheet" href="./ferrofluid.css">
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js" } }</script>
+<script type="module" src="./app.js"></script>
+</head> <body class="min-h-screen" style="background: var(--color-bg); color: var(--color-text);"> <header style="border-bottom: 1px solid var(--color-border);" class="px-6 py-4"> <nav class="max-w-4xl mx-auto flex items-center justify-between"> <a href="/" class="text-xl font-semibold hover:opacity-70 transition-opacity" style="color: var(--color-accent);">
+Our Infinite Reality
+</a> <div class="flex items-center gap-4 text-sm"> <div class="hidden sm:flex items-center gap-4"> <a href="/" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Home</a><a href="/essays" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Essays</a><a href="/ddj" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">DDJ</a><a href="/catalog" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Catalog</a><a href="/about" class="hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">About</a> </div> <button id="theme-toggle" class="p-2 rounded-lg transition-colors" style="background: var(--color-surface); border: 1px solid var(--color-border);" aria-label="Toggle theme"> <svg id="sun-icon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path> </svg> <svg id="moon-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path> </svg> </button> <button id="menu-toggle" class="sm:hidden p-2 rounded-lg transition-colors" style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text);" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"> <svg id="menu-open-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> <svg id="menu-close-icon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> </nav> <div id="mobile-menu" class="hidden sm:hidden max-w-4xl mx-auto mt-4 flex flex-col gap-1 text-sm"> <a href="/" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Home</a><a href="/essays" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Essays</a><a href="/ddj" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">DDJ</a><a href="/catalog" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">Catalog</a><a href="/about" class="py-2 hover:opacity-100 transition-opacity" style="color: var(--color-text-muted); opacity: 0.85;">About</a> </div> </header>
+
+<main class="ff">
+  <section class="ff-intro">
+    <h1>Ferrofluid sphere</h1>
+    <p class="ff-lead">A glass sphere coated in ferrofluid. Magnets sweep around it, pulling the fluid up as they pass. The question: <strong>can it be pulled up strongly enough, or often enough, that it never has time to fall back?</strong></p>
+    <p class="ff-sub">The film is simulated with real material properties: viscosity, surface tension, magnetization, gravity, and the field of an actual cylinder magnet. Drag the view to orbit it and scroll to zoom. The verdict is measured along the whole path the magnets sweep. The purple dot is one point on that path, and its history is plotted below.</p>
+  </section>
+
+  <div class="ff-app">
+    <div class="ff-stage">
+      <canvas id="view" aria-label="3D view of the ferrofluid-coated sphere and magnets"></canvas>
+      <div class="ff-badge" id="badge"><span class="ff-dot"></span><span id="badge-text">Measuring…</span></div>
+      <div class="ff-stage-btns">
+        <button id="btn-play" type="button" aria-label="Pause">Pause</button>
+        <button id="btn-reset" type="button">Re-coat</button>
+      </div>
+      <div class="ff-clock" id="clock">t = 0.0 s</div>
+      <div class="ff-scale" id="heat-legend"><span>thinner</span><i></i><span>thicker</span></div>
+    </div>
+    <aside class="ff-panel" id="panel" aria-label="Simulation controls"></aside>
+  </div>
+
+  <section class="ff-results">
+    <div class="ff-chart-card">
+      <div class="ff-card-head">
+        <h2>Watch point: fluid height over time</h2>
+        <div class="ff-legend"><span class="lg lg-tip"></span>surface tip (film + spikes) <span class="lg lg-film"></span>film <span class="lg lg-base"></span>typical film elsewhere <span class="lg lg-pass"></span>magnet overhead</div>
+      </div>
+      <canvas id="chart" height="220"></canvas>
+    </div>
+    <div class="ff-stats" id="stats"></div>
+  </section>
+
+  <section class="ff-scan">
+    <div class="ff-card-head">
+      <h2>Find the combination</h2>
+      <p>Sweeps one setting while keeping everything else as it is in the panel, and runs a fresh simulation for each value: several passes to settle, then it measures the last pass.</p>
+    </div>
+    <div class="ff-scan-row">
+      <label for="scan-param">Sweep</label>
+      <select id="scan-param"></select>
+      <button id="btn-scan" type="button" class="ff-primary">Run sweep</button>
+      <div class="ff-progress" id="scan-progress" hidden><div></div></div>
+    </div>
+    <div id="scan-out"></div>
+  </section>
+
+  <section class="ff-notes">
+    <h2>What's being modelled</h2>
+    <div class="ff-notes-grid">
+      <div>
+        <h3>The film</h3>
+        <p>Film thickness is tracked on about 2,600 patches covering the sphere. Fluid flows between patches, driven by:</p>
+        <ul>
+          <li><b>The Kelvin force</b> μ₀M∇H, which pulls magnetized fluid toward stronger field. Magnetization follows a Langevin curve that saturates at M<sub>s</sub>.</li>
+          <li><b>Magnetic normal stress</b> μ₀M<sub>n</sub>²/2 on the free surface.</li>
+          <li><b>Surface tension</b>, which flattens bumps, and <b>gravity</b>, which drains the film along the glass and weighs it down.</li>
+          <li><b>Viscous drag</b> from the glass (3μv/h²) and the fluid's <b>inertia</b>. Thick, thin fluids slosh. Thin, viscous films creep.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>The spikes</h3>
+        <p>Above a critical normal magnetization M<sub>c</sub> (the <b>Rosensweig instability</b>), a ferrofluid surface breaks into spikes spaced about 2π√(σ/ρg) apart. Spike height is limited by the fluid available, rises and collapses at the film's own relaxation rate, and shows hysteresis: once formed, spikes survive down to about 0.9 M<sub>c</sub>. Spikes are drawn leaning along the local field.</p>
+        <h3>The magnets</h3>
+        <p>Each magnet is a solid cylinder, modelled by spreading magnetic charge over both pole faces. Its axis points at the sphere's centre, and the gap is measured from the glass to the near face.</p>
+      </div>
+      <div>
+        <h3>When fluid leaves</h3>
+        <p>A fluid column detaches when the outward force on it beats surface tension (Bond number ρ·f·h²/σ ≳ 3.5). On the underside, gravity makes it <b>drip</b>. Under a strong, close magnet, the fluid <b>jumps to the magnet</b>. Both count as fluid lost.</p>
+        <h3>Limits</h3>
+        <p>This is a thin-film model. The bulk shape is computed, but individual spikes are a sub-grid estimate, and the fluid's own effect on the field (demagnetization) is included only in the normal direction. Centrifugal force from spinning the sphere is negligible at these speeds and is left out. Material presets are typical datasheet values, not specific products. Trends and orders of magnitude are trustworthy. Exact thresholds are approximate to within tens of percent.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer style="border-top: 1px solid var(--color-border);" class="px-6 py-6 mt-12"> <div class="max-w-4xl mx-auto text-center text-sm" style="color: var(--color-text-muted);"> <p>Written by Claude in conversation with Will Goldstein.</p> <p>Unless otherwise noted: work in progress, subject to revision.</p> </div> </footer> <script>
+      const toggle = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('sun-icon');
+      const moonIcon = document.getElementById('moon-icon');
+
+      function updateIcons() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        sunIcon.classList.toggle('hidden', !isDark);
+        moonIcon.classList.toggle('hidden', isDark);
+      }
+
+      updateIcons();
+
+      toggle.addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+        updateIcons();
+      });
+
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpenIcon = document.getElementById('menu-open-icon');
+      const menuCloseIcon = document.getElementById('menu-close-icon');
+
+      menuToggle.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        const open = !isHidden;
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuOpenIcon.classList.toggle('hidden', open);
+        menuCloseIcon.classList.toggle('hidden', !open);
+      });
+    </script> </body> </html>
