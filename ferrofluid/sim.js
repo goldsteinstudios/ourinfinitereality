@@ -18,6 +18,7 @@
 
 export const MU0 = 4e-7 * Math.PI;
 export const G0 = 9.81;
+export function gravityOf(p) { return p.gravity === 'off' ? 0 : G0 * (p.gScale ?? 1); }
 
 export const FLUIDS = {
   oil: { label: 'Light oil-based (EFH1-like)', rho: 1210, mu: 0.006, sigma: 0.029, Ms: 35e3, chi: 2.6 },
@@ -33,7 +34,9 @@ export const DEFAULTS = {
   Br: 1.3, magD: 0.025, magL: 0.025, gap: 0.01,
   nMag: 1, altPoles: false,
   mode: 'orbit', tilt: 0, period: 2,
-  gravity: true, detach: true,
+  // 'center': pulls toward the sphere's centre everywhere (like a small planet)
+  // 'down': ordinary lab gravity, sphere resting on a table · 'off': no gravity
+  gravity: 'center', gScale: 1, detach: true,
 };
 
 const BO_CRIT = 3.5;        // Bond number at which a pendant / pulled column detaches
@@ -328,10 +331,15 @@ export class FerroSim {
     const { axis, mags, bodyAngle } = this.worldState();
     this.magDirs = mags.map(m => rotate(m.dir, axis, -bodyAngle));
     this.magSign = mags.map(m => m.sign);
-    const g = this.params.gravity ? G0 : 0;
-    const gb = rotate([0, -g, 0], axis, -bodyAngle);
-    this.gBody = gb;
+    const g = gravityOf(this.params);
     const u = this.unit, R = this.params.R;
+    if (this.params.gravity === 'center') {
+      // radial: presses the film onto the glass equally everywhere, no downhill direction
+      this.gin.fill(g);
+      this.gdotx.fill(0);
+      return;
+    }
+    const gb = rotate([0, -g, 0], axis, -bodyAngle);
     for (let i = 0; i < this.n; i++) {
       const gd = gb[0] * u[3 * i] + gb[1] * u[3 * i + 1] + gb[2] * u[3 * i + 2];
       this.gin[i] = -gd;
@@ -422,7 +430,7 @@ export class FerroSim {
     let hmax = H_MIN, vmax = 1e-9;
     for (let i = 0; i < this.n; i++) if (this.h[i] > hmax) hmax = this.h[i];
     for (let e = 0; e < this.ne; e++) { const a = Math.abs(this.v[e]); if (a > vmax) vmax = a; }
-    const g = this.params.gravity ? G0 : 0;
+    const g = gravityOf(this.params);
     const K = sigma * this.lam * this.lam + rho * g * this.lam;
     const a = hmax * K / rho;
     const D = 3 * mu / (rho * hmax * hmax);
@@ -607,7 +615,7 @@ export class FerroSim {
       mcRatio = Math.max(mcRatio, this.Mn[i] / Mc);
     }
     const L = 2 * p.R * this.footHalfAngle;
-    const g = p.gravity ? G0 : 0.1;
+    const g = Math.max(gravityOf(p), 0.1);
     const hRef = Math.max(hAvg, maxH, 1e-5);
     const tauMound = relaxTime(hRef, 2 * L, p, g);
     const lamS = 2 * Math.PI * Math.sqrt(p.sigma / (p.rho * g));

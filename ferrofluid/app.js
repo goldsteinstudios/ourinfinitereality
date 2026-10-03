@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from './vendor/OrbitControls.js';
 import { RoomEnvironment } from './vendor/RoomEnvironment.js';
-import { FerroSim, FLUIDS, DEFAULTS, verdict, G0 } from './sim.js';
+import { FerroSim, FLUIDS, DEFAULTS, verdict, gravityOf } from './sim.js';
 
 // ------------------------------------------------------------------ parameters
 // UI values are in display units; `scale` converts to SI for the simulation.
@@ -32,7 +32,9 @@ const CONTROLS = [
   ] },
   { group: 'Sphere & world', items: [
     { key: 'R', label: 'Sphere diameter', unit: 'cm', min: 2, max: 30, step: 0.5, scale: 0.005, digits: 1, note: 'changing this re-coats the sphere' },
-    { key: 'gravity', type: 'check', label: 'Gravity' },
+    { key: 'gravity', type: 'seg', label: 'Gravity points', options: [['center', 'To centre'], ['down', 'Down (table)'], ['off', 'Off']] },
+    { key: 'gScale', label: 'Gravity strength', unit: 'g', min: 0.05, max: 5, log: true, scale: 1, digits: 2,
+      note: 'To centre: the sphere pulls its own coat inward, like a small planet' },
     { key: 'detach', type: 'check', label: 'Fluid can drip off / jump to magnet' },
   ] },
   { group: 'View', items: [
@@ -82,6 +84,12 @@ function buildControl(c) {
   if (c.type === 'seg') {
     const seg = document.createElement('div');
     seg.className = 'ff-seg'; seg.setAttribute('role', 'group');
+    if (c.label) {
+      seg.setAttribute('aria-label', c.label);
+      const lab = document.createElement('div');
+      lab.className = 'ff-ctl-top'; lab.style.marginBottom = '.3rem'; lab.textContent = c.label;
+      wrap.appendChild(lab);
+    }
     for (const [val, lab] of c.options) {
       const b = document.createElement('button');
       b.type = 'button'; b.textContent = lab; b.dataset.val = val;
@@ -157,7 +165,7 @@ function apply(p, fluidPreset = false) {
   sim.setParams(p);
   if (needsReset) sim.reset();
   if ('nMag' in p || 'period' in p || 'mode' in p || 'tilt' in p || 'altPoles' in p) rebuildMagnets();
-  if ('R' in p || 'sigma' in p || 'rho' in p || 'gravity' in p || fluidPreset) rebuildSpikePattern();
+  if ('R' in p || 'sigma' in p || 'rho' in p || 'gravity' in p || 'gScale' in p || fluidPreset) rebuildSpikePattern();
   if ('R' in p || 'gap' in p || 'magD' in p || 'magL' in p) { rebuildMagnets(); placeCamera(false); }
   if ('tilt' in p) rebuildMagnets();
 }
@@ -240,7 +248,7 @@ function buildRenderMesh() {
 // critical wavelength; each render vertex stores a cone profile around its nearest point.
 function rebuildSpikePattern() {
   const p = sim.params;
-  const g = p.gravity ? G0 : 2;
+  const g = Math.max(gravityOf(p), 2);
   const lam = Math.min(0.03, Math.max(0.004, 2 * Math.PI * Math.sqrt(p.sigma / (p.rho * g))));
   const R = p.R;
   const N = Math.max(12, Math.round(4 * Math.PI * R * R / (0.866 * lam * lam)));
