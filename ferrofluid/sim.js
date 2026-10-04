@@ -37,6 +37,8 @@ export const DEFAULTS = {
   // 'center': pulls toward the sphere's centre everywhere (like a small planet)
   // 'down': ordinary lab gravity, sphere resting on a table · 'off': no gravity
   gravity: 'center', gScale: 1, detach: true,
+  // Earth-like mode: period = day length, tilt = obliquity; the magnet is the Sun
+  year: 30, ecc: 0.0167, precess: 300, oblAmp: 0, oblPeriod: 200,
 };
 
 const BO_CRIT = 3.5;        // Bond number at which a pendant / pulled column detaches
@@ -69,14 +71,26 @@ function lnSinhOverX(x) {
 export function magnetization(H, Ms, chi) { return Ms * langevin(3 * chi * H / Ms); }
 export function magEnergy(H, Ms, chi) { return MU0 * Ms * Ms / (3 * chi) * lnSinhOverX(3 * chi * H / Ms); }
 
-function rotate(v, a, ang) { // Rodrigues, a unit
-  const c = Math.cos(ang), s = Math.sin(ang);
-  const d = (a[0] * v[0] + a[1] * v[1] + a[2] * v[2]) * (1 - c);
-  return [
-    v[0] * c + (a[1] * v[2] - a[2] * v[1]) * s + a[0] * d,
-    v[1] * c + (a[2] * v[0] - a[0] * v[2]) * s + a[1] * d,
-    v[2] * c + (a[0] * v[1] - a[1] * v[0]) * s + a[2] * d,
-  ];
+// 3x3 rotation matrices, row-major [9]
+function matAxisAngle(a, ang) {
+  const c = Math.cos(ang), s = Math.sin(ang), t = 1 - c, [x, y, z] = a;
+  return [t * x * x + c, t * x * y - s * z, t * x * z + s * y,
+    t * x * y + s * z, t * y * y + c, t * y * z - s * x,
+    t * x * z - s * y, t * y * z + s * x, t * z * z + c];
+}
+function matMul(A, B) {
+  const C = new Array(9);
+  for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) C[3 * i + j] = A[3 * i] * B[j] + A[3 * i + 1] * B[3 + j] + A[3 * i + 2] * B[6 + j];
+  return C;
+}
+function mulT(M, v) { // M^T v : world -> body
+  return [M[0] * v[0] + M[3] * v[1] + M[6] * v[2], M[1] * v[0] + M[4] * v[1] + M[7] * v[2], M[2] * v[0] + M[5] * v[1] + M[8] * v[2]];
+}
+// Kepler: true anomaly for mean anomaly M and eccentricity e
+function trueAnomaly(M, e) {
+  let E = M;
+  for (let k = 0; k < 8; k++) E -= (E - e * Math.sin(E) - M) / (1 - e * Math.cos(E));
+  return 2 * Math.atan2(Math.sqrt(1 + e) * Math.sin(E / 2), Math.sqrt(1 - e) * Math.cos(E / 2));
 }
 
 // ---------------------------------------------------------------- geometry
@@ -189,7 +203,8 @@ export class FerroSim {
     const old = this.params;
     const np = { ...old, ...p };
     this.params = np;
-    const geomChanged = force || ['R', 'Br', 'magD', 'magL', 'gap'].some(k => np[k] !== old[k]);
+    const geomChanged = force || ['R', 'Br', 'magD', 'magL', 'gap'].some(k => np[k] !== old[k])
+      || ((np.mode === 'earth') !== (old.mode === 'earth')) || (np.mode === 'earth' && np.ecc !== old.ecc);
     if (np.R !== old.R || force) {
       this.A = new Float64Array(this.n);
       for (let i = 0; i < this.n; i++) this.A[i] = this.areaU[i] * np.R * np.R;
@@ -203,15 +218,32 @@ export class FerroSim {
     }
     if (geomChanged) this._buildFieldTable();
     if (!force && this.path) {
-      if (np.tilt !== old.tilt) this._initPath();
+      if (['tilt', 'mode', 'oblAmp'].some(k => np[k] !== old[k])) this._initPath();
       else if (Object.keys(p).some(k => np[k] !== old[k])) this._clearHist();
     }
   }
 
   // Field of one cylinder magnet (axis through the sphere centre, north face toward
   // the sphere) tabulated over (angle from the magnet axis, radius from centre).
+  // Eccentric orbits change the gap, so the field is tabulated at several gaps and blended.
   _buildFieldTable() {
-    const { R, Br, magD, magL, gap } = this.params;
+    const { gap, ecc, mode } = this.params;
+    const e = mode === 'earth' ? ecc : 0;
+    const gaps = e > 0 ? [0, 1, 2, 3, 4, 5, 6].map(k => gap * (1 - e + (2 * e * k) / 6)) : [gap];
+    const nr = Math.max(2, Math.min(26, Math.floor((gaps[0] - 0.0005) / DR) + 1));
+    this.tblNR = nr;
+    this.tables = gaps.map(g => ({ gap: g, ...this._tableFor(g, nr) }));
+    const mid = this.tables[this.tables.length >> 1];
+    // footprint: angular half-width where |H| at the glass drops to half its peak
+    const H0 = Math.hypot(mid.Hr[0], mid.Ha[0]);
+    let ih = NA - 1;
+    for (let i = 0; i < NA; i++) if (Math.hypot(mid.Hr[i], mid.Ha[i]) < 0.5 * H0) { ih = i; break; }
+    this.footHalfAngle = Math.PI * ih / (NA - 1);
+    this.Hglass = H0;
+  }
+
+  _tableFor(gap, nr) {
+    const { R, Br, magD, magL } = this.params;
     const a = magD / 2, Mmag = Br / MU0;
     const charges = []; // [rho, phi, z, q]
     const NRING = 8;
@@ -227,9 +259,6 @@ export class FerroSim {
         }
       }
     }
-    const nr = Math.max(2, Math.min(26, Math.floor((gap - 0.0005) / DR) + 1));
-    this.tblNR = nr;
-    this.tblRmax = R + (nr - 1) * DR;
     const Hr = new Float32Array(nr * NA), Ha = new Float32Array(nr * NA);
     const nc = charges.length / 4;
     for (let j = 0; j < nr; j++) {
@@ -249,13 +278,7 @@ export class FerroSim {
         Ha[j * NA + i] = hx * ca - hz * sa;
       }
     }
-    this.tblHr = Hr; this.tblHa = Ha;
-    // footprint: angular half-width where |H| at the glass drops to half its peak
-    const H0 = Math.hypot(Hr[0], Ha[0]);
-    let ih = NA - 1;
-    for (let i = 0; i < NA; i++) if (Math.hypot(Hr[i], Ha[i]) < 0.5 * H0) { ih = i; break; }
-    this.footHalfAngle = Math.PI * ih / (NA - 1);
-    this.Hglass = H0;
+    return { Hr, Ha };
   }
 
   reset() {
@@ -275,8 +298,16 @@ export class FerroSim {
   // Cells lying on the magnets' path (a great circle around the rotation axis, fixed in
   // the sphere's frame in both modes). The verdict is the median over all of them.
   _initPath() {
-    const { axis } = this.frame(), u = this.unit;
+    const earth = this.params.mode === 'earth';
+    const axis = earth ? [0, 1, 0] : this.frame().axis, u = this.unit;
     let w = 0.55 * this.dminU, path = [];
+    if (earth) {
+      w = Math.max(w, Math.sin(Math.min(Math.PI / 2, this.params.tilt + this.params.oblAmp)));
+      let band = 0, tot = 0;
+      for (let i = 0; i < this.n; i++) { tot += this.areaU[i]; if (Math.abs(u[3 * i + 1]) < w) band += this.areaU[i]; }
+      this.tropicsW = w;
+      this.tropicsArea = band / tot;
+    }
     while (path.length < 24) {
       path = [];
       for (let i = 0; i < this.n; i++) {
@@ -290,7 +321,9 @@ export class FerroSim {
 
   _clearHist() {
     this.hist = { t: [], tip: [], h: [], s: [], prox: [], path: [] };
+    this.season = { t: [], decl: [], imb: [], trop: [] };
     this.nextSample = 0;
+    this.nextSeason = 0;
     this.histStart = this.t;
   }
 
@@ -303,7 +336,11 @@ export class FerroSim {
     return best;
   }
 
-  get passInterval() { return this.params.period / this.params.nMag; }
+  get passInterval() {
+    const p = this.params;
+    if (p.mode === 'earth') return p.year > p.period ? 1 / (1 / p.period - 1 / p.year) : p.period; // solar day
+    return p.period / p.nMag;
+  }
 
   // World-frame axis + basis of the rotation.
   frame() {
@@ -314,23 +351,43 @@ export class FerroSim {
     return { axis, e1, e2 };
   }
 
-  // Magnet directions in world frame and body (sphere) rotation angle about the axis.
+  // Magnet directions (world frame), their gaps, and the sphere's orientation `rot`
+  // (world-from-body rotation matrix).
   worldState(t = this.t) {
+    const p = this.params;
+    if (p.mode === 'earth') {
+      // spin about the body pole (y), tilt the pole by the obliquity, precess it about
+      // the orbit normal; the Sun goes round in the horizontal plane on a Kepler ellipse
+      const eps = p.tilt + p.oblAmp * Math.sin(2 * Math.PI * t / p.oblPeriod);
+      const phi = -2 * Math.PI * t / p.precess;
+      const spin = 2 * Math.PI * t / p.period;
+      const rot = matMul(matAxisAngle([0, 1, 0], phi), matMul(matAxisAngle([0, 0, 1], -eps), matAxisAngle([0, 1, 0], spin)));
+      const nu = trueAnomaly(2 * Math.PI * t / p.year, p.ecc);
+      const gap = p.gap * (1 - p.ecc * p.ecc) / (1 + p.ecc * Math.cos(nu));
+      return { rot, nu, eps, axis: [rot[1], rot[4], rot[7]], mags: [{ dir: [Math.cos(nu), 0, -Math.sin(nu)], sign: 1, gap }] };
+    }
     const { axis, e1, e2 } = this.frame();
-    const { nMag, period, mode, altPoles } = this.params;
+    const { nMag, period, mode, altPoles } = p;
     const th = 2 * Math.PI * t / period;
     const mags = [];
     for (let k = 0; k < nMag; k++) {
       const a = 2 * Math.PI * k / nMag + (mode === 'orbit' ? th : 0);
-      mags.push({ dir: [Math.cos(a) * e1[0] + Math.sin(a) * e2[0], Math.cos(a) * e1[1] + Math.sin(a) * e2[1], Math.cos(a) * e1[2] + Math.sin(a) * e2[2]], sign: altPoles && k % 2 ? -1 : 1 });
+      mags.push({ dir: [Math.cos(a) * e1[0] + Math.sin(a) * e2[0], Math.cos(a) * e1[1] + Math.sin(a) * e2[1], Math.cos(a) * e1[2] + Math.sin(a) * e2[2]], sign: altPoles && k % 2 ? -1 : 1, gap: p.gap });
     }
-    return { axis, mags, bodyAngle: mode === 'spin' ? -th : 0 };
+    return { axis, mags, rot: matAxisAngle(axis, mode === 'spin' ? -th : 0) };
   }
 
   _updateFrame() {
-    const { axis, mags, bodyAngle } = this.worldState();
-    this.magDirs = mags.map(m => rotate(m.dir, axis, -bodyAngle));
+    const { mags, rot } = this.worldState();
+    this.magDirs = mags.map(m => mulT(rot, m.dir));
     this.magSign = mags.map(m => m.sign);
+    // which pair of field tables to blend for each magnet's current gap
+    const T = this.tables;
+    this.magTbl = mags.map(m => {
+      if (T.length === 1) return [0, 0];
+      const f = Math.max(0, Math.min(T.length - 1 - 1e-9, (m.gap - T[0].gap) / (T[1].gap - T[0].gap)));
+      return [Math.floor(f), f - Math.floor(f)];
+    });
     const g = gravityOf(this.params);
     const u = this.unit, R = this.params.R;
     if (this.params.gravity === 'center') {
@@ -339,7 +396,7 @@ export class FerroSim {
       this.gdotx.fill(0);
       return;
     }
-    const gb = rotate([0, -g, 0], axis, -bodyAngle);
+    const gb = mulT(rot, [0, -g, 0]);
     for (let i = 0; i < this.n; i++) {
       const gd = gb[0] * u[3 * i] + gb[1] * u[3 * i + 1] + gb[2] * u[3 * i + 2];
       this.gin[i] = -gd;
@@ -347,13 +404,12 @@ export class FerroSim {
     }
   }
 
-  _lookup(al, rIdx) { // bilinear in (angle, radius); returns [Hr, Ha]
+  _lookup(al, rIdx, Hr, Ha) { // bilinear in (angle, radius); returns [Hr, Ha]
     const fi = al / Math.PI * (NA - 1);
     let i = Math.floor(fi); if (i >= NA - 1) i = NA - 2;
     const wi = fi - i;
     let j = Math.floor(rIdx); if (j >= this.tblNR - 1) j = this.tblNR - 2; if (j < 0) j = 0;
     let wj = rIdx - j; if (wj > 1) wj = 1; if (wj < 0) wj = 0;
-    const Hr = this.tblHr, Ha = this.tblHa;
     const k00 = j * NA + i, k10 = k00 + NA;
     const hr0 = Hr[k00] + (Hr[k00 + 1] - Hr[k00]) * wi, hr1 = Hr[k10] + (Hr[k10 + 1] - Hr[k10]) * wi;
     const ha0 = Ha[k00] + (Ha[k00 + 1] - Ha[k00]) * wi, ha1 = Ha[k10] + (Ha[k10 + 1] - Ha[k10]) * wi;
@@ -369,7 +425,13 @@ export class FerroSim {
       let c = x * m[0] + y * m[1] + z * m[2];
       if (c > 1) c = 1; else if (c < -1) c = -1;
       const al = Math.acos(c);
-      const [hr, ha] = this._lookup(al, rIdx);
+      const [ti, tw] = this.magTbl[k], T0 = this.tables[ti];
+      let [hr, ha] = this._lookup(al, rIdx, T0.Hr, T0.Ha);
+      if (tw > 0) {
+        const T1 = this.tables[ti + 1];
+        const [hr1, ha1] = this._lookup(al, rIdx, T1.Hr, T1.Ha);
+        hr += (hr1 - hr) * tw; ha += (ha1 - ha) * tw;
+      }
       const sg = this.magSign[k];
       const sa = Math.sin(al);
       let ex = 0, ey = 0, ez = 0;
@@ -541,6 +603,7 @@ export class FerroSim {
   }
 
   _sample() {
+    if (this.params.mode === 'earth' && this.t >= this.nextSeason) this._sampleSeason();
     if (this.t < this.nextSample) return;
     const sp = Math.min(0.01, this.passInterval / 150);
     this.nextSample = this.t + sp;
@@ -553,6 +616,51 @@ export class FerroSim {
     for (let c = 0; c < P.length; c++) { snap[2 * c] = this.h[P[c]] + this.s[P[c]]; snap[2 * c + 1] = this.s[P[c]]; }
     H.path.push(snap);
     if (H.t.length > 6000) for (const k in H) H[k].splice(0, 1000);
+  }
+
+  // Seasonal record: the Sun's latitude on the sphere and how the fluid is split.
+  _sampleSeason() {
+    this.nextSeason = this.t + Math.max(0.02, this.params.year / 240);
+    const sun = this.magDirs[0], u = this.unit, h = this.h, A = this.A, w = this.tropicsW;
+    let V = 0, north = 0, trop = 0;
+    for (let i = 0; i < this.n; i++) {
+      const v = h[i] * A[i], y = u[3 * i + 1];
+      V += v;
+      if (y > 0) north += v; else if (y === 0) north += v / 2;
+      if (Math.abs(y) < w) trop += v;
+    }
+    const S = this.season;
+    S.t.push(this.t); S.decl.push(Math.asin(Math.max(-1, Math.min(1, sun[1]))));
+    S.imb.push((2 * north - V) / V); S.trop.push(trop / V);
+    if (S.t.length > 3000) for (const k in S) S[k].splice(0, 500);
+  }
+
+  // Does the fluid follow the Sun between hemispheres? Correlation of the north-south
+  // imbalance with the Sun's latitude, at the lag (0 to half a year) that fits best.
+  seasonStats() {
+    const S = this.season, n = S.t.length, Y = this.params.year;
+    const out = { n, years: n ? (S.t[n - 1] - S.t[0]) / Y : 0, decl: n ? S.decl[n - 1] : 0, imb: n ? S.imb[n - 1] : 0,
+      trop: n ? S.trop[n - 1] : 0, tropArea: this.tropicsArea, r: NaN, lag: NaN, amp: NaN };
+    if (out.years < 1) return out;
+    let k0 = 0;
+    while (S.t[n - 1] - S.t[k0] > 3 * Y) k0++;
+    const dtS = (S.t[n - 1] - S.t[k0]) / (n - 1 - k0);
+    // remove the slow trend (fluid being lost, or settling) so only the seasonal swing is compared
+    const imb = detrend(S.imb, S.t, k0, n);
+    const maxLag = Math.min(Math.floor(0.5 * Y / dtS), Math.floor((n - k0) / 2));
+    let best = -2, bestLag = 0;
+    for (let L = 0; L <= maxLag; L++) {
+      const r = pearson(S.decl, imb, k0, n - L, L);
+      if (r > best) { best = r; bestLag = L; }
+    }
+    let lo = Infinity, hi = -Infinity;
+    for (let k = k0; k < n; k++) { lo = Math.min(lo, imb[k]); hi = Math.max(hi, imb[k]); }
+    let dlo = Infinity, dhi = -Infinity;
+    for (let k = k0; k < n; k++) { dlo = Math.min(dlo, S.decl[k]); dhi = Math.max(dhi, S.decl[k]); }
+    const declAmp = (dhi - dlo) / 2;
+    // with almost no seasonal swing of the Sun there is nothing meaningful to correlate
+    if (declAmp < 3 * Math.PI / 180) return { ...out, declAmp, noSeasons: true, amp: (hi - lo) / 2 };
+    return { ...out, declAmp, r: best, lag: bestLag * dtS, amp: (hi - lo) / 2 };
   }
 
   // Advance by simDt seconds of simulated time, but stop after maxMs of wall time.
@@ -638,6 +746,33 @@ export function relaxTime(h, lam, { rho, mu, sigma }, g) {
   const tv = 3 * mu / (h * h * h * stiff);
   const tw = 1 / Math.sqrt(k * Math.tanh(k * h) * (sigma * k * k + rho * g) / rho);
   return tv + tw;
+}
+
+// y minus its least-squares line over [k0, n); entries before k0 are left as they are
+function detrend(y, t, k0, n) {
+  const out = y.slice();
+  let st = 0, sy = 0, stt = 0, sty = 0;
+  const m = n - k0;
+  for (let k = k0; k < n; k++) { st += t[k]; sy += y[k]; stt += t[k] * t[k]; sty += t[k] * y[k]; }
+  const den = m * stt - st * st;
+  const b = den > 0 ? (m * sty - st * sy) / den : 0, a = (sy - b * st) / m;
+  for (let k = k0; k < n; k++) out[k] = y[k] - (a + b * t[k]);
+  return out;
+}
+
+// correlation of x[k] with y[k + lag] for k in [k0, k1)
+function pearson(x, y, k0, k1, lag) {
+  const m = k1 - k0;
+  if (m < 4) return NaN;
+  let sx = 0, sy = 0;
+  for (let k = k0; k < k1; k++) { sx += x[k]; sy += y[k + lag]; }
+  const mx = sx / m, my = sy / m;
+  let sxy = 0, sxx = 0, syy = 0;
+  for (let k = k0; k < k1; k++) {
+    const a = x[k] - mx, b = y[k + lag] - my;
+    sxy += a * b; sxx += a * a; syy += b * b;
+  }
+  return sxx > 0 && syy > 0 ? sxy / Math.sqrt(sxx * syy) : 0;
 }
 
 function median(a) {

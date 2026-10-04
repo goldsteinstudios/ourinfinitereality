@@ -8,12 +8,20 @@ import { FerroSim, FLUIDS, DEFAULTS, verdict, gravityOf } from './sim.js';
 const deg = Math.PI / 180;
 const CONTROLS = [
   { group: 'Motion', items: [
-    { key: 'mode', type: 'seg', options: [['orbit', 'Magnet orbits'], ['spin', 'Sphere spins']] },
-    { key: 'period', label: 'Time per revolution', unit: 's', min: 0.05, max: 20, log: true, scale: 1, digits: 2 },
-    { key: 'nMag', label: 'Magnets around the circle', unit: '', min: 1, max: 8, step: 1, scale: 1, digits: 0 },
-    { key: 'altPoles', type: 'check', label: 'Alternate poles (N, S, N…)' },
-    { key: 'tilt', label: 'Rotation axis tilt', unit: '°', min: 0, max: 90, step: 1, scale: deg, digits: 0,
-      note: '0° = magnet circles the equator · 90° = goes over the top and under' },
+    { key: 'mode', type: 'seg', options: [['orbit', 'Magnet orbits'], ['spin', 'Sphere spins'], ['earth', 'Earth-like']] },
+    { key: 'period', label: p => p.mode === 'earth' ? 'Day length (one spin)' : 'Time per revolution', unit: 's', min: 0.05, max: 20, log: true, scale: 1, digits: 2 },
+    { key: 'nMag', label: 'Magnets around the circle', unit: '', min: 1, max: 8, step: 1, scale: 1, digits: 0, show: p => p.mode !== 'earth' },
+    { key: 'altPoles', type: 'check', label: 'Alternate poles (N, S, N…)', show: p => p.mode !== 'earth' },
+    { key: 'tilt', label: p => p.mode === 'earth' ? 'Axis tilt (obliquity)' : 'Rotation axis tilt', unit: '°', min: 0, max: 90, step: 0.5, scale: deg, digits: 1,
+      note: p => p.mode === 'earth' ? 'Earth: 23.4°. The Sun stands overhead anywhere up to this latitude.' : '0° = magnet circles the equator · 90° = goes over the top and under' },
+  ] },
+  { group: 'Earth-like orbit', show: p => p.mode === 'earth', items: [
+    { key: 'earthPreset', type: 'button', label: 'Set Earth’s values (time compressed)' },
+    { key: 'year', label: 'Year length (one orbit)', unit: 's', min: 2, max: 300, log: true, scale: 1, digits: 1, note: 'Earth: 365 days per year' },
+    { key: 'ecc', label: 'Orbit eccentricity', unit: '', min: 0, max: 0.6, step: 0.005, scale: 1, digits: 3, note: 'Earth: 0.017 now, 0 to 0.06 over 100,000 years. It sets how much the gap changes.' },
+    { key: 'precess', label: 'Axis precession period', unit: 's', min: 5, max: 3000, log: true, scale: 1, digits: 0, note: 'The axis traces a cone. Earth: about 26,000 years.' },
+    { key: 'oblAmp', label: 'Tilt nodding (± amplitude)', unit: '°', min: 0, max: 20, step: 0.1, scale: deg, digits: 1, note: 'Earth: about ±1.2° (22.1° to 24.5°)' },
+    { key: 'oblPeriod', label: 'Tilt nodding period', unit: 's', min: 5, max: 3000, log: true, scale: 1, digits: 0, note: 'Earth: about 41,000 years' },
   ] },
   { group: 'Magnet (NdFeB cylinder)', items: [
     { key: 'Br', label: 'Remanence (grade)', unit: 'T', min: 0.2, max: 1.48, step: 0.01, scale: 1, digits: 2, note: 'N35 ≈ 1.18 T · N42 ≈ 1.30 T · N52 ≈ 1.45 T' },
@@ -48,6 +56,8 @@ const RESET_KEYS = new Set(['h0', 'R']);
 // Default starting point: a viscous fluid and a moderately close magnet, which shows the
 // trade-off between lifting the film and stripping it off.
 const START = { ...DEFAULTS, ...FLUIDS.viscous, gap: 0.012, period: 1.5, h0: 0.0004 };
+// Earth's orbital geometry with time compressed: 20 days a year, a precession every 10 years.
+const EARTH_VALUES = { mode: 'earth', tilt: 23.44 * deg, ecc: 0.0167, period: 1.5, year: 30, precess: 300, oblAmp: 1.2 * deg, oblPeriod: 200 };
 const view = { exag: 5, speed: 1, heat: true };
 let preset = 'viscous';
 
@@ -55,7 +65,8 @@ const sim = new FerroSim(4, START);
 
 // ------------------------------------------------------------------ control panel
 const panel = document.getElementById('panel');
-const ctlRefs = {};
+const ctlRefs = {}, groupRefs = [];
+const resolve = (v) => typeof v === 'function' ? v(sim.params) : v;
 
 function toDisplay(c, v) { return v / c.scale; }
 function sliderToValue(c, x) { return c.log ? Math.exp(Math.log(c.min) + x * (Math.log(c.max) - Math.log(c.min))) : x; }
@@ -72,6 +83,7 @@ function buildPanel() {
   for (const g of CONTROLS) {
     const sec = document.createElement('div');
     sec.className = 'ff-group';
+    if (g.show) groupRefs.push({ g, sec });
     sec.innerHTML = `<h3>${g.group}</h3>`;
     for (const c of g.items) sec.appendChild(buildControl(c));
     panel.appendChild(sec);
@@ -81,6 +93,14 @@ function buildPanel() {
 function buildControl(c) {
   const wrap = document.createElement('div');
   wrap.className = 'ff-ctl';
+  if (c.type === 'button') {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'ff-btn'; b.textContent = c.label;
+    b.addEventListener('click', () => { apply(EARTH_VALUES); sim.reset(); syncPanel(); });
+    wrap.appendChild(b);
+    ctlRefs[c.key] = { c, wrap };
+    return wrap;
+  }
   if (c.type === 'seg') {
     const seg = document.createElement('div');
     seg.className = 'ff-seg'; seg.setAttribute('role', 'group');
@@ -97,7 +117,7 @@ function buildControl(c) {
       seg.appendChild(b);
     }
     wrap.appendChild(seg);
-    ctlRefs[c.key] = { c, seg };
+    ctlRefs[c.key] = { c, seg, wrap };
   } else if (c.type === 'check') {
     const lab = document.createElement('label');
     lab.className = 'ff-check';
@@ -105,7 +125,7 @@ function buildControl(c) {
     const inp = lab.querySelector('input');
     inp.addEventListener('change', () => { if (c.view) view[c.key] = inp.checked; else apply({ [c.key]: inp.checked }); });
     wrap.appendChild(lab);
-    ctlRefs[c.key] = { c, inp };
+    ctlRefs[c.key] = { c, inp, wrap };
   } else if (c.type === 'preset') {
     const sel = document.createElement('select');
     sel.className = 'ff-select'; sel.setAttribute('aria-label', 'Ferrofluid preset');
@@ -119,11 +139,11 @@ function buildControl(c) {
       syncPanel();
     });
     wrap.appendChild(sel);
-    ctlRefs.preset = { c, sel };
+    ctlRefs.preset = { c, sel, wrap };
   } else {
     const id = 'ctl-' + c.key;
-    wrap.innerHTML = `<div class="ff-ctl-top"><label for="${id}">${c.label}</label><span class="ff-ctl-val"></span></div>
-      <input id="${id}" type="range">${c.note ? `<div class="ff-ctl-note">${c.note}</div>` : ''}`;
+    wrap.innerHTML = `<div class="ff-ctl-top"><label for="${id}"></label><span class="ff-ctl-val"></span></div>
+      <input id="${id}" type="range">${c.note ? `<div class="ff-ctl-note"></div>` : ''}`;
     const inp = wrap.querySelector('input'), out = wrap.querySelector('.ff-ctl-val');
     if (c.log) { inp.min = 0; inp.max = 1; inp.step = 0.001; } else { inp.min = c.min; inp.max = c.max; inp.step = c.step; }
     inp.addEventListener('input', () => {
@@ -133,13 +153,18 @@ function buildControl(c) {
       if (['mu', 'Ms', 'chi', 'sigma', 'rho'].includes(c.key)) { preset = 'custom'; ctlRefs.preset.sel.value = 'custom'; }
       scheduleApply({ [c.key]: v * c.scale });
     });
-    ctlRefs[c.key] = { c, inp, out };
+    ctlRefs[c.key] = { c, inp, out, wrap, lab: wrap.querySelector('label'), note: wrap.querySelector('.ff-ctl-note') };
   }
   return wrap;
 }
 
 function syncPanel() {
-  for (const { c, inp, out, seg, sel } of Object.values(ctlRefs)) {
+  for (const { g, sec } of groupRefs) sec.hidden = !g.show(sim.params);
+  for (const { c, inp, out, seg, sel, wrap, lab, note } of Object.values(ctlRefs)) {
+    if (c.show) wrap.hidden = !c.show(sim.params);
+    if (lab) lab.textContent = resolve(c.label);
+    if (note) note.textContent = resolve(c.note);
+    if (c.type === 'button') continue;
     if (c.type === 'seg') {
       for (const b of seg.children) b.setAttribute('aria-pressed', String(b.dataset.val === sim.params[c.key]));
     } else if (c.type === 'check') {
@@ -164,7 +189,8 @@ function apply(p, fluidPreset = false) {
   const needsReset = Object.keys(p).some(k => RESET_KEYS.has(k) && p[k] !== sim.params[k]);
   sim.setParams(p);
   if (needsReset) sim.reset();
-  if ('nMag' in p || 'period' in p || 'mode' in p || 'tilt' in p || 'altPoles' in p) rebuildMagnets();
+  if (['nMag', 'period', 'mode', 'tilt', 'altPoles', 'ecc', 'gap'].some(k => k in p)) rebuildMagnets();
+  if ('mode' in p) { syncPanel(); seasonCard.hidden = p.mode !== 'earth'; }
   if ('R' in p || 'sigma' in p || 'rho' in p || 'gravity' in p || 'gScale' in p || fluidPreset) rebuildSpikePattern();
   if ('R' in p || 'gap' in p || 'magD' in p || 'magL' in p) { rebuildMagnets(); placeCamera(false); }
   if ('tilt' in p) rebuildMagnets();
@@ -343,7 +369,9 @@ function rebuildMagnets() {
   for (const m of magMeshes) { magGroup.remove(m); m.traverse(o => o.geometry && o.geometry.dispose()); }
   magMeshes = [];
   if (ring) { scene.remove(ring); ring.geometry.dispose(); }
-  const { magD, magL, nMag, altPoles } = sim.params;
+  const { magD, magL, altPoles } = sim.params;
+  const earth = sim.params.mode === 'earth', nMag = earth ? 1 : sim.params.nMag;
+  axisLine.visible = earth;
   const rad = magD / 2 * CM, half = magL / 2 * CM;
   for (let k = 0; k < nMag; k++) {
     const g = new THREE.Group();
@@ -354,11 +382,14 @@ function rebuildMagnets() {
     magGroup.add(g);
     magMeshes.push(g);
   }
-  const { e1, e2 } = sim.frame();
-  const rr = (sim.params.R + sim.params.gap + sim.params.magL / 2) * CM;
+  const { e1, e2 } = earth ? { e1: [1, 0, 0], e2: [0, 0, -1] } : sim.frame();
+  const { R, gap, ecc } = sim.params;
   const pts = [];
   for (let i = 0; i <= 128; i++) {
     const a = 2 * Math.PI * i / 128;
+    // Earth-like: the Sun's ellipse (eccentricity applied to the gap)
+    const g = earth ? gap * (1 - ecc * ecc) / (1 + ecc * Math.cos(a)) : gap;
+    const rr = (R + g + magL / 2) * CM;
     pts.push(new THREE.Vector3((Math.cos(a) * e1[0] + Math.sin(a) * e2[0]) * rr, (Math.cos(a) * e1[1] + Math.sin(a) * e2[1]) * rr, (Math.cos(a) * e1[2] + Math.sin(a) * e2[2]) * rr));
   }
   ring = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineDashedMaterial({ color: 0x6b7280, dashSize: 0.4, gapSize: 0.3, transparent: true, opacity: 0.6 }));
@@ -367,17 +398,21 @@ function rebuildMagnets() {
 }
 
 
-const _up = new THREE.Vector3(0, 1, 0), _dir = new THREE.Vector3(), _axis = new THREE.Vector3();
+const _up = new THREE.Vector3(0, 1, 0), _dir = new THREE.Vector3(), _m4 = new THREE.Matrix4();
+// the sphere's spin axis (Earth-like mode): a thin rod through the poles, riding on the body
+const axisLine = new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, -1.35, 0), new THREE.Vector3(0, 1.35, 0)]),
+  new THREE.LineBasicMaterial({ color: 0xd1d5db, transparent: true, opacity: 0.7 }));
+body.add(axisLine);
 function updateScene() {
   const ws = sim.worldState();
-  const R = sim.params.R * CM;
-  _axis.set(...ws.axis);
-  body.setRotationFromAxisAngle(_axis, ws.bodyAngle);
-  const rr = (sim.params.R + sim.params.gap + sim.params.magL / 2) * CM;
+  const R = sim.params.R * CM, M = ws.rot;
+  _m4.set(M[0], M[1], M[2], 0, M[3], M[4], M[5], 0, M[6], M[7], M[8], 0, 0, 0, 0, 1);
+  body.quaternion.setFromRotationMatrix(_m4);
+  axisLine.scale.setScalar(R);
   ws.mags.forEach((m, k) => {
     const g = magMeshes[k]; if (!g) return;
     _dir.set(...m.dir);
-    g.position.copy(_dir).multiplyScalar(rr);
+    g.position.copy(_dir).multiplyScalar((sim.params.R + m.gap + sim.params.magL / 2) * CM);
     g.quaternion.setFromUnitVectors(_up, _dir);
   });
   const w = sim.watch, u = sim.unit;
@@ -453,6 +488,65 @@ function drawChart(st) {
 function niceMax(v) { const p = 10 ** Math.floor(Math.log10(v)); for (const m of [1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10]) if (m * p >= v) return m * p; return 10 * p; }
 function niceStep(v) { const p = 10 ** Math.floor(Math.log10(v)); for (const m of [1, 2, 5, 10]) if (m * p >= v) return m * p; return 10 * p; }
 
+// ------------------------------------------------------------------ seasons (Earth-like mode)
+const seasonCard = document.getElementById('season-card');
+const seasonCanvas = document.getElementById('season-chart');
+const sctx = seasonCanvas.getContext('2d');
+const seasonOut = document.getElementById('season-out');
+function drawSeason() {
+  const S = sim.season, n = S.t.length, p = sim.params;
+  const dpr = Math.min(window.devicePixelRatio, 2);
+  const W = seasonCanvas.clientWidth, H = 200;
+  if (seasonCanvas.width !== Math.round(W * dpr)) { seasonCanvas.width = Math.round(W * dpr); seasonCanvas.height = Math.round(H * dpr); }
+  sctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  sctx.clearRect(0, 0, W, H);
+  const text = css('--color-text-muted'), accent = css('--color-accent'), border = css('--color-border');
+  const padL = 48, padR = 44, padT = 10, padB = 26;
+  const t1 = Math.max(sim.t, p.year * 0.25), span = Math.min(t1, 4 * p.year), t0 = t1 - span;
+  let k0 = 0; while (k0 < n - 1 && S.t[k0] < t0) k0++;
+  const dmax = Math.max(1 * deg, p.tilt + p.oblAmp) * 1.1;
+  let imax = 0.005;
+  for (let k = k0; k < n; k++) imax = Math.max(imax, Math.abs(S.imb[k]));
+  imax = niceMax(imax * 100 * 1.15) / 100;
+  const X = t => padL + (t - t0) / span * (W - padL - padR);
+  const yMid = padT + (H - padT - padB) / 2, half = (H - padT - padB) / 2;
+  sctx.font = '11px system-ui, sans-serif';
+  sctx.strokeStyle = border; sctx.lineWidth = 1;
+  for (const f of [-1, 0, 1]) { sctx.beginPath(); sctx.moveTo(padL, yMid - f * half); sctx.lineTo(W - padR, yMid - f * half); sctx.stroke(); }
+  sctx.fillStyle = accent; sctx.textAlign = 'right';
+  for (const f of [-1, 0, 1]) sctx.fillText(`${f > 0 ? '+' : ''}${(f * imax * 100).toFixed(imax < 0.1 ? 1 : 0)}%`, padL - 6, yMid - f * half + 4);
+  sctx.fillStyle = '#d97706'; sctx.textAlign = 'left';
+  for (const f of [-1, 0, 1]) sctx.fillText(`${f > 0 ? '+' : ''}${(f * dmax / deg).toFixed(0)}°`, W - padR + 6, yMid - f * half + 4);
+  sctx.fillStyle = text; sctx.textAlign = 'center';
+  const yr0 = Math.ceil(t0 / p.year), yr1 = Math.floor(t1 / p.year);
+  for (let y = yr0; y <= yr1; y++) { sctx.fillText(`year ${y}`, X(y * p.year), H - 8); }
+  const line = (arr, scale, color, w) => {
+    sctx.strokeStyle = color; sctx.lineWidth = w; sctx.beginPath();
+    for (let k = k0; k < n; k++) { const x = X(S.t[k]), y = yMid - arr[k] / scale * half; k === k0 ? sctx.moveTo(x, y) : sctx.lineTo(x, y); }
+    sctx.stroke();
+  };
+  if (n > 1) { line(S.decl, dmax, '#f59e0b', 1.5); line(S.imb, imax, accent, 2); }
+
+  const ss = sim.seasonStats();
+  const yrFrac = v => `${(v / p.year).toFixed(2)} of a year`;
+  const days = v => Math.round(v / p.year * 365);
+  let follow;
+  if (ss.noSeasons) follow = `<div class="ff-stat wide"><div class="k">Does it follow the Sun?</div><div class="v">No seasons to follow</div><div class="d">The Sun only moves ±${(ss.declAmp / deg).toFixed(1)}° in latitude. Tilt the axis to give the sphere seasons.</div></div>`;
+  else if (ss.years < 1) follow = `<div class="ff-stat wide"><div class="k">Does it follow the Sun?</div><div class="v">Measuring…</div><div class="d">Needs at least one full year (${Math.round(ss.years * 100)}% so far).</div></div>`;
+  else {
+    const k = ss.r > 0.7 ? 'up' : ss.r > 0.3 ? 'partial' : 'down';
+    const word = ss.r > 0.7 ? 'Yes, it follows the Sun' : ss.r > 0.3 ? 'Partly' : 'No clear link';
+    follow = `<div class="ff-stat wide verdict" data-k="${k}"><div class="k">Does it follow the Sun?</div><div class="v">${word} (r = ${ss.r.toFixed(2)})</div>
+      <div class="d">Best match when the fluid lags the Sun by ${sec(ss.lag)}, which is ${yrFrac(ss.lag)} (about ${days(ss.lag)} days on Earth's calendar).</div></div>
+      <div class="ff-stat"><div class="k">Seasonal swing</div><div class="v">±${(ss.amp * 100).toFixed(1)}%</div><div class="d">of all the fluid moves between hemispheres each year</div></div>`;
+  }
+  const conc = ss.tropArea > 0 ? ss.trop / ss.tropArea : 0;
+  seasonOut.innerHTML = `${follow}
+    <div class="ff-stat"><div class="k">Sun's latitude now</div><div class="v">${(ss.decl / deg).toFixed(1)}° ${ss.decl >= 0 ? 'N' : 'S'}</div><div class="d">where it stands overhead</div></div>
+    <div class="ff-stat"><div class="k">North vs south</div><div class="v">${(50 + ss.imb * 50).toFixed(1)}% / ${(50 - ss.imb * 50).toFixed(1)}%</div><div class="d">share of the fluid in each hemisphere</div></div>
+    <div class="ff-stat"><div class="k">Tropics (±${((p.tilt + p.oblAmp) / deg).toFixed(1)}°)</div><div class="v">${(ss.trop * 100).toFixed(0)}% of fluid</div><div class="d">on ${(ss.tropArea * 100).toFixed(0)}% of the surface, ${conc.toFixed(2)}× concentrated</div></div>`;
+}
+
 // ------------------------------------------------------------------ readouts
 const statsEl = document.getElementById('stats');
 const badge = document.getElementById('badge'), badgeText = document.getElementById('badge-text');
@@ -500,6 +594,7 @@ const SWEEPS = {
   gap: { label: 'Gap to glass', values: [3, 5, 7, 10, 13, 17, 22, 30].map(v => v * 1e-3), fmt: v => `${(v * 1e3).toFixed(0)} mm` },
   Br: { label: 'Magnet strength (remanence)', values: [0.3, 0.5, 0.7, 0.9, 1.1, 1.3, 1.45], fmt: v => `${v} T` },
   mu: { label: 'Viscosity', values: [3, 10, 30, 100, 300, 1000, 3000, 10000].map(v => v * 1e-3), fmt: v => `${(v * 1e3).toFixed(0)} mPa·s` },
+  tilt: { label: 'Axis tilt', values: [0, 10, 23.44, 35, 45, 60, 80].map(v => v * deg), fmt: v => `${(v / deg).toFixed(1)}°` },
   h0: { label: 'Coating thickness', values: [0.05, 0.1, 0.2, 0.3, 0.5, 0.8, 1.2, 2].map(v => v * 1e-3), fmt: v => `${(v * 1e3).toFixed(2)} mm` },
 };
 const scanSel = document.getElementById('scan-param');
@@ -509,6 +604,8 @@ const prog = document.getElementById('scan-progress');
 let scanning = false;
 
 function scanDuration(p) {
+  // Earth-like: two full years so the seasonal link can be measured
+  if (p.mode === 'earth') return Math.min(120, Math.max(2.05 * p.year, 4 * p.period));
   const Tp = p.period / p.nMag;
   return Math.min(30, Math.max(4 * Tp, 3));
 }
@@ -531,7 +628,7 @@ async function runSweep() {
     }
     done += T;
     const st = s.stats();
-    rows.push({ v, st, vd: verdict(st) });
+    rows.push({ v, st, vd: verdict(st), ss: p.mode === 'earth' ? s.seasonStats() : null, year: p.year });
     renderSweep(key, rows);
   }
   scanning = false; scanBtn.disabled = false; prog.hidden = true;
@@ -547,12 +644,12 @@ function renderSweep(key, rows) {
   const best = rows.reduce((b, r) => (score(r) > (b ? score(b) : -0.5) ? r : b), null);
   const maxLift = Math.max(1e-6, ...rows.map(r => r.st.lift));
   scanOut.innerHTML = `<div class="ff-table-wrap"><table class="ff-table"><thead><tr>
-    <th>${sw.label}</th><th>Peak lift</th><th>Held between passes</th><th>Fluid lost</th><th>Result</th><th></th></tr></thead><tbody>
+    <th>${sw.label}</th><th>Peak lift</th><th>Held between passes</th><th>Fluid lost</th>${rows[0] && rows[0].ss ? '<th>Follows the Sun</th>' : ''}<th>Result</th><th></th></tr></thead><tbody>
     ${rows.map((r, i) => `<tr class="${r === best ? 'best' : ''}">
       <td>${sw.fmt(r.v)}</td>
       <td><div class="cellbar"><span style="width:${Math.max(2, 60 * Math.max(0, r.st.lift) / maxLift)}px"></span>${mm(Math.max(0, r.st.lift))}</div></td>
       <td><div class="cellbar"><span style="width:${Math.max(2, 60 * r.st.retention)}px"></span>${pct(r.st.retention)}</div></td>
-      <td>${pct(1 - r.st.remaining)}</td>
+      <td>${pct(1 - r.st.remaining)}</td>${r.ss ? `<td>${r.ss.noSeasons ? 'no seasons' : isFinite(r.ss.r) ? `r = ${r.ss.r.toFixed(2)}, lag ${(r.ss.lag / r.year).toFixed(2)} yr, ±${(r.ss.amp * 100).toFixed(1)}%` : '…'}</td>` : ''}
       <td class="vk" data-k="${r.vd.key}">${r.vd.text}</td>
       <td><button type="button" data-i="${i}">Use</button></td></tr>`).join('')}
     </tbody></table></div>
@@ -594,6 +691,7 @@ function frame(now) {
     const st = sim.stats();
     renderStats(st);
     drawChart(st);
+    if (sim.params.mode === 'earth') drawSeason();
     const slow = running && rate < view.speed * 0.8;
     clock.textContent = `t = ${sim.t.toFixed(1)} s${running ? ` · ${rate < 0.995 ? rate.toFixed(2) : rate.toFixed(1)}× real time${slow ? ' (slowed by compute)' : ''}` : ' · paused'}`;
   }
@@ -602,6 +700,7 @@ function frame(now) {
 
 buildPanel();
 syncPanel();
+seasonCard.hidden = sim.params.mode !== 'earth';
 rebuildSpikePattern();
 rebuildMagnets();
 placeCamera(true);

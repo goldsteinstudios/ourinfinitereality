@@ -135,7 +135,13 @@ main.ff {
 .ff-bar > div { height: 100%; background: var(--color-accent); border-radius: 3px; }
 
 /* scan */
-.ff-scan, .ff-notes { margin-top: 1rem; }
+.ff-scan, .ff-notes, .ff-season { margin-top: 1rem; }
+.ff-season { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; padding: 1rem; }
+#season-chart { width: 100%; display: block; }
+.ff-season-out { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .5rem; margin-top: .75rem; }
+.lg-sun { background: #f59e0b; }
+.ff-btn { width: 100%; background: transparent; color: var(--color-accent); border: 1px solid var(--color-accent); border-radius: 8px; padding: .4rem .5rem; font-size: .82rem; cursor: pointer; }
+.ff-btn:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
 .ff-scan-row { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-bottom: .75rem; }
 .ff-scan-row label { font-size: .88rem; }
 .ff-scan-row select { width: auto; min-width: 14rem; }
