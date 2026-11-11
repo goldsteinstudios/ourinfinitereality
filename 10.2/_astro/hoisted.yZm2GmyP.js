@@ -1,0 +1,1 @@
+const i=window.matchMedia("(prefers-reduced-motion: reduce)");if(!i.matches&&"IntersectionObserver"in window){const r=new IntersectionObserver(e=>{for(const n of e)n.isIntersecting&&n.target.classList.add("in-view")},{threshold:.4}),t=e=>{e.addEventListener("animationend",()=>e.classList.remove("in-view")),r.observe(e)};document.querySelectorAll("svg.oir-glyph").forEach(t)}

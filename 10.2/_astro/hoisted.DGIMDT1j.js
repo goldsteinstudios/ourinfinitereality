@@ -1,0 +1,1 @@
+import"./hoisted.yZm2GmyP.js";const t=window.matchMedia("(prefers-reduced-motion: reduce)");if(!t.matches&&"IntersectionObserver"in window){const o=new IntersectionObserver(e=>{for(const r of e)r.isIntersecting&&(r.target.classList.add("go"),o.unobserve(r.target))},{threshold:.45});document.querySelectorAll("svg.oir-diagram").forEach(e=>o.observe(e))}
