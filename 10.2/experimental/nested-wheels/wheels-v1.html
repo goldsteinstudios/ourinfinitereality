@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Recursive nested wheels</title>
+<style>
+  :root{--ink:#26282b;--sub:#6b6e72;--hair:#d8d8d2;--bg:#f4f4f1;--card:#fbfbf9}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
+  .wrap{max-width:760px;margin:0 auto;padding:10px 10px 40px}
+  canvas{width:100%;display:block;background:var(--card);
+    border:1px solid var(--hair);border-radius:3px;touch-action:none}
+  .strip{display:flex;gap:5px;overflow-x:auto;padding:8px 0 2px}
+  .strip::-webkit-scrollbar{display:none}
+  button{font:inherit;font-size:12px;padding:7px 10px;border:1px solid var(--hair);
+    background:var(--card);color:var(--ink);border-radius:3px;white-space:nowrap;cursor:pointer}
+  button.on{background:var(--ink);color:#fbfbf9;border-color:var(--ink)}
+  .row{display:flex;align-items:center;gap:8px;margin:9px 0}
+  .row label{font-size:11px;color:var(--sub);width:128px;flex:none}
+  .row input[type=range]{flex:1;min-width:0;accent-color:var(--ink)}
+  .val{font:12px ui-monospace,Menlo,monospace;width:54px;text-align:right;flex:none}
+  details{border:1px solid var(--hair);border-radius:3px;background:var(--card);
+    margin-top:8px;padding:0 12px}
+  summary{font-size:12px;padding:10px 0;cursor:pointer;color:var(--sub);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"+ ";color:var(--ink)}
+  details[open] summary::before{content:"– "}
+  details>*:last-child{margin-bottom:12px}
+  .checks{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;font-size:12px}
+  .checks label{display:flex;gap:6px;align-items:center}
+  input[type=checkbox],input[type=radio]{accent-color:var(--ink)}
+  .radios{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+  .radios label{display:flex;gap:5px;align-items:center}
+  pre{font:11px/1.55 ui-monospace,Menlo,monospace;background:var(--card);
+    border:1px solid var(--hair);border-radius:3px;padding:11px;overflow-x:auto;margin:8px 0 0}
+  .note{font-size:11px;color:var(--sub);margin:6px 0 0}
+  h1{font-size:13px;font-weight:600;margin:0 0 8px}
+  h1 span{color:var(--sub);font-weight:400}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Recursive nested wheels <span>— every level is the same construction</span></h1>
+  <canvas id="cv"></canvas>
+  <div class="strip" id="cams"></div>
+  <div class="strip">
+    <button id="play">play</button><button id="reset">reset</button>
+    <span style="flex:1"></span>
+    <span class="val" id="thlab" style="width:auto;align-self:center;color:var(--sub)"></span>
+  </div>
+  <div class="row"><label>θ₀</label><input type="range" id="theta" min="0" max="12.566" step="0.005" value="0"></div>
+
+  <details open><summary>Regimes</summary>
+    <div class="strip" id="presets"></div>
+    <p class="note" id="presetnote">Nine regimes found by scanning (λ, ρ, depth). Tap one.</p>
+  </details>
+
+  <details open><summary>Drive — rolling wheel, or spinning top under two pulls</summary>
+    <div class="radios">
+      <label><input type="radio" name="mode" value="roll" checked> rolling on the road</label>
+      <label><input type="radio" name="mode" value="top"> spinning top on a pivot</label>
+    </div>
+    <div class="strip" id="toppre"></div>
+    <div class="row"><label>initial tilt (deg)</label><input type="range" id="tilt" min="0" max="80" step="1" value="30"><span class="val" id="tiltv"></span></div>
+    <div class="row"><label>gravity pull (down)</label><input type="range" id="kg" min="0" max="2" step="0.01" value="1"><span class="val" id="kgv"></span></div>
+    <div class="row"><label>sun pull</label><input type="range" id="ks" min="0" max="2" step="0.01" value="1"><span class="val" id="ksv"></span></div>
+    <div class="row"><label>sun elevation (deg)</label><input type="range" id="sunel" min="-90" max="90" step="1" value="90"><span class="val" id="sunelv"></span></div>
+    <p class="note" id="topnote">Sun at +90° is straight overhead, exactly opposite gravity. Precession per turn of spin scales as 1/ω² — faster spin, slower wobble.</p>
+  </details>
+
+  <details open><summary>Recursion</summary>
+    <div class="row"><label>depth  levels below 0</label><input type="range" id="depth" min="0" max="5" step="1" value="2"><span class="val" id="depthv"></span></div>
+    <div class="row"><label>λ  R<sub>k+1</sub>/R<sub>k</sub></label><input type="range" id="lam" min="0.12" max="0.9" step="0.01" value="0.38"><span class="val" id="lamv"></span></div>
+    <div class="row"><label>c  countersink /R<sub>k</sub></label><input type="range" id="c" min="-0.4" max="0" step="0.01" value="0"><span class="val" id="cv2"></span></div>
+    <div class="row"><label>ρ  Ω<sub>k+1</sub>/Ω<sub>k</sub></label><input type="range" id="rho" min="0" max="4" step="0.01" value="1.5"><span class="val" id="rhov"></span></div>
+    <div class="strip" id="rhos"></div>
+    <p class="note" id="rhonote"></p>
+  </details>
+
+  <details><summary>Parameters</summary>
+    <div class="row"><label>R₀</label><input type="range" id="R0" min="0.5" max="2" step="0.05" value="1"><span class="val" id="R0v"></span></div>
+    <div class="row"><label>ω  parent rate</label><input type="range" id="omega" min="0.1" max="3" step="0.1" value="1"><span class="val" id="omegav"></span></div>
+    <div class="row"><label>φ₀  phase, all levels</label><input type="range" id="phi0" min="0" max="6.283" step="0.01" value="0"><span class="val" id="phi0v"></span></div>
+    <div class="row"><label>spokes per wheel</label><input type="range" id="nsp" min="3" max="12" step="1" value="8"><span class="val" id="nspv"></span></div>
+    <div class="row"><label>revolutions</label><input type="range" id="nrev" min="1" max="6" step="1" value="2"><span class="val" id="nrevv"></span></div>
+    <div class="row"><label>speed</label><input type="range" id="speed" min="0.1" max="3" step="0.1" value="1"><span class="val" id="speedv"></span></div>
+    <div class="row"><label>camera distance</label><input type="range" id="dist" min="1.5" max="14" step="0.1" value="5"><span class="val" id="distv"></span></div>
+  </details>
+
+  <details><summary>Display</summary>
+    <div class="checks">
+      <label><input type="checkbox" id="c_road" checked> road</label>
+      <label><input type="checkbox" id="c_spokes" checked> spokes</label>
+      <label><input type="checkbox" id="c_nails" checked> nails / heads</label>
+      <label><input type="checkbox" id="c_q" checked> tracked-point path</label>
+      <label><input type="checkbox" id="c_hubpath"> hub paths, all levels</label>
+      <label><input type="checkbox" id="c_basis"> local bases</label>
+      <label><input type="checkbox" id="c_contact" checked> road contacts</label>
+      <label><input type="checkbox" id="c_diag"> diagnostics</label>
+    </div>
+    <div class="radios" style="margin-top:10px">
+      <label><input type="radio" name="trail" value="0"> no trail</label>
+      <label><input type="radio" name="trail" value="1"> 1 rev</label>
+      <label><input type="radio" name="trail" value="5"> 5 revs</label>
+      <label><input type="radio" name="trail" value="all" checked> all</label>
+    </div>
+  </details>
+
+  <pre id="info"></pre>
+  <p class="note">Drag to orbit. “axis k” looks along n<sub>k</sub> — k=0 is the parent axle view,
+  k=1 the spoke-axis view, and so on down.</p>
+</div>
+
+<script>
+/* ===========================================================================
+   THE RECURSION
+
+   A level is a frame (u, v, n) plus a hub H and a radius R, with the wheel
+   lying in span(u,v) and n its axis. Handedness is fixed by  v × u = n,
+   equivalently  e_t × n = e_r  and  n × e_r = e_t.
+
+     e_r,k(θ) = sinθ·u_k + cosθ·v_k        outward along the selected spoke
+     e_t,k(θ) = cosθ·u_k − sinθ·v_k        = d(e_r)/dθ
+
+   The child is the nail head mounted at the selected nail:
+
+     H_{k+1} = H_k + R_k(1+c)·e_r,k        c ≤ 0 countersinks it
+     n_{k+1} = e_r,k                       INHERITED axis
+     u_{k+1} = n_k                         parent axis becomes a child in-plane axis
+     v_{k+1} = e_t,k                       parent tangent becomes the other
+     R_{k+1} = λ·R_k
+     θ_{k+1} = ρ^{k+1}·θ₀ + φ₀
+
+   The handedness relation is inductive: v_{k+1} × u_{k+1} = e_t,k × n_k = e_r,k
+   = n_{k+1}. So level k+1 is the same kind of object as level k, and the
+   construction can be applied again with no new rules. Level 0 is the only
+   exception, and only in its DRIVE: x_H = R₀θ₀ ties it to the road, while every
+   deeper level's rate is free. Setting ρ = 1/λ is the choice that makes rim
+   speed match from level to level.
+=========================================================================== */
+const CO={wheel:["#a98a63","#8c7fa0","#4f8fa8","#5aa07a","#b0894f","#8a8f95"],
+  spoke:"#1f5fbf",nail:"#3b3f45",pt:"#e01b24",hubPath:"#9aa6b5",road:"#c2c2bb",
+  impact:"#f07c1e",er:"#c0392b",et:"#1f5fbf",ey:"#2e9e5b",ink:"#26282b"};
+
+const sub=(a,b)=>[a[0]-b[0],a[1]-b[1],a[2]-b[2]];
+const add=(a,b)=>[a[0]+b[0],a[1]+b[1],a[2]+b[2]];
+const mul=(a,k)=>[a[0]*k,a[1]*k,a[2]*k];
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+const norm=a=>{const n=Math.hypot(a[0],a[1],a[2])||1;return mul(a,1/n)};
+
+const E_r=(L,th)=>add(mul(L.u,Math.sin(th)),mul(L.v,Math.cos(th)));
+const E_t=(L,th)=>sub(mul(L.u,Math.cos(th)),mul(L.v,Math.sin(th)));
+
+/* ---- root-wheel precession (top mode) -------------------------------------
+   Fast-top approximation: spin angular momentum L = I ω n₀ dominates, so
+       dL/dt = torque   ⇒   dn₀/dt = (1/Iω) Σ kᵢ (n₀ × dᵢ)
+   for pulls of strength kᵢ toward directions dᵢ acting on the offset mass.
+   Written on the master variable θ₀ = ωt (I = 1):
+       dn₀/dθ = (1/ω²) [ k_g (n₀ × d_g) + k_s (n₀ × d_s) ],  d_g = −ẑ.
+   A pull toward d makes the axis sweep AROUND d, keeping its angle to d —
+   it does not fall toward d. Two exactly opposite equal pulls cancel.
+   This is an ODE, so n₀(θ) is integrated once into a table and looked up. */
+const PREC={key:"",N:0,thMax:0,n:[]};
+const sunDir=C=>[Math.cos(C.sunel),0,Math.sin(C.sunel)];
+function precField(n,C){const dg=[0,0,-1],ds=sunDir(C);
+  const a=cross(n,dg),b=cross(n,ds);
+  return mul(add(mul(a,C.kg),mul(b,C.ks)),1/(C.omega*C.omega));}
+function ensureTable(C){
+  const thMax=2*Math.PI*C.nrev;
+  const key=[C.tilt,C.kg,C.ks,C.sunel,C.omega,C.nrev].join("|");
+  if(PREC.key===key) return;
+  const N=Math.max(4000,Math.round(1500*C.nrev)),h=thMax/N;
+  let n=[0,Math.cos(C.tilt),Math.sin(C.tilt)];
+  const tab=[n];
+  for(let i=0;i<N;i++){
+    const k1=precField(n,C),k2=precField(add(n,mul(k1,h/2)),C),
+          k3=precField(add(n,mul(k2,h/2)),C),k4=precField(add(n,mul(k3,h)),C);
+    n=norm(add(n,mul(add(add(k1,mul(k2,2)),add(mul(k3,2),k4)),h/6)));
+    tab.push(n);}
+  PREC.key=key;PREC.N=N;PREC.thMax=thMax;PREC.n=tab;
+}
+function n0At(th,C){ensureTable(C);
+  const x=Math.max(0,Math.min(PREC.N,th/PREC.thMax*PREC.N)),i=Math.floor(x),f=x-i;
+  const a=PREC.n[i],b=PREC.n[Math.min(i+1,PREC.N)];
+  return norm(add(mul(a,1-f),mul(b,f)));}
+function rootFrame(th0,C){
+  if(C.mode!=="top") return {u:[1,0,0],v:[0,0,1],n:[0,1,0],H:[C.R0*th0,0,C.R0]};
+  const n=n0At(th0,C);
+  let u=cross(n,[0,0,1]);
+  if(Math.hypot(...u)<1e-9) u=[1,0,0];
+  u=norm(u); const v=cross(u,n);
+  return {u,v,n,H:[0,0,2*C.R0]};
+}
+
+/* Build levels 0 … depth+1.  The last entry is the hub the NEXT level would
+   have; that point is the tracked point Q. */
+function chain(th0,C){
+  const rf=rootFrame(th0,C);
+  let u=rf.u,v=rf.v,n=rf.n,R=C.R0,H=rf.H,rate=1,th=th0;
+  const out=[];
+  for(let k=0;k<=C.depth+1;k++){
+    const L={k,H,u,v,n,R,theta:th,rate};
+    L.er=E_r(L,th); L.et=E_t(L,th);
+    out.push(L);
+    H=add(H,mul(L.er,R*(1+C.c)));
+    const nu=n, nv=L.et, nn=L.er;
+    u=nu; v=nv; n=nn; R*=C.lam; rate*=C.rho; th=rate*th0+C.phi0;
+  }
+  return out;
+}
+/* Lowest point of a level's rim.  The rim is a circle of radius R in the plane
+   spanned by u and v, so its minimum height is exact at every depth:
+        z_min = H_z − R·√(u_z² + v_z²) = H_z − R·√(1 − n_z²)                */
+const zMin=L=>L.H[2]-L.R*Math.hypot(L.u[2],L.v[2]);
+
+/* ------------------------------ renderer -------------------------------- */
+const cv=document.getElementById("cv"),ctx=cv.getContext("2d");
+let W=0,H=0,cam={eye:[0,0,0],s:[1,0,0],u:[0,1,0],f:[0,0,1]},focal=600;
+const NEAR=0.02;
+function resize(){const dpr=Math.min(window.devicePixelRatio||1,2);
+  W=cv.clientWidth;H=Math.round(Math.min(Math.max(W*0.72,260),430));
+  cv.style.height=H+"px";cv.width=W*dpr;cv.height=H*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);focal=Math.min(W,H)*1.05;}
+function setCam(eye,target,up){const f=norm(sub(target,eye));
+  let s=cross(f,up); if(Math.hypot(...s)<1e-9)s=cross(f,[1,0,0]);
+  s=norm(s); cam={eye,f,s,u:cross(s,f)};}
+const vw=p=>{const q=sub(p,cam.eye);return[dot(q,cam.s),dot(q,cam.u),dot(q,cam.f)]};
+const pj=v=>[W/2+focal*v[0]/v[2],H/2-focal*v[1]/v[2]];
+let queue=[];
+const DIAG={arc:null,yspread:null,samples:0};
+function clipSeg(a,b){if(a[2]>=NEAR&&b[2]>=NEAR)return[a,b];
+  if(a[2]<NEAR&&b[2]<NEAR)return null;
+  const k=(NEAR-a[2])/(b[2]-a[2]),m=[a[0]+k*(b[0]-a[0]),a[1]+k*(b[1]-a[1]),NEAR];
+  return a[2]<NEAR?[m,b]:[a,m];}
+function addLine(pts,color,width,opt={}){
+  const v=pts.map(vw),segs=[];let z=0,n=0;
+  for(let i=0;i<v.length-1;i++){
+    if(opt.breaks&&opt.breaks[i])continue;
+    const c=clipSeg(v[i],v[i+1]);if(!c)continue;
+    segs.push([pj(c[0]),pj(c[1])]);z+=c[0][2]+c[1][2];n+=2;}
+  if(!segs.length)return;
+  queue.push({z:z/n,draw(){ctx.save();ctx.globalAlpha=opt.alpha??1;
+    ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap="round";ctx.lineJoin="round";
+    if(opt.dash)ctx.setLineDash(opt.dash);ctx.beginPath();
+    for(const s of segs){ctx.moveTo(s[0][0],s[0][1]);ctx.lineTo(s[1][0],s[1][1])}
+    ctx.stroke();ctx.restore();}});}
+function addPoly(pts,fill,stroke,opt={}){
+  const v=pts.map(vw);if(v.some(p=>p[2]<NEAR))return;
+  const s=v.map(pj),z=v.reduce((k,p)=>k+p[2],0)/v.length;
+  queue.push({z,draw(){ctx.save();ctx.beginPath();ctx.moveTo(s[0][0],s[0][1]);
+    for(let i=1;i<s.length;i++)ctx.lineTo(s[i][0],s[i][1]);ctx.closePath();
+    if(fill){ctx.globalAlpha=opt.alpha??.3;ctx.fillStyle=fill;ctx.fill()}
+    if(stroke){ctx.globalAlpha=1;ctx.strokeStyle=stroke;ctx.lineWidth=opt.width??1.5;ctx.stroke()}
+    ctx.restore();}});}
+function addDot(p,color,rad,label){const v=vw(p);if(v[2]<NEAR)return;const s=pj(v);
+  queue.push({z:v[2]-1e-4,draw(){ctx.save();ctx.fillStyle=color;ctx.beginPath();
+    ctx.arc(s[0],s[1],rad,0,6.2832);ctx.fill();
+    if(label){ctx.fillStyle=CO.ink;ctx.font="10px ui-monospace,Menlo,monospace";
+      ctx.textAlign="center";ctx.fillText(label,s[0],s[1]-rad-4)}ctx.restore();}});}
+function addArrow(o,v,color,label){const tip=add(o,v);addLine([o,tip],color,2.5);
+  const back=sub(tip,mul(norm(v),Math.hypot(...v)*0.26)),perp=norm(cross(v,cam.f)),
+    w=Math.hypot(...v)*0.09;
+  addPoly([tip,add(back,mul(perp,w)),add(back,mul(perp,-w))],color,color,{alpha:1});
+  addDot(tip,color,0.01,label);}
+const paint=()=>{queue.sort((a,b)=>b.z-a.z);for(const it of queue)it.draw()};
+
+/* ------------------------------- state ---------------------------------- */
+const S={theta:0,playing:false,cam:"follow",axisLevel:1,az:-1.05,el:0.42};
+const el=id=>document.getElementById(id);
+const cfg=()=>({R0:+el("R0").value,lam:+el("lam").value,c:+el("c").value,
+  rho:+el("rho").value,depth:+el("depth").value,phi0:+el("phi0").value,
+  omega:+el("omega").value,nrev:+el("nrev").value,speed:+el("speed").value,
+  dist:+el("dist").value,nsp:+el("nsp").value,
+  mode:document.querySelector('input[name=mode]:checked').value,
+  tilt:+el("tilt").value*Math.PI/180,kg:+el("kg").value,ks:+el("ks").value,
+  sunel:+el("sunel").value*Math.PI/180});
+
+const CAMS=[["world","world"],["road","road"],["follow","follow hub"],["free","free"]];
+function buildCamStrip(){
+  const box=el("cams");box.innerHTML="";
+  const mk=(v,t,lvl)=>{const b=document.createElement("button");b.textContent=t;
+    b.dataset.cam=v;b.dataset.lvl=lvl??"";
+    b.onclick=()=>{S.cam=v;if(lvl!==undefined)S.axisLevel=lvl;syncCams();draw()};
+    box.appendChild(b)};
+  CAMS.forEach(([v,t])=>mk(v,t));
+  for(let k=0;k<=+el("depth").value+1;k++) mk("axis","axis "+k,k);
+  syncCams();
+}
+const syncCams=()=>[...el("cams").children].forEach(b=>
+  b.classList.toggle("on",b.dataset.cam===S.cam&&
+    (b.dataset.cam!=="axis"||+b.dataset.lvl===S.axisLevel)));
+
+function placeCamera(Ls,C){
+  const R=C.R0,D=C.dist*R,obl=norm([1.3,-2.0,1.05]),
+    mid=C.mode==="top"?Ls[0].H:[R*Math.PI*C.nrev,0,R];
+  let target,dir,up=[0,0,1],dist=D;
+  const far=C.mode==="top"?D*1.4:D*1.9+R*C.nrev*2;
+  if(S.cam==="world"){target=mid;dir=obl;dist=far;}
+  else if(S.cam==="road"){target=mid;dir=[0,-1,0];dist=far;}
+  else if(S.cam==="follow"){target=Ls[0].H;dir=obl;}
+  else if(S.cam==="axis"){const L=Ls[Math.min(S.axisLevel,Ls.length-1)];
+    target=L.H;dir=L.n;up=L.v;dist=Math.max(D*L.R/R,0.35*L.R+0.05);}
+  else{target=Ls[0].H;
+    dir=[Math.cos(S.el)*Math.cos(S.az),Math.cos(S.el)*Math.sin(S.az),Math.sin(S.el)];}
+  setCam(add(target,mul(norm(dir),dist)),target,up);
+}
+
+/* ------------------------------- drawing -------------------------------- */
+function draw(){
+  const C=cfg(),thMax=2*Math.PI*C.nrev;
+  el("theta").max=thMax.toFixed(3);
+  const th=Math.min(S.theta,thMax);
+  const Ls=chain(th,C);
+  DIAG.arc=null;DIAG.yspread=null;
+  placeCamera(Ls,C);
+  queue=[];ctx.clearRect(0,0,W,H);
+  const sh=id=>el(id).checked;
+  const trailSel=document.querySelector('input[name=trail]:checked').value;
+  const trail=trailSel==="all"?null:(trailSel==="0"?0:2*Math.PI*(+trailSel));
+  const th0=trail===null?0:Math.max(0,th-trail);
+
+  if(sh("c_road")){
+    const x1=C.mode==="top"?2*C.R0:C.R0*thMax+2*C.R0,w=1.5*C.R0;
+    addLine([[-1.5*C.R0,-w,0],[x1,-w,0]],CO.road,1.5,{alpha:.8});
+    addLine([[-1.5*C.R0,w,0],[x1,w,0]],CO.road,1.5,{alpha:.8});
+    for(let k=0;2*Math.PI*C.R0*k<=x1;k++){const x=2*Math.PI*C.R0*k;
+      addLine([[x,-w,0],[x,w,0]],CO.road,1,{alpha:.7})}
+  }
+
+  if(C.mode==="top"){
+    const H0=Ls[0].H,n0=Ls[0].n,R=C.R0;
+    addLine([add(H0,mul(n0,-1.3*R)),add(H0,mul(n0,1.3*R))],CO.nail,3);   // axle
+    addDot(H0,CO.ink,5,"pivot");
+    addArrow(add(H0,[0,0,-0.2*R]),[0,0,-0.8*R],CO.ey,"gravity");
+    const ds=sunDir(C),sunP=add(H0,mul(ds,2.6*R));
+    addLine([H0,sunP],"#e0b400",1,{alpha:.5,dash:[3,5]});
+    addDot(sunP,"#e0b400",7,"sun");
+    /* trace of the axis tip: a dot if the pulls cancel, a circle if they
+       don't, a rosette when the sun is off the vertical */
+    if(trail!==0&&th>th0){
+      const M=Math.max(200,Math.round(120*(th-th0)));
+      const pts=[...Array(M+1)].map((_,i)=>add(H0,mul(n0At(th0+(th-th0)*i/M,C),1.3*R)));
+      addLine(pts,"#8e44ad",2.2,{alpha:.9});
+    }
+    addDot(add(H0,mul(n0,1.3*R)),"#8e44ad",4);
+  }
+
+  /* every level: rim, spokes, selected spoke, nail head */
+  for(let k=0;k<=C.depth;k++){
+    const L=Ls[k],col=CO.wheel[k%CO.wheel.length],fade=k===0?1:Math.max(.45,1-.12*k);
+    const rim=[];for(let i=0;i<=96;i++){const s=i/96*6.2832;
+      rim.push(add(L.H,mul(E_r(L,s),L.R)))}
+    addLine(rim,col,k===0?2.5:2,{alpha:fade});
+    if(sh("c_spokes")) for(let j=1;j<C.nsp;j++)
+      addLine([L.H,add(L.H,mul(E_r(L,L.theta+j*2*Math.PI/C.nsp),L.R))],col,1.4,{alpha:.55*fade});
+    addLine([L.H,add(L.H,mul(L.er,L.R))],CO.spoke,Math.max(1.5,5-k),{alpha:fade});
+    addDot(L.H,CO.ink,Math.max(2,4-k*0.5));
+    if(sh("c_nails")){                     // the nail: rim point → child hub
+      addLine([add(L.H,mul(L.er,L.R)),Ls[k+1].H],CO.nail,Math.max(1.5,4-k));
+      addDot(Ls[k+1].H,CO.nail,Math.max(2,3.5-k*0.4));
+    }
+    if(sh("c_basis")){const A=0.5*L.R;
+      addArrow(L.H,mul(L.er,A),CO.er);addArrow(L.H,mul(L.et,A),CO.et);
+      addArrow(L.H,mul(L.n,A),CO.ey);}
+  }
+
+  /* trajectories */
+  if(trail!==0&&th>th0){
+    const rateMax=Math.pow(Math.max(1,C.rho),C.depth+1);
+    const N=Math.min(6000,Math.max(120,Math.round(30*(th-th0)*rateMax)));
+    const ts=[...Array(N+1)].map((_,i)=>th0+(th-th0)*i/N);
+    const chains=ts.map(t=>chain(t,C));
+    if(sh("c_hubpath")) for(let k=1;k<=C.depth;k++)
+      addLine(chains.map(L=>L[k].H),CO.hubPath,1.4,{alpha:.75});
+    if(sh("c_q")) addLine(chains.map(L=>L[C.depth+1].H),CO.pt,2.4);
+    /* relative arc length of Q per parent revolution, with the parent's own
+       forward translation removed, plus how far Q leaves the wheel plane */
+    let arc=0,ymin=1e9,ymax=-1e9;
+    const dth=(th-th0)/N;
+    for(let i=0;i<chains.length;i++){
+      const q=chains[i][C.depth+1].H; ymin=Math.min(ymin,q[1]); ymax=Math.max(ymax,q[1]);
+      if(i){const p=chains[i-1][C.depth+1].H;
+        arc+=Math.hypot(q[0]-p[0]-C.R0*dth,q[1]-p[1],q[2]-p[2]);}}
+    DIAG.arc=arc/((th-th0)/(2*Math.PI))/C.R0; DIAG.yspread=ymax-ymin;
+    DIAG.samples=N;
+  }
+  addDot(Ls[C.depth+1].H,CO.pt,5,"Q");
+
+  /* road contacts: exact per level, first crossing of z_min */
+  const contacts=[];
+  if(sh("c_contact")){
+    const NS=Math.max(400,Math.round(240*C.nrev*Math.pow(Math.max(1,C.rho),C.depth)));
+    let prev=null;
+    for(let i=0;i<=NS;i++){const t=thMax*i/NS,Lc=chain(t,C);
+      let lo=1e9,at=0;
+      for(let k=0;k<=C.depth;k++){const z=zMin(Lc[k]);if(z<lo){lo=z;at=k}}
+      if(prev!==null&&prev.z>0&&lo<=0) contacts.push({theta:t,level:at,x:Lc[at].H[0]});
+      prev={z:lo};}
+    contacts.slice(0,12).forEach((ct,i)=>
+      addDot([ct.x,0,0],CO.impact,4,"c"+(i+1)+"·L"+ct.level));
+  }
+  paint();
+  info(th,C,Ls,contacts);
+}
+
+/* -------------------------------- info ---------------------------------- */
+const fv=v=>"("+v.map(c=>(c>=0?"+":"")+c.toFixed(3)).join(",")+")";
+function info(th,C,Ls,contacts){
+  const L=[];
+  L.push(`θ₀ ${th.toFixed(4)}   t ${(th/C.omega).toFixed(4)}   depth ${C.depth}   λ ${C.lam}   ρ ${C.rho}   c ${C.c}`);
+  L.push("");
+  L.push(" k    R_k     θ_k      Ω_k/ω        n_k (axis)            z_min");
+  for(let k=0;k<=C.depth;k++){const x=Ls[k];
+    L.push(` ${k}  ${x.R.toFixed(4)}  ${x.theta.toFixed(3).padStart(8)}  ${x.rate.toFixed(4).padStart(9)}   ${fv(x.n)}   ${zMin(x).toFixed(4).padStart(8)}`);}
+  L.push("");
+  L.push("Q (next hub)  "+fv(Ls[C.depth+1].H));
+  /* how far the chain reaches back out past level 0's rim */
+  let reach=0;
+  for(let k=1;k<=C.depth+1;k++)
+    reach=Math.max(reach,dot(sub(Ls[k].H,Ls[0].H),Ls[0].er));
+  L.push(`radial reach along e_r,0 = ${reach.toFixed(4)}   (R₀(1+c) = ${(C.R0*(1+C.c)).toFixed(4)})`);
+  if(reach>C.R0*(1+C.c)+1e-9)
+    L.push("  → a deeper level has swung back out past its grandparent's rim:");
+  L.push("    flush is a LOCAL constraint between adjacent levels, not a global one.");
+  if(contacts.length){
+    const byLvl={};contacts.forEach(c=>byLvl[c.level]=(byLvl[c.level]||0)+1);
+    L.push("");
+    L.push(`road contacts in this run: ${contacts.length}   by level: `+
+      Object.entries(byLvl).map(([k,v])=>`L${k}×${v}`).join("  "));
+  }
+  if(C.mode==="top"){
+    const n0=Ls[0].n,tiltNow=Math.acos(Math.max(-1,Math.min(1,n0[2])))*180/Math.PI;
+    /* measured precession: azimuth advance of n₀ over the last full spin turn */
+    let meas=null;
+    if(th>=2*Math.PI){
+      const a=n0At(th-2*Math.PI,C),b=n0;
+      let d=Math.atan2(b[1],b[0])-Math.atan2(a[1],a[0]);
+      /* unwrap coarsely using the table */
+      let acc=0,prev=Math.atan2(a[1],a[0]);
+      const M=400;for(let i=1;i<=M;i++){const p=n0At(th-2*Math.PI+2*Math.PI*i/M,C);
+        let ph=Math.atan2(p[1],p[0]),dd=ph-prev;while(dd>Math.PI)dd-=2*Math.PI;while(dd<-Math.PI)dd+=2*Math.PI;
+        acc+=dd;prev=ph;}
+      meas=acc;}
+    const opp=Math.abs(C.sunel-Math.PI/2)<1e-9;
+    const pred=opp?2*Math.PI*(C.kg-C.ks)/(C.omega*C.omega):null;
+    L.push("");
+    L.push(`TOP MODE   axis angle from vertical now ${ (90-tiltNow).toFixed(2)}°  (started ${(C.tilt*180/Math.PI).toFixed(0)}°)`);
+    if(opp){
+      L.push(`sun exactly opposite gravity: precession per spin turn = 2π(k_g−k_s)/ω² = ${pred.toFixed(4)} rad`
+        + (Math.abs(C.kg-C.ks)<1e-9?"  → the two pulls cancel; the axis holds still":""));
+    } else L.push(`sun off the vertical by ${((Math.PI/2-C.sunel)*180/Math.PI).toFixed(0)}°: no single precession axis — the tip traces a rosette`);
+    if(meas!==null) L.push(`measured azimuth advance over the last spin turn = ${meas.toFixed(4)} rad`
+        +(pred!==null?`   (predicted ${pred.toFixed(4)})`:""));
+  }
+
+  /* --- regime diagnostics ------------------------------------------------ */
+  const lr=C.lam*C.rho;
+  let q=null; for(let i=1;i<=64;i++){if(Math.abs(C.rho*i-Math.round(C.rho*i))<1e-9){q=i;break}}
+  L.push("");
+  L.push(`λρ = ${lr.toFixed(4)}   ` + (Math.abs(lr-1)<5e-3
+      ? "marginal: every level adds the same rim speed (this is the rim-coupled line)"
+      : lr<1 ? "convergent: deeper levels add less and less; the shape settles with depth"
+             : "roughening: arc length grows by ~λρ per level while the extent stays bounded"));
+  if(C.rho===0) L.push("ρ = 0: all children rigid — the path is exactly planar at fixed y.");
+  else if(q===null) L.push(`no q ≤ 64 makes ρ·q an integer, so the configuration does not return.`);
+  else{const m=Math.pow(q,C.depth);
+    L.push(`ρ = p/${q} → configuration returns after q^depth = ${q}^${C.depth} = ${m} parent revolution${m>1?"s":""}`
+      +(m>C.nrev?`  (this run is only ${C.nrev})`:""));}
+  if(DIAG.arc!==null)
+    L.push(`relative arc of Q per revolution = ${DIAG.arc.toFixed(2)} R₀   `+
+           `out-of-plane spread ${DIAG.yspread.toFixed(4)}`+
+           (DIAG.yspread<1e-9?"  → planar":""));
+  if(el("c_diag").checked){
+    let mo=0,mn=0,mh=0,mi=0;
+    for(let k=0;k<=C.depth+1;k++){const x=Ls[k];
+      mo=Math.max(mo,Math.abs(dot(x.u,x.v)),Math.abs(dot(x.u,x.n)),Math.abs(dot(x.v,x.n)));
+      mn=Math.max(mn,Math.abs(Math.hypot(...x.u)-1),Math.abs(Math.hypot(...x.v)-1),
+                     Math.abs(Math.hypot(...x.n)-1));
+      const h=sub(cross(x.v,x.u),x.n);mh=Math.max(mh,Math.hypot(...h));
+      if(k>0){const inh=sub(x.n,Ls[k-1].er);mi=Math.max(mi,Math.hypot(...inh));}}
+    L.push("");
+    L.push(`orthogonality  ${mo.toExponential(2)}    unit norms  ${mn.toExponential(2)}`);
+    L.push(`handedness v×u−n  ${mh.toExponential(2)}    inheritance n_{k+1}−e_r,k  ${mi.toExponential(2)}`);
+  }
+  el("info").textContent=L.join("\n");
+  el("thlab").textContent="θ₀ = "+th.toFixed(3);
+  el("rhonote").textContent=`ρ = 1/λ = ${(1/C.lam).toFixed(3)} matches rim speed across levels. Currently ρ = ${C.rho}.`;
+}
+
+/* ------------------------------- wiring --------------------------------- */
+[["R0","R0v"],["lam","lamv"],["c","cv2"],["rho","rhov"],["depth","depthv"],
+ ["phi0","phi0v"],["omega","omegav"],["nrev","nrevv"],["speed","speedv"],
+ ["dist","distv"],["nsp","nspv"],["tilt","tiltv"],["kg","kgv"],["ks","ksv"],
+ ["sunel","sunelv"]].forEach(([id,vid])=>{
+  const s=el(id),v=el(vid);
+  const upd=()=>{v.textContent=(+s.value).toFixed(["depth","nsp","nrev","tilt","sunel"].includes(id)?0:2);
+    if(id==="depth")buildCamStrip();draw()};
+  s.addEventListener("input",upd);upd();});
+el("theta").addEventListener("input",e=>{S.theta=+e.target.value;draw()});
+document.querySelectorAll('input[type=checkbox],input[type=radio]')
+  .forEach(i=>i.addEventListener("change",draw));
+el("play").onclick=()=>{S.playing=!S.playing;el("play").textContent=S.playing?"pause":"play"};
+el("reset").onclick=()=>{S.theta=0;el("theta").value=0;S.playing=false;
+  el("play").textContent="play";draw()};
+
+[["rim ρ=1/λ",null],["0",0],["1",1],["3/2",1.5],["√2",Math.SQRT2],
+ ["φ",(1+Math.sqrt(5))/2]].forEach(([lab,v])=>{
+  const b=document.createElement("button");b.textContent=lab;
+  b.onclick=()=>{el("rho").value=Math.min(4,v===null?1/(+el("lam").value):v);
+    el("rhov").textContent=(+el("rho").value).toFixed(2);draw()};
+  el("rhos").appendChild(b)});
+
+const setv=(id,v)=>{el(id).value=v;
+  const m={R0:"R0v",lam:"lamv",c:"cv2",rho:"rhov",depth:"depthv",phi0:"phi0v",
+           omega:"omegav",nrev:"nrevv",speed:"speedv",dist:"distv",nsp:"nspv",
+           tilt:"tiltv",kg:"kgv",ks:"ksv",sunel:"sunelv"};
+  el(m[id]).textContent=(+v).toFixed(["depth","nsp","nrev","tilt","sunel"].includes(id)?0:2);};
+const TOPPRE=[
+ ["cancel",  {tilt:30,kg:1,ks:1,sunel:90,omega:1,nrev:3},
+  "Equal pulls, sun straight overhead. The axis holds perfectly still — no preferred orientation at all."],
+ ["precess", {tilt:30,kg:1,ks:0.4,sunel:90,omega:1,nrev:3},
+  "Gravity wins. The axis does not fall — it sweeps a clean cone. Raise ω to see it slow."],
+ ["rosette", {tilt:30,kg:1,ks:1,sunel:10,omega:1,nrev:6},
+  "Sun near the horizon. No single precession axis: the tip draws a wobbling rosette."],
+];
+TOPPRE.forEach(([lab,p,note])=>{const b=document.createElement("button");b.textContent=lab;
+  b.onclick=()=>{document.querySelector('input[name=mode][value=top]').checked=true;
+    Object.entries(p).forEach(([k,v])=>setv(k,v));
+    [...el("toppre").children].forEach(x=>x.classList.toggle("on",x===b));
+    el("topnote").textContent=note;
+    if(S.cam!=="free")S.cam="follow";syncCams();draw();};
+  el("toppre").appendChild(b)});
+const PRESETS=[
+ ["planar",      {lam:.38,rho:0,   c:0,depth:3,nrev:2},
+  "ρ = 0. Every child rigid. y is exactly constant — the path collapses to a plane."],
+ ["unison",      {lam:.38,rho:1,   c:0,depth:3,nrev:2},
+  "Every level turns at the parent rate. Shortest path of any ρ; near-degenerate."],
+ ["gear train",  {lam:.5, rho:2,   c:0,depth:3,nrev:2},
+  "Rim-coupled and integer: ρ = 1/λ = 2. Returns every single revolution at any depth."],
+ ["golden",      {lam:.618,rho:1.618,c:0,depth:3,nrev:3},
+  "Rim-coupled at λρ = 1 with ρ irrational. Marginal regime, never returns."],
+ ["q^depth",     {lam:.667,rho:1.5,c:0,depth:3,nrev:6},
+  "ρ = 3/2 returns after 2^3 = 8 revolutions. Raise depth to 5 and it needs 32."],
+ ["convergent",  {lam:.5, rho:1.4, c:0,depth:5,nrev:2},
+  "λρ = 0.7. Sweep depth 2→5: the path barely changes. Deep levels stop mattering."],
+ ["roughening",  {lam:.5, rho:2.6, c:0,depth:5,nrev:2},
+  "λρ = 1.3. Sweep depth 2→6: arc/rev goes 14 → 46 while the extent stays ~1.34 R₀."],
+ ["all touch",   {lam:.25,rho:4,   c:0,depth:4,nrev:2},
+  "Rim-coupled, small. Every one of the five levels reaches the road."],
+ ["fat chain",   {lam:.8, rho:1.25,c:0,depth:2,nrev:2},
+  "λ near 1. The children are no longer decoration — reach 1.64 R₀, deep road strikes."],
+];
+PRESETS.forEach(([lab,p,note])=>{const b=document.createElement("button");
+  b.textContent=lab;
+  b.onclick=()=>{Object.entries(p).forEach(([k,v])=>setv(k,v));
+    [...el("presets").children].forEach(x=>x.classList.toggle("on",x===b));
+    buildCamStrip();el("presetnote").textContent=note;draw();};
+  el("presets").appendChild(b)});
+
+let drag=null;
+cv.addEventListener("pointerdown",e=>{drag=[e.clientX,e.clientY];S.cam="free";
+  syncCams();cv.setPointerCapture(e.pointerId)});
+cv.addEventListener("pointermove",e=>{if(!drag)return;
+  S.az-=(e.clientX-drag[0])*0.008;
+  S.el=Math.max(-1.4,Math.min(1.4,S.el+(e.clientY-drag[1])*0.008));
+  drag=[e.clientX,e.clientY];draw()});
+["pointerup","pointercancel"].forEach(k=>cv.addEventListener(k,()=>drag=null));
+
+let last=performance.now();
+function loop(now){const dt=Math.min((now-last)/1000,0.05);last=now;
+  if(S.playing){const C=cfg(),thMax=2*Math.PI*C.nrev;
+    S.theta+=C.omega*C.speed*dt;if(S.theta>thMax)S.theta=0;
+    el("theta").value=S.theta;draw();}
+  requestAnimationFrame(loop);}
+window.addEventListener("resize",()=>{resize();draw()});
+buildCamStrip();resize();draw();requestAnimationFrame(loop);
+</script>
+</body>
+</html>
